@@ -1,0 +1,120 @@
+import Hammer from "hammerjs";
+export function zoomElement(t, e, n) {
+  var a = (function () {
+      return (
+        window[Hammer.prefixed(window, "requestAnimationFrame")] ||
+        function (t) {
+          window.setTimeout(t, 1e3 / 60);
+        }
+      );
+    })(),
+    i = !1,
+    o = 1,
+    r = "",
+    s = M(0, 0),
+    f = M(0, 0),
+    h = M(0, 0),
+    l = M(t.offsetWidth / 2, t.offsetHeight / 2),
+    m = M(t.offsetWidth / 2, t.offsetHeight / 2);
+  if ((g(), e)) {
+    var u = new Hammer(e);
+    u.on("tap", () => {
+      y({ center: M(0, 0) });
+    });
+  }
+  if (n) {
+    var x = new Hammer(n);
+    x.on("tap", () => {
+      y({ center: M(0, 0) });
+    });
+  }
+  var c = new Hammer(t);
+  function y(e) {
+    if (
+      ((r = ""),
+      (f = M(s.x, s.y)),
+      (l = M(m.x + f.x, m.y + f.y)),
+      (h = M(e.center.x - l.x, e.center.y - l.y)),
+      o > 1)
+    )
+      ((o = 1), (s = M(0, 0)));
+    else {
+      o = 2;
+      let e = Number((1 - o) * h.x + f.x),
+        n = Number((1 - o) * h.y + f.y),
+        a = t.getBoundingClientRect().width / 2 - t.offsetWidth / 2,
+        i = t.getBoundingClientRect().height / 2 - t.offsetHeight / 2;
+      (Math.abs(e) > Math.abs(a) && (e = p(e, a)),
+        Math.abs(n) > Math.abs(i) && (n = p(n, i)),
+        (s = M(e, n)));
+    }
+    d();
+  }
+  function d() {
+    i || (a(b), (i = !0));
+  }
+  function b() {
+    ((t.style.transition = r),
+      (t.style.transform = "translate(" + s.x + "px," + s.y + "px) scale(" + o + "," + o + ")"),
+      (t.style.WebkitTransform =
+        "translate(" + s.x + "px," + s.y + "px) scale(" + o + "," + o + ")"),
+      (t.style.msTransform = "translate(" + s.x + "px," + s.y + "px) scale(" + o + "," + o + ")"),
+      g(),
+      (i = !1));
+  }
+  function g() {
+    (e && (e.style.display = 1 === o ? "inline" : "none"),
+      n && (n.style.display = 1 === o ? "none" : "inline"));
+  }
+  function p(t, e) {
+    let n = w(t),
+      a = w(e),
+      i = 0;
+    return ((i = Number(!n && a ? "-" + e : e)), i);
+  }
+  function w(t) {
+    var e = new RegExp("^-?[0-9]*.?[0-9]*$");
+    if (e.test(t)) {
+      var n = Math.abs(t);
+      return t === n;
+    }
+  }
+  function M(t, e) {
+    return { x: t, y: e };
+  }
+  (c.on("doubletap", (t) => {
+    y(t);
+  }),
+    c.on("panstart", (t) => {
+      f = M(s.x, s.y);
+    }),
+    c.on("panmove", (e) => {
+      r = "1.6";
+      let n = Number(f.x + e.deltaX),
+        a = Number(f.y + e.deltaY),
+        i = t.getBoundingClientRect().width / 2 - t.offsetWidth / 2,
+        o = t.getBoundingClientRect().height / 2 - t.offsetHeight / 2;
+      (Math.abs(n) > Math.abs(i) && (n = p(n, i)),
+        Math.abs(a) > Math.abs(o) && (a = p(a, o)),
+        (s = M(n, a)),
+        d());
+    }),
+    c.on("pinchstart", (t) => {
+      ((r = ""),
+        (f = M(s.x, s.y)),
+        (l = M(m.x + f.x, m.y + f.y)),
+        (h = M(t.center.x - l.x, t.center.y - l.y)));
+    }),
+    c.on("pinchmove", (e) => {
+      let n = o * e.scale;
+      (n < 1 ? (n = 1) : n > 3 && (n = 3), (o = n));
+      let a = Number((1 - o) * h.x + f.x),
+        i = Number((1 - o) * h.y + f.y),
+        r = t.getBoundingClientRect().width / 2 - t.offsetWidth / 2,
+        l = t.getBoundingClientRect().height / 2 - t.offsetHeight / 2;
+      (Math.abs(a) > Math.abs(r) && (a = p(a, r)),
+        Math.abs(i) > Math.abs(l) && (i = p(i, l)),
+        (s = M(a, i)),
+        d());
+    }));
+}

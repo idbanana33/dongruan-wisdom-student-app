@@ -1,0 +1,1528 @@
+[
+ {
+  "path": "/",
+  "name": null,
+  "chunks": [
+   "6"
+  ],
+  "mods": [
+   "713b"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "",
+  "name": null,
+  "chunks": [
+   "0",
+   "10"
+  ],
+  "mods": [
+   "35a8"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/user/login",
+  "name": null,
+  "chunks": [
+   "0",
+   "5"
+  ],
+  "mods": [
+   "dc6c"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/transfer",
+  "name": "/transfer",
+  "chunks": [
+   "0",
+   "8"
+  ],
+  "mods": [
+   "46fe"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/update",
+  "name": null,
+  "chunks": [
+   "0",
+   "9"
+  ],
+  "mods": [
+   "da3b"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/policy/privacyPolicy",
+  "name": null,
+  "chunks": [
+   "0",
+   "17"
+  ],
+  "mods": [
+   "261e"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/policy/termsOfUse",
+  "name": null,
+  "chunks": [
+   "0",
+   "18"
+  ],
+  "mods": [
+   "f26b"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/user/findPwd",
+  "name": null,
+  "chunks": [
+   "0",
+   "122"
+  ],
+  "mods": [
+   "5e71"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/user/password",
+  "name": null,
+  "chunks": [
+   "0",
+   "124"
+  ],
+  "mods": [
+   "62a1"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "19"
+  ],
+  "mods": [
+   "500e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/apply/index",
+  "name": "/student/apply/index",
+  "chunks": [
+   "0",
+   "22"
+  ],
+  "mods": [
+   "0a0d"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/apply/applyDetail",
+  "name": "/student/apply/applyDetail",
+  "chunks": [
+   "0",
+   "1",
+   "21"
+  ],
+  "mods": [
+   "d0ce"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/apply/stumanage",
+  "name": null,
+  "chunks": [
+   "0",
+   "23"
+  ],
+  "mods": [
+   "def2"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/apply/stumanagedetail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "24"
+  ],
+  "mods": [
+   "f260"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/leave/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "28"
+  ],
+  "mods": [
+   "cc5a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/leave/leave",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "29"
+  ],
+  "mods": [
+   "fffb"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/leave/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "27"
+  ],
+  "mods": [
+   "3076"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/notice/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "34"
+  ],
+  "mods": [
+   "d2bb0"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/notice/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "33"
+  ],
+  "mods": [
+   "4f38"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/notice/stumanage",
+  "name": null,
+  "chunks": [
+   "0",
+   "35"
+  ],
+  "mods": [
+   "cb82"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/notice/stumanagedetail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "36"
+  ],
+  "mods": [
+   "90a6"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/leave/reportleave",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "30"
+  ],
+  "mods": [
+   "750d"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/index",
+  "name": "/student/signin/index",
+  "chunks": [
+   "0",
+   "48"
+  ],
+  "mods": [
+   "be3e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/stumanage",
+  "name": null,
+  "chunks": [
+   "0",
+   "53"
+  ],
+  "mods": [
+   "a2f3"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/signin",
+  "name": "/student/signin/signin",
+  "chunks": [
+   "0",
+   "1",
+   "51"
+  ],
+  "mods": [
+   "df96"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/qrcodePerson",
+  "name": null,
+  "chunks": [
+   "0",
+   "49"
+  ],
+  "mods": [
+   "048f"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/qrcodePersonDetails",
+  "name": "/student/signin/qrcodePersonDetails",
+  "chunks": [
+   "0",
+   "50"
+  ],
+  "mods": [
+   "b6d3"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/qrScanning",
+  "name": "/student/signin/qrScanning",
+  "chunks": [
+   "0",
+   "3"
+  ],
+  "mods": [
+   "2a13"
+  ],
+  "needLogin": false
+ },
+ {
+  "path": "/student/signin/signinSuccess",
+  "name": "/student/signin/signinSuccess",
+  "chunks": [
+   "0",
+   "1",
+   "52"
+  ],
+  "mods": [
+   "1a43"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/signinPersonnel",
+  "name": "/student/signin/signinPersonnel",
+  "chunks": [
+   "0",
+   "54"
+  ],
+  "mods": [
+   "4ab0"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/signin/stumanagedetail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "55"
+  ],
+  "mods": [
+   "a6f6"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/sanitation/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "47"
+  ],
+  "mods": [
+   "7c65"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/sanitation/detailResult",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "46"
+  ],
+  "mods": [
+   "93dc"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/experience/index",
+  "name": "/student/experience/index",
+  "chunks": [
+   "0",
+   "26"
+  ],
+  "mods": [
+   "a1b2"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/repair/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "43"
+  ],
+  "mods": [
+   "8a70"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/repair/new",
+  "name": null,
+  "chunks": [
+   "0",
+   "45"
+  ],
+  "mods": [
+   "b25f"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/repair/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "41"
+  ],
+  "mods": [
+   "733d"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/repair/evaluate",
+  "name": null,
+  "chunks": [
+   "0",
+   "42"
+  ],
+  "mods": [
+   "dc02"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/repair/maintainerInfo",
+  "name": null,
+  "chunks": [
+   "0",
+   "44"
+  ],
+  "mods": [
+   "866f"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "56"
+  ],
+  "mods": [
+   "69c3"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/qrcodeScanning",
+  "name": null,
+  "chunks": [
+   "0",
+   "4"
+  ],
+  "mods": [
+   "0611"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/verification/signinVer",
+  "name": "/teacher/verification/signinVer",
+  "chunks": [
+   "0",
+   "118"
+  ],
+  "mods": [
+   "87c4"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/verification/leaveVer",
+  "name": "/teacher/verification/leaveVer",
+  "chunks": [
+   "0",
+   "117"
+  ],
+  "mods": [
+   "0930"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/signin/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "113"
+  ],
+  "mods": [
+   "6822"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/signin/new",
+  "name": "/teacher/signin/new",
+  "chunks": [
+   "0",
+   "1",
+   "114"
+  ],
+  "mods": [
+   "2045"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/signin/detail",
+  "name": "/teacher/signin/detail",
+  "chunks": [
+   "0",
+   "1",
+   "112"
+  ],
+  "mods": [
+   "a0ab"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/signin/statistics",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "116"
+  ],
+  "mods": [
+   "49de"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/signin/signinExperience",
+  "name": "/teacher/signin/signinExperience",
+  "chunks": [
+   "0",
+   "1",
+   "115"
+  ],
+  "mods": [
+   "92f0"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/list",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "78"
+  ],
+  "mods": [
+   "3cd2"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "84"
+  ],
+  "mods": [
+   "a858"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/multilist",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "81"
+  ],
+  "mods": [
+   "493a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/multidetail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "82"
+  ],
+  "mods": [
+   "965e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/leaveExperience",
+  "name": "/teacher/leave/leaveExperience",
+  "chunks": [
+   "0",
+   "1",
+   "79"
+  ],
+  "mods": [
+   "f3d1"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/multiHistory",
+  "name": "/teacher/leave/multiHistory",
+  "chunks": [
+   "0",
+   "80"
+  ],
+  "mods": [
+   "2727"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/newMultiLeave",
+  "name": "/teacher/leave/newMultiLeave",
+  "chunks": [
+   "0",
+   "1",
+   "85"
+  ],
+  "mods": [
+   "43e8"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/multiStudent",
+  "name": "/teacher/leave/multiStudent",
+  "chunks": [
+   "0",
+   "83"
+  ],
+  "mods": [
+   "3865"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/sanitation/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "108"
+  ],
+  "mods": [
+   "1563"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/joblog/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "74"
+  ],
+  "mods": [
+   "326a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/joblog/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "72"
+  ],
+  "mods": [
+   "d79d"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/notice/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "98"
+  ],
+  "mods": [
+   "7f35"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/notice/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "97"
+  ],
+  "mods": [
+   "03ca"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/notice/new",
+  "name": "/teacher/notice/new",
+  "chunks": [
+   "0",
+   "1",
+   "99"
+  ],
+  "mods": [
+   "66de"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/notice/noticeExperience",
+  "name": "/teacher/notice/noticeExperience",
+  "chunks": [
+   "0",
+   "1",
+   "100"
+  ],
+  "mods": [
+   "60e8"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/joblog/new",
+  "name": "/teacher/joblog/new",
+  "chunks": [
+   "0",
+   "1",
+   "75"
+  ],
+  "mods": [
+   "18bf"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/sanitation/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "106"
+  ],
+  "mods": [
+   "3b5c"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/sanitation/detailresult",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "107"
+  ],
+  "mods": [
+   "a22e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "76"
+  ],
+  "mods": [
+   "efa0"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/sanitation/new",
+  "name": "/teacher/sanitation/new",
+  "chunks": [
+   "0",
+   "1",
+   "109"
+  ],
+  "mods": [
+   "54fe"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/leave/history",
+  "name": null,
+  "chunks": [
+   "0",
+   "77"
+  ],
+  "mods": [
+   "07ff"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/apply/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "65"
+  ],
+  "mods": [
+   "fdfc"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/apply/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "64"
+  ],
+  "mods": [
+   "6154"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/apply/statistics",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "67"
+  ],
+  "mods": [
+   "d03a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/apply/new",
+  "name": "/teacher/apply/new",
+  "chunks": [
+   "0",
+   "1",
+   "66"
+  ],
+  "mods": [
+   "ac1c"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/apply/applyExperience",
+  "name": "/teacher/apply/applyExperience",
+  "chunks": [
+   "0",
+   "1",
+   "63"
+  ],
+  "mods": [
+   "64e7"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/joblog/detailresult",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "73"
+  ],
+  "mods": [
+   "b6da"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/experience/index",
+  "name": "/teacher/experience/index",
+  "chunks": [
+   "0",
+   "71"
+  ],
+  "mods": [
+   "a0d5"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/achievement/index",
+  "name": "/teacher/achievement/index",
+  "chunks": [
+   "0",
+   "58"
+  ],
+  "mods": [
+   "9ddf"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/analysis/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "59"
+  ],
+  "mods": [
+   "c676"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/basic/stuInfo",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "25"
+  ],
+  "mods": [
+   "c3b1"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/basic/teaInfo",
+  "name": null,
+  "chunks": [
+   "0",
+   "68"
+  ],
+  "mods": [
+   "ad93"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/user/bindingMob",
+  "name": null,
+  "chunks": [
+   "0",
+   "120"
+  ],
+  "mods": [
+   "d313"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/monitor/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "93"
+  ],
+  "mods": [
+   "daec"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/scanning/signinVer",
+  "name": "/teacher/scanning/signinVer",
+  "chunks": [
+   "0",
+   "111"
+  ],
+  "mods": [
+   "7e9c"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/scanning/leaveVer",
+  "name": "/teacher/scanning/leaveVer",
+  "chunks": [
+   "0",
+   "110"
+  ],
+  "mods": [
+   "c4d2"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/news/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "95"
+  ],
+  "mods": [
+   "c201"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/news/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "94"
+  ],
+  "mods": [
+   "6b6a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/news/new",
+  "name": "/teacher/news/new",
+  "chunks": [
+   "0",
+   "96"
+  ],
+  "mods": [
+   "8087"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/news/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "32"
+  ],
+  "mods": [
+   "5542"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/news/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "31"
+  ],
+  "mods": [
+   "579a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/process/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "38"
+  ],
+  "mods": [
+   "839a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/process/new",
+  "name": "/student/process/new",
+  "chunks": [
+   "0",
+   "39"
+  ],
+  "mods": [
+   "f3a7"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/process/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "37"
+  ],
+  "mods": [
+   "5e52"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/process/NewProcess",
+  "name": "/student/process/NewProcess",
+  "chunks": [
+   "0",
+   "1",
+   "40"
+  ],
+  "mods": [
+   "c054"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/process/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "104"
+  ],
+  "mods": [
+   "1e9e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/process/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "101"
+  ],
+  "mods": [
+   "32f5"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/process/list",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "103"
+  ],
+  "mods": [
+   "897e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/process/processTypeList",
+  "name": null,
+  "chunks": [
+   "0",
+   "102"
+  ],
+  "mods": [
+   "40d3"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/process/typeDetail",
+  "name": "/teacher/process/processTypeNew",
+  "chunks": [
+   "0",
+   "1",
+   "105"
+  ],
+  "mods": [
+   "0fc5"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/user/qrCode",
+  "name": null,
+  "chunks": [
+   "0",
+   "125"
+  ],
+  "mods": [
+   "2971"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/user/passport",
+  "name": null,
+  "chunks": [
+   "0",
+   "123"
+  ],
+  "mods": [
+   "1e4d"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/analysis/stuData",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "60"
+  ],
+  "mods": [
+   "7778"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/analysis/stuLocation",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "61"
+  ],
+  "mods": [
+   "23a6"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/student/todo",
+  "name": null,
+  "chunks": [
+   "0",
+   "20"
+  ],
+  "mods": [
+   "700f"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/todo",
+  "name": null,
+  "chunks": [
+   "0",
+   "57"
+  ],
+  "mods": [
+   "58c1"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/user/doBindingMob",
+  "name": null,
+  "chunks": [
+   "0",
+   "121"
+  ],
+  "mods": [
+   "a3a5"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/user/account",
+  "name": null,
+  "chunks": [
+   "0",
+   "119"
+  ],
+  "mods": [
+   "f7d9"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/composite/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "70"
+  ],
+  "mods": [
+   "e90c"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/composite/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "69"
+  ],
+  "mods": [
+   "ebc5"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "87"
+  ],
+  "mods": [
+   "19fe"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/messageIndex",
+  "name": null,
+  "chunks": [
+   "0",
+   "90"
+  ],
+  "mods": [
+   "710a"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/new",
+  "name": "/teacher/message/new",
+  "chunks": [
+   "0",
+   "1",
+   "91"
+  ],
+  "mods": [
+   "8060"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/statistics",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "92"
+  ],
+  "mods": [
+   "0df3"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "86"
+  ],
+  "mods": [
+   "9c8e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/analysis/teaMessage",
+  "name": null,
+  "chunks": [
+   "0",
+   "1",
+   "62"
+  ],
+  "mods": [
+   "4c50"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/message",
+  "name": "/teacher/message/message",
+  "chunks": [
+   "0",
+   "88"
+  ],
+  "mods": [
+   "098e"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/teacher/message/messageDetail",
+  "name": "/teacher/message/messageDetail",
+  "chunks": [
+   "0",
+   "1",
+   "89"
+  ],
+  "mods": [
+   "2a54"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/maintainer/index",
+  "name": null,
+  "chunks": [
+   "0",
+   "12"
+  ],
+  "mods": [
+   "7ee9"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/maintainer/todo",
+  "name": null,
+  "chunks": [
+   "0",
+   "16"
+  ],
+  "mods": [
+   "b6c5"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/maintainer/repairList",
+  "name": null,
+  "chunks": [
+   "0",
+   "14"
+  ],
+  "mods": [
+   "f741"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/maintainer/detail",
+  "name": null,
+  "chunks": [
+   "0",
+   "11"
+  ],
+  "mods": [
+   "8456"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/maintainer/receivingOrder",
+  "name": null,
+  "chunks": [
+   "0",
+   "13"
+  ],
+  "mods": [
+   "2c02"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "/maintainer/repairOrder",
+  "name": null,
+  "chunks": [
+   "0",
+   "15"
+  ],
+  "mods": [
+   "589c"
+  ],
+  "needLogin": true
+ },
+ {
+  "path": "*",
+  "name": null,
+  "chunks": [
+   "0",
+   "7"
+  ],
+  "mods": [
+   "e51e"
+  ],
+  "needLogin": false
+ }
+]

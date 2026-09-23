@@ -1,0 +1,961 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+  [15],
+  {
+    "589c": function (e, t, r) {
+      "use strict";
+      r.r(t);
+      var a = function () {
+          var e = this,
+            t = e.$createElement,
+            r = e._self._c || t;
+          return r(
+            "q-layout",
+            { attrs: { view: "lHh lpr lFf" } },
+            [
+              r(
+                "q-header",
+                { staticClass: "bg-grey-3 text-black" },
+                [
+                  r(
+                    "q-toolbar",
+                    [
+                      r("q-btn", {
+                        attrs: { flat: "", round: "", dense: "", icon: "keyboard_arrow_left" },
+                        on: { click: e.goBack },
+                      }),
+                      r("q-toolbar-title", [e._v("维修")]),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+              r(
+                "q-page-container",
+                [
+                  r(
+                    "q-page",
+                    { staticClass: "bg-grey-3" },
+                    [
+                      r(
+                        "q-form",
+                        { on: { submit: e.onSubmit } },
+                        [
+                          r(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              r("q-card-section", [
+                                r(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "neu-css-after-colon text-bold neu-css-before-white-space",
+                                  },
+                                  [e._v("报修单号")],
+                                ),
+                                e._v(e._s(e.record.order) + "\n          "),
+                              ]),
+                              r(
+                                "q-card-section",
+                                [
+                                  r(
+                                    "span",
+                                    {
+                                      staticClass:
+                                        "neu-css-after-colon text-bold neu-css-before-red-asterisk",
+                                    },
+                                    [e._v("故障类型")],
+                                  ),
+                                  r("q-select", {
+                                    attrs: {
+                                      "emit-value": "",
+                                      "map-options": "",
+                                      outlined: "",
+                                      "hide-bottom-space": "",
+                                      dense: "",
+                                      "lazy-rules": "",
+                                      rules: [
+                                        function (e) {
+                                          return (null !== e && "" !== e) || "请选择故障类型";
+                                        },
+                                      ],
+                                      options: e.fault_type_list,
+                                    },
+                                    model: {
+                                      value: e.record.fault_type_id,
+                                      callback: function (t) {
+                                        e.$set(e.record, "fault_type_id", t);
+                                      },
+                                      expression: "record.fault_type_id",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                              r(
+                                "q-card-section",
+                                [
+                                  r(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "text-bold neu-css-after-colon neu-css-before-red-asterisk q-mb-sm",
+                                    },
+                                    [e._v("维修描述")],
+                                  ),
+                                  r("q-input", {
+                                    attrs: {
+                                      dense: "",
+                                      outlined: "",
+                                      "hide-bottom-space": "",
+                                      placeholder: "请填写该项",
+                                      type: "textarea",
+                                      "lazy-rules": "",
+                                      rules: [
+                                        function (e) {
+                                          return !!e || "请填写该项";
+                                        },
+                                        function (e) {
+                                          return e.length <= 200 || "最多填写200个字";
+                                        },
+                                        function (e) {
+                                          return e.length >= 1 || "最少填写1个字";
+                                        },
+                                      ],
+                                    },
+                                    model: {
+                                      value: e.record.repair_description,
+                                      callback: function (t) {
+                                        e.$set(e.record, "repair_description", t);
+                                      },
+                                      expression: "record.repair_description",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                          r(
+                            "q-card",
+                            { staticClass: "full-width row q-mt-sm", attrs: { flat: "" } },
+                            [
+                              r(
+                                "q-list",
+                                { staticClass: "full-width", attrs: { padding: "" } },
+                                [
+                                  r(
+                                    "q-item",
+                                    [
+                                      r(
+                                        "q-item-section",
+                                        [
+                                          r(
+                                            "q-item-label",
+                                            { staticClass: "neu-css-before-white-space" },
+                                            [
+                                              r(
+                                                "span",
+                                                { staticClass: "neu-css-after-colon text-bold" },
+                                                [e._v("维修附件")],
+                                              ),
+                                            ],
+                                          ),
+                                          r(
+                                            "q-item-label",
+                                            {
+                                              staticClass: "neu-css-before-white-space q-my-sm",
+                                              attrs: { caption: "" },
+                                            },
+                                            [e._v("文件格式支持：")],
+                                          ),
+                                          r(
+                                            "q-item-label",
+                                            {
+                                              staticClass: "neu-css-before-white-space q-my-sm",
+                                              attrs: { caption: "" },
+                                            },
+                                            [e._v(".jpg、.png、.jpeg、.mp4")],
+                                          ),
+                                          r("q-field", {
+                                            attrs: {
+                                              borderless: "",
+                                              dense: "",
+                                              "hide-bottom-space": "",
+                                              "lazy-rules": "",
+                                              value: e.record.repair_attachments,
+                                            },
+                                            scopedSlots: e._u([
+                                              {
+                                                key: "control",
+                                                fn: function () {
+                                                  return [
+                                                    0 == e.isHarmonyOS
+                                                      ? r("q-uploader", {
+                                                          staticClass: "full-width",
+                                                          attrs: {
+                                                            flat: "",
+                                                            multiple: "",
+                                                            "max-files": "3",
+                                                            url: e.uploader,
+                                                            "auto-upload": "",
+                                                            filter: e.checkFile,
+                                                            accept:
+                                                              ".jpg, .png, .jpeg, .mp4, audio/*, image/*, video/*",
+                                                            "max-file-size": "31457280",
+                                                          },
+                                                          on: {
+                                                            uploaded: e.afterUploaded,
+                                                            rejected: e.onRejected,
+                                                            removed: e.afterRemoved,
+                                                          },
+                                                          scopedSlots: e._u(
+                                                            [
+                                                              {
+                                                                key: "header",
+                                                                fn: function (t) {
+                                                                  return [
+                                                                    r(
+                                                                      "div",
+                                                                      {
+                                                                        staticClass:
+                                                                          "row no-wrap items-center q-pa-sm q-gutter-xs",
+                                                                      },
+                                                                      [
+                                                                        r(
+                                                                          "div",
+                                                                          { staticClass: "col" },
+                                                                          [
+                                                                            e._v(
+                                                                              "上传(每个30M以内)",
+                                                                            ),
+                                                                          ],
+                                                                        ),
+                                                                        t.canAddFiles
+                                                                          ? r(
+                                                                              "q-btn",
+                                                                              {
+                                                                                attrs: {
+                                                                                  type: "a",
+                                                                                  icon: "add_box",
+                                                                                  round: "",
+                                                                                  dense: "",
+                                                                                  flat: "",
+                                                                                },
+                                                                              },
+                                                                              [
+                                                                                r(
+                                                                                  "q-uploader-add-trigger",
+                                                                                ),
+                                                                                r("q-tooltip", [
+                                                                                  e._v(
+                                                                                    "选择文件并上传",
+                                                                                  ),
+                                                                                ]),
+                                                                              ],
+                                                                              1,
+                                                                            )
+                                                                          : e._e(),
+                                                                      ],
+                                                                      1,
+                                                                    ),
+                                                                  ];
+                                                                },
+                                                              },
+                                                              {
+                                                                key: "list",
+                                                                fn: function (t) {
+                                                                  return [
+                                                                    r(
+                                                                      "q-list",
+                                                                      { attrs: { separator: "" } },
+                                                                      [
+                                                                        e._l(t.files, function (a) {
+                                                                          return r(
+                                                                            "q-item",
+                                                                            { key: a.name },
+                                                                            [
+                                                                              r(
+                                                                                "q-item-section",
+                                                                                [
+                                                                                  r(
+                                                                                    "q-item-label",
+                                                                                    {
+                                                                                      staticClass:
+                                                                                        "full-width ellipsis cursor-pointer",
+                                                                                    },
+                                                                                    [
+                                                                                      e._v(
+                                                                                        "\n                                " +
+                                                                                          e._s(
+                                                                                            a.name,
+                                                                                          ) +
+                                                                                          "\n                              ",
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ],
+                                                                                1,
+                                                                              ),
+                                                                              r(
+                                                                                "q-item-section",
+                                                                                {
+                                                                                  attrs: {
+                                                                                    side: "",
+                                                                                  },
+                                                                                },
+                                                                                [
+                                                                                  r(
+                                                                                    "q-btn",
+                                                                                    {
+                                                                                      attrs: {
+                                                                                        flat: "",
+                                                                                        dense: "",
+                                                                                        color:
+                                                                                          "negative",
+                                                                                        icon: "delete",
+                                                                                        size: "sm",
+                                                                                      },
+                                                                                      on: {
+                                                                                        click:
+                                                                                          function (
+                                                                                            e,
+                                                                                          ) {
+                                                                                            return t.removeFile(
+                                                                                              a,
+                                                                                            );
+                                                                                          },
+                                                                                      },
+                                                                                    },
+                                                                                    [
+                                                                                      r(
+                                                                                        "q-tooltip",
+                                                                                        [
+                                                                                          e._v(
+                                                                                            "删除",
+                                                                                          ),
+                                                                                        ],
+                                                                                      ),
+                                                                                    ],
+                                                                                    1,
+                                                                                  ),
+                                                                                ],
+                                                                                1,
+                                                                              ),
+                                                                            ],
+                                                                            1,
+                                                                          );
+                                                                        }),
+                                                                        e._l(
+                                                                          e.matchingUploadedFiles(
+                                                                            e.record
+                                                                              .repair_attachments,
+                                                                            t.files,
+                                                                          ),
+                                                                          function (t) {
+                                                                            return r(
+                                                                              "q-item",
+                                                                              { key: t.servername },
+                                                                              [
+                                                                                r(
+                                                                                  "q-item-section",
+                                                                                  [
+                                                                                    r(
+                                                                                      "q-item-label",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "full-width ellipsis cursor-pointer",
+                                                                                      },
+                                                                                      [
+                                                                                        e._v(
+                                                                                          "\n                                " +
+                                                                                            e._s(
+                                                                                              t.srcname,
+                                                                                            ) +
+                                                                                            "\n                              ",
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ],
+                                                                                  1,
+                                                                                ),
+                                                                                r(
+                                                                                  "q-item-section",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      side: "",
+                                                                                    },
+                                                                                  },
+                                                                                  [
+                                                                                    r(
+                                                                                      "q-btn",
+                                                                                      {
+                                                                                        attrs: {
+                                                                                          flat: "",
+                                                                                          dense: "",
+                                                                                          color:
+                                                                                            "negative",
+                                                                                          icon: "delete",
+                                                                                          size: "sm",
+                                                                                        },
+                                                                                        on: {
+                                                                                          click:
+                                                                                            function (
+                                                                                              r,
+                                                                                            ) {
+                                                                                              return e.removeFile(
+                                                                                                t.servername,
+                                                                                              );
+                                                                                            },
+                                                                                        },
+                                                                                      },
+                                                                                      [
+                                                                                        r(
+                                                                                          "q-tooltip",
+                                                                                          [
+                                                                                            e._v(
+                                                                                              "删除",
+                                                                                            ),
+                                                                                          ],
+                                                                                        ),
+                                                                                      ],
+                                                                                      1,
+                                                                                    ),
+                                                                                  ],
+                                                                                  1,
+                                                                                ),
+                                                                              ],
+                                                                              1,
+                                                                            );
+                                                                          },
+                                                                        ),
+                                                                      ],
+                                                                      2,
+                                                                    ),
+                                                                  ];
+                                                                },
+                                                              },
+                                                            ],
+                                                            null,
+                                                            !1,
+                                                            2810095678,
+                                                          ),
+                                                          model: {
+                                                            value: e.filesMaxNumber,
+                                                            callback: function (t) {
+                                                              e.filesMaxNumber = t;
+                                                            },
+                                                            expression: "filesMaxNumber",
+                                                          },
+                                                        })
+                                                      : e._e(),
+                                                    1 == e.isHarmonyOS
+                                                      ? r("q-uploader", {
+                                                          staticClass: "full-width",
+                                                          attrs: {
+                                                            flat: "",
+                                                            multiple: "",
+                                                            "max-files": "3",
+                                                            url: e.uploader,
+                                                            "auto-upload": "",
+                                                            filter: e.checkFile,
+                                                            "max-file-size": "31457280",
+                                                          },
+                                                          on: {
+                                                            uploaded: e.afterUploaded,
+                                                            removed: e.afterRemoved,
+                                                          },
+                                                          scopedSlots: e._u(
+                                                            [
+                                                              {
+                                                                key: "header",
+                                                                fn: function (t) {
+                                                                  return [
+                                                                    r(
+                                                                      "div",
+                                                                      {
+                                                                        staticClass:
+                                                                          "row no-wrap items-center q-pa-sm q-gutter-xs",
+                                                                      },
+                                                                      [
+                                                                        r(
+                                                                          "div",
+                                                                          { staticClass: "col" },
+                                                                          [
+                                                                            e._v(
+                                                                              "上传(每个30M以内)",
+                                                                            ),
+                                                                          ],
+                                                                        ),
+                                                                        t.canAddFiles
+                                                                          ? r(
+                                                                              "q-btn",
+                                                                              {
+                                                                                attrs: {
+                                                                                  type: "a",
+                                                                                  icon: "add_box",
+                                                                                  round: "",
+                                                                                  dense: "",
+                                                                                  flat: "",
+                                                                                },
+                                                                              },
+                                                                              [
+                                                                                r(
+                                                                                  "q-uploader-add-trigger",
+                                                                                ),
+                                                                                r("q-tooltip", [
+                                                                                  e._v(
+                                                                                    "选择文件并上传",
+                                                                                  ),
+                                                                                ]),
+                                                                              ],
+                                                                              1,
+                                                                            )
+                                                                          : e._e(),
+                                                                      ],
+                                                                      1,
+                                                                    ),
+                                                                  ];
+                                                                },
+                                                              },
+                                                              {
+                                                                key: "list",
+                                                                fn: function (t) {
+                                                                  return [
+                                                                    r(
+                                                                      "q-list",
+                                                                      { attrs: { separator: "" } },
+                                                                      [
+                                                                        e._l(t.files, function (a) {
+                                                                          return r(
+                                                                            "q-item",
+                                                                            { key: a.name },
+                                                                            [
+                                                                              r(
+                                                                                "q-item-section",
+                                                                                [
+                                                                                  r(
+                                                                                    "q-item-label",
+                                                                                    {
+                                                                                      staticClass:
+                                                                                        "full-width ellipsis cursor-pointer",
+                                                                                    },
+                                                                                    [
+                                                                                      e._v(
+                                                                                        "\n                                " +
+                                                                                          e._s(
+                                                                                            a.name,
+                                                                                          ) +
+                                                                                          "\n                              ",
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ],
+                                                                                1,
+                                                                              ),
+                                                                              r(
+                                                                                "q-item-section",
+                                                                                {
+                                                                                  attrs: {
+                                                                                    side: "",
+                                                                                  },
+                                                                                },
+                                                                                [
+                                                                                  r(
+                                                                                    "q-btn",
+                                                                                    {
+                                                                                      attrs: {
+                                                                                        flat: "",
+                                                                                        dense: "",
+                                                                                        color:
+                                                                                          "negative",
+                                                                                        icon: "delete",
+                                                                                        size: "sm",
+                                                                                      },
+                                                                                      on: {
+                                                                                        click:
+                                                                                          function (
+                                                                                            e,
+                                                                                          ) {
+                                                                                            return t.removeFile(
+                                                                                              a,
+                                                                                            );
+                                                                                          },
+                                                                                      },
+                                                                                    },
+                                                                                    [
+                                                                                      r(
+                                                                                        "q-tooltip",
+                                                                                        [
+                                                                                          e._v(
+                                                                                            "删除",
+                                                                                          ),
+                                                                                        ],
+                                                                                      ),
+                                                                                    ],
+                                                                                    1,
+                                                                                  ),
+                                                                                ],
+                                                                                1,
+                                                                              ),
+                                                                            ],
+                                                                            1,
+                                                                          );
+                                                                        }),
+                                                                        e._l(
+                                                                          e.matchingUploadedFiles(
+                                                                            e.record
+                                                                              .repair_attachments,
+                                                                            t.files,
+                                                                          ),
+                                                                          function (t) {
+                                                                            return r(
+                                                                              "q-item",
+                                                                              { key: t.servername },
+                                                                              [
+                                                                                r(
+                                                                                  "q-item-section",
+                                                                                  [
+                                                                                    r(
+                                                                                      "q-item-label",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "full-width ellipsis cursor-pointer",
+                                                                                      },
+                                                                                      [
+                                                                                        e._v(
+                                                                                          "\n                                " +
+                                                                                            e._s(
+                                                                                              t.srcname,
+                                                                                            ) +
+                                                                                            "\n                              ",
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ],
+                                                                                  1,
+                                                                                ),
+                                                                                r(
+                                                                                  "q-item-section",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      side: "",
+                                                                                    },
+                                                                                  },
+                                                                                  [
+                                                                                    r(
+                                                                                      "q-btn",
+                                                                                      {
+                                                                                        attrs: {
+                                                                                          flat: "",
+                                                                                          dense: "",
+                                                                                          color:
+                                                                                            "negative",
+                                                                                          icon: "delete",
+                                                                                          size: "sm",
+                                                                                        },
+                                                                                        on: {
+                                                                                          click:
+                                                                                            function (
+                                                                                              r,
+                                                                                            ) {
+                                                                                              return e.removeFile(
+                                                                                                t.servername,
+                                                                                              );
+                                                                                            },
+                                                                                        },
+                                                                                      },
+                                                                                      [
+                                                                                        r(
+                                                                                          "q-tooltip",
+                                                                                          [
+                                                                                            e._v(
+                                                                                              "删除",
+                                                                                            ),
+                                                                                          ],
+                                                                                        ),
+                                                                                      ],
+                                                                                      1,
+                                                                                    ),
+                                                                                  ],
+                                                                                  1,
+                                                                                ),
+                                                                              ],
+                                                                              1,
+                                                                            );
+                                                                          },
+                                                                        ),
+                                                                      ],
+                                                                      2,
+                                                                    ),
+                                                                  ];
+                                                                },
+                                                              },
+                                                            ],
+                                                            null,
+                                                            !1,
+                                                            2810095678,
+                                                          ),
+                                                          model: {
+                                                            value: e.filesMaxNumber,
+                                                            callback: function (t) {
+                                                              e.filesMaxNumber = t;
+                                                            },
+                                                            expression: "filesMaxNumber",
+                                                          },
+                                                        })
+                                                      : e._e(),
+                                                  ];
+                                                },
+                                                proxy: !0,
+                                              },
+                                            ]),
+                                          }),
+                                        ],
+                                        1,
+                                      ),
+                                    ],
+                                    1,
+                                  ),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                          r(
+                            "q-footer",
+                            { staticClass: "bg-white text-primary", attrs: { bordered: "" } },
+                            [
+                              r(
+                                "div",
+                                { staticClass: "row justify-between" },
+                                [
+                                  r("q-btn", {
+                                    staticStyle: { width: "40%", height: "2.8rem" },
+                                    attrs: {
+                                      flat: "",
+                                      color: "grey",
+                                      label: "取消",
+                                      to: "/maintainer/repairList",
+                                    },
+                                  }),
+                                  r("q-btn", {
+                                    staticClass: "bg-primary",
+                                    staticStyle: { width: "60%", height: "2.8rem" },
+                                    attrs: {
+                                      flat: "",
+                                      unelevated: "",
+                                      color: "white",
+                                      label: "维修完成",
+                                      type: "submit",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                          ),
+                        ],
+                        1,
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+            ],
+            1,
+          );
+        },
+        i = [],
+        s = (r("c975"), r("baa5"), r("13d5"), r("a434"), r("ddb0"), r("ded3")),
+        n = r.n(s),
+        o = {
+          name: "repairOrder",
+          data() {
+            return {
+              uploader: window.localStorage.server + this.$appConf.fileUploader,
+              filesMaxNumber: null,
+              user: {},
+              record: {
+                id: "",
+                order: null,
+                maintainer_no: null,
+                fault_type_id: "",
+                repair_description: null,
+                repair_attachments: [],
+              },
+              fault_type_list: [],
+              repairId: this.$route.query.id,
+              checkFileType: ["jpg", "png", "jpeg", "mp4"],
+              isHarmonyOS: !1,
+            };
+          },
+          destroyed() {
+            window.removeEventListener("popstate", this.goBack, !1);
+          },
+          mounted() {
+            ((this.user = JSON.parse(localStorage.getItem("userinfo"))),
+              window.history &&
+                window.history.pushState &&
+                (history.pushState(null, null, document.URL),
+                window.addEventListener("popstate", this.goBack, !1)),
+              this.getInfo(),
+              this.getSelectList(),
+              this.detectOperatingSystem());
+          },
+          methods: {
+            detectOperatingSystem() {
+              const e = navigator.userAgent.toLowerCase();
+              e.indexOf("harmonyos") >= 0 || e.indexOf("huawei") >= 0 || e.indexOf("emui") >= 0
+                ? (this.isHarmonyOS = !0)
+                : (e.indexOf("android") >= 0 || e.indexOf("linux") >= 0) && (this.isHarmonyOS = !1);
+            },
+            getInfo() {
+              this.$axiosAction("/api/teacher/basic/maintainer.api", {
+                action: "queryForRepairOrder",
+                id: this.repairId,
+              }).then((e) => {
+                this.record = e.data.info;
+              });
+            },
+            getSelectList() {
+              this.$axiosAction("/api/teacher/basic/maintainer.api", {
+                action: "queryListForFaultType",
+              }).then((e) => {
+                this.fault_type_list = e.data.fault_type_list;
+              });
+            },
+            onRejected(e) {
+              this.$q.notify({ type: "negative", message: `${e.length}份文件不符合格式限制！` });
+            },
+            afterUploaded(e) {
+              const t = JSON.parse(e.xhr.response);
+              t.error
+                ? this.$showErrorNotify(t.error)
+                : this.record.repair_attachments
+                  ? this.record.repair_attachments.push(t)
+                  : (this.record.repair_attachments = [t]);
+            },
+            afterRemoved(e) {
+              for (const t of e) {
+                const e = JSON.parse(t.xhr.response);
+                this.removeFile(e.servername);
+              }
+            },
+            removeFile(e) {
+              const t = this.record.repair_attachments.findIndex((t) => t.servername === e);
+              this.record.repair_attachments.splice(t, 1);
+            },
+            matchingUploadedFiles(e, t) {
+              return (e || []).reduce(
+                (e, r) =>
+                  t && t.length > 0
+                    ? 0 ===
+                      t.reduce((e, t) => {
+                        if (t.xhr.response) {
+                          const a = JSON.parse(t.xhr.response);
+                          return a.servername === r.servername ? e + 1 : e;
+                        }
+                        return e;
+                      }, 0)
+                      ? e.concat(r)
+                      : e
+                    : e.concat(r),
+                [],
+              );
+            },
+            onSubmit() {
+              null !== this.record.repair_attachments && this.record.repair_attachments.length > 3
+                ? this.$showErrorNotify("最多可上传3个文件")
+                : (null !== this.record.repair_attachments &&
+                  0 !== this.record.repair_attachments.length
+                    ? (this.record.repair_attachments = JSON.stringify(
+                        this.record.repair_attachments,
+                      ))
+                    : (this.record.repair_attachments = null),
+                  this.$axiosAction(
+                    "/api/teacher/basic/maintainer.api",
+                    n()({ action: "updateMaintainerRepairOrderInfo" }, this.record),
+                  ).then((e) => {
+                    0 === e.data.code
+                      ? (this.$q.loading.hide(), this.$router.push("/maintainer/repairList"))
+                      : this.$q.loading.hide();
+                  }));
+            },
+            goBack() {
+              this.$router.push("/maintainer/repairList");
+            },
+            checkFile(e) {
+              return e.filter((e) => {
+                if (e.size >= 31457280)
+                  return (this.$showErrorNotify("文件大小应限制在30M以内"), !1);
+                const t = e.name.lastIndexOf(".");
+                if (!(t > 0)) return (this.$showErrorNotify("不支持该类型文件上传"), !1);
+                {
+                  const r = e.name.substring(t + 1).toLowerCase();
+                  if (-1 === this.checkFileType.indexOf(r))
+                    return (this.$showErrorNotify("不支持该类型文件上传"), !1);
+                }
+                return !0;
+              });
+            },
+          },
+        },
+        l = o,
+        c = r("2877"),
+        d = r("4d5a"),
+        u = r("e359"),
+        p = r("65c6"),
+        m = r("9c40"),
+        f = r("6ac5"),
+        h = r("09e3"),
+        _ = r("9989"),
+        b = r("0378"),
+        q = r("f09f"),
+        g = r("a370"),
+        v = r("ddd8"),
+        y = r("27f9"),
+        w = r("1c1c"),
+        x = r("66e5"),
+        k = r("4074"),
+        C = r("0170"),
+        S = r("8572"),
+        F = r("ee89"),
+        O = r("cc04"),
+        Q = r("05c0"),
+        $ = r("7ff0"),
+        N = r("eebe"),
+        L = r.n(N),
+        I = Object(c["a"])(l, a, i, !1, null, null, null);
+      t["default"] = I.exports;
+      L()(I, "components", {
+        QLayout: d["a"],
+        QHeader: u["a"],
+        QToolbar: p["a"],
+        QBtn: m["a"],
+        QToolbarTitle: f["a"],
+        QPageContainer: h["a"],
+        QPage: _["a"],
+        QForm: b["a"],
+        QCard: q["a"],
+        QCardSection: g["a"],
+        QSelect: v["a"],
+        QInput: y["a"],
+        QList: w["a"],
+        QItem: x["a"],
+        QItemSection: k["a"],
+        QItemLabel: C["a"],
+        QField: S["a"],
+        QUploader: F["a"],
+        QUploaderAddTrigger: O["a"],
+        QTooltip: Q["a"],
+        QFooter: $["a"],
+      });
+    },
+  },
+]);

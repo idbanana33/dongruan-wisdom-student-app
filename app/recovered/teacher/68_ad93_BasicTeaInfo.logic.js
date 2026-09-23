@@ -1,0 +1,140 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/68.js -> module "ad93"
+ * Route: /teacher/basic/teaInfo
+ * Component guess: BasicTeaInfo
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+ad93: function(e, a, t) {
+  "use strict";
+  t.r(a);
+  var l = function() {
+      var e = this,
+        a = e.$createElement,
+        t = e._self._c || a;
+      return t("q-layout", {
+        attrs: {
+          view: "lHh lpr lFf"
+        }
+      }, [t("q-header", {
+        staticClass: "bg-grey-3 text-black"
+      }, [t("q-toolbar", [t("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "keyboard_arrow_left"
+        },
+        on: {
+          click: e.goBack
+        }
+      }), t("q-toolbar-title", [e._v("我的信息")])], 1)], 1), t("q-page-container", [t("q-page", {
+        staticClass: "bg-grey-3 q-pb-sm"
+      }, [t("q-card", {
+        staticClass: "q-mx-md",
+        attrs: {
+          flat: ""
+        }
+      }, e._l(e.commonCols, (function(a) {
+        return t("q-item", {
+          key: a.field,
+          attrs: {
+            dense: ""
+          }
+        }, [t("q-item-section", {
+          attrs: {
+            avatar: ""
+          }
+        }, [t("q-item-label", {
+          staticClass: "text-grey"
+        }, [e._v(e._s(a.label))])], 1), t("q-item-section", [t("q-item-label", {
+          staticClass: "text-right"
+        }, [e._v("\n              " + e._s(e.record[a.field]) + "\n            ")])], 1)], 1)
+      })), 1)], 1)], 1)], 1)
+    },
+    o = [],
+    r = {
+      name: "BasicTeaInfo",
+      data() {
+        return {
+          record: {},
+          commonCols: [{
+            label: "教工号",
+            field: "login_name"
+          }, {
+            label: "姓名",
+            field: "name"
+          }, {
+            label: "性别",
+            field: "sex_name"
+          }, {
+            label: "院系",
+            field: "dep_name"
+          }, {
+            label: "角色",
+            field: "role_name"
+          }, {
+            label: "身份证号",
+            field: "id_card"
+          }, {
+            label: "手机号",
+            field: "mob"
+          }]
+        }
+      },
+      mounted() {
+        this.loadData()
+      },
+      methods: {
+        loadData() {
+          this.$axiosAction("/api/teacher/basic/teaInfo.api", {
+            action: "queryMyTeaInfo"
+          }).then((e => {
+            0 === e.data.code && (this.record = e.data.result)
+          }))
+        },
+        goBack() {
+          this.$router.push("/teacher/index")
+        },
+        moveTo(e, a, t) {
+          this.$router.push({
+            path: e,
+            query: {
+              [a]: t
+            }
+          })
+        }
+      }
+    },
+    n = r,
+    i = t("2877"),
+    s = t("4d5a"),
+    c = t("e359"),
+    d = t("65c6"),
+    b = t("9c40"),
+    m = t("6ac5"),
+    f = t("09e3"),
+    u = t("9989"),
+    h = t("f09f"),
+    p = t("66e5"),
+    q = t("4074"),
+    _ = t("0170"),
+    g = t("eebe"),
+    Q = t.n(g),
+    y = Object(i["a"])(n, l, o, !1, null, null, null);
+  a["default"] = y.exports;
+  Q()(y, "components", {
+    QLayout: s["a"],
+    QHeader: c["a"],
+    QToolbar: d["a"],
+    QBtn: b["a"],
+    QToolbarTitle: m["a"],
+    QPageContainer: f["a"],
+    QPage: u["a"],
+    QCard: h["a"],
+    QItem: p["a"],
+    QItemSection: q["a"],
+    QItemLabel: _["a"]
+  })
+}

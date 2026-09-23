@@ -1,0 +1,15 @@
+{
+  "name": "dongruan-wisdom-student-app-analysis-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static analysis helpers for recovered Vue/Webpack modules",
+  "scripts": {
+    "verify:algorithms": "node verify_algo.mjs",
+    "decompile:template": "node devue2.js"
+  },
+  "dependencies": {
+    "acorn": "^8.18.0",
+    "js-beautify": "^2.0.3",
+    "prettier": "^3.9.8"
+  }
+}

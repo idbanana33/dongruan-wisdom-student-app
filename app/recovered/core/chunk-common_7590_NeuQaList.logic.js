@@ -1,0 +1,240 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/chunk-common.js -> module "7590"
+ * Route: (shared/core)
+ * Component guess: NeuQaList
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+7590: function(e, t, i) {
+  "use strict";
+  var a = function() {
+      var e = this,
+        t = e.$createElement,
+        i = e._self._c || t;
+      return i("q-card", {
+        staticClass: "full-width bg-grey-3",
+        attrs: {
+          flat: ""
+        }
+      }, [i("div", {
+        staticClass: "text-weight-bold"
+      }, [e._v("我的问题")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !e.messageList || 0 == e.messageList.length,
+          expression: "!messageList || messageList.length == 0"
+        }],
+        staticClass: "text-center text-grey"
+      }, [e._v("暂无数据")]), e._l(e.messageList, (function(t, a) {
+        return i("div", {
+          key: a,
+          staticClass: "q-pa-md row justify-center"
+        }, [i("div", {
+          staticStyle: {
+            width: "100%",
+            "max-width": "400px"
+          }
+        }, [i("q-chat-message", {
+          attrs: {
+            name: (t.login_name == e.user.login_name ? "我" : t.name) + (null != t.istop_time ? "(置顶)" : ""),
+            text: [t.content],
+            sent: "T" != t.role_type,
+            "text-color": (t.role_type, "white"),
+            "bg-color": "T" != t.role_type ? "blue-grey-5" : "brown-5",
+            stamp: 1 == t.secret_flag ? t.create_time + "(仅自己可见)" : t.create_time
+          }
+        })], 1), e._l(t.answer, (function(e) {
+          return i("div", {
+            key: e.id,
+            staticStyle: {
+              width: "100%",
+              "max-width": "400px"
+            }
+          }, [i("q-chat-message", {
+            attrs: {
+              name: e.name,
+              text: [e.content],
+              stamp: e.create_time,
+              "text-color": "black",
+              "bg-color": "white"
+            }
+          })], 1)
+        }))], 2)
+      })), i("q-page-sticky", {
+        attrs: {
+          position: "bottom-right",
+          offset: e.fabPos
+        }
+      }, [i("q-btn", {
+        directives: [{
+          name: "touch-pan",
+          rawName: "v-touch-pan.prevent.mouse",
+          value: e.moveFab,
+          expression: "moveFab",
+          modifiers: {
+            prevent: !0,
+            mouse: !0
+          }
+        }],
+        attrs: {
+          round: "",
+          color: "primary",
+          icon: "create"
+        },
+        on: {
+          click: e.open
+        }
+      })], 1), i("q-dialog", {
+        attrs: {
+          position: "bottom"
+        },
+        model: {
+          value: e.dialog,
+          callback: function(t) {
+            e.dialog = t
+          },
+          expression: "dialog"
+        }
+      }, [i("q-card", {
+        staticStyle: {
+          width: "350px"
+        }
+      }, [i("q-linear-progress", {
+        attrs: {
+          value: 1,
+          color: "primary"
+        }
+      }), i("q-card-section", {
+        staticClass: "row items-center justify-between",
+        attrs: {
+          dense: ""
+        }
+      }, [i("q-input", {
+        attrs: {
+          outlined: "",
+          dense: "",
+          placeholder: "在此输入你的问题。",
+          clearable: "",
+          "clear-icon": "close",
+          filled: ""
+        },
+        scopedSlots: e._u([{
+          key: "prepend",
+          fn: function() {
+            return [i("q-icon", {
+              staticClass: "cursor-pointer",
+              attrs: {
+                name: "create"
+              }
+            })]
+          },
+          proxy: !0
+        }, {
+          key: "after",
+          fn: function() {
+            return [i("q-btn", {
+              staticClass: "q-ml-md",
+              attrs: {
+                color: "primary",
+                label: "提交"
+              },
+              on: {
+                click: function(t) {
+                  return e.updateQuestion()
+                }
+              }
+            })]
+          },
+          proxy: !0
+        }]),
+        model: {
+          value: e.contact,
+          callback: function(t) {
+            e.contact = t
+          },
+          expression: "contact"
+        }
+      })], 1)], 1)], 1)], 2)
+    },
+    s = [],
+    l = {
+      name: "NeuQaList",
+      props: {
+        taskMenuId: String,
+        taskId: String
+      },
+      data() {
+        return {
+          messageList: [],
+          contact: null,
+          fabPos: [30, 40],
+          dialog: !1,
+          user: window.localStorage.userinfo ? JSON.parse(window.localStorage.getItem("userinfo")) : {}
+        }
+      },
+      mounted() {
+        this.getQuestion()
+      },
+      methods: {
+        getQuestion() {
+          this.$axiosAction("/api/student/basic/qa.api", {
+            action: "getQaQuestionList",
+            task_menu_id: this.taskMenuId,
+            task_id: this.taskId
+          }).then((e => {
+            this.messageList = e.data.result
+          }))
+        },
+        updateQuestion() {
+          if (null == this.contact || "" === this.contact) return this.$showErrorNotify("问题不能为空");
+          this.$axiosAction("/api/student/basic/qa.api", {
+            action: "AddQaQuestion",
+            task_menu_id: this.taskMenuId,
+            task_id: this.taskId,
+            role_type: "S",
+            login_name: this.user.login_name,
+            content: this.contact
+          }).then((e => {
+            this.getQuestion(), this.contact = null, this.dialog = !1
+          }))
+        },
+        moveFab(e) {
+          this.draggingFab = !0 !== e.isFirst && !0 !== e.isFinal, this.fabPos = [this.fabPos[0] - e.delta.x, this.fabPos[1] - e.delta.y]
+        },
+        open() {
+          this.dialog = !0
+        }
+      }
+    },
+    o = l,
+    n = i("2877"),
+    r = i("f09f"),
+    c = i("8169"),
+    u = i("de5e"),
+    d = i("9c40"),
+    m = i("24e8"),
+    f = i("6b1d"),
+    p = i("a370"),
+    h = i("27f9"),
+    y = i("0016"),
+    g = i("75c3"),
+    b = i("eebe"),
+    v = i.n(b),
+    _ = Object(n["a"])(o, a, s, !1, null, null, null);
+  t["a"] = _.exports;
+  v()(_, "components", {
+    QCard: r["a"],
+    QChatMessage: c["a"],
+    QPageSticky: u["a"],
+    QBtn: d["a"],
+    QDialog: m["a"],
+    QLinearProgress: f["a"],
+    QCardSection: p["a"],
+    QInput: h["a"],
+    QIcon: y["a"]
+  }), v()(_, "directives", {
+    TouchPan: g["a"]
+  })
+}

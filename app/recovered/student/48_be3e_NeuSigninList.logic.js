@@ -1,0 +1,612 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/48.js -> module "be3e"
+ * Route: /student/signin/index
+ * Component guess: NeuSigninList
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+be3e: function(t, e, i) {
+  "use strict";
+  i.r(e);
+  var s = function() {
+      var t = this,
+        e = t.$createElement,
+        i = t._self._c || e;
+      return i("q-layout", {
+        attrs: {
+          view: "lHh lpr lFf"
+        }
+      }, [i("q-header", {
+        staticClass: "bg-grey-3 text-black"
+      }, [i("q-toolbar", [i("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "keyboard_arrow_left"
+        },
+        on: {
+          click: t.goBack
+        }
+      }), i("q-toolbar-title", [t._v("签到")]), i("span", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: 0 !== t.badgeCount,
+          expression: "badgeCount !== 0"
+        }],
+        staticClass: "text-red",
+        on: {
+          click: t.goStuManage
+        }
+      }, [t._v("班级协助>")]), i("q-btn", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: t.showQR,
+          expression: "showQR"
+        }],
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "mdi-qrcode"
+        },
+        on: {
+          click: t.scannList
+        }
+      })], 1)], 1), i("q-page-container", [i("q-page", {
+        staticClass: "bg-grey-3 q-pb-xs"
+      }, [i("neu-signin-list", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "signin" == t.tab,
+          expression: "tab == 'signin'"
+        }]
+      }), i("neu-signin-history", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "history" == t.tab,
+          expression: "tab == 'history'"
+        }]
+      })], 1)], 1), i("q-footer", {
+        staticClass: "bg-white text-primary",
+        attrs: {
+          bordered: ""
+        }
+      }, [i("q-tabs", {
+        staticClass: "text-black",
+        attrs: {
+          "no-caps": "",
+          "active-color": "primary",
+          "indicator-color": "transparent",
+          align: "justify"
+        },
+        model: {
+          value: t.tab,
+          callback: function(e) {
+            t.tab = e
+          },
+          expression: "tab"
+        }
+      }, [i("q-tab", {
+        attrs: {
+          name: "signin",
+          label: "正在进行"
+        }
+      }), i("q-separator", {
+        attrs: {
+          vertical: ""
+        }
+      }), i("q-tab", {
+        attrs: {
+          name: "history",
+          label: "历史"
+        }
+      })], 1)], 1)], 1)
+    },
+    a = [],
+    n = function() {
+      var t = this,
+        e = t.$createElement,
+        i = t._self._c || e;
+      return i("q-pull-to-refresh", {
+        on: {
+          refresh: t.refresh
+        }
+      }, [t._l(t.list, (function(e) {
+        return i("q-card", {
+          key: e.id,
+          staticClass: "bg-white q-mb-sm q-mx-sm",
+          style: "进行中" == e.status ? "border-left:0.25rem solid #" + t.menuColor + ";" : "border-left:0.25rem solid #b5b3b3;",
+          attrs: {
+            flat: ""
+          }
+        }, [i("q-item", {
+          attrs: {
+            clickable: ""
+          },
+          on: {
+            click: function(i) {
+              return t.goDetail(e.id, e.batch_no)
+            }
+          }
+        }, [i("q-item-section", [i("q-item-label", {
+          staticClass: "text-subtitle1 row items-center"
+        }, [t._v("\n            " + t._s(e.title) + "\n            "), i("q-badge", {
+          staticClass: "q-ml-xs",
+          attrs: {
+            color: "grey-5",
+            "text-color": "white"
+          }
+        }, [t._v(t._s(e.signin_type_name))])], 1), i("q-item-label", {
+          staticClass: "q-mb-xs",
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon"
+        }, [t._v("发起人")]), t._v(t._s(e.name) + "\n          ")]), i("q-item-label", {
+          staticStyle: {
+            "min-width": "250px"
+          },
+          attrs: {
+            caption: "",
+            lines: "1"
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon "
+        }, [t._v("签到时间")]), t._v(t._s(e.begin_time) + " 至 " + t._s(e.end_time) + "\n          ")])], 1), i("q-item-section", {
+          attrs: {
+            side: ""
+          }
+        }, [i("q-item-label", [i("q-icon", {
+          staticClass: "text-grey",
+          attrs: {
+            name: "keyboard_arrow_right",
+            size: "xs"
+          }
+        })], 1)], 1)], 1)], 1)
+      })), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount != t.paging.pageNum,
+          expression: "!isLoading && paging.pageCount != paging.pageNum"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md",
+        on: {
+          click: function(e) {
+            return t.getSigninList(null)
+          }
+        }
+      }, [t._v("\n      加载更多...\n    ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount == t.paging.pageNum && 0 != t.list.length,
+          expression: "!isLoading && paging.pageCount == paging.pageNum && list.length != 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n      没有更多了\n    ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && 0 == t.list.length,
+          expression: "!isLoading && list.length == 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n      暂无进行的签到\n    ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: t.isLoading,
+          expression: "isLoading"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [i("q-spinner-dots", {
+        attrs: {
+          color: "primary",
+          size: "md"
+        }
+      })], 1)], 2)
+    },
+    o = [],
+    r = i("ded3"),
+    g = i.n(r),
+    l = i("ad56"),
+    c = {
+      name: "NeuSigninList",
+      data() {
+        return {
+          menuColor: Object(l["d"])("signin"),
+          list: [],
+          paging: {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          },
+          isLoading: !1
+        }
+      },
+      mounted() {
+        this.getSigninList((() => {}))
+      },
+      methods: {
+        getSigninList(t) {
+          t && (this.paging.pageNum = 0, this.list = []), this.paging.pageNum += 1, this.isLoading = !0, this.$axiosAction("/api/student/signin/signin.api", {
+            action: "getUnSigninList",
+            pageSize: this.paging.pageSize,
+            pageNum: this.paging.pageNum
+          }).then((e => {
+            if (0 === e.data.code) {
+              this.list = this.list.concat(e.data.result.list);
+              const {
+                pageSize: t,
+                pageNum: i,
+                rowCount: s,
+                pageCount: a,
+                startIndex: n,
+                endIndex: o
+              } = g()({}, e.data.result);
+              this.paging = {
+                pageSize: t,
+                pageNum: i,
+                rowCount: s,
+                pageCount: a,
+                startIndex: n,
+                endIndex: o
+              }
+            } else this.setDefaultList();
+            t && t(), this.isLoading = !1
+          })).catch((e => {
+            this.setDefaultList(), t && t(), this.isLoading = !1
+          }))
+        },
+        setDefaultList() {
+          this.list = [], this.paging = {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          }
+        },
+        refresh(t) {
+          this.getSigninList(t)
+        },
+        goDetail(t, e) {
+          this.$router.push({
+            name: "/student/signin/signin",
+            query: {
+              id: t,
+              batch_no: e
+            }
+          })
+        }
+      }
+    },
+    d = c,
+    u = i("2877"),
+    p = i("59d7"),
+    m = i("f09f"),
+    h = i("66e5"),
+    b = i("4074"),
+    v = i("0170"),
+    w = i("58a81"),
+    x = i("0016"),
+    q = i("8380"),
+    f = i("eebe"),
+    C = i.n(f),
+    y = Object(u["a"])(d, n, o, !1, null, null, null),
+    _ = y.exports;
+  C()(y, "components", {
+    QPullToRefresh: p["a"],
+    QCard: m["a"],
+    QItem: h["a"],
+    QItemSection: b["a"],
+    QItemLabel: v["a"],
+    QBadge: w["a"],
+    QIcon: x["a"],
+    QSpinnerDots: q["a"]
+  });
+  var L = function() {
+      var t = this,
+        e = t.$createElement,
+        i = t._self._c || e;
+      return i("q-pull-to-refresh", {
+        on: {
+          refresh: t.refresh
+        }
+      }, [t._l(t.list, (function(e, s) {
+        return i("q-card", {
+          key: s,
+          staticClass: "bg-white q-mb-sm q-mx-sm",
+          style: 1 == e.status ? "border-left:0.25rem solid #c10015;" : 3 == e.status ? "border-left:0.25rem solid #027be3;" : "border-left:0.25rem solid #21ba45;",
+          attrs: {
+            flat: ""
+          },
+          on: {
+            click: function(i) {
+              return t.goDetail(e.id, e.batch_no)
+            }
+          }
+        }, [i("q-item", {
+          attrs: {
+            clickable: ""
+          }
+        }, [i("q-item-section", [i("q-item-label", {
+          staticClass: "text-subtitle1 row items-center"
+        }, [t._v("\n            " + t._s(e.title) + "\n            "), i("q-badge", {
+          staticClass: "q-ml-xs",
+          attrs: {
+            color: "grey-5",
+            "text-color": "white"
+          }
+        }, [t._v(t._s(e.signin_type_name))])], 1), i("q-item-label", {
+          staticClass: "q-mb-xs",
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon "
+        }, [t._v("发起人")]), t._v(t._s(e.name) + "\n          ")]), i("q-item-label", {
+          staticStyle: {
+            "min-width": "250px"
+          },
+          attrs: {
+            caption: "",
+            lines: "1"
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon "
+        }, [t._v("签到时间")]), t._v(t._s(e.begin_time) + " 至 " + t._s(e.end_time) + "\n          ")])], 1), i("q-item-section", {
+          attrs: {
+            side: ""
+          }
+        }, [i("q-item-label", [i("q-icon", {
+          staticClass: "text-grey",
+          attrs: {
+            name: "keyboard_arrow_right",
+            size: "xs"
+          }
+        })], 1)], 1)], 1), i("div", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: 1 == e.status,
+            expression: "item.status == 1"
+          }],
+          staticClass: "absolute-right q-mr-xl q-mt-sm",
+          staticStyle: {
+            width: "50px",
+            height: "50px"
+          },
+          style: "background: url(" + t.nosigninImage + ") no-repeat;"
+        }), i("div", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: 3 == e.status,
+            expression: "item.status == 3"
+          }],
+          staticClass: "absolute-right q-mr-xl q-mt-sm",
+          staticStyle: {
+            width: "50px",
+            height: "50px"
+          },
+          style: "background: url(" + t.timeoffImage + ") no-repeat;"
+        })], 1)
+      })), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount != t.paging.pageNum,
+          expression: "!isLoading && paging.pageCount != paging.pageNum"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md",
+        on: {
+          click: function(e) {
+            return t.getHistorySigninList(null)
+          }
+        }
+      }, [t._v("\n          加载更多...\n        ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount == t.paging.pageNum && 0 != t.list.length,
+          expression: "!isLoading && paging.pageCount == paging.pageNum && list.length != 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n          没有更多了\n        ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && 0 == t.list.length,
+          expression: "!isLoading && list.length == 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n          暂无数据\n        ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: t.isLoading,
+          expression: "isLoading"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [i("q-spinner-dots", {
+        attrs: {
+          color: "primary",
+          size: "md"
+        }
+      })], 1)], 2)
+    },
+    N = [],
+    S = {
+      name: "NeuSigninHistory",
+      data() {
+        return {
+          nosigninImage: `${cordova.file.applicationDirectory}www/img/nosignin.png`,
+          timeoffImage: `${cordova.file.applicationDirectory}www/img/timeoff.png`,
+          list: [],
+          paging: {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          },
+          isLoading: !1
+        }
+      },
+      mounted() {
+        this.getHistorySigninList((() => {}))
+      },
+      methods: {
+        getHistorySigninList(t) {
+          t && (this.paging.pageNum = 0, this.list = []), this.paging.pageNum += 1, this.isLoading = !0, this.$axiosAction("/api/student/signin/signin.api", {
+            action: "getSigninHistoryList",
+            pageSize: this.paging.pageSize,
+            pageNum: this.paging.pageNum
+          }).then((e => {
+            if (0 === e.data.code) {
+              this.list = this.list.concat(e.data.result.list);
+              const {
+                pageSize: t,
+                pageNum: i,
+                rowCount: s,
+                pageCount: a,
+                startIndex: n,
+                endIndex: o
+              } = g()({}, e.data.result);
+              this.paging = {
+                pageSize: t,
+                pageNum: i,
+                rowCount: s,
+                pageCount: a,
+                startIndex: n,
+                endIndex: o
+              }
+            } else this.setDefaultList();
+            t && t(), this.isLoading = !1
+          })).catch((e => {
+            this.setDefaultList(), t && t(), this.isLoading = !1
+          }))
+        },
+        setDefaultList() {
+          this.list = [], this.paging = {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          }
+        },
+        refresh(t) {
+          this.getHistorySigninList(t)
+        },
+        goDetail(t, e) {
+          this.$router.push({
+            name: "/student/signin/signinSuccess",
+            query: {
+              id: t,
+              batch_no: e,
+              tab: "history"
+            }
+          })
+        }
+      }
+    },
+    Q = S,
+    k = Object(u["a"])(Q, L, N, !1, null, null, null),
+    I = k.exports;
+  C()(k, "components", {
+    QPullToRefresh: p["a"],
+    QCard: m["a"],
+    QItem: h["a"],
+    QItemSection: b["a"],
+    QItemLabel: v["a"],
+    QBadge: w["a"],
+    QIcon: x["a"],
+    QSpinnerDots: q["a"]
+  });
+  var z = {
+      components: {
+        NeuSigninList: _,
+        NeuSigninHistory: I
+      },
+      name: "SigninIndex",
+      data() {
+        return {
+          tab: this.$route.query.tab ? this.$route.query.tab : "signin",
+          record: "",
+          showQR: !1,
+          badgeCount: 0
+        }
+      },
+      mounted() {
+        this.loadList(), window.history && window.history.pushState && (history.pushState(null, null, document.URL), window.addEventListener("popstate", this.goBack, !1)), this.getbadgeCount()
+      },
+      destroyed() {
+        window.removeEventListener("popstate", this.goBack, !1)
+      },
+      watch: {
+        tab(t) {
+          "signin" === t && this.loadList()
+        }
+      },
+      methods: {
+        loadList() {
+          this.$axiosAction("/api/student/signin/signin.api", {
+            action: "checkQrcodePerson"
+          }).then((t => {
+            0 === t.data.code && (this.record = t.data.result, 0 !== this.record && "signin" === this.tab ? this.showQR = !0 : this.showQR = !1)
+          }))
+        },
+        goBack() {
+          this.$router.push("/student/index")
+        },
+        getbadgeCount() {
+          this.$axiosAction("/api/student/signin/signin.api", {
+            action: "getStuManageIsExist"
+          }).then((t => {
+            if (0 === t.data.code) {
+              const e = t.data.result;
+              null !== e && "" !== e && (this.badgeCount = 1)
+            }
+          })).catch((t => {}))
+        },
+        scannList() {
+          this.$router.push("/student/signin/qrcodePerson")
+        },
+        goStuManage() {
+          this.$router.push("/student/signin/stumanage")
+        }
+      }
+    },
+    $ = z,
+    D = i("4d5a"),
+    H = i("e359"),
+    B = i("65c6"),
+    R = i("9c40"),
+    T = i("6ac5"),
+    E = i("09e3"),
+    P = i("9989"),
+    j = i("7ff0"),
+    A = i("429b"),
+    O = i("7460"),
+    M = i("eb85"),
+    F = Object(u["a"])($, s, a, !1, null, null, null);
+  e["default"] = F.exports;
+  C()(F, "components", {
+    QLayout: D["a"],
+    QHeader: H["a"],
+    QToolbar: B["a"],
+    QBtn: R["a"],
+    QToolbarTitle: T["a"],
+    QBadge: w["a"],
+    QPageContainer: E["a"],
+    QPage: P["a"],
+    QFooter: j["a"],
+    QTabs: A["a"],
+    QTab: O["a"],
+    QSeparator: M["a"]
+  })
+}

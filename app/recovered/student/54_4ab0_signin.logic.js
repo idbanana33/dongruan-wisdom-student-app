@@ -1,0 +1,651 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/54.js -> module "4ab0"
+ * Route: /student/signin/signinPersonnel
+ * Component guess: signin
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+"4ab0": function(t, e, a) {
+  "use strict";
+  a.r(e);
+  var s = function() {
+      var t = this,
+        e = t.$createElement,
+        a = t._self._c || e;
+      return a("q-layout", {
+        attrs: {
+          view: "lHh lpr lFf"
+        }
+      }, [a("q-header", {
+        staticClass: "bg-grey-3 text-black"
+      }, [a("q-toolbar", [a("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "keyboard_arrow_left"
+        },
+        on: {
+          click: t.goBack
+        }
+      }), a("q-toolbar-title", [t._v(t._s(t.title))]), a("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "search"
+        },
+        on: {
+          click: t.open
+        }
+      }, [a("q-badge", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: 0 != t.condCount,
+          expression: "condCount != 0"
+        }],
+        attrs: {
+          color: "orange",
+          floating: "",
+          transparent: ""
+        }
+      }, [t._v(t._s(t.condCount))])], 1)], 1)], 1), a("q-page-container", [a("q-page", {
+        staticClass: "bg-grey-3"
+      }, [a("q-select", {
+        attrs: {
+          dense: "",
+          "bg-color": "grey-2",
+          filled: "",
+          "emit-value": "",
+          "map-options": "",
+          options: [{
+            label: "按学号排序",
+            value: "0"
+          }, {
+            label: "按姓名排序",
+            value: "1"
+          }]
+        },
+        on: {
+          input: function(e) {
+            t.refresh((function() {}))
+          }
+        },
+        model: {
+          value: t.model,
+          callback: function(e) {
+            t.model = e
+          },
+          expression: "model"
+        }
+      }), a("q-pull-to-refresh", {
+        ref: "pageRefresh",
+        on: {
+          refresh: t.refresh
+        }
+      }, [t._l(t.list, (function(e) {
+        return a("q-card", {
+          key: e.id,
+          staticClass: "bg-white q-mb-sm q-mx-sm",
+          style: 1 == e.signin_status ? "border-left:0.25rem solid #c10015;" : 2 == e.signin_status ? "border-left:0.25rem solid #21ba45;" : 3 == e.signin_status ? "border-left:0.25rem solid #f2c037;" : "border-left:0.25rem solid #b5b3b3;",
+          attrs: {
+            flat: ""
+          }
+        }, [a("q-item", {
+          attrs: {
+            clickable: ""
+          }
+        }, [a("q-item-section", {
+          attrs: {
+            avatar: ""
+          }
+        }, [a("q-item-label", {
+          staticStyle: {
+            "font-size": "1.01rem"
+          }
+        }, [t._v(t._s(e.name))]), a("q-item-label", {
+          attrs: {
+            caption: "",
+            lines: "1"
+          }
+        }, [t._v(t._s(e.sex_name) + " (" + t._s(e.student_no) + ")")])], 1), a("q-item-section"), a("q-item-section", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: 1 == e.signin_status,
+            expression: "item.signin_status == 1"
+          }],
+          attrs: {
+            side: ""
+          },
+          on: {
+            click: function(a) {
+              return t.changeStatus(e.id)
+            }
+          }
+        }, [a("q-item-label", {
+          staticClass: "text-primary"
+        }, [t._v("\n                  变更记录"), a("q-icon", {
+          staticClass: "text-primary",
+          attrs: {
+            name: "keyboard_arrow_right",
+            size: "xs"
+          }
+        })], 1)], 1), a("q-item-section", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: 2 == e.signin_status,
+            expression: "item.signin_status == 2"
+          }],
+          attrs: {
+            side: ""
+          }
+        }, [a("q-item-label", {
+          staticClass: "text-positive"
+        }, [t._v("已签到")])], 1), a("q-item-section", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: 3 == e.signin_status,
+            expression: "item.signin_status == 3"
+          }],
+          attrs: {
+            side: ""
+          }
+        }, [a("q-item-label", {
+          staticClass: "text-warning"
+        }, [t._v("已请假")])], 1)], 1)], 1)
+      })), a("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount != t.paging.pageNum,
+          expression: "!isLoading && paging.pageCount != paging.pageNum"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md",
+        on: {
+          click: function(e) {
+            return t.loadList(null)
+          }
+        }
+      }, [t._v("\n              加载更多...\n            ")]), a("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount == t.paging.pageNum && 0 != t.list.length,
+          expression: "!isLoading && paging.pageCount == paging.pageNum && list.length != 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n              没有更多了\n            ")]), a("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && 0 == t.list.length,
+          expression: "!isLoading && list.length == 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n              暂无数据\n            ")]), a("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: t.isLoading,
+          expression: "isLoading"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [a("q-spinner-dots", {
+        attrs: {
+          color: "primary",
+          size: "md"
+        }
+      })], 1), a("q-dialog", {
+        attrs: {
+          position: "bottom"
+        },
+        model: {
+          value: t.dialog,
+          callback: function(e) {
+            t.dialog = e
+          },
+          expression: "dialog"
+        }
+      }, [a("q-card", {
+        staticStyle: {
+          width: "350px"
+        }
+      }, [a("q-linear-progress", {
+        attrs: {
+          value: 1,
+          color: "primary"
+        }
+      }), a("q-card-section", {
+        staticClass: "row items-center justify-between",
+        attrs: {
+          dense: ""
+        }
+      }, [a("q-btn", {
+        attrs: {
+          outline: "",
+          label: "取消",
+          color: "grey",
+          size: "md"
+        },
+        on: {
+          click: function(e) {
+            return t.close()
+          }
+        }
+      }), a("q-btn", {
+        attrs: {
+          unelevated: "",
+          label: "确定",
+          color: "primary",
+          size: "md"
+        },
+        on: {
+          click: t.getCondition
+        }
+      })], 1), a("q-separator"), a("q-list", {
+        attrs: {
+          bordered: ""
+        }
+      }, [a("q-item", {
+        attrs: {
+          clickable: ""
+        }
+      }, [a("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [a("span", [t._v("任务状态")])]), a("q-item-section", [a("div", {
+        staticClass: "row justify-evenly"
+      }, t._l([{
+        label: "未签到",
+        value: "1"
+      }, {
+        label: "已签到",
+        value: "2"
+      }, {
+        label: "已请假",
+        value: "3"
+      }], (function(e) {
+        return a("q-btn", {
+          key: e.value,
+          attrs: {
+            outline: "",
+            color: e.value == t.queryModel.status ? "primary" : "grey"
+          },
+          on: {
+            click: function(a) {
+              return t.getValue(e.value)
+            }
+          }
+        }, [t._v("\n                      " + t._s(e.label) + "\n                      "), a("q-badge", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: t.queryModel.status == e.value,
+            expression: "queryModel.status == item.value"
+          }],
+          attrs: {
+            color: "orange",
+            floating: ""
+          }
+        }, [t._v("√")])], 1)
+      })), 1)])], 1), a("q-separator"), a("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [a("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [a("span", [t._v("综合查询")])]), a("q-item-section", [a("q-input", {
+        attrs: {
+          outlined: "",
+          clearable: "",
+          dense: ""
+        },
+        model: {
+          value: t.queryModel.mutli_search,
+          callback: function(e) {
+            t.$set(t.queryModel, "mutli_search", e)
+          },
+          expression: "queryModel.mutli_search"
+        }
+      }), a("q-item-label", {
+        attrs: {
+          caption: ""
+        }
+      }, [t._v("可以查询学号、姓名")])], 1)], 1)], 1)], 1)], 1)], 2)], 1)], 1), a("q-dialog", {
+        attrs: {
+          persistent: "",
+          "full-width": ""
+        },
+        model: {
+          value: t.changeStudentStatus,
+          callback: function(e) {
+            t.changeStudentStatus = e
+          },
+          expression: "changeStudentStatus"
+        }
+      }, [a("q-card", [a("q-card-section", {
+        staticClass: "flex flex-center"
+      }, [a("div", {
+        staticClass: "text-weight-bold"
+      }, [t._v("变更状态")])]), a("q-card-section", [a("div", {
+        staticClass: "neu-css-after-colon"
+      }, [t._v("\n          变更为\n        ")]), a("div", {
+        staticClass: "flex flex-center"
+      }, [a("q-btn-toggle", {
+        attrs: {
+          size: "md",
+          "toggle-color": "primary",
+          color: "white",
+          "text-color": "primary",
+          unelevated: "",
+          "emit-value": "",
+          "map-options": "",
+          options: [{
+            label: "已签到",
+            value: "1"
+          }, {
+            label: "未签到",
+            value: "0"
+          }]
+        },
+        model: {
+          value: t.condition,
+          callback: function(e) {
+            t.condition = e
+          },
+          expression: "condition"
+        }
+      })], 1)]), a("q-card-section", [a("div", {
+        staticClass: "neu-css-after-colon full-width"
+      }, [t._v("\n          变更说明\n        ")]), a("q-input", {
+        staticStyle: {
+          "min-width": "250px"
+        },
+        attrs: {
+          outlined: "",
+          type: "textarea",
+          placeholder: "变更说明选填"
+        },
+        model: {
+          value: t.text,
+          callback: function(e) {
+            t.text = e
+          },
+          expression: "text"
+        }
+      })], 1), a("q-separator"), a("q-card-actions", {
+        attrs: {
+          align: "around"
+        }
+      }, [a("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          flat: ""
+        }
+      }, [t._v("取消")]), a("q-separator", {
+        attrs: {
+          vertical: ""
+        }
+      }), a("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          flat: "",
+          color: "primary"
+        },
+        on: {
+          click: function(e) {
+            return t.changeSigninStatus(t.signinId)
+          }
+        }
+      }, [t._v("变更")])], 1)], 1)], 1), a("q-footer", {
+        staticClass: "bg-white text-primary",
+        attrs: {
+          bordered: ""
+        }
+      }, [a("q-tabs", {
+        staticClass: "text-black",
+        attrs: {
+          "no-caps": "",
+          "active-color": "primary",
+          "indicator-color": "transparent",
+          align: "justify"
+        },
+        model: {
+          value: t.tabs,
+          callback: function(e) {
+            t.tabs = e
+          },
+          expression: "tabs"
+        }
+      }, [a("q-tab", {
+        attrs: {
+          name: "scan",
+          label: "签到扫描"
+        },
+        on: {
+          click: function(e) {
+            return t.goScan(t.id, t.batch_no, t.title)
+          }
+        }
+      }), a("q-separator", {
+        attrs: {
+          vertical: ""
+        }
+      }), a("q-tab", {
+        attrs: {
+          name: "personnel",
+          label: "签到人员列表"
+        }
+      })], 1)], 1)], 1)
+    },
+    i = [],
+    n = (a("13d5"), a("ded3")),
+    o = a.n(n),
+    r = {
+      name: "signin",
+      data() {
+        return {
+          tabs: "personnel",
+          condition: "1",
+          text: "",
+          list: [],
+          paging: {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          },
+          changeStudentStatus: !1,
+          model: "0",
+          signinId: "",
+          id: this.$route.query.id,
+          batch_no: this.$route.query.batch_no,
+          title: this.$route.query.title,
+          dialog: !1,
+          queryModel: {
+            status: "",
+            mutli_search: ""
+          },
+          originalCond: {},
+          condCount: 0,
+          isLoading: !1
+        }
+      },
+      destroyed() {
+        window.removeEventListener("popstate", this.goBack, !1)
+      },
+      mounted() {
+        window.history && window.history.pushState && (history.pushState(null, null, document.URL), window.addEventListener("popstate", this.goBack, !1)), this.loadList((() => {}))
+      },
+      methods: {
+        open() {
+          this.dialog = !0, this.originalCond = Object.keys(this.queryModel).reduce(((t, e) => (t[e] = this.queryModel[e], t)), {})
+        },
+        close() {
+          this.dialog = !1, this.queryModel = Object.keys(this.originalCond).reduce(((t, e) => (t[e] = this.originalCond[e], t)), {})
+        },
+        refresh(t) {
+          this.loadList(t)
+        },
+        loadList(t) {
+          t && (this.paging.pageNum = 0, this.list = []), this.paging.pageNum += 1, this.isLoading = !0, this.$axiosAction("/api/student/signin/signin.api", o()(o()({
+            action: "getStudentStatusList"
+          }, this.queryModel), {}, {
+            id: this.id,
+            batch_no: this.batch_no,
+            model: this.model,
+            pageSize: this.paging.pageSize,
+            pageNum: this.paging.pageNum
+          })).then((e => {
+            if (0 === e.data.code) {
+              this.list = this.list.concat(e.data.result.list);
+              const {
+                pageSize: t,
+                pageNum: a,
+                rowCount: s,
+                pageCount: i,
+                startIndex: n,
+                endIndex: r
+              } = o()({}, e.data.result);
+              this.paging = {
+                pageSize: t,
+                pageNum: a,
+                rowCount: s,
+                pageCount: i,
+                startIndex: n,
+                endIndex: r
+              }
+            } else this.setDefaultList();
+            t && t(), this.isLoading = !1
+          })).catch((e => {
+            this.setDefaultList(), t && t(), this.isLoading = !1
+          }))
+        },
+        setDefaultList() {
+          this.list = [], this.paging = {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          }
+        },
+        getValue(t) {
+          this.queryModel.status === t ? this.queryModel.status = "" : this.queryModel.status = t
+        },
+        getCondition() {
+          this.condCount = Object.keys(this.queryModel).reduce(((t, e) => this.queryModel[e] ? t + 1 : t), 0), this.$refs.pageRefresh.trigger(), this.dialog = !1
+        },
+        changeStatus(t) {
+          this.signinId = t, this.changeStudentStatus = !0, this.text = ""
+        },
+        changeSigninStatus(t) {
+          this.$axiosAction("/api/student/signin/signin.api", {
+            action: "changeStudentSigninStatus",
+            id: t,
+            status: this.condition,
+            reason: this.text
+          }).then((() => {
+            this.refresh((() => {}))
+          }))
+        },
+        goBack() {
+          this.$router.push("/student/signin/qrcodePerson")
+        },
+        goScan(t, e, a) {
+          this.$router.push({
+            name: "/student/signin/qrcodePersonDetails",
+            params: {
+              id: t,
+              batch_no: e,
+              title: a
+            }
+          })
+        }
+      }
+    },
+    l = r,
+    c = a("2877"),
+    d = a("4d5a"),
+    u = a("e359"),
+    g = a("65c6"),
+    p = a("9c40"),
+    m = a("6ac5"),
+    h = a("58a81"),
+    v = a("09e3"),
+    b = a("9989"),
+    q = a("ddd8"),
+    f = a("59d7"),
+    w = a("f09f"),
+    y = a("66e5"),
+    x = a("4074"),
+    _ = a("0170"),
+    C = a("0016"),
+    S = a("8380"),
+    k = a("24e8"),
+    L = a("6b1d"),
+    Q = a("a370"),
+    N = a("eb85"),
+    M = a("1c1c"),
+    z = a("27f9"),
+    I = a("6a67"),
+    $ = a("4b7e"),
+    j = a("7ff0"),
+    B = a("429b"),
+    P = a("7460"),
+    T = a("714f"),
+    D = a("7f67"),
+    R = a("eebe"),
+    O = a.n(R),
+    A = Object(c["a"])(l, s, i, !1, null, null, null);
+  e["default"] = A.exports;
+  O()(A, "components", {
+    QLayout: d["a"],
+    QHeader: u["a"],
+    QToolbar: g["a"],
+    QBtn: p["a"],
+    QToolbarTitle: m["a"],
+    QBadge: h["a"],
+    QPageContainer: v["a"],
+    QPage: b["a"],
+    QSelect: q["a"],
+    QPullToRefresh: f["a"],
+    QCard: w["a"],
+    QItem: y["a"],
+    QItemSection: x["a"],
+    QItemLabel: _["a"],
+    QIcon: C["a"],
+    QSpinnerDots: S["a"],
+    QDialog: k["a"],
+    QLinearProgress: L["a"],
+    QCardSection: Q["a"],
+    QSeparator: N["a"],
+    QList: M["a"],
+    QInput: z["a"],
+    QBtnToggle: I["a"],
+    QCardActions: $["a"],
+    QFooter: j["a"],
+    QTabs: B["a"],
+    QTab: P["a"]
+  }), O()(A, "directives", {
+    Ripple: T["a"],
+    ClosePopup: D["a"]
+  })
+}

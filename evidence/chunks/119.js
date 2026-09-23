@@ -1,0 +1,329 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+  [119],
+  {
+    f7d9: function (t, e, a) {
+      "use strict";
+      a.r(e);
+      var s = function () {
+          var t = this,
+            e = t.$createElement,
+            a = t._self._c || e;
+          return a(
+            "q-layout",
+            { attrs: { view: "lHh lpr lFf" } },
+            [
+              a(
+                "q-header",
+                { staticClass: "bg-grey-3 text-black" },
+                [
+                  a(
+                    "q-toolbar",
+                    [
+                      a("q-btn", {
+                        attrs: { flat: "", round: "", dense: "", icon: "keyboard_arrow_left" },
+                        on: { click: t.goBack },
+                      }),
+                      a("q-toolbar-title", [t._v("账号安全")]),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+              a(
+                "q-page-container",
+                [
+                  a(
+                    "q-page",
+                    { staticClass: "bg-grey-3 q-pb-sm" },
+                    [
+                      a(
+                        "q-card",
+                        { staticClass: "q-mx-sm", attrs: { flat: "" } },
+                        [
+                          a(
+                            "q-item",
+                            [
+                              a("q-item-section", { attrs: { avatar: "" } }, [t._v("登录密码")]),
+                              a(
+                                "q-item-section",
+                                {
+                                  on: {
+                                    click: function (e) {
+                                      return t.moveTo("/user/password", null);
+                                    },
+                                  },
+                                },
+                                [
+                                  a(
+                                    "q-item-label",
+                                    { staticClass: "text-right text-grey" },
+                                    [
+                                      t._v("\n              修改\n              "),
+                                      a("q-icon", {
+                                        attrs: { name: "keyboard_arrow_right", size: "sm" },
+                                      }),
+                                    ],
+                                    1,
+                                  ),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                          t.mobLink
+                            ? a("q-separator", {
+                                staticClass: "bg-grey-3",
+                                staticStyle: { height: "0.5rem" },
+                              })
+                            : t._e(),
+                          t.mobLink
+                            ? a(
+                                "q-item",
+                                [
+                                  a("q-item-section", { attrs: { avatar: "" } }, [t._v("手机号")]),
+                                  a(
+                                    "q-item-section",
+                                    {
+                                      on: {
+                                        click: function (e) {
+                                          return t.moveTo(t.mobLink, { mob: t.record.mob });
+                                        },
+                                      },
+                                    },
+                                    [
+                                      a(
+                                        "q-item-label",
+                                        {
+                                          staticClass: "text-right",
+                                          class: t.record.mob ? "" : "text-grey",
+                                        },
+                                        [
+                                          t._v(
+                                            "\n              " +
+                                              t._s(t.record.mob ? t.record.mob : "绑定") +
+                                              "\n              ",
+                                          ),
+                                          a("q-icon", {
+                                            staticClass: "text-grey",
+                                            attrs: { name: "keyboard_arrow_right", size: "sm" },
+                                          }),
+                                        ],
+                                        1,
+                                      ),
+                                    ],
+                                    1,
+                                  ),
+                                ],
+                                1,
+                              )
+                            : t._e(),
+                          a("q-separator", {
+                            directives: [
+                              {
+                                name: "show",
+                                rawName: "v-show",
+                                value: "P" != t.isStu,
+                                expression: "isStu != 'P'",
+                              },
+                            ],
+                            staticClass: "bg-grey-3",
+                            staticStyle: { height: "0.5rem" },
+                          }),
+                          a(
+                            "q-item",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: "P" != t.isStu,
+                                  expression: "isStu != 'P'",
+                                },
+                              ],
+                            },
+                            [
+                              a("q-item-section", { attrs: { avatar: "" } }, [t._v("微信")]),
+                              a(
+                                "q-item-section",
+                                { on: { click: t.registerWechat } },
+                                [
+                                  a(
+                                    "q-item-label",
+                                    {
+                                      staticClass: "text-right",
+                                      class: t.record.wx_userinfo ? "" : "text-grey",
+                                    },
+                                    [
+                                      t._v(
+                                        "\n              " +
+                                          t._s(
+                                            t.record.wx_userinfo
+                                              ? t.record.wx_userinfo.nickname
+                                              : "绑定",
+                                          ) +
+                                          "\n              ",
+                                      ),
+                                      a("q-icon", {
+                                        staticClass: "text-grey",
+                                        attrs: { name: "keyboard_arrow_right", size: "sm" },
+                                      }),
+                                    ],
+                                    1,
+                                  ),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+            ],
+            1,
+          );
+        },
+        o = [],
+        i = a("2b0e"),
+        r = {
+          name: "Password",
+          data() {
+            return {
+              isStu: JSON.parse(window.localStorage.userinfo).role_type,
+              mobLink:
+                window.localStorage.captcha && JSON.parse(window.localStorage.captcha)
+                  ? "/user/bindingMob"
+                  : "",
+              record: {},
+            };
+          },
+          destroyed() {
+            window.removeEventListener("popstate", this.goBack, !1);
+          },
+          mounted() {
+            (window.history &&
+              window.history.pushState &&
+              (history.pushState(null, null, document.URL),
+              window.addEventListener("popstate", this.goBack, !1)),
+              "S" === this.isStu
+                ? this.$axiosAction("/api/student/basic/stuInfo.api", {
+                    action: "queryMyStuInfo",
+                  }).then((t) => {
+                    0 === t.data.code && (this.record = t.data.result);
+                  })
+                : "T" === this.isStu
+                  ? this.$axiosAction("/api/teacher/basic/teaInfo.api", {
+                      action: "queryMyTeaInfo",
+                    }).then((t) => {
+                      0 === t.data.code && (this.record = t.data.result);
+                    })
+                  : this.$axiosAction("/api/teacher/basic/mainInfo.api", {
+                      action: "queryMyMainInfo",
+                    }).then((t) => {
+                      0 === t.data.code && (this.record = t.data.result);
+                    }));
+          },
+          methods: {
+            goBack() {
+              "S" === JSON.parse(window.localStorage.userinfo).role_type
+                ? this.$router.push("/student/index")
+                : "T" === JSON.parse(window.localStorage.userinfo).role_type
+                  ? this.$router.push("/teacher/index")
+                  : this.$router.push("/maintainer/index");
+            },
+            moveTo(t, e) {
+              t && (e ? this.$router.push({ path: t, query: e }) : this.$router.push(t));
+            },
+            registerWechat() {
+              this.record.wx_userinfo
+                ? this.$q
+                    .dialog({
+                      title: "微信解绑确认",
+                      message: "您确认要解除绑定微信账号关联吗？",
+                      persistent: !0,
+                      cancel: { label: "取消", outline: !0, color: "grey" },
+                      ok: { label: "确认", unelevated: !0, color: "negative" },
+                    })
+                    .onOk(() => {
+                      (this.$q.loading.show({ message: "解绑中……" }),
+                        this.$axiosAction("/api/user/user.api", {
+                          action: "unregisterWechat",
+                        }).then((t) => {
+                          (0 === t.data.code && i["a"].set(this.record, "wx_userinfo", null),
+                            this.$q.loading.hide());
+                        }));
+                    })
+                : Wechat.isInstalled((t) => {
+                    if (t) {
+                      const t = "snsapi_userinfo",
+                        e = `_${Date.now()}`;
+                      Wechat.auth(
+                        t,
+                        e,
+                        (t) => {
+                          t.state === e
+                            ? (this.$q.loading.show({ message: "绑定中……" }),
+                              this.$axiosAction("/api/user/user.api", {
+                                action: "registerWechat",
+                                code: t.code,
+                              }).then((t) => {
+                                (0 === t.data.code &&
+                                  i["a"].set(this.record, "wx_userinfo", t.data.wx_userinfo),
+                                  this.$q.loading.hide());
+                              }))
+                            : this.$showErrorNotify("授权处理过期");
+                        },
+                        (t) => {
+                          this.$showErrorNotify(t);
+                        },
+                      );
+                    } else this.$showErrorNotify("未安装微信");
+                  });
+            },
+          },
+        },
+        n = r,
+        c = a("2877"),
+        l = a("4d5a"),
+        h = a("e359"),
+        d = a("65c6"),
+        u = a("9c40"),
+        m = a("6ac5"),
+        p = a("09e3"),
+        w = a("9989"),
+        g = a("f09f"),
+        b = a("66e5"),
+        q = a("4074"),
+        y = a("0170"),
+        f = a("0016"),
+        _ = a("eb85"),
+        x = a("eebe"),
+        v = a.n(x),
+        S = Object(c["a"])(n, s, o, !1, null, null, null);
+      e["default"] = S.exports;
+      v()(S, "components", {
+        QLayout: l["a"],
+        QHeader: h["a"],
+        QToolbar: d["a"],
+        QBtn: u["a"],
+        QToolbarTitle: m["a"],
+        QPageContainer: p["a"],
+        QPage: w["a"],
+        QCard: g["a"],
+        QItem: b["a"],
+        QItemSection: q["a"],
+        QItemLabel: y["a"],
+        QIcon: f["a"],
+        QSeparator: _["a"],
+      });
+    },
+  },
+]);

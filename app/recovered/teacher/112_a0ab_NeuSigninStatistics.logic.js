@@ -1,0 +1,1877 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/112.js -> module "a0ab"
+ * Route: /teacher/signin/detail
+ * Component guess: NeuSigninStatistics
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+a0ab: function(t, e, i) {
+  "use strict";
+  i.r(e);
+  var a = function() {
+      var t = this,
+        e = t.$createElement,
+        i = t._self._c || e;
+      return i("q-layout", {
+        attrs: {
+          view: "lHh lpr lFf"
+        }
+      }, [i("q-header", {
+        staticClass: "bg-grey-3 text-black"
+      }, [i("q-toolbar", [i("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "keyboard_arrow_left"
+        },
+        on: {
+          click: t.goBack
+        }
+      }), i("q-toolbar-title", [t._v(t._s(t.menuInfo.title) + "详情")]), "progress" == t.tab && 1 == t.checkBatchNo ? i("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "search"
+        },
+        on: {
+          click: t.open
+        }
+      }, [i("q-badge", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: 0 != t.condCount,
+          expression: "condCount != 0"
+        }],
+        attrs: {
+          color: "orange",
+          floating: "",
+          transparent: ""
+        }
+      }, [t._v(t._s(t.condCount))])], 1) : t._e()], 1), i("q-card", {
+        staticClass: "bg-white",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-item", [i("q-item-section", [i("q-item-label", {
+        staticStyle: {
+          "font-size": "1.3em"
+        }
+      }, [t._v(t._s(t.record.title))]), i("q-item-label", {
+        attrs: {
+          caption: ""
+        }
+      }, [t._v(t._s(t.record.signin_type_name))])], 1), i("q-item-section", {
+        attrs: {
+          side: ""
+        }
+      }, [i("q-btn", {
+        attrs: {
+          flat: "",
+          dense: "",
+          icon: "more_vert",
+          size: "sm"
+        },
+        on: {
+          click: function(e) {
+            t.drawerRight = !t.drawerRight
+          }
+        }
+      })], 1)], 1)], 1), i("q-separator", {
+        staticStyle: {
+          height: "0.1rem"
+        },
+        attrs: {
+          color: "grey-3"
+        }
+      })], 1), i("q-drawer", {
+        attrs: {
+          side: "right",
+          width: 200,
+          breakpoint: 10,
+          overlay: "",
+          bordered: "",
+          "content-class": "bg-white-3"
+        },
+        model: {
+          value: t.drawerRight,
+          callback: function(e) {
+            t.drawerRight = e
+          },
+          expression: "drawerRight"
+        }
+      }, [i("q-scroll-area", {
+        staticClass: "fit"
+      }, [i("q-list", {
+        staticStyle: {
+          "border-left": "0.15rem solid #027be3"
+        },
+        attrs: {
+          separator: ""
+        }
+      }, ["progress" == t.tab && 1 == t.checkBatchNo && "L" == t.record.signin_method ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "bubble_chart",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: t.showAnalysisMap
+        }
+      }, [t._v("签到位置可视化分析")])], 1) : t._e(), "progress" == t.tab && 1 == t.checkBatchNo ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "get_app",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: t.exportList
+        }
+      }, [t._v("导出签到数据")])], 1) : t._e(), "progress" == t.tab && 1 == t.checkBatchNo && "L" == t.record.signin_method ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "get_app",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: t.exportStatisticsData
+        }
+      }, [t._v("导出位置分布数据")])], 1) : t._e(), "statistics" == t.tab && 1 == t.checkBatchNo ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "get_app",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: t.exportSigninList
+        }
+      }, [t._v("导出")])], 1) : t._e(), i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }, {
+          name: "show",
+          rawName: "v-show",
+          value: "progress" == t.tab && "0" != t.time && t.record.is_author,
+          expression: "tab == 'progress' && time != '0' && record.is_author"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "notifications",
+          size: "sm",
+          color: "primary"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-primary",
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: t.unsigninAlert
+        }
+      }, [t._v("未签到提醒(App推送)")])], 1), i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }, {
+          name: "show",
+          rawName: "v-show",
+          value: "progress" == t.tab && "0" != t.time && t.record.is_author && t.allowSmsRemind,
+          expression: "tab == 'progress' && time != '0' && record.is_author && allowSmsRemind"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "notifications",
+          size: "sm",
+          color: "primary"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-primary",
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: t.sendSigninSmsRemind
+        }
+      }, [t._v("未签到提醒(短信提醒)")])], 1), i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }, {
+          name: "show",
+          rawName: "v-show",
+          value: t.record.tea_show && "定位" != t.record.signin_method_name && "progress" == t.tab || t.record.teacher_no == t.loginName && "定位" != t.record.signin_method_name && "progress" == t.tab,
+          expression: "(record.tea_show && record.signin_method_name != '定位' && tab == 'progress') || (record.teacher_no == loginName && record.signin_method_name != '定位' && tab == 'progress')"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "mdi-qrcode",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        },
+        on: {
+          click: function(e) {
+            return t.qrShowing(t.record.id)
+          }
+        }
+      }, [t._v("展示二维码")])], 1)], 1)], 1)], 1), i("q-page-container", [i("q-page", {
+        staticClass: "bg-grey-3"
+      }, ["progress" == t.tab || "statistics" == t.tab ? i("q-card", {
+        attrs: {
+          flat: ""
+        }
+      }, [t.batchNoList && 0 != t.batchNoList.length ? i("q-item", {
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: t.changeSigninTime
+        }
+      }, [i("q-item-section", [i("q-item-label", [i("div", {
+        staticClass: "text-grey"
+      }, [t._v("\n                签到时间段\n              ")])]), i("q-item-label", {
+        staticClass: "q-mb-sm"
+      }, [t._v("\n              " + t._s(t.batchLabel) + "\n            ")]), t.initDetail.total && "progress" == t.tab ? i("q-item-label", [i("div", {
+        staticClass: "text-grey"
+      }, [t._v("\n                本次签到率 "), i("span", {
+        staticClass: "text-black"
+      }, [t._v(t._s(t.initDetail.signined_ratio) + "% (" + t._s(t.initDetail.signin_total) + "/" + t._s(t.initDetail.total - t.initDetail.leave_total) + ")")])]), i("div", {
+        staticClass: "text-grey q-mt-sm"
+      }, [t._v("\n                本次请假率 "), i("span", {
+        staticClass: "text-black"
+      }, [t._v(t._s(t.initDetail.leaved_ratio) + "% (" + t._s(t.initDetail.leave_total) + "/" + t._s(t.initDetail.total) + ")")])])]) : t._e()], 1), "单次" != t.record.frequency_name ? i("q-item-section", {
+        attrs: {
+          side: "",
+          top: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "arrow_drop_down"
+        }
+      })], 1) : t._e()], 1) : t._e(), "statistics" == t.tab ? i("q-item", [i("q-item-section", [i("q-item-label", [i("div", {
+        staticClass: "text-grey"
+      }, [t._v("统计方式")])]), i("q-item-label", [i("q-btn-toggle", {
+        attrs: {
+          unelevated: "",
+          size: "sm",
+          options: [{
+            label: "按班级统计",
+            value: "1"
+          }, {
+            label: "按专业统计",
+            value: "2"
+          }, {
+            label: "按院系统计",
+            value: "3"
+          }, {
+            label: "按" + t.counsellorlabel + "统计",
+            value: "4"
+          }]
+        },
+        model: {
+          value: t.model.signin_statistics,
+          callback: function(e) {
+            t.$set(t.model, "signin_statistics", e)
+          },
+          expression: "model.signin_statistics"
+        }
+      })], 1)], 1)], 1) : t._e()], 1) : t._e(), i("neu-manage-qa", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "qa" == t.tab,
+          expression: "tab == 'qa'"
+        }],
+        staticClass: "bg-grey-3",
+        attrs: {
+          taskMenuId: "signin",
+          taskId: t.record.id + "",
+          readonly: !t.record.is_author
+        }
+      }), i("neu-signin-statistics", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "statistics" == t.tab,
+          expression: "tab == 'statistics'"
+        }],
+        attrs: {
+          id: t.record.id,
+          title: t.record.title,
+          batch_no: t.batchNo,
+          signin_statistics: t.model.signin_statistics,
+          tea_show: t.record.tea_show
+        }
+      }), i("q-pull-to-refresh", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "progress" == t.tab,
+          expression: "tab == 'progress'"
+        }],
+        ref: "pageRefresh",
+        on: {
+          refresh: t.refresh
+        }
+      }, [t._l(t.initList, (function(e, a) {
+        return i("q-card", {
+          key: a,
+          staticClass: "bg-white q-my-sm q-mx-sm",
+          style: "未签到" == e.signin_status ? "border-left:0.25rem solid #c10015;" : "已请假" == e.signin_status ? "border-left:0.25rem solid #027be3;" : "border-left:0.25rem solid #21ba45;",
+          attrs: {
+            flat: ""
+          }
+        }, [i("q-item", [i("q-item-section", [i("q-item-label", [i("q-icon", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "男" == e.sex_name,
+            expression: "item.sex_name == '男'"
+          }],
+          attrs: {
+            name: "person",
+            color: "blue"
+          }
+        }), i("q-icon", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "女" == e.sex_name,
+            expression: "item.sex_name == '女'"
+          }],
+          attrs: {
+            name: "person",
+            color: "pink"
+          }
+        }), t._v("\n                  " + t._s(e.name) + " "), i("span", {
+          staticClass: "text-grey"
+        }, [t._v("(" + t._s(e.student_no) + ")")])], 1), i("q-item-label", {
+          attrs: {
+            lines: "1",
+            caption: ""
+          }
+        }, [t._v(t._s(e.class_name) + " " + t._s(e.major_name) + " " + t._s(e.dep_name))]), i("q-item-label", {
+          attrs: {
+            lines: "1",
+            caption: ""
+          }
+        }, [t._v(t._s(t.counsellorlabel) + "：" + t._s(e.counsellor))]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: e.location_status && "L" == t.record.signin_method,
+            expression: "item.location_status && record.signin_method == 'L'"
+          }],
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          class: 1 == e.outside_flag ? "text-red" : ""
+        }, [t._v("签到" + t._s(e.location_status))])]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: e.picture_evidence && "L" == t.record.signin_method && 1 == t.record.picture_evidence,
+            expression: "item.picture_evidence && record.signin_method == 'L' && record.picture_evidence == 1"
+          }],
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "查看照片" == e.picture_evidence,
+            expression: "item.picture_evidence == '查看照片'"
+          }],
+          staticClass: "text-primary cursor-pointer",
+          on: {
+            click: function(i) {
+              return t.showPic(e.picture)
+            }
+          }
+        }, [t._v(t._s(e.picture_evidence))])]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: e.qrcode_source && ("SQR" == t.record.signin_method || "DQR" == t.record.signin_method),
+            expression: "item.qrcode_source && (record.signin_method == 'SQR' || record.signin_method == 'DQR')"
+          }],
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon"
+        }, [t._v("二维码来源")]), t._v(t._s(e.qrcode_source) + "\n                ")]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "有变更" == e.modified_log,
+            expression: "item.modified_log == '有变更'"
+          }],
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "text-primary cursor-pointer",
+          on: {
+            click: function(i) {
+              return t.checkModifiedLog(e.id)
+            }
+          }
+        }, [t._v("查看签到状态变更记录")])])], 1), i("q-item-section", {
+          attrs: {
+            side: "",
+            top: ""
+          },
+          on: {
+            click: function(i) {
+              (t.record.is_author || t.record.tea_show) && t.changeStatus(e.id, e.signin_status)
+            }
+          }
+        }, [i("q-item-label", [i("div", {
+          class: "未签到" == e.signin_status ? "text-red" : "已请假" == e.signin_status ? "text-primary" : "text-positive"
+        }, [t._v("\n                    " + t._s(e.signin_status)), i("q-icon", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: t.record.is_author || t.record.tea_show,
+            expression: "record.is_author || record.tea_show"
+          }],
+          attrs: {
+            name: "keyboard_arrow_right",
+            size: "sm"
+          }
+        })], 1)]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: e.signin_time,
+            expression: "item.signin_time"
+          }],
+          attrs: {
+            caption: ""
+          }
+        }, [t._v(t._s(e.signin_time))])], 1)], 1)], 1)
+      })), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount != t.paging.pageNum,
+          expression: "!isLoading && paging.pageCount != paging.pageNum"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md",
+        on: {
+          click: function(e) {
+            return t.loadList(null)
+          }
+        }
+      }, [t._v("\n            加载更多...\n          ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && t.paging.pageCount == t.paging.pageNum && 0 != t.initList.length,
+          expression: "!isLoading && paging.pageCount == paging.pageNum && initList.length != 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n            没有更多了\n          ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !t.isLoading && 0 == t.initList.length,
+          expression: "!isLoading && initList.length == 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [t._v("\n            暂无" + t._s(t.menuInfo.title) + "数据\n          ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: t.isLoading,
+          expression: "isLoading"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [i("q-spinner-dots", {
+        attrs: {
+          color: "primary",
+          size: "md"
+        }
+      })], 1), i("q-dialog", {
+        attrs: {
+          position: "bottom"
+        },
+        model: {
+          value: t.dialog,
+          callback: function(e) {
+            t.dialog = e
+          },
+          expression: "dialog"
+        }
+      }, [i("q-card", {
+        staticStyle: {
+          width: "350px"
+        }
+      }, [i("q-linear-progress", {
+        attrs: {
+          value: 1,
+          color: "primary"
+        }
+      }), i("q-card-section", {
+        staticClass: "row items-center justify-between",
+        attrs: {
+          dense: ""
+        }
+      }, [i("q-btn", {
+        attrs: {
+          outline: "",
+          label: "取消",
+          color: "grey",
+          size: "md"
+        },
+        on: {
+          click: function(e) {
+            return t.close()
+          }
+        }
+      }), i("q-btn", {
+        attrs: {
+          unelevated: "",
+          label: "确定",
+          color: "primary",
+          size: "md"
+        },
+        on: {
+          click: t.getCondition
+        }
+      })], 1), i("q-list", {
+        attrs: {
+          bordered: ""
+        }
+      }, [i("q-item", {
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [i("span", [t._v("签到结果")])]), i("q-item-section", [i("div", {
+        staticClass: "row justify-evenly"
+      }, t._l([{
+        label: "未签到",
+        value: "1"
+      }, {
+        label: "已请假",
+        value: "2"
+      }, {
+        label: "已签到",
+        value: "3"
+      }], (function(e) {
+        return i("q-btn", {
+          key: e.value,
+          attrs: {
+            outline: "",
+            color: e.value == t.queryModel.signin_status ? "primary" : "grey"
+          },
+          on: {
+            click: function(i) {
+              return t.getValue("signin_status", e.value)
+            }
+          }
+        }, [t._v("\n                      " + t._s(e.label) + "\n                      "), i("q-badge", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: t.queryModel.signin_status == e.value,
+            expression: "queryModel.signin_status == item.value"
+          }],
+          attrs: {
+            color: "orange",
+            floating: ""
+          }
+        }, [t._v("√")])], 1)
+      })), 1)])], 1), i("q-separator", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "L" == t.record.signin_method,
+          expression: "record.signin_method == 'L'"
+        }]
+      }), i("q-item", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: "L" == t.record.signin_method,
+          expression: "record.signin_method == 'L'"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [i("span", [t._v("位置状态")])]), i("q-item-section", [i("div", {
+        staticClass: "row justify-evenly"
+      }, t._l([{
+        label: "位置正常",
+        value: "1"
+      }, {
+        label: "位置异常",
+        value: "2"
+      }], (function(e) {
+        return i("q-btn", {
+          key: e.value,
+          attrs: {
+            outline: "",
+            color: e.value == t.queryModel.location_status ? "primary" : "grey"
+          },
+          on: {
+            click: function(i) {
+              return t.getValue("location_status", e.value)
+            }
+          }
+        }, [t._v("\n                      " + t._s(e.label) + "\n                      "), i("q-badge", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: t.queryModel.location_status == e.value,
+            expression: "queryModel.location_status == items.value"
+          }],
+          attrs: {
+            color: "orange",
+            floating: ""
+          }
+        }, [t._v("√")])], 1)
+      })), 1)])], 1), i("q-separator"), i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [i("span", [t._v("综合查询")])]), i("q-item-section", [i("q-input", {
+        attrs: {
+          outlined: "",
+          clearable: "",
+          dense: ""
+        },
+        model: {
+          value: t.queryModel.mutli_search,
+          callback: function(e) {
+            t.$set(t.queryModel, "mutli_search", e)
+          },
+          expression: "queryModel.mutli_search"
+        }
+      }), i("q-item-label", {
+        staticClass: "q-mt-sm",
+        attrs: {
+          caption: ""
+        }
+      }, [t._v("可以查询学号、姓名、性别、手机号、年级、院系、专业、班级信息")])], 1)], 1)], 1)], 1)], 1)], 2)], 1)], 1), i("q-dialog", {
+        model: {
+          value: t.signinTime,
+          callback: function(e) {
+            t.signinTime = e
+          },
+          expression: "signinTime"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-card-section", {
+        staticClass: "row items-center justify-between"
+      }, [i("div", {
+        staticClass: "text-bold"
+      }, [t._v("签到时间段选择")]), i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          icon: "close",
+          flat: "",
+          round: "",
+          dense: "",
+          size: "sm"
+        }
+      })], 1), i("q-separator"), t._l(t.batchNoList, (function(e, a) {
+        return i("q-list", {
+          key: e.value
+        }, [i("q-item", {
+          attrs: {
+            clickable: ""
+          }
+        }, [i("q-item-section", [t._v("\n            " + t._s(e.label) + "\n          ")]), i("q-item-section", {
+          attrs: {
+            side: ""
+          }
+        }, [i("q-toggle", {
+          attrs: {
+            "checked-icon": "check",
+            color: "primary",
+            val: e.value
+          },
+          on: {
+            input: function(e) {
+              return t.checkBatchno(a)
+            }
+          },
+          model: {
+            value: t.getBatchnoList[a],
+            callback: function(e) {
+              t.$set(t.getBatchnoList, a, e)
+            },
+            expression: "getBatchnoList[index]"
+          }
+        })], 1)], 1)], 1)
+      }))], 2)], 1), i("q-dialog", {
+        model: {
+          value: t.qrShowingDialog,
+          callback: function(e) {
+            t.qrShowingDialog = e
+          },
+          expression: "qrShowingDialog"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-card-section", {
+        staticClass: "row items-center justify-between"
+      }, [i("div", {
+        staticClass: "text-bold"
+      }, [t._v("二维码展示")]), i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          icon: "close",
+          flat: "",
+          round: "",
+          dense: "",
+          size: "sm"
+        }
+      })], 1), i("q-separator"), i("q-card-section", {
+        staticClass: "text-center"
+      }, [
+        [i("vue-qr", {
+          staticClass: "q-mb-xl",
+          attrs: {
+            text: t.downloadData.text,
+            margin: 0,
+            colorDark: "#3B3B3B",
+            colorLight: "#fff",
+            logoScale: .3,
+            size: 250
+          }
+        })]
+      ], 2)], 1)], 1), i("q-dialog", {
+        attrs: {
+          persistent: ""
+        },
+        model: {
+          value: t.teacherChangeStatus,
+          callback: function(e) {
+            t.teacherChangeStatus = e
+          },
+          expression: "teacherChangeStatus"
+        }
+      }, [i("q-card", [i("q-card-section", {
+        staticClass: "flex flex-center"
+      }, [i("div", {
+        staticClass: "text-weight-bold"
+      }, [t._v("变更状态")])]), i("q-card-section", [i("div", {
+        staticClass: "neu-css-after-colon"
+      }, [t._v("\n          变更为\n        ")]), i("div", {
+        staticClass: "flex flex-center"
+      }, [i("q-btn-toggle", {
+        attrs: {
+          size: "md",
+          "toggle-color": "primary",
+          color: "white",
+          "text-color": "primary",
+          unelevated: "",
+          "emit-value": "",
+          "map-options": "",
+          options: [{
+            label: "已签到",
+            value: "1"
+          }, {
+            label: "未签到",
+            value: "0"
+          }]
+        },
+        model: {
+          value: t.change,
+          callback: function(e) {
+            t.change = e
+          },
+          expression: "change"
+        }
+      })], 1)]), i("q-card-section", [i("div", {
+        staticClass: "neu-css-after-colon full-width"
+      }, [t._v("\n          变更说明\n        ")]), i("q-input", {
+        staticStyle: {
+          "min-width": "250px"
+        },
+        attrs: {
+          outlined: "",
+          type: "textarea",
+          placeholder: "变更说明选填"
+        },
+        model: {
+          value: t.texterea,
+          callback: function(e) {
+            t.texterea = e
+          },
+          expression: "texterea"
+        }
+      })], 1), i("q-separator"), i("q-card-actions", {
+        attrs: {
+          align: "around"
+        }
+      }, [i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          flat: ""
+        }
+      }, [t._v("取消")]), i("q-separator", {
+        attrs: {
+          vertical: ""
+        }
+      }), i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          flat: "",
+          color: "primary"
+        },
+        on: {
+          click: function(e) {
+            return t.changeSigninStatus(t.stuSigninId)
+          }
+        }
+      }, [t._v("变更")])], 1)], 1)], 1), i("q-dialog", {
+        model: {
+          value: t.checkModified,
+          callback: function(e) {
+            t.checkModified = e
+          },
+          expression: "checkModified"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-card-section", {
+        staticClass: "row items-center justify-between"
+      }, [i("div", {
+        staticClass: "text-bold"
+      }, [t._v("变更记录详情")]), i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          icon: "close",
+          flat: "",
+          round: "",
+          dense: "",
+          size: "sm"
+        }
+      })], 1), i("q-separator"), i("q-card-section", t._l(t.modList, (function(e) {
+        return i("q-list", {
+          key: e.id,
+          staticClass: "q-mt-sm",
+          attrs: {
+            bordered: ""
+          }
+        }, [i("q-item", [i("q-item-section", [i("div", {
+          staticClass: "row q-mt-xs"
+        }, [i("span", {
+          staticClass: "neu-css-after-colon text-grey",
+          staticStyle: {
+            "font-size": "15px"
+          }
+        }, [t._v("签到状态变更为")]), i("span", {
+          class: "未签到" == e.status ? "text-red" : "text-positive"
+        }, [t._v(t._s(e.status))])]), i("div", {
+          staticClass: "row q-mt-xs"
+        }, [i("span", {
+          staticClass: "neu-css-after-colon text-grey",
+          staticStyle: {
+            "font-size": "15px"
+          }
+        }, [t._v("变更人")]), t._v(t._s(e.name) + "\n              ")]), i("div", {
+          staticClass: "row q-mt-xs"
+        }, [i("span", {
+          staticClass: "neu-css-after-colon text-grey",
+          staticStyle: {
+            "font-size": "15px"
+          }
+        }, [t._v("变更原因")]), t._v(t._s(e.reason) + "\n              ")]), i("div", {
+          staticClass: "row q-mt-xs"
+        }, [i("span", {
+          staticClass: "neu-css-after-colon text-grey",
+          staticStyle: {
+            "font-size": "15px"
+          }
+        }, [t._v("变更时间")]), t._v(t._s(e.modified_time) + "\n              ")])])], 1)], 1)
+      })), 1)], 1)], 1), i("q-dialog", {
+        model: {
+          value: t.checkPicture,
+          callback: function(e) {
+            t.checkPicture = e
+          },
+          expression: "checkPicture"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-card-section", {
+        staticClass: "row items-center justify-between"
+      }, [i("div", {
+        staticClass: "text-bold"
+      }, [t._v("上传的照片")]), i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          icon: "close",
+          flat: "",
+          round: "",
+          dense: "",
+          size: "sm"
+        }
+      })], 1), i("q-separator"), i("q-card-section", {
+        staticClass: "text-center"
+      }, [i("q-img", {
+        attrs: {
+          src: t.baseUrl + t.link,
+          ratio: 1
+        }
+      })], 1)], 1)], 1), i("q-dialog", {
+        attrs: {
+          timeDialog: ""
+        },
+        model: {
+          value: t.timeDialog,
+          callback: function(e) {
+            t.timeDialog = e
+          },
+          expression: "timeDialog"
+        }
+      }, [i("q-card", {
+        staticStyle: {
+          "border-radius": "25px",
+          width: "15rem"
+        }
+      }, [i("q-item", [i("q-item-section", {
+        staticClass: "flex flex-center"
+      }, [i("q-item-label", {
+        staticClass: "text-weight-bold"
+      }, [t._v("时间段选择")])], 1)], 1), i("q-item", {
+        staticClass: "text-center q-mb-sm",
+        attrs: {
+          dense: ""
+        }
+      }, [i("q-item-section", [i("q-item-label", [t._v("请至少选择一个时间段!")])], 1)], 1), i("q-separator"), i("q-card-actions", {
+        attrs: {
+          align: "around"
+        }
+      }, [i("q-btn", {
+        attrs: {
+          flat: "",
+          color: "primary"
+        },
+        on: {
+          click: t.chooseSigninTime
+        }
+      }, [t._v("确定")])], 1)], 1)], 1), i("q-dialog", {
+        attrs: {
+          maximized: ""
+        },
+        model: {
+          value: t.mapDialog,
+          callback: function(e) {
+            t.mapDialog = e
+          },
+          expression: "mapDialog"
+        }
+      }, [i("neu-location-analysis-map", {
+        attrs: {
+          statisticsData: t.statisticsData,
+          clusterData: t.clusterData
+        }
+      })], 1), i("q-footer", {
+        staticClass: "bg-white text-primary",
+        attrs: {
+          bordered: ""
+        }
+      }, [i("q-tabs", {
+        staticClass: "text-black",
+        attrs: {
+          "no-caps": "",
+          "active-color": "primary",
+          "indicator-color": "transparent",
+          align: "justify"
+        },
+        model: {
+          value: t.tab,
+          callback: function(e) {
+            t.tab = e
+          },
+          expression: "tab"
+        }
+      }, [i("q-tab", {
+        attrs: {
+          name: "progress",
+          label: "签到进度"
+        }
+      }), i("q-separator", {
+        attrs: {
+          vertical: ""
+        }
+      }), i("q-tab", {
+        attrs: {
+          name: "statistics",
+          label: "签到统计"
+        }
+      }), i("q-separator", {
+        attrs: {
+          vertical: ""
+        }
+      }), i("q-tab", {
+        attrs: {
+          name: "qa",
+          label: "学生提问"
+        }
+      })], 1)], 1), i("neu-full-screen-image", {
+        attrs: {
+          url: t.bigPicUrl,
+          name: t.bigPicName
+        },
+        model: {
+          value: t.showBigPic,
+          callback: function(e) {
+            t.showBigPic = e
+          },
+          expression: "showBigPic"
+        }
+      }), i("neu-export-data", {
+        attrs: {
+          config: t.exportCompConfig
+        }
+      })], 1)
+    },
+    s = [],
+    n = (i("c975"), i("13d5"), i("ddb0"), i("ded3")),
+    o = i.n(n),
+    r = i("33be"),
+    c = i("58a84"),
+    l = i("156a"),
+    h = function() {
+      var t = this,
+        e = t.$createElement,
+        i = t._self._c || e;
+      return i("div", t._l(t.list, (function(e, a) {
+        return i("q-card", {
+          key: a,
+          staticClass: "bg-white q-my-sm q-mx-sm",
+          staticStyle: {
+            "border-left": "0.25rem solid #b5b3b3"
+          },
+          attrs: {
+            flat: ""
+          }
+        }, [i("q-item", [i("q-item-section", [i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "1" == t.signinStatistics,
+            expression: "signinStatistics == '1'"
+          }]
+        }, [t._v(t._s(e.signin_class))]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "2" == t.signinStatistics,
+            expression: "signinStatistics == '2'"
+          }]
+        }, [t._v(t._s(e.signin_major))]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "3" == t.signinStatistics,
+            expression: "signinStatistics == '3'"
+          }]
+        }, [t._v(t._s(e.signin_dep))]), i("q-item-label", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "4" == t.signinStatistics,
+            expression: "signinStatistics == '4'"
+          }]
+        }, [t._v(t._s(e.name) + "(" + t._s(e.tea_no) + ")")]), i("q-item-label", {
+          staticClass: "row justify-between",
+          attrs: {
+            lines: "1",
+            caption: ""
+          }
+        }, [t._v("\n          应签到人数：" + t._s(e.signin_count) + "\n          "), i("span", [t._v("已请假人数：" + t._s(e.leaved_total))])]), i("q-item-label", {
+          staticClass: "row justify-between",
+          attrs: {
+            lines: "1",
+            caption: ""
+          }
+        }, [t._v("\n          已签到人数：" + t._s(e.signined_total) + "\n          "), i("span", [t._v("未签到人数：" + t._s(e.unsignin_total))])])], 1)], 1)], 1)
+      })), 1)
+    },
+    d = [],
+    g = {
+      name: "NeuSigninStatistics",
+      props: {
+        id: Number,
+        title: String,
+        batch_no: String,
+        signin_statistics: String,
+        tea_show: Boolean
+      },
+      data() {
+        return {
+          list: []
+        }
+      },
+      mounted() {
+        this.signinId = this.id, this.signinTitle = this.title, this.batchNo = this.batch_no, this.signinStatistics = this.signin_statistics, this.loadSigninList()
+      },
+      watch: {
+        id(t) {
+          this.signinId = t, this.loadSigninList()
+        },
+        title(t) {
+          this.signinTitle = t, this.loadSigninList()
+        },
+        batch_no(t) {
+          this.batchNo = t, this.loadSigninList()
+        },
+        signin_statistics(t) {
+          this.signinStatistics = t, this.loadSigninList()
+        }
+      },
+      methods: {
+        loadSigninList() {
+          if (!this.signinId || !this.signinTitle || !this.batchNo || !this.signinStatistics) return;
+          let t = "";
+          t = !0 === this.tea_show ? 1 : 0, this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "teaCompleteSigninRate",
+            id: this.signinId,
+            batch_no: this.batchNo,
+            signinStatistics: this.signinStatistics,
+            teaShow: t
+          }).then((t => {
+            0 === t.data.code && (this.list = t.data.result)
+          })).catch((t => {
+            this.list = []
+          }))
+        }
+      }
+    },
+    u = g,
+    m = i("2877"),
+    p = i("f09f"),
+    _ = i("66e5"),
+    b = i("4074"),
+    v = i("0170"),
+    q = i("eebe"),
+    w = i.n(q),
+    f = Object(m["a"])(u, h, d, !1, null, null, null),
+    S = f.exports;
+  w()(f, "components", {
+    QCard: p["a"],
+    QItem: _["a"],
+    QItemSection: b["a"],
+    QItemLabel: v["a"]
+  });
+  var x = i("658f"),
+    y = i.n(x),
+    N = i("ad56"),
+    k = i("961c"),
+    C = i("d852"),
+    L = {
+      components: {
+        NeuManageQa: l["a"],
+        NeuSigninStatistics: S,
+        vueQr: y.a,
+        NeuLocationAnalysisMap: k["a"],
+        NeuExportData: C["a"],
+        NeuFullScreenImage: r["a"]
+      },
+      name: "SigninDetail",
+      data() {
+        return {
+          loginName: JSON.parse(window.localStorage.getItem("userinfo")).login_name,
+          baseUrl: window.localStorage.server,
+          roleId: JSON.parse(window.localStorage.getItem("userinfo")).role_id,
+          batchNoParam: this.$route.query.batch_no,
+          getBatchnoList: [],
+          id: null,
+          menuInfo: null,
+          drawerRight: !1,
+          tab: "progress",
+          change: "",
+          texterea: "",
+          stuSigninId: "",
+          list: [],
+          initList: [],
+          modList: [],
+          batchNoList: [],
+          condition: [],
+          record: {},
+          initDetail: {},
+          link: "",
+          batchNo: "",
+          batchLabel: "",
+          queryModel: {
+            signin_status: "",
+            location_status: "",
+            mutli_search: ""
+          },
+          model: {
+            signin_statistics: "1"
+          },
+          downloadData: {
+            text: ""
+          },
+          showStuDialog: !1,
+          studentShowing: [],
+          showTeaDialog: !1,
+          teacherShowing: [],
+          dialog: !1,
+          detailDialog: !1,
+          shareDialog: !1,
+          timeDialog: !1,
+          qrShowingDialog: !1,
+          signinTime: !1,
+          teacherChangeStatus: !1,
+          checkModified: !1,
+          checkPicture: !1,
+          maximizedToggle: !0,
+          shareTarget: [],
+          taskTargetDialog: !1,
+          taskTargetExcludDialog: !1,
+          actionTarget: [],
+          noActionTarget: [],
+          infoModel: [],
+          condCount: 0,
+          paging: {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          },
+          originalCond: {},
+          getPageStatus: !1,
+          time: "",
+          editPermit: null,
+          countRuleShow: !1,
+          ruleTitle: "",
+          ruleMessage: "",
+          isLoading: !1,
+          mapDialog: !1,
+          statisticsData: null,
+          clusterData: null,
+          allowSmsRemind: !1,
+          exportCompConfig: null,
+          showBigPic: !1,
+          bigPicUrl: "",
+          bigPicName: "",
+          counsellorlabel: localStorage.getItem("counsellorlabel"),
+          cId: this.$route.query.compositeId
+        }
+      },
+      destroyed() {
+        window.removeEventListener("popstate", this.goBack, !1)
+      },
+      computed: {
+        checkBatchNo() {
+          let t = "";
+          return t = this.batchNo ? 1 : 0, t
+        }
+      },
+      mounted() {
+        this.id = this.$route.query.id, window.localStorage.getItem("menu") && (this.menuInfo = JSON.parse(window.localStorage.getItem("menu")).find((t => "signin" === t.id)), this.editPermit = this.menuInfo.edit_permit), this.initBatchNoList(), this.allowSmsRemind = "true" === localStorage.getItem("remind"), window.history && window.history.pushState && (history.pushState(null, null, document.URL), window.addEventListener("popstate", this.goBack, !1))
+      },
+      methods: {
+        CountRule(t) {
+          "signin" === t ? (this.ruleTitle = "签到率", this.ruleMessage = "签到率计算规则：已签到次数/(应签到次数-已请假次数)") : "leave" === t && (this.ruleTitle = "请假率", this.ruleMessage = "请假率计算规则：已请假次数/应签到次数"), this.countRuleShow = !0
+        },
+        getData() {
+          this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "querySignin",
+            id: this.id
+          }).then((t => {
+            0 === t.data.code ? (this.record = t.data.result, this.changeBatchNo()) : this.goBack()
+          })).catch((t => {
+            this.record = {}
+          }))
+        },
+        initBatchNoList() {
+          this.id = this.$route.query.id, this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "querySigninPeriodList",
+            signin_id: this.id
+          }).then((t => {
+            if (0 === t.data.code)
+              if (this.batchNoList = t.data.result, this.getBatchnoList.length = this.batchNoList.length, this.batchNoList && this.batchNoList.length > 0) {
+                if (void 0 !== this.batchNoParam && "" !== this.batchNoParam && null !== this.batchNoParam) {
+                  this.batchNo = Number(this.batchNoParam);
+                  const t = this.batchNoList.findIndex((t => t.value === this.batchNo));
+                  this.batchLabel = this.batchNoList[t].label;
+                  for (let e = 0; e < this.batchNoList.length; e++) this.getBatchnoList[e] = e === t
+                } else {
+                  this.batchNo = this.batchNoList[0].value, this.batchLabel = this.batchNoList[0].label;
+                  for (let t = 0; t < this.batchNoList.length; t++) this.getBatchnoList[t] = 0 === t
+                }
+                this.getData()
+              } else this.batchNo = "", this.initList = [], this.initDetail = {};
+            else this.goBack()
+          })).catch((t => {
+            this.batchNoList = [], this.initList = [], this.initDetail = {}
+          }))
+        },
+        changeBatchNo() {
+          let t = "";
+          t = !0 === this.record.tea_show ? 1 : 0, this.id = this.$route.query.id, this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "querySigninResultStat",
+            signin_id: this.id,
+            batch_no: this.batchNo,
+            teaShow: t
+          }).then((t => {
+            0 === t.data.code && (this.initDetail = t.data.result, this.time = t.data.time, this.loadList((() => {})))
+          })).catch((t => {
+            this.initDetail = {}
+          })), this.signinTime = !1
+        },
+        changeSigninTime() {
+          "单次" !== this.record.frequency_name && (this.signinTime = !0)
+        },
+        checkBatchno(t) {
+          if (null != t) {
+            this.batchNo = this.batchNoList[t].value, this.batchLabel = this.batchNoList[t].label;
+            for (let e = 0; e < this.getBatchnoList.length; e++) e !== t && (this.getBatchnoList[e] = !1);
+            !1 === this.getBatchnoList[t] ? (this.timeDialog = !0, this.getBatchnoList[t] = !0) : this.changeBatchNo()
+          }
+        },
+        chooseSigninTime() {
+          this.timeDialog = !1, this.signinTime = !0
+        },
+        loadList(t) {
+          if (t && (this.paging.pageNum = 0, this.initList = []), this.paging.pageNum += 1, this.isLoading = !0, !this.id) return;
+          let e = "";
+          e = !0 === this.record.tea_show ? 1 : 0, this.$axiosAction("/api/teacher/signin/signin.api", o()(o()({
+            action: "querySigninResultList"
+          }, this.queryModel), {}, {
+            teaShow: e,
+            batch_no: this.batchNo,
+            signin_id: this.$route.query.id,
+            pageSize: this.paging.pageSize,
+            pageNum: this.paging.pageNum
+          })).then((e => {
+            if (0 === e.data.code) {
+              this.initList = this.initList.concat(e.data.result.list);
+              const {
+                pageSize: t,
+                pageNum: i,
+                rowCount: a,
+                pageCount: s,
+                startIndex: n,
+                endIndex: r
+              } = o()({}, e.data.result);
+              if (this.paging = {
+                  pageSize: t,
+                  pageNum: i,
+                  rowCount: a,
+                  pageCount: s,
+                  startIndex: n,
+                  endIndex: r
+                }, this.record.info_config)
+                for (let e = 0; e < this.record.info_config.length; e++)
+                  for (const t of this.list) t.info_result && (t["info" + e] = Object(c["c"])(this.record.info_config[e], t.info_result[e]))
+            } else this.setDefaultList();
+            t && t(), this.isLoading = !1
+          })).catch((e => {
+            this.setDefaultList(), t && t(), this.isLoading = !1
+          }))
+        },
+        setDefaultList() {
+          this.initList = [], this.paging = {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          }
+        },
+        refresh(t) {
+          this.loadList(t)
+        },
+        qrShowing(t) {
+          this.qrShowingDialog = !0, "DQR" === this.record.signin_method ? (this.getDqrCode(t), this.setInter = setInterval((() => {
+            this.getDqrCode(t)
+          }), 6e4)) : (this.getSqrCode(t), this.setInter = setInterval((() => {
+            this.getSqrCode(t)
+          }), 31536e7))
+        },
+        getSqrCode(t) {
+          this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "teaEncrytedQrCode",
+            signin_method: this.record.signin_method,
+            id: t,
+            batch_no: this.batchNo,
+            role_type: "T",
+            login_name: JSON.parse(window.localStorage.getItem("userinfo")).login_name,
+            name: JSON.parse(window.localStorage.getItem("userinfo")).name
+          }).then((t => {
+            this.downloadData.text = t.data.qrcode
+          }))
+        },
+        getDqrCode(t) {
+          this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "teaEncrytedQrCode",
+            signin_method: this.record.signin_method,
+            id: t,
+            batch_no: this.batchNo,
+            role_type: "T",
+            login_name: JSON.parse(window.localStorage.getItem("userinfo")).login_name,
+            name: JSON.parse(window.localStorage.getItem("userinfo")).name
+          }).then((t => {
+            this.downloadData.text = t.data.qrcode
+          }))
+        },
+        deleteSignin() {
+          this.id = this.$route.query.id, this.$q.dialog({
+            title: "确认删除",
+            message: '该签到信息及其产生的<span class="text-red">数据将被清空。</span>',
+            html: !0,
+            persistent: !0,
+            cancel: {
+              label: "取消",
+              outline: !0,
+              color: "grey"
+            },
+            ok: {
+              label: "删除",
+              unelevated: !0,
+              color: "negative"
+            }
+          }).onOk((() => {
+            this.$q.loading.show(), this.$axiosAction("/api/teacher/signin/signin.api", {
+              action: "deleteSignin",
+              id: this.id
+            }).then((t => {
+              0 === t.data.code && this.$router.push("/teacher/signin/index"), this.$q.loading.hide()
+            })).catch((t => {
+              this.$q.loading.hide()
+            }))
+          }))
+        },
+        openShareDialog() {
+          this.shareDialog = !0, this.shareTarget = this.record.share_target
+        },
+        updateShareTarget() {
+          this.id = this.$route.query.id, this.$q.loading.show(), this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "updateShareTarget",
+            id: this.id,
+            share_target: this.shareTarget && this.shareTarget.length > 0 ? JSON.stringify(this.shareTarget) : null
+          }).then((t => {
+            0 === t.data.code && (this.record.share_target = this.shareTarget, this.shareDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        copySignin() {
+          this.id = this.$route.query.id, this.$q.dialog({
+            title: "确认复制",
+            message: "复制该签到信息设置数据并全新发布",
+            html: !0,
+            persistent: !0,
+            cancel: {
+              label: "取消",
+              outline: !0,
+              color: "grey"
+            },
+            ok: {
+              label: "复制",
+              unelevated: !0,
+              color: "primary"
+            }
+          }).onOk((() => {
+            this.$axiosAction("/api/teacher/signin/signin.api", {
+              action: "querySigninForEditing",
+              id: this.id
+            }).then((t => {
+              0 === t.data.code && this.$router.push({
+                name: "/teacher/signin/new",
+                params: {
+                  record: t.data.result
+                }
+              })
+            })).catch((t => {}))
+          }))
+        },
+        getLoopFrequencyName(t) {
+          if (t && 0 !== t.length) {
+            const e = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"].reduce(((e, i, a) => t.indexOf(((a + 1) % 7).toString()) > -1 ? e.concat(i) : e), []);
+            return e.join("、")
+          }
+          return ""
+        },
+        exportList() {
+          if (!this.id) return;
+          let t = "";
+          t = !0 === this.record.tea_show ? 1 : 0, this.exportCompConfig = ["/api/teacher/signin/signin.api", "querySigninResultList", o()(o()({}, this.queryModel), {}, {
+            signin_id: this.$route.query.id,
+            batch_no: this.batchNo,
+            teaShow: t
+          }), {
+            [this.record.title]: "result"
+          }, this.record.title, null, t => t.reduce(((t, e) => {
+            const i = {
+              "签到结果": "未签到" === e.signin_status ? "未签到" : "已请假" === e.signin_status ? "已请假" : "已签到",
+              "签到时间": e.signin_time
+            };
+            return "L" === this.record.signin_method ? (i.学号 = e.student_no, i.姓名 = e.name, i.性别 = e.sex_name, i.位置状态 = e.location_status, i.一级行政区 = e.province, i.二级行政区 = e.city, i.详细地址 = e.address, i[this.counsellorlabel] = e.counsellor, i.手机号 = e.mob, i.年级 = e.grade_name, i.院系 = e.dep_name, i.专业 = e.major_name, i.班级 = e.class_name) : (i.二维码来源 = e.qrcode_source, i.学号 = e.student_no, i.姓名 = e.name, i.性别 = e.sex_name, i[this.counsellorlabel] = e.counsellor, i.手机号 = e.mob, i.年级 = e.grade_name, i.院系 = e.dep_name, i.专业 = e.major_name, i.班级 = e.class_name), t.concat(i)
+          }), []), 1e3, 5e3]
+        },
+        exportSigninList() {
+          this.exportCompConfig = ["/api/teacher/signin/signin.api", "exportCompleteSigninRate", {
+            id: this.record.id,
+            batch_no: this.batchNo,
+            signinStatistics: this.model.signin_statistics
+          }, {
+            [`${this.record.title}的签到统计`]: "result"
+          }, `${this.record.title}的签到统计`, null, null, null, null]
+        },
+        changeStatus(t, e) {
+          this.stuSigninId = t, this.change = "已签到" === e ? "1" : "0", this.teacherChangeStatus = !0
+        },
+        changeSigninStatus(t) {
+          this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "changeStudentSigninStatus",
+            id: t,
+            status: this.change,
+            reason: this.texterea
+          }).then((() => {
+            this.getData()
+          }))
+        },
+        checkModifiedLog(t) {
+          this.checkModified = !0, this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "queryModifiedLog",
+            id: t
+          }).then((t => {
+            0 === t.data.code && (this.modList = t.data.result)
+          })).catch((t => {
+            this.modList = []
+          }))
+        },
+        checkStuPicture(t) {
+          this.checkPicture = !0, this.link = this.$appConf.base + t[0].link
+        },
+        goBack() {
+          null !== this.cId && void 0 !== this.cId ? this.$router.push(`/teacher/signin/statistics?id=${this.id}&compositeId=${this.cId}`) : this.$router.push("/teacher/signin/statistics?id=" + this.id)
+        },
+        open() {
+          this.dialog = !0, this.originalCond = Object.keys(this.queryModel).reduce(((t, e) => (t[e] = this.queryModel[e], t)), {})
+        },
+        close() {
+          this.dialog = !1, this.queryModel = Object.keys(this.originalCond).reduce(((t, e) => (t[e] = this.originalCond[e], t)), {})
+        },
+        getValue(t, e) {
+          this.queryModel[t] === e ? this.queryModel[t] = "" : this.queryModel[t] = e
+        },
+        getCondition() {
+          this.condCount = Object.keys(this.queryModel).reduce(((t, e) => this.queryModel[e] ? t + 1 : t), 0), this.$refs.pageRefresh.trigger(), this.dialog = !1
+        },
+        downloadFile(t, e) {
+          Object(N["c"])(t, e)
+        },
+        unsigninAlert() {
+          this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "warnUnSigninStudent",
+            id: this.record.id,
+            batch_no: this.batchNo
+          })
+        },
+        sendSigninSmsRemind() {
+          this.$q.loading.show();
+          const t = JSON.parse(window.localStorage.getItem("menu")).find((t => "signin" === t.id));
+          this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "sendSmsRemind",
+            id: this.record.id,
+            title: this.record.title,
+            batch_no: this.batchNo,
+            menu_id: t.id,
+            menu_name: t.title
+          }).then((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        taskTargetDialogOpen() {
+          this.taskTargetDialog = !0, this.actionTarget = JSON.parse(JSON.stringify(this.record.task_target))
+        },
+        taskTargetExcludDialogOpen() {
+          this.taskTargetExcludDialog = !0, this.noActionTarget = JSON.parse(JSON.stringify(this.record.task_target_excluding))
+        },
+        updateActionTarget() {
+          if (this.actionTarget.length <= 0) return this.$showErrorNotify("任务对象不能为空");
+          this.$q.loading.show(), this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "updateActionTarget",
+            id: this.$route.query.id,
+            task_target: this.actionTarget && this.actionTarget.length > 0 ? JSON.stringify(this.actionTarget) : null
+          }).then((t => {
+            0 === t.data.code && (this.record.task_target = this.actionTarget, this.taskTargetDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        updateNoActionTarget() {
+          this.$q.loading.show(), this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "updateNoActionTarget",
+            id: this.$route.query.id,
+            task_target_excluding: this.noActionTarget && this.noActionTarget.length > 0 ? JSON.stringify(this.noActionTarget) : null
+          }).then((t => {
+            0 === t.data.code && (this.record.task_target_excluding = this.noActionTarget, this.taskTargetExcludDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        detailDialogOpen() {
+          this.$q.loading.show(), this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "querySigninAfter",
+            id: this.id
+          }).then((t => {
+            0 === t.data.code && (this.record.loop_frequency = t.data.result.loop_frequency, this.record.attachment = t.data.result.attachment, this.record.create_time = t.data.result.create_time, this.record.detail = t.data.result.detail, this.record.frequency = t.data.result.frequency, this.record.info_config = t.data.result.info_config, this.record.is_author = t.data.result.is_author, this.record.loop_begin_date = t.data.result.loop_begin_date, this.record.loop_begin_time = t.data.result.loop_begin_time, this.record.loop_end_date = t.data.result.loop_end_date, this.record.loop_end_time = t.data.result.loop_end_time, this.record.share_target = t.data.result.share_target, this.record.single_begin_time = t.data.result.single_begin_time, this.record.single_end_time = t.data.result.single_end_time, this.record.student_showing = t.data.result.student_showing, this.record.task_target = t.data.result.task_target, this.record.task_target_excluding = t.data.result.task_target_excluding, this.record.teacher_showing = t.data.result.teacher_showing, this.record.appointed_date = t.data.result.appointed_date, this.detailDialog = !0), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        updateShowOpen(t) {
+          if (1 === t) return this.showStuDialog = !0, void(this.studentShowing = JSON.parse(JSON.stringify(this.record.student_showing)));
+          2 === t && (this.showTeaDialog = !0, this.teacherShowing = JSON.parse(JSON.stringify(this.record.teacher_showing)))
+        },
+        updateShowTarget(t) {
+          this.$q.loading.show(), 1 !== t ? 2 === t && this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "updateTeaShow",
+            id: this.id,
+            teacher_showing: this.teacherShowing && this.teacherShowing.length > 0 ? JSON.stringify(this.teacherShowing) : null
+          }).then((t => {
+            0 === t.data.code && (this.record.teacher_showing = this.teacherShowing, this.showTeaDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          })) : this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "updateStuShow",
+            id: this.id,
+            student_showing: this.studentShowing && this.studentShowing.length > 0 ? JSON.stringify(this.studentShowing) : null
+          }).then((t => {
+            0 === t.data.code && (this.record.student_showing = this.studentShowing, this.showStuDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        exportStatisticsData() {
+          this.exportCompConfig = ["/api/teacher/signin/signin.api", "exportSigninLocationStatistics", {
+            signin_id: this.id,
+            batch_no: this.batchNo
+          }, {
+            "一级行政区分布": "province",
+            "二级行政区分布": "city",
+            "三级行政区分布": "district"
+          }, `${this.record.title}(签到位置分布数据)`, null, null, null, null]
+        },
+        showAnalysisMap() {
+          this.$q.loading.show(), this.$axiosAction("/api/teacher/signin/signin.api", {
+            action: "querySigninLocationAnalysisMap",
+            signin_id: this.id,
+            batch_no: this.batchNo
+          }).then((t => {
+            0 === t.data.code && (this.statisticsData = t.data.statisticsData, this.clusterData = t.data.clusterData, this.mapDialog = !0), this.$q.loading.hide()
+          }))
+        },
+        showPic(t, e) {
+          this.bigPicUrl = t[0].link, this.bigPicName = t[0].srcname, this.showBigPic = !0
+        }
+      }
+    },
+    D = L,
+    $ = i("4d5a"),
+    T = i("e359"),
+    I = i("65c6"),
+    Q = i("9c40"),
+    B = i("6ac5"),
+    A = i("58a81"),
+    z = i("eb85"),
+    M = i("9404"),
+    O = i("4983"),
+    P = i("1c1c"),
+    R = i("0016"),
+    J = i("09e3"),
+    j = i("9989"),
+    E = i("6a67"),
+    U = i("59d7"),
+    F = i("8380"),
+    V = i("24e8"),
+    H = i("6b1d"),
+    G = i("a370"),
+    K = i("27f9"),
+    W = i("9564"),
+    X = i("4b7e"),
+    Y = i("068f"),
+    Z = i("7ff0"),
+    tt = i("429b"),
+    et = i("7460"),
+    it = i("714f"),
+    at = i("7f67"),
+    st = Object(m["a"])(D, a, s, !1, null, null, null);
+  e["default"] = st.exports;
+  w()(st, "components", {
+    QLayout: $["a"],
+    QHeader: T["a"],
+    QToolbar: I["a"],
+    QBtn: Q["a"],
+    QToolbarTitle: B["a"],
+    QBadge: A["a"],
+    QCard: p["a"],
+    QItem: _["a"],
+    QItemSection: b["a"],
+    QItemLabel: v["a"],
+    QSeparator: z["a"],
+    QDrawer: M["a"],
+    QScrollArea: O["a"],
+    QList: P["a"],
+    QIcon: R["a"],
+    QPageContainer: J["a"],
+    QPage: j["a"],
+    QBtnToggle: E["a"],
+    QPullToRefresh: U["a"],
+    QSpinnerDots: F["a"],
+    QDialog: V["a"],
+    QLinearProgress: H["a"],
+    QCardSection: G["a"],
+    QInput: K["a"],
+    QToggle: W["a"],
+    QCardActions: X["a"],
+    QImg: Y["a"],
+    QFooter: Z["a"],
+    QTabs: tt["a"],
+    QTab: et["a"]
+  }), w()(st, "directives", {
+    Ripple: it["a"],
+    ClosePopup: at["a"]
+  })
+}

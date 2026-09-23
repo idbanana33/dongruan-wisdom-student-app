@@ -1,0 +1,1689 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+  [109],
+  {
+    "54fe": function (t, i, e) {
+      "use strict";
+      e.r(i);
+      var n = function () {
+          var t = this,
+            i = t.$createElement,
+            e = t._self._c || i;
+          return e(
+            "q-layout",
+            { attrs: { view: "lHh lpr lFf" } },
+            [
+              e(
+                "q-header",
+                { staticClass: "bg-grey-3 text-black" },
+                [
+                  e(
+                    "q-toolbar",
+                    [
+                      e("q-btn", {
+                        attrs: { flat: "", round: "", dense: "", icon: "keyboard_arrow_left" },
+                        on: { click: t.goBack },
+                      }),
+                      e("q-toolbar-title", [t._v("新建查寝任务")]),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+              e(
+                "q-page-container",
+                [
+                  e(
+                    "q-page",
+                    { staticClass: "bg-white-3" },
+                    [
+                      e(
+                        "q-form",
+                        { staticClass: "q-gutter-sm full-width", on: { submit: t.saveSanitation } },
+                        [
+                          t.menuInfo
+                            ? e(
+                                "q-card",
+                                { staticClass: "full-width", attrs: { flat: "" } },
+                                [
+                                  e(
+                                    "q-list",
+                                    [
+                                      e(
+                                        "q-item",
+                                        [
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e("q-item-label", { staticClass: "text-bold" }, [
+                                                t._v("寝室检查通知内容"),
+                                              ]),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator"),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e(
+                                              "div",
+                                              { staticClass: "neu-css-before-red-asterisk" },
+                                              [t._v("\n                名称\n              ")],
+                                            ),
+                                          ]),
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e("q-input", {
+                                                attrs: {
+                                                  outlined: "",
+                                                  dense: "",
+                                                  "hide-bottom-space": "",
+                                                  "lazy-rules": "",
+                                                  rules: [
+                                                    function (t) {
+                                                      return !!t || "请填写该项";
+                                                    },
+                                                  ],
+                                                },
+                                                model: {
+                                                  value: t.sanitation.title,
+                                                  callback: function (i) {
+                                                    t.$set(t.sanitation, "title", i);
+                                                  },
+                                                  expression: "sanitation.title",
+                                                },
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator"),
+                                      e("q-item", [
+                                        e("div", { staticClass: "row" }, [
+                                          e(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "col-12 col-md-2 col-sm-3 neu-css-before-red-asterisk",
+                                              class: t.$q.screen.lt.sm ? "" : "text-right",
+                                            },
+                                            [t._v("要求")],
+                                          ),
+                                          e(
+                                            "div",
+                                            { staticClass: "col-12 col-md-10 col-sm-9" },
+                                            [
+                                              e("q-editor", {
+                                                attrs: {
+                                                  toolbar: t.editorToolBar,
+                                                  fonts: t.editorFonts,
+                                                  "min-height": "10em",
+                                                  "hide-bottom-space": "",
+                                                  "lazy-rules": "",
+                                                  rules: [
+                                                    function (t) {
+                                                      return !!t || "请填写该项";
+                                                    },
+                                                  ],
+                                                },
+                                                model: {
+                                                  value: t.sanitation.detail,
+                                                  callback: function (i) {
+                                                    t.$set(t.sanitation, "detail", i);
+                                                  },
+                                                  expression: "sanitation.detail",
+                                                },
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ]),
+                                      ]),
+                                      e("q-separator", {
+                                        staticStyle: { height: "7px" },
+                                        attrs: { color: "grey-3" },
+                                      }),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e("q-item-label", { staticClass: "text-bold" }, [
+                                                t._v("填写有效期间"),
+                                              ]),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator"),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e(
+                                              "div",
+                                              { staticClass: "neu-css-before-red-asterisk" },
+                                              [t._v("\n                开始时间\n              ")],
+                                            ),
+                                          ]),
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e("q-field", {
+                                                staticStyle: { width: "100%" },
+                                                attrs: {
+                                                  outlined: "",
+                                                  dense: "",
+                                                  "stack-label": "",
+                                                  "hide-bottom-space": "",
+                                                  "lazy-rules": "",
+                                                  rules: [
+                                                    function (t) {
+                                                      return !!t || "请填写该项";
+                                                    },
+                                                  ],
+                                                  value: t.sanitation.begin_date,
+                                                },
+                                                scopedSlots: t._u(
+                                                  [
+                                                    {
+                                                      key: "control",
+                                                      fn: function () {
+                                                        return [
+                                                          t._v(t._s(t.sanitation.begin_date)),
+                                                        ];
+                                                      },
+                                                      proxy: !0,
+                                                    },
+                                                    {
+                                                      key: "append",
+                                                      fn: function () {
+                                                        return [
+                                                          e(
+                                                            "q-icon",
+                                                            {
+                                                              staticClass: "cursor-pointer",
+                                                              attrs: { name: "event" },
+                                                            },
+                                                            [
+                                                              e(
+                                                                "q-popup-proxy",
+                                                                {
+                                                                  attrs: {
+                                                                    "transition-show": "scale",
+                                                                    "transition-hide": "scale",
+                                                                  },
+                                                                },
+                                                                [
+                                                                  e(
+                                                                    "div",
+                                                                    [
+                                                                      e(
+                                                                        "q-date",
+                                                                        {
+                                                                          attrs: {
+                                                                            flat: "",
+                                                                            minimal: "",
+                                                                            mask: "YYYY-MM-DD",
+                                                                          },
+                                                                          model: {
+                                                                            value:
+                                                                              t.sanitation
+                                                                                .begin_date,
+                                                                            callback: function (i) {
+                                                                              t.$set(
+                                                                                t.sanitation,
+                                                                                "begin_date",
+                                                                                i,
+                                                                              );
+                                                                            },
+                                                                            expression:
+                                                                              "sanitation.begin_date",
+                                                                          },
+                                                                        },
+                                                                        [
+                                                                          e(
+                                                                            "div",
+                                                                            {
+                                                                              staticClass:
+                                                                                "row items-center justify-end",
+                                                                            },
+                                                                            [
+                                                                              e("q-btn", {
+                                                                                directives: [
+                                                                                  {
+                                                                                    name: "close-popup",
+                                                                                    rawName:
+                                                                                      "v-close-popup",
+                                                                                  },
+                                                                                ],
+                                                                                attrs: {
+                                                                                  dense: "",
+                                                                                  label: "关闭",
+                                                                                  flat: "",
+                                                                                },
+                                                                              }),
+                                                                            ],
+                                                                            1,
+                                                                          ),
+                                                                        ],
+                                                                      ),
+                                                                    ],
+                                                                    1,
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            ],
+                                                            1,
+                                                          ),
+                                                        ];
+                                                      },
+                                                      proxy: !0,
+                                                    },
+                                                  ],
+                                                  null,
+                                                  !1,
+                                                  1347279859,
+                                                ),
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator"),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e(
+                                              "div",
+                                              { staticClass: "neu-css-before-red-asterisk" },
+                                              [t._v("\n                截止时间\n              ")],
+                                            ),
+                                          ]),
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e("q-field", {
+                                                staticStyle: { width: "100%" },
+                                                attrs: {
+                                                  outlined: "",
+                                                  dense: "",
+                                                  "stack-label": "",
+                                                  "hide-bottom-space": "",
+                                                  "lazy-rules": "",
+                                                  rules: [
+                                                    function (t) {
+                                                      return !!t || "请填写该项";
+                                                    },
+                                                    function (i) {
+                                                      return (
+                                                        i > t.sanitation.begin_date ||
+                                                        "截止日期应在开始日期之后"
+                                                      );
+                                                    },
+                                                  ],
+                                                  value: t.sanitation.end_date,
+                                                },
+                                                scopedSlots: t._u(
+                                                  [
+                                                    {
+                                                      key: "control",
+                                                      fn: function () {
+                                                        return [t._v(t._s(t.sanitation.end_date))];
+                                                      },
+                                                      proxy: !0,
+                                                    },
+                                                    {
+                                                      key: "append",
+                                                      fn: function () {
+                                                        return [
+                                                          e(
+                                                            "q-icon",
+                                                            {
+                                                              staticClass: "cursor-pointer",
+                                                              attrs: { name: "event" },
+                                                            },
+                                                            [
+                                                              e(
+                                                                "q-popup-proxy",
+                                                                {
+                                                                  attrs: {
+                                                                    "transition-show": "scale",
+                                                                    "transition-hide": "scale",
+                                                                  },
+                                                                },
+                                                                [
+                                                                  e(
+                                                                    "div",
+                                                                    [
+                                                                      e(
+                                                                        "q-date",
+                                                                        {
+                                                                          attrs: {
+                                                                            flat: "",
+                                                                            minimal: "",
+                                                                            mask: "YYYY-MM-DD",
+                                                                          },
+                                                                          model: {
+                                                                            value:
+                                                                              t.sanitation.end_date,
+                                                                            callback: function (i) {
+                                                                              t.$set(
+                                                                                t.sanitation,
+                                                                                "end_date",
+                                                                                i,
+                                                                              );
+                                                                            },
+                                                                            expression:
+                                                                              "sanitation.end_date",
+                                                                          },
+                                                                        },
+                                                                        [
+                                                                          e(
+                                                                            "div",
+                                                                            {
+                                                                              staticClass:
+                                                                                "row items-center justify-end",
+                                                                            },
+                                                                            [
+                                                                              e("q-btn", {
+                                                                                directives: [
+                                                                                  {
+                                                                                    name: "close-popup",
+                                                                                    rawName:
+                                                                                      "v-close-popup",
+                                                                                  },
+                                                                                ],
+                                                                                attrs: {
+                                                                                  dense: "",
+                                                                                  label: "关闭",
+                                                                                  flat: "",
+                                                                                },
+                                                                              }),
+                                                                            ],
+                                                                            1,
+                                                                          ),
+                                                                        ],
+                                                                      ),
+                                                                    ],
+                                                                    1,
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            ],
+                                                            1,
+                                                          ),
+                                                        ];
+                                                      },
+                                                      proxy: !0,
+                                                    },
+                                                  ],
+                                                  null,
+                                                  !1,
+                                                  1812385779,
+                                                ),
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator", {
+                                        staticStyle: { height: "7px" },
+                                        attrs: { color: "grey-3" },
+                                      }),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e(
+                                              "div",
+                                              { staticClass: "neu-css-before-red-asterisk" },
+                                              [
+                                                t._v(
+                                                  "\n                " +
+                                                    t._s(t.menuInfo.title) +
+                                                    "配置\n              ",
+                                                ),
+                                              ],
+                                            ),
+                                          ]),
+                                          e("q-item-section"),
+                                          e(
+                                            "q-item-section",
+                                            { attrs: { side: "" } },
+                                            [
+                                              e(
+                                                "q-item-label",
+                                                { staticClass: "row items-center" },
+                                                [
+                                                  e(
+                                                    "span",
+                                                    {
+                                                      class:
+                                                        0 === t.sanitation.info_config.length
+                                                          ? "text-grey"
+                                                          : "text-primary",
+                                                      attrs: { size: "md" },
+                                                      on: {
+                                                        click: function (i) {
+                                                          return t.addInfoConfig(
+                                                            t.sanitation.info_config.length,
+                                                          );
+                                                        },
+                                                      },
+                                                    },
+                                                    [t._v("添加")],
+                                                  ),
+                                                  e("q-icon", {
+                                                    class:
+                                                      0 === t.sanitation.info_config.length
+                                                        ? "text-grey"
+                                                        : "text-primary",
+                                                    attrs: {
+                                                      name: "keyboard_arrow_right",
+                                                      size: "sm",
+                                                    },
+                                                  }),
+                                                ],
+                                                1,
+                                              ),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e(
+                                        "q-item",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "show",
+                                              rawName: "v-show",
+                                              value: 0 !== t.sanitation.info_config.length,
+                                              expression: "sanitation.info_config.length !== 0",
+                                            },
+                                          ],
+                                        },
+                                        [
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e("q-item-label", { staticClass: "q-my-sm" }, [
+                                                t._v(t._s(t.menuInfo.title) + "项目"),
+                                              ]),
+                                              t._l(t.sanitation.info_config, function (i, n) {
+                                                return e(
+                                                  "div",
+                                                  {
+                                                    key: n,
+                                                    staticClass: "bg-grey-2 q-pa-sm q-mt-sm",
+                                                  },
+                                                  [
+                                                    e("div", [
+                                                      e(
+                                                        "span",
+                                                        { staticClass: "neu-css-after-colon" },
+                                                        [t._v("第" + t._s(n + 1) + "检查项")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "text-primary cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.editInfoConfig(n);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("编辑")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "text-negative cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.deleteInfoConfig(n);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("删除")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          directives: [
+                                                            {
+                                                              name: "show",
+                                                              rawName: "v-show",
+                                                              value:
+                                                                n + 1 !=
+                                                                t.sanitation.info_config.length,
+                                                              expression:
+                                                                "index + 1 != sanitation.info_config.length",
+                                                            },
+                                                          ],
+                                                          staticClass:
+                                                            "text-primary cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.moveInfoConfig(n, 1);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("下移")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          directives: [
+                                                            {
+                                                              name: "show",
+                                                              rawName: "v-show",
+                                                              value: 0 != n,
+                                                              expression: "index != 0",
+                                                            },
+                                                          ],
+                                                          staticClass:
+                                                            "text-primary cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.moveInfoConfig(n, -1);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("上移")],
+                                                      ),
+                                                    ]),
+                                                    e("neu-widget", {
+                                                      attrs: { config: i, viewMode: !0 },
+                                                      model: {
+                                                        value: t.infoModel[n],
+                                                        callback: function (i) {
+                                                          t.$set(t.infoModel, n, i);
+                                                        },
+                                                        expression: "infoModel[index]",
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1,
+                                                );
+                                              }),
+                                            ],
+                                            2,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator", {
+                                        staticStyle: { height: "7px" },
+                                        attrs: { color: "grey-3" },
+                                      }),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e("div", [
+                                              t._v(
+                                                "\n                学生个人检查配置\n              ",
+                                              ),
+                                            ]),
+                                          ]),
+                                          e("q-item-section"),
+                                          e(
+                                            "q-item-section",
+                                            { attrs: { side: "" } },
+                                            [
+                                              e("q-toggle", {
+                                                attrs: {
+                                                  size: "lg",
+                                                  "checked-icon": "check",
+                                                  "unchecked-icon": "clear",
+                                                  dense: "",
+                                                  "false-value": "0",
+                                                  "true-value": "1",
+                                                },
+                                                model: {
+                                                  value: t.studentSet,
+                                                  callback: function (i) {
+                                                    t.studentSet = i;
+                                                  },
+                                                  expression: "studentSet",
+                                                },
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e(
+                                        "q-item",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "show",
+                                              rawName: "v-show",
+                                              value: "1" === t.studentSet,
+                                              expression: "studentSet === '1'",
+                                            },
+                                          ],
+                                        },
+                                        [
+                                          e(
+                                            "q-item-section",
+                                            [
+                                              e(
+                                                "div",
+                                                { staticClass: "row" },
+                                                [
+                                                  e(
+                                                    "q-item-label",
+                                                    {
+                                                      staticClass:
+                                                        "neu-css-before-red-asterisk q-my-sm",
+                                                    },
+                                                    [t._v("学生个人检查配置项目")],
+                                                  ),
+                                                  e(
+                                                    "div",
+                                                    { staticStyle: { "margin-left": "128px" } },
+                                                    [
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          class:
+                                                            0 ===
+                                                            t.sanitation.stu_info_config.length
+                                                              ? "text-grey"
+                                                              : "text-primary",
+                                                          attrs: { size: "md" },
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.addStuInfoConfig(
+                                                                t.sanitation.stu_info_config.length,
+                                                              );
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("添加")],
+                                                      ),
+                                                      e("q-icon", {
+                                                        class:
+                                                          0 === t.sanitation.stu_info_config.length
+                                                            ? "text-grey"
+                                                            : "text-primary",
+                                                        attrs: {
+                                                          name: "keyboard_arrow_right",
+                                                          size: "sm",
+                                                        },
+                                                      }),
+                                                    ],
+                                                    1,
+                                                  ),
+                                                ],
+                                                1,
+                                              ),
+                                              t._l(t.sanitation.stu_info_config, function (i, n) {
+                                                return e(
+                                                  "div",
+                                                  {
+                                                    key: n,
+                                                    staticClass: "bg-grey-2 q-pa-sm q-mt-sm",
+                                                  },
+                                                  [
+                                                    e("div", [
+                                                      e(
+                                                        "span",
+                                                        { staticClass: "neu-css-after-colon" },
+                                                        [t._v("第" + t._s(n + 1) + "检查项")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "text-primary cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.editStuInfoConfig(n);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("编辑")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "text-negative cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.deleteStuInfoConfig(n);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("删除")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          directives: [
+                                                            {
+                                                              name: "show",
+                                                              rawName: "v-show",
+                                                              value:
+                                                                n + 1 !=
+                                                                t.sanitation.stu_info_config.length,
+                                                              expression:
+                                                                "index + 1 != sanitation.stu_info_config.length",
+                                                            },
+                                                          ],
+                                                          staticClass:
+                                                            "text-primary cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.moveStuInfoConfig(n, 1);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("下移")],
+                                                      ),
+                                                      e(
+                                                        "span",
+                                                        {
+                                                          directives: [
+                                                            {
+                                                              name: "show",
+                                                              rawName: "v-show",
+                                                              value: 0 != n,
+                                                              expression: "index != 0",
+                                                            },
+                                                          ],
+                                                          staticClass:
+                                                            "text-primary cursor-pointer q-ml-sm",
+                                                          on: {
+                                                            click: function (i) {
+                                                              return t.moveStuInfoConfig(n, -1);
+                                                            },
+                                                          },
+                                                        },
+                                                        [t._v("上移")],
+                                                      ),
+                                                    ]),
+                                                    e("neu-widget", {
+                                                      attrs: { config: i, viewMode: !0 },
+                                                      model: {
+                                                        value: t.stuInfoModel[n],
+                                                        callback: function (i) {
+                                                          t.$set(t.stuInfoModel, n, i);
+                                                        },
+                                                        expression: "stuInfoModel[index]",
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1,
+                                                );
+                                              }),
+                                            ],
+                                            2,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator", {
+                                        staticStyle: { height: "7px" },
+                                        attrs: { color: "grey-3" },
+                                      }),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e(
+                                              "div",
+                                              { staticClass: "neu-css-before-red-asterisk" },
+                                              [
+                                                t._v(
+                                                  "\n                " +
+                                                    t._s(t.menuInfo.title) +
+                                                    "执行对象\n              ",
+                                                ),
+                                              ],
+                                            ),
+                                          ]),
+                                          e("q-item-section"),
+                                          e(
+                                            "q-item-section",
+                                            { attrs: { side: "" } },
+                                            [
+                                              e(
+                                                "q-item-label",
+                                                { staticClass: "row items-center" },
+                                                [
+                                                  e(
+                                                    "span",
+                                                    {
+                                                      class:
+                                                        0 === t.sanitation.task_target.length
+                                                          ? "text-grey"
+                                                          : "text-primary",
+                                                      attrs: { size: "md" },
+                                                      on: {
+                                                        click: function (i) {
+                                                          t.taskTargetDialog = !0;
+                                                        },
+                                                      },
+                                                    },
+                                                    [
+                                                      t._v(
+                                                        t._s(
+                                                          0 === t.sanitation.task_target.length
+                                                            ? "请选择"
+                                                            : "已选择 (" +
+                                                                t.sanitation.task_target.length +
+                                                                ")",
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  e("q-icon", {
+                                                    class:
+                                                      0 === t.sanitation.task_target.length
+                                                        ? "text-grey"
+                                                        : "text-primary",
+                                                    attrs: {
+                                                      name: "keyboard_arrow_right",
+                                                      size: "sm",
+                                                    },
+                                                  }),
+                                                ],
+                                                1,
+                                              ),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e(
+                                        "div",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "show",
+                                              rawName: "v-show",
+                                              value: !1,
+                                              expression: "false",
+                                            },
+                                          ],
+                                          staticClass: "row items-center",
+                                        },
+                                        [
+                                          e(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "col-12 col-md-2 col-sm-3 neu-css-after-colon neu-css-before-red-asterisk",
+                                              class: t.$q.screen.lt.sm ? "" : "text-right",
+                                            },
+                                            [t._v("已选择")],
+                                          ),
+                                          e(
+                                            "div",
+                                            { staticClass: "col-12 col-md-10 col-sm-9" },
+                                            [
+                                              e("neu-view-assigned-teacher", {
+                                                attrs: { value: t.sanitation.task_target },
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                      ),
+                                      e("q-separator", {
+                                        staticStyle: { height: "7px" },
+                                        attrs: { color: "grey-3" },
+                                      }),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e("q-item-section", { attrs: { avatar: "" } }, [
+                                            e(
+                                              "div",
+                                              { staticClass: "neu-css-before-red-asterisk" },
+                                              [
+                                                t._v(
+                                                  "\n                允许填写人自己删除记录\n              ",
+                                                ),
+                                              ],
+                                            ),
+                                          ]),
+                                          e("q-item-section"),
+                                          e(
+                                            "q-item-section",
+                                            { attrs: { side: "" } },
+                                            [
+                                              e("q-toggle", {
+                                                attrs: {
+                                                  size: "lg",
+                                                  "checked-icon": "check",
+                                                  "unchecked-icon": "clear",
+                                                  dense: "",
+                                                  "false-value": 0,
+                                                  "true-value": 1,
+                                                },
+                                                model: {
+                                                  value: t.sanitation.allow_delete,
+                                                  callback: function (i) {
+                                                    t.$set(t.sanitation, "allow_delete", i);
+                                                  },
+                                                  expression: "sanitation.allow_delete",
+                                                },
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e("q-separator", {
+                                        staticStyle: { height: "7px" },
+                                        attrs: { color: "grey-3" },
+                                      }),
+                                      e(
+                                        "q-item",
+                                        [
+                                          e(
+                                            "q-item-section",
+                                            { attrs: { avatar: "" } },
+                                            [
+                                              e("q-item-label", [t._v("共享对象")]),
+                                              e("q-item-label", { attrs: { caption: "" } }, [
+                                                t._v("将该查寝统计数据共享给其他老师"),
+                                              ]),
+                                            ],
+                                            1,
+                                          ),
+                                          e("q-item-section"),
+                                          e(
+                                            "q-item-section",
+                                            { attrs: { side: "" } },
+                                            [
+                                              e(
+                                                "q-item-label",
+                                                { staticClass: "row items-center" },
+                                                [
+                                                  e(
+                                                    "span",
+                                                    {
+                                                      class:
+                                                        0 === t.sanitation.share_target.length
+                                                          ? "text-grey"
+                                                          : "text-primary",
+                                                      attrs: { size: "md" },
+                                                      on: {
+                                                        click: function (i) {
+                                                          t.shareDialog = !0;
+                                                        },
+                                                      },
+                                                    },
+                                                    [
+                                                      t._v(
+                                                        t._s(
+                                                          0 === t.sanitation.share_target.length
+                                                            ? "请选择"
+                                                            : "已选择 (" +
+                                                                t.sanitation.share_target.length +
+                                                                ")",
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  e("q-icon", {
+                                                    class:
+                                                      0 === t.sanitation.share_target.length
+                                                        ? "text-grey"
+                                                        : "text-primary",
+                                                    attrs: {
+                                                      name: "keyboard_arrow_right",
+                                                      size: "sm",
+                                                    },
+                                                  }),
+                                                ],
+                                                1,
+                                              ),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                        1,
+                                      ),
+                                      e(
+                                        "div",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "show",
+                                              rawName: "v-show",
+                                              value: !1,
+                                              expression: "false",
+                                            },
+                                          ],
+                                          staticClass: "row items-center",
+                                        },
+                                        [
+                                          e(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "col-12 col-md-2 col-sm-3 neu-css-after-colon",
+                                              class: t.$q.screen.lt.sm ? "" : "text-right",
+                                            },
+                                            [t._v("已选择")],
+                                          ),
+                                          e(
+                                            "div",
+                                            { staticClass: "col-12 col-md-10 col-sm-9" },
+                                            [
+                                              e("neu-view-assigned-teacher", {
+                                                attrs: { value: t.sanitation.share_target },
+                                              }),
+                                            ],
+                                            1,
+                                          ),
+                                        ],
+                                      ),
+                                      e("q-separator"),
+                                    ],
+                                    1,
+                                  ),
+                                ],
+                                1,
+                              )
+                            : t._e(),
+                          e(
+                            "q-footer",
+                            {
+                              staticClass: "bg-white text-primary",
+                              staticStyle: {
+                                height: "2.8rem",
+                                "margin-left": "0px",
+                                border: "0px",
+                              },
+                              attrs: { bordered: "" },
+                            },
+                            [
+                              e("q-btn", {
+                                staticStyle: { width: "40%", height: "100%" },
+                                attrs: {
+                                  outline: "",
+                                  color: "grey",
+                                  label: "取消",
+                                  to: "/teacher/sanitation/index",
+                                },
+                              }),
+                              e("q-btn", {
+                                staticStyle: { width: "60%", height: "100%" },
+                                attrs: { color: "primary", label: "发布", type: "submit" },
+                              }),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      e(
+                        "q-dialog",
+                        {
+                          attrs: { persistent: "" },
+                          model: {
+                            value: t.infoConfigDialog,
+                            callback: function (i) {
+                              t.infoConfigDialog = i;
+                            },
+                            expression: "infoConfigDialog",
+                          },
+                        },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              e("q-card-section", [
+                                e("div", { staticClass: "text-bold" }, [t._v("寝室检查配置")]),
+                              ]),
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-define-widget", {
+                                    on: {
+                                      save: function (i) {
+                                        t.infoConfigDialog = !1;
+                                      },
+                                      cancel: t.cancelInfoConfig,
+                                    },
+                                    model: {
+                                      value: t.sanitation.info_config[t.infoConfigIndex],
+                                      callback: function (i) {
+                                        t.$set(t.sanitation.info_config, t.infoConfigIndex, i);
+                                      },
+                                      expression: "sanitation.info_config[infoConfigIndex]",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      e(
+                        "q-dialog",
+                        {
+                          attrs: { persistent: "" },
+                          model: {
+                            value: t.StuinfoConfigDialog,
+                            callback: function (i) {
+                              t.StuinfoConfigDialog = i;
+                            },
+                            expression: "StuinfoConfigDialog",
+                          },
+                        },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              e("q-card-section", [
+                                e("div", { staticClass: "text-bold" }, [t._v("学生检查配置")]),
+                              ]),
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-define-widget", {
+                                    on: {
+                                      save: function (i) {
+                                        t.StuinfoConfigDialog = !1;
+                                      },
+                                      cancel: t.stucancelInfoConfig,
+                                    },
+                                    model: {
+                                      value: t.sanitation.stu_info_config[t.stuInfoConfigIndex],
+                                      callback: function (i) {
+                                        t.$set(
+                                          t.sanitation.stu_info_config,
+                                          t.stuInfoConfigIndex,
+                                          i,
+                                        );
+                                      },
+                                      expression: "sanitation.stu_info_config[stuInfoConfigIndex]",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      e(
+                        "q-dialog",
+                        {
+                          attrs: { persistent: "", fullWidth: "", maximized: !0 },
+                          model: {
+                            value: t.taskTargetDialog,
+                            callback: function (i) {
+                              t.taskTargetDialog = i;
+                            },
+                            expression: "taskTargetDialog",
+                          },
+                        },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              e("q-toolbar", [
+                                e(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "full-width row items-center justify-between q-px-xs q-py-sm",
+                                  },
+                                  [
+                                    e("div", { staticClass: "text-bold text-black" }, [
+                                      t._v("设置填写对象"),
+                                    ]),
+                                    e("q-btn", {
+                                      attrs: { unelevated: "", color: "primary", label: "完成" },
+                                      on: {
+                                        click: function (i) {
+                                          t.taskTargetDialog = !1;
+                                        },
+                                      },
+                                    }),
+                                  ],
+                                  1,
+                                ),
+                              ]),
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-assign-teacher", {
+                                    model: {
+                                      value: t.sanitation.task_target,
+                                      callback: function (i) {
+                                        t.$set(t.sanitation, "task_target", i);
+                                      },
+                                      expression: "sanitation.task_target",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      e(
+                        "q-dialog",
+                        {
+                          attrs: { persistent: "", fullWidth: "", maximized: !0 },
+                          model: {
+                            value: t.shareDialog,
+                            callback: function (i) {
+                              t.shareDialog = i;
+                            },
+                            expression: "shareDialog",
+                          },
+                        },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              e("q-toolbar", [
+                                e(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "full-width row items-center justify-between q-px-xs q-py-sm",
+                                  },
+                                  [
+                                    e("div", { staticClass: "text-bold text-black" }, [
+                                      t._v("设置共享对象"),
+                                    ]),
+                                    e("q-btn", {
+                                      attrs: { unelevated: "", color: "primary", label: "完成" },
+                                      on: {
+                                        click: function (i) {
+                                          t.shareDialog = !1;
+                                        },
+                                      },
+                                    }),
+                                  ],
+                                  1,
+                                ),
+                              ]),
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-assign-teacher", {
+                                    model: {
+                                      value: t.sanitation.share_target,
+                                      callback: function (i) {
+                                        t.$set(t.sanitation, "share_target", i);
+                                      },
+                                      expression: "sanitation.share_target",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      e(
+                        "q-dialog",
+                        {
+                          attrs: { persistent: "", maximized: !0 },
+                          model: {
+                            value: t.infoConfigDialog,
+                            callback: function (i) {
+                              t.infoConfigDialog = i;
+                            },
+                            expression: "infoConfigDialog",
+                          },
+                        },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              e("q-card-section", [
+                                e("div", { staticClass: "text-bold" }, [t._v("寝室检查配置")]),
+                              ]),
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-define-widget", {
+                                    on: {
+                                      save: function (i) {
+                                        t.infoConfigDialog = !1;
+                                      },
+                                      cancel: t.cancelInfoConfig,
+                                    },
+                                    model: {
+                                      value: t.sanitation.info_config[t.infoConfigIndex],
+                                      callback: function (i) {
+                                        t.$set(t.sanitation.info_config, t.infoConfigIndex, i);
+                                      },
+                                      expression: "sanitation.info_config[infoConfigIndex]",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      e(
+                        "q-dialog",
+                        {
+                          attrs: { persistent: "", maximized: !0 },
+                          model: {
+                            value: t.StuinfoConfigDialog,
+                            callback: function (i) {
+                              t.StuinfoConfigDialog = i;
+                            },
+                            expression: "StuinfoConfigDialog",
+                          },
+                        },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width", attrs: { flat: "" } },
+                            [
+                              e("q-card-section", [
+                                e("div", { staticClass: "text-bold" }, [t._v("学生检查配置")]),
+                              ]),
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-define-widget", {
+                                    on: {
+                                      save: function (i) {
+                                        t.StuinfoConfigDialog = !1;
+                                      },
+                                      cancel: t.stucancelInfoConfig,
+                                    },
+                                    model: {
+                                      value: t.sanitation.stu_info_config[t.stuInfoConfigIndex],
+                                      callback: function (i) {
+                                        t.$set(
+                                          t.sanitation.stu_info_config,
+                                          t.stuInfoConfigIndex,
+                                          i,
+                                        );
+                                      },
+                                      expression: "sanitation.stu_info_config[stuInfoConfigIndex]",
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+            ],
+            1,
+          );
+        },
+        a = [],
+        s = (e("a434"), e("ded3")),
+        o = e.n(s),
+        r = e("9a3d"),
+        l = e("8bef"),
+        c = e("5333"),
+        f = e("974f"),
+        d = {
+          name: "SanitationNew",
+          components: {
+            NeuAssignTeacher: r["a"],
+            NeuDefineWidget: l["a"],
+            NeuViewAssignedTeacher: c["a"],
+            NeuWidget: f["a"],
+          },
+          data() {
+            return {
+              editorToolBar: JSON.parse(window.localStorage.editorToolBar),
+              editorFonts: JSON.parse(window.localStorage.editorFonts),
+              menuInfo: null,
+              infoConfigDialog: !1,
+              StuinfoConfigDialog: !1,
+              taskTargetDialog: !1,
+              shareDialog: !1,
+              infoConfigIndex: 0,
+              stuInfoConfigIndex: 0,
+              sanitation: {
+                title: "",
+                detail: "",
+                info_config: [],
+                stu_info_config: [],
+                begin_date: "",
+                end_date: "",
+                task_target: [],
+                share_target: [],
+                allow_delete: 0,
+              },
+              studentSet: "0",
+              infoModel: [],
+              stuInfoModel: [],
+            };
+          },
+          mounted() {
+            (window.localStorage.getItem("menu") &&
+              (this.menuInfo = JSON.parse(window.localStorage.getItem("menu")).find(
+                (t) => "sanitation" === t.id,
+              )),
+              this.$route.params &&
+                this.$route.params.sanitation &&
+                ((this.sanitation = this.$route.params.sanitation),
+                this.sanitation.stu_info_config.length > 0
+                  ? (this.studentSet = "1")
+                  : (this.studentSet = "0")));
+          },
+          methods: {
+            goBack() {
+              this.$router.push("/teacher/sanitation/index");
+            },
+            cancelInfoConfig() {
+              (this.sanitation.info_config[this.infoConfigIndex] ||
+                (this.sanitation.info_config.splice(this.infoConfigIndex, 1),
+                this.infoModel.splice(this.infoConfigIndex, 1)),
+                (this.infoConfigDialog = !1));
+            },
+            stucancelInfoConfig() {
+              (this.sanitation.stu_info_config[this.stuInfoConfigIndex] ||
+                (this.sanitation.stu_info_config.splice(this.stuInfoConfigIndex, 1),
+                this.stuInfoModel.splice(this.stuInfoConfigIndex, 1)),
+                (this.StuinfoConfigDialog = !1));
+            },
+            addInfoConfig(t) {
+              (this.sanitation.info_config.splice(t, 0, null),
+                this.infoModel.splice(t, 0, null),
+                (this.infoConfigDialog = !0),
+                (this.infoConfigIndex = t));
+            },
+            addStuInfoConfig(t) {
+              (this.sanitation.stu_info_config.splice(t, 0, null),
+                this.stuInfoModel.splice(t, 0, null),
+                (this.StuinfoConfigDialog = !0),
+                (this.stuInfoConfigIndex = t));
+            },
+            editInfoConfig(t) {
+              ((this.infoConfigDialog = !0), (this.infoConfigIndex = t));
+            },
+            editStuInfoConfig(t) {
+              ((this.StuinfoConfigDialog = !0), (this.stuInfoConfigIndex = t));
+            },
+            deleteInfoConfig(t) {
+              (this.sanitation.info_config.splice(t, 1), this.infoModel.splice(t, 1));
+            },
+            deleteStuInfoConfig(t) {
+              (this.sanitation.stu_info_config.splice(t, 1), this.stuInfoModel.splice(t, 1));
+            },
+            moveInfoConfig(t, i) {
+              (this.sanitation.info_config.splice(
+                t + i,
+                0,
+                this.sanitation.info_config.splice(t, 1)[0],
+              ),
+                this.infoModel.splice(t + i, 0, this.infoModel.splice(t, 1)[0]));
+            },
+            moveStuInfoConfig(t, i) {
+              (this.sanitation.stu_info_config.splice(
+                t + i,
+                0,
+                this.sanitation.info_config.splice(t, 1)[0],
+              ),
+                this.stuInfoModel.splice(t + i, 0, this.stuInfoModel.splice(t, 1)[0]));
+            },
+            saveSanitation() {
+              if ("1" === this.studentSet) {
+                if (
+                  !this.sanitation.stu_info_config ||
+                  0 === this.sanitation.stu_info_config.length
+                )
+                  return void this.$showErrorNotify("请设置学生个人检查配置");
+              } else "0" === this.studentSet && (this.sanitation.stu_info_config = []);
+              if (!this.sanitation.title) return void this.$showErrorNotify("请填写任务名称");
+              if (!this.sanitation.detail) return void this.$showErrorNotify("请填写要求");
+              if (!this.sanitation.begin_date) return void this.$showErrorNotify("请填写开始时间");
+              if (!this.sanitation.end_date) return void this.$showErrorNotify("请填写结束时间");
+              if (!this.sanitation.task_target || 0 === this.sanitation.task_target.length)
+                return void this.$showErrorNotify("请设置执行对象");
+              if (!this.sanitation.info_config || 0 === this.sanitation.info_config.length)
+                return void this.$showErrorNotify("请设置寝室检查配置");
+              this.$q.loading.show();
+              const t = o()({}, this.sanitation);
+              ((t.task_target = JSON.stringify(t.task_target)),
+                (t.share_target =
+                  t.share_target && t.share_target.length > 0
+                    ? JSON.stringify(t.share_target)
+                    : null),
+                (t.info_config = JSON.stringify(t.info_config)),
+                (t.stu_info_config = JSON.stringify(t.stu_info_config)),
+                this.$axiosAction(
+                  "/api/teacher/sanitation/sanitation.api",
+                  o()({ action: "insert" }, t),
+                )
+                  .then((t) => {
+                    (0 === t.data.code && this.$router.push("/teacher/sanitation/index"),
+                      this.$q.loading.hide());
+                  })
+                  .catch((t) => {
+                    this.$q.loading.hide();
+                  }));
+            },
+          },
+        },
+        g = d,
+        u = e("2877"),
+        m = e("4d5a"),
+        h = e("e359"),
+        p = e("65c6"),
+        _ = e("9c40"),
+        v = e("6ac5"),
+        q = e("09e3"),
+        C = e("9989"),
+        x = e("0378"),
+        b = e("f09f"),
+        w = e("1c1c"),
+        y = e("66e5"),
+        k = e("4074"),
+        I = e("0170"),
+        S = e("eb85"),
+        D = e("27f9"),
+        $ = e("d66b"),
+        N = e("8572"),
+        M = e("0016"),
+        Q = e("7cbe"),
+        z = e("52ee"),
+        T = e("9564"),
+        E = e("7ff0"),
+        J = e("24e8"),
+        O = e("a370"),
+        Y = e("7f67"),
+        F = e("eebe"),
+        B = e.n(F),
+        j = Object(u["a"])(g, n, a, !1, null, null, null);
+      i["default"] = j.exports;
+      (B()(j, "components", {
+        QLayout: m["a"],
+        QHeader: h["a"],
+        QToolbar: p["a"],
+        QBtn: _["a"],
+        QToolbarTitle: v["a"],
+        QPageContainer: q["a"],
+        QPage: C["a"],
+        QForm: x["a"],
+        QCard: b["a"],
+        QList: w["a"],
+        QItem: y["a"],
+        QItemSection: k["a"],
+        QItemLabel: I["a"],
+        QSeparator: S["a"],
+        QInput: D["a"],
+        QEditor: $["a"],
+        QField: N["a"],
+        QIcon: M["a"],
+        QPopupProxy: Q["a"],
+        QDate: z["a"],
+        QToggle: T["a"],
+        QFooter: E["a"],
+        QDialog: J["a"],
+        QCardSection: O["a"],
+      }),
+        B()(j, "directives", { ClosePopup: Y["a"] }));
+    },
+  },
+]);

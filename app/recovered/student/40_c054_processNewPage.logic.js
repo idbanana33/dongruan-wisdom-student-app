@@ -1,0 +1,275 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/40.js -> module "c054"
+ * Route: /student/process/NewProcess
+ * Component guess: processNewPage
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+c054: function(e, t, s) {
+  "use strict";
+  s.r(t);
+  var o = function() {
+      var e = this,
+        t = e.$createElement,
+        s = e._self._c || t;
+      return s("q-layout", {
+        attrs: {
+          view: "lHh lpr lFf"
+        }
+      }, [s("q-header", {
+        staticClass: "bg-grey-3 text-black"
+      }, [s("q-toolbar", [s("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "keyboard_arrow_left"
+        },
+        on: {
+          click: e.goBack
+        }
+      }), s("q-toolbar-title", [e._v("新建" + e._s(e.record.process_type_name) + "流程申请")])], 1)], 1), s("q-page-container", [s("q-page", {
+        staticClass: "bg-white-3"
+      }, [s("q-form", {
+        staticClass: "q-gutter-sm full-width",
+        on: {
+          submit: e.saveProcess
+        }
+      }, [e.menuInfo ? s("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [s("q-list", [e._l(e.record.process_info_config, (function(t, o) {
+        return s("q-item", {
+          key: o
+        }, [s("q-item-section", [s("neu-widget", {
+          attrs: {
+            labelClass: "col-12 col-md-2 col-sm-9 text-right" + (e.$q.screen.lt.sm ? "text-right" : ""),
+            controlClass: "col-12 col-md-10 col-sm-9",
+            config: t,
+            viewMode: e.viewMode
+          },
+          model: {
+            value: e.process.info_result[o],
+            callback: function(t) {
+              e.$set(e.process.info_result, o, t)
+            },
+            expression: "process.info_result[index]"
+          }
+        }), s("q-separator", {
+          staticStyle: {
+            "margin-top": "6px"
+          }
+        })], 1)], 1)
+      })), s("q-item", [s("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [s("div", [e._v("\n                紧急联系号码\n              ")])]), s("q-item-section", [s("q-input", {
+        attrs: {
+          outlined: "",
+          type: "number",
+          dense: "",
+          "hide-bottom-space": ""
+        },
+        model: {
+          value: e.process.contact,
+          callback: function(t) {
+            e.$set(e.process, "contact", t)
+          },
+          expression: "process.contact"
+        }
+      })], 1)], 1), s("q-separator", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: 1 == e.record.process_need_locate,
+          expression: "record.process_need_locate == 1"
+        }],
+        staticStyle: {
+          width: "92%",
+          "margin-left": "16px"
+        }
+      }), s("q-item", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: 1 == e.record.process_need_locate,
+          expression: "record.process_need_locate == 1"
+        }]
+      }, [s("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [s("div", [e._v("\n                当前所在位置\n              ")])]), s("q-item-section", [e._v("\n              " + e._s(e.location.address) + "\n              "), s("neu-geo-location", {
+        attrs: {
+          needAddr: !0,
+          location: e.research
+        },
+        on: {
+          completed: e.locationCompleted,
+          error: e.locationError
+        }
+      })], 1)], 1)], 2)], 1) : e._e(), s("q-footer", {
+        staticClass: "bg-white text-primary",
+        staticStyle: {
+          height: "2.8rem",
+          "margin-left": "0px",
+          border: "0px"
+        },
+        attrs: {
+          bordered: ""
+        }
+      }, [s("q-btn", {
+        staticStyle: {
+          width: "40%",
+          height: "100%"
+        },
+        attrs: {
+          outline: "",
+          color: "grey",
+          label: "取消"
+        },
+        on: {
+          click: e.goBack
+        }
+      }), s("q-btn", {
+        staticStyle: {
+          width: "60%",
+          height: "100%"
+        },
+        attrs: {
+          color: "primary",
+          label: "申请",
+          type: "submit"
+        }
+      })], 1)], 1)], 1)], 1)], 1)
+    },
+    i = [],
+    r = s("ded3"),
+    a = s.n(r),
+    c = s("974f"),
+    n = s("46f3"),
+    l = {
+      name: "processNewPage",
+      components: {
+        NeuWidget: c["a"],
+        NeuGeoLocation: n["a"]
+      },
+      data() {
+        return {
+          id: this.$route.query.id,
+          menuType: "",
+          viewMode: !1,
+          menuInfo: null,
+          process: {
+            info_result: [],
+            contact: ""
+          },
+          record: {},
+          user: JSON.parse(window.localStorage.getItem("userinfo")),
+          service_flag: "N",
+          location: {
+            point: null,
+            address: null,
+            addressComponents: null
+          },
+          research: 0,
+          locationStatus: !1
+        }
+      },
+      mounted() {
+        window.localStorage.getItem("menu") && (this.service_flag = this.$route.query.service_flag, "N" === this.service_flag ? this.menuType = "process" : this.menuType = "process_gate", this.menuInfo = JSON.parse(window.localStorage.getItem("menu")).find((e => e.id === this.menuType))), this.getProcessType(this.id)
+      },
+      methods: {
+        getProcessType(e) {
+          this.$axiosAction("/api/student/process/process.api", {
+            action: "queryList",
+            id: e
+          }).then((e => {
+            0 === e.data.code && (this.record = e.data.result.list[0]), null !== this.record.process_apply_limit && "" !== this.record.process_apply_limit && void 0 !== this.record.process_apply_limit || this.goBack()
+          })).catch((e => {
+            this.record = {}
+          }))
+        },
+        goBack() {
+          this.$router.push("/student/process/new?service_flag=" + this.service_flag)
+        },
+        saveProcess() {
+          if (null === this.record.process_apply_limit || "" === this.record.process_apply_limit || void 0 === this.record.process_apply_limit) return this.$showErrorNotify("数据加载错误，请重新加载或联系管理员");
+          this.$q.loading.show(), this.locationStatus = !0, this.research = this.research + 1
+        },
+        locationCompleted(e) {
+          this.location = e, this.locationStatus && (this.locationStatus = !1, this.saveSubmit(1))
+        },
+        locationError(e) {
+          this.locationStatus && (this.locationStatus = !1, this.saveSubmit(2))
+        },
+        saveSubmit(e) {
+          let t = {};
+          t = 1 === e ? JSON.stringify(this.location) : "", this.$q.loading.show(), this.process = {
+            info_config: JSON.stringify(this.record.process_info_config),
+            info_result: JSON.stringify(this.process.info_result),
+            process_type_id: this.id,
+            review_status: "W",
+            contact: this.process.contact,
+            type_name: this.record.process_type_name,
+            student_name: this.user.name,
+            process_apply_limit: this.record.process_apply_limit,
+            service_flag: this.record.service_flag,
+            location: t,
+            menu_id: this.menuType,
+            menuTypeName: this.menuInfo.title
+          }, this.$axiosAction("/api/student/process/process.api", a()({
+            action: "insertProcess"
+          }, this.process)).then((e => {
+            e.data.code, this.$router.push("/student/process/index?service_flag=" + this.service_flag), this.$q.loading.hide()
+          })).catch((e => {
+            this.process = [], this.$q.loading.hide()
+          }))
+        }
+      }
+    },
+    p = l,
+    d = s("2877"),
+    h = s("4d5a"),
+    u = s("e359"),
+    m = s("65c6"),
+    _ = s("9c40"),
+    f = s("6ac5"),
+    g = s("0016"),
+    y = s("09e3"),
+    v = s("9989"),
+    w = s("0378"),
+    q = s("f09f"),
+    b = s("1c1c"),
+    S = s("66e5"),
+    x = s("4074"),
+    Q = s("eb85"),
+    $ = s("27f9"),
+    N = s("7ff0"),
+    k = s("eebe"),
+    C = s.n(k),
+    I = Object(d["a"])(p, o, i, !1, null, null, null);
+  t["default"] = I.exports;
+  C()(I, "components", {
+    QLayout: h["a"],
+    QHeader: u["a"],
+    QToolbar: m["a"],
+    QBtn: _["a"],
+    QToolbarTitle: f["a"],
+    QIcon: g["a"],
+    QPageContainer: y["a"],
+    QPage: v["a"],
+    QForm: w["a"],
+    QCard: q["a"],
+    QList: b["a"],
+    QItem: S["a"],
+    QItemSection: x["a"],
+    QSeparator: Q["a"],
+    QInput: $["a"],
+    QFooter: N["a"]
+  })
+}

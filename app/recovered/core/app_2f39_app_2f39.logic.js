@@ -1,0 +1,1059 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/app.js -> module "2f39"
+ * Route: (shared/core)
+ * Component guess: app_2f39
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+"2f39": function(e, n, t) {
+  "use strict";
+  t.r(n);
+  t("e6cf"), t("5319"), t("9f29"), t("7d6e"), t("e54f"), t("985d"), t("0047"), t("2a19a");
+  var a = t("2b0e"),
+    o = t("bf69"),
+    i = t("42d2"),
+    l = t("b05d"),
+    r = t("2a19"),
+    d = t("f508"),
+    c = t("436b"),
+    s = t("7518");
+  a["a"].use(l["a"], {
+    config: {
+      notify: {
+        position: "top",
+        timeout: 3e3
+      }
+    },
+    lang: o["a"],
+    iconSet: i["a"],
+    plugins: {
+      Notify: r["a"],
+      Loading: d["a"],
+      Dialog: c["a"],
+      BottomSheet: s["a"]
+    }
+  });
+  var p = function() {
+      var e = this,
+        n = e.$createElement,
+        t = e._self._c || n;
+      return t("div", {
+        staticStyle: {
+          height: "100%"
+        },
+        attrs: {
+          id: "q-app"
+        }
+      }, [t("div", {
+        staticStyle: {
+          height: "100%"
+        }
+      }, [e.RouterState ? t("router-view") : e._e()], 1)])
+    },
+    m = [],
+    h = t("ad56");
+  a["a"].prototype.$showSuccessNotify = function(e) {
+    return this.$q.notify({
+      color: "green-4",
+      icon: "cloud_done",
+      message: e
+    })
+  }, a["a"].prototype.$showErrorNotify = function(e) {
+    return this.$q.notify({
+      color: "red-5",
+      icon: "error",
+      message: e
+    })
+  }, a["a"].prototype.$showConfirmNotify = function(e, n, t) {
+    return this.$q.notify({
+      message: e,
+      color: t || "negative",
+      position: "center",
+      actions: n
+    })
+  }, a["a"].prototype.$addStorageEvent = function(e, n, t, a) {
+    if (1 === e) {
+      const e = document.createEvent("StorageEvent"),
+        o = {
+          setItem: function(n, t) {
+            localStorage.setItem(n, t), e.initStorageEvent("setItem", !1, !1, n, null, t, null, null), window.dispatchEvent(e)
+          },
+          removeItem: function(n) {
+            localStorage.removeItem(n), e.initStorageEvent("setItem", !1, !1, n, null, null, null, null), window.dispatchEvent(e)
+          }
+        };
+      return a ? o.removeItem(n) : o.setItem(n, t)
+    } {
+      const e = document.createEvent("StorageEvent"),
+        o = {
+          setItem: function(n, t) {
+            sessionStorage.setItem(n, t), e.initStorageEvent("setItem", !1, !1, n, null, t, null, null), window.dispatchEvent(e)
+          },
+          removeItem: function(n) {
+            sessionStorage.removeItem(n), e.initStorageEvent("setItem", !1, !1, n, null, null, null, null), window.dispatchEvent(e)
+          }
+        };
+      return a ? o.removeItem(n) : o.setItem(n, t)
+    }
+  };
+  var u = {
+      name: "App",
+      provide() {
+        return {
+          reload: this.reload
+        }
+      },
+      data() {
+        return {
+          RouterState: !0
+        }
+      },
+      created() {
+        window.localStorage.setItem("appversion", this.$appConf.appVersion), this.$axios.interceptors.response.use((e => {
+          if (!e.config.headers.forbid_notify && e.data.message)
+            if (401 === e.data.code) "/" !== this.$route.path && (this.$showErrorNotify("会话已过期，请重新登录"), this.$addStorageEvent(1, "userinfo", null, !0), this.$addStorageEvent(1, "menu", null, !0), this.$addStorageEvent(1, "menuappver", null, !0), this.$router.replace({
+              path: "/",
+              query: {
+                path: this.$route.path,
+                query: this.$route.query,
+                params: this.$route.params
+              }
+            }));
+            else {
+              if (901 === e.data.code) return this.$showErrorNotify(e.data.message), Object(h["b"])(this, !0), Promise.reject(e);
+              0 === e.data.code ? this.$showSuccessNotify(e.data.message) : this.$showErrorNotify(e.data.message)
+            } return this.checkNewlyVer(e.data.systemmillisecond), e
+        }), (e => (this.$q.loading.hide(), this.$showErrorNotify("服务器出现错误"), Promise.reject(e))))
+      },
+      methods: {
+        reload() {
+          this.RouterState = !1, this.$nextTick((() => {
+            this.RouterState = !0
+          }))
+        },
+        checkNewlyVer(e) {
+          try {
+            if (!e) return;
+            if (window.localStorage.lastcheckvertime && !(parseInt(window.localStorage.lastcheckvertime) + 864e5 < e)) return;
+            window.localStorage.setItem("lastcheckvertime", e), Object(h["b"])(this, !0)
+          } catch (n) {}
+        }
+      }
+    },
+    f = u,
+    g = (t("034f"), t("2877")),
+    b = Object(g["a"])(f, p, m, !1, null, null, null),
+    P = b.exports,
+    v = t("8c4f");
+  const w = [{
+    path: "/",
+    component: () => t.e(6).then(t.bind(null, "713b")),
+    children: [{
+      path: "",
+      component: () => Promise.all([t.e(0), t.e(10)]).then(t.bind(null, "35a8"))
+    }, {
+      path: "/user/login",
+      component: () => Promise.all([t.e(0), t.e(5)]).then(t.bind(null, "dc6c"))
+    }, {
+      path: "/transfer",
+      name: "/transfer",
+      component: () => Promise.all([t.e(0), t.e(8)]).then(t.bind(null, "46fe"))
+    }, {
+      path: "/update",
+      component: () => Promise.all([t.e(0), t.e(9)]).then(t.bind(null, "da3b"))
+    }, {
+      path: "/policy/privacyPolicy",
+      component: () => Promise.all([t.e(0), t.e(17)]).then(t.bind(null, "261e"))
+    }, {
+      path: "/policy/termsOfUse",
+      component: () => Promise.all([t.e(0), t.e(18)]).then(t.bind(null, "f26b"))
+    }, {
+      path: "/user/findPwd",
+      component: () => Promise.all([t.e(0), t.e(122)]).then(t.bind(null, "5e71"))
+    }, {
+      path: "/user/password",
+      component: () => Promise.all([t.e(0), t.e(124)]).then(t.bind(null, "62a1")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/index",
+      component: () => Promise.all([t.e(0), t.e(19)]).then(t.bind(null, "500e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/apply/index",
+      name: "/student/apply/index",
+      component: () => Promise.all([t.e(0), t.e(22)]).then(t.bind(null, "0a0d")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/apply/applyDetail",
+      name: "/student/apply/applyDetail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(21)]).then(t.bind(null, "d0ce")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/apply/stumanage",
+      component: () => Promise.all([t.e(0), t.e(23)]).then(t.bind(null, "def2")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/apply/stumanagedetail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(24)]).then(t.bind(null, "f260")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/leave/index",
+      component: () => Promise.all([t.e(0), t.e(28)]).then(t.bind(null, "cc5a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/leave/leave",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(29)]).then(t.bind(null, "fffb")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/leave/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(27)]).then(t.bind(null, "3076")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/notice/index",
+      component: () => Promise.all([t.e(0), t.e(34)]).then(t.bind(null, "d2bb0")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/notice/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(33)]).then(t.bind(null, "4f38")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/notice/stumanage",
+      component: () => Promise.all([t.e(0), t.e(35)]).then(t.bind(null, "cb82")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/notice/stumanagedetail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(36)]).then(t.bind(null, "90a6")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/leave/reportleave",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(30)]).then(t.bind(null, "750d")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/index",
+      name: "/student/signin/index",
+      component: () => Promise.all([t.e(0), t.e(48)]).then(t.bind(null, "be3e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/stumanage",
+      component: () => Promise.all([t.e(0), t.e(53)]).then(t.bind(null, "a2f3")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/signin",
+      name: "/student/signin/signin",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(51)]).then(t.bind(null, "df96")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/qrcodePerson",
+      component: () => Promise.all([t.e(0), t.e(49)]).then(t.bind(null, "048f")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/qrcodePersonDetails",
+      name: "/student/signin/qrcodePersonDetails",
+      component: () => Promise.all([t.e(0), t.e(50)]).then(t.bind(null, "b6d3")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/qrScanning",
+      name: "/student/signin/qrScanning",
+      component: () => Promise.all([t.e(0), t.e(3)]).then(t.bind(null, "2a13"))
+    }, {
+      path: "/student/signin/signinSuccess",
+      name: "/student/signin/signinSuccess",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(52)]).then(t.bind(null, "1a43")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/signinPersonnel",
+      name: "/student/signin/signinPersonnel",
+      component: () => Promise.all([t.e(0), t.e(54)]).then(t.bind(null, "4ab0")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/signin/stumanagedetail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(55)]).then(t.bind(null, "a6f6")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/sanitation/index",
+      component: () => Promise.all([t.e(0), t.e(47)]).then(t.bind(null, "7c65")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/sanitation/detailResult",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(46)]).then(t.bind(null, "93dc")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/experience/index",
+      name: "/student/experience/index",
+      component: () => Promise.all([t.e(0), t.e(26)]).then(t.bind(null, "a1b2")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/repair/index",
+      component: () => Promise.all([t.e(0), t.e(43)]).then(t.bind(null, "8a70")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/repair/new",
+      component: () => Promise.all([t.e(0), t.e(45)]).then(t.bind(null, "b25f")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/repair/detail",
+      component: () => Promise.all([t.e(0), t.e(41)]).then(t.bind(null, "733d")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/repair/evaluate",
+      component: () => Promise.all([t.e(0), t.e(42)]).then(t.bind(null, "dc02")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/repair/maintainerInfo",
+      component: () => Promise.all([t.e(0), t.e(44)]).then(t.bind(null, "866f")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/index",
+      component: () => Promise.all([t.e(0), t.e(56)]).then(t.bind(null, "69c3")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/qrcodeScanning",
+      component: () => Promise.all([t.e(0), t.e(4)]).then(t.bind(null, "0611")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/verification/signinVer",
+      name: "/teacher/verification/signinVer",
+      component: () => Promise.all([t.e(0), t.e(118)]).then(t.bind(null, "87c4")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/verification/leaveVer",
+      name: "/teacher/verification/leaveVer",
+      component: () => Promise.all([t.e(0), t.e(117)]).then(t.bind(null, "0930")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/signin/index",
+      component: () => Promise.all([t.e(0), t.e(113)]).then(t.bind(null, "6822")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/signin/new",
+      name: "/teacher/signin/new",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(114)]).then(t.bind(null, "2045")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/signin/detail",
+      name: "/teacher/signin/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(112)]).then(t.bind(null, "a0ab")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/signin/statistics",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(116)]).then(t.bind(null, "49de")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/signin/signinExperience",
+      name: "/teacher/signin/signinExperience",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(115)]).then(t.bind(null, "92f0")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/leave/list",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(78)]).then(t.bind(null, "3cd2")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/leave/index",
+      component: () => Promise.all([t.e(0), t.e(84)]).then(t.bind(null, "a858")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/leave/multilist",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(81)]).then(t.bind(null, "493a")),
+      meta: {
+        needLogin: !0,
+        pathInfo: [{
+          label: "教师端批量请假"
+        }]
+      }
+    }, {
+      path: "/teacher/leave/multidetail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(82)]).then(t.bind(null, "965e")),
+      meta: {
+        needLogin: !0,
+        pathInfo: [{
+          label: "教师端批量请假详情"
+        }]
+      }
+    }, {
+      path: "/teacher/leave/leaveExperience",
+      name: "/teacher/leave/leaveExperience",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(79)]).then(t.bind(null, "f3d1")),
+      meta: {
+        needLogin: !0,
+        pathInfo: [{
+          label: "请假历史记录"
+        }]
+      }
+    }, {
+      path: "/teacher/leave/multiHistory",
+      name: "/teacher/leave/multiHistory",
+      component: () => Promise.all([t.e(0), t.e(80)]).then(t.bind(null, "2727")),
+      meta: {
+        needLogin: !0,
+        pathInfo: [{
+          label: "批量请假历史记录"
+        }]
+      }
+    }, {
+      path: "/teacher/leave/newMultiLeave",
+      name: "/teacher/leave/newMultiLeave",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(85)]).then(t.bind(null, "43e8")),
+      meta: {
+        needLogin: !0,
+        pathInfo: [{
+          label: "批量请假"
+        }]
+      }
+    }, {
+      path: "/teacher/leave/multiStudent",
+      name: "/teacher/leave/multiStudent",
+      component: () => Promise.all([t.e(0), t.e(83)]).then(t.bind(null, "3865")),
+      meta: {
+        needLogin: !0,
+        pathInfo: [{
+          label: "批量请假全部学生"
+        }]
+      }
+    }, {
+      path: "/teacher/sanitation/index",
+      component: () => Promise.all([t.e(0), t.e(108)]).then(t.bind(null, "1563")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/joblog/index",
+      component: () => Promise.all([t.e(0), t.e(74)]).then(t.bind(null, "326a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/joblog/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(72)]).then(t.bind(null, "d79d")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/notice/index",
+      component: () => Promise.all([t.e(0), t.e(98)]).then(t.bind(null, "7f35")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/notice/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(97)]).then(t.bind(null, "03ca")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/notice/new",
+      name: "/teacher/notice/new",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(99)]).then(t.bind(null, "66de")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/notice/noticeExperience",
+      name: "/teacher/notice/noticeExperience",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(100)]).then(t.bind(null, "60e8")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/joblog/new",
+      name: "/teacher/joblog/new",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(75)]).then(t.bind(null, "18bf")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/sanitation/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(106)]).then(t.bind(null, "3b5c")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/sanitation/detailresult",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(107)]).then(t.bind(null, "a22e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/leave/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(76)]).then(t.bind(null, "efa0")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/sanitation/new",
+      name: "/teacher/sanitation/new",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(109)]).then(t.bind(null, "54fe")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/leave/history",
+      component: () => Promise.all([t.e(0), t.e(77)]).then(t.bind(null, "07ff")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/apply/index",
+      component: () => Promise.all([t.e(0), t.e(65)]).then(t.bind(null, "fdfc")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/apply/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(64)]).then(t.bind(null, "6154")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/apply/statistics",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(67)]).then(t.bind(null, "d03a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/apply/new",
+      name: "/teacher/apply/new",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(66)]).then(t.bind(null, "ac1c")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/apply/applyExperience",
+      name: "/teacher/apply/applyExperience",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(63)]).then(t.bind(null, "64e7")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/joblog/detailresult",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(73)]).then(t.bind(null, "b6da")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/experience/index",
+      name: "/teacher/experience/index",
+      component: () => Promise.all([t.e(0), t.e(71)]).then(t.bind(null, "a0d5")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/achievement/index",
+      name: "/teacher/achievement/index",
+      component: () => Promise.all([t.e(0), t.e(58)]).then(t.bind(null, "9ddf")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/analysis/index",
+      component: () => Promise.all([t.e(0), t.e(59)]).then(t.bind(null, "c676")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/basic/stuInfo",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(25)]).then(t.bind(null, "c3b1")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/basic/teaInfo",
+      component: () => Promise.all([t.e(0), t.e(68)]).then(t.bind(null, "ad93")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/user/bindingMob",
+      component: () => Promise.all([t.e(0), t.e(120)]).then(t.bind(null, "d313")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/monitor/index",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(93)]).then(t.bind(null, "daec")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/scanning/signinVer",
+      name: "/teacher/scanning/signinVer",
+      component: () => Promise.all([t.e(0), t.e(111)]).then(t.bind(null, "7e9c")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/scanning/leaveVer",
+      name: "/teacher/scanning/leaveVer",
+      component: () => Promise.all([t.e(0), t.e(110)]).then(t.bind(null, "c4d2")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/news/index",
+      component: () => Promise.all([t.e(0), t.e(95)]).then(t.bind(null, "c201")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/news/detail",
+      component: () => Promise.all([t.e(0), t.e(94)]).then(t.bind(null, "6b6a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/news/new",
+      name: "/teacher/news/new",
+      component: () => Promise.all([t.e(0), t.e(96)]).then(t.bind(null, "8087")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/news/index",
+      component: () => Promise.all([t.e(0), t.e(32)]).then(t.bind(null, "5542")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/news/detail",
+      component: () => Promise.all([t.e(0), t.e(31)]).then(t.bind(null, "579a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/process/index",
+      component: () => Promise.all([t.e(0), t.e(38)]).then(t.bind(null, "839a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/process/new",
+      name: "/student/process/new",
+      component: () => Promise.all([t.e(0), t.e(39)]).then(t.bind(null, "f3a7")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/process/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(37)]).then(t.bind(null, "5e52")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/process/NewProcess",
+      name: "/student/process/NewProcess",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(40)]).then(t.bind(null, "c054")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/process/index",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(104)]).then(t.bind(null, "1e9e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/process/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(101)]).then(t.bind(null, "32f5")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/process/list",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(103)]).then(t.bind(null, "897e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/process/processTypeList",
+      component: () => Promise.all([t.e(0), t.e(102)]).then(t.bind(null, "40d3")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/process/typeDetail",
+      name: "/teacher/process/processTypeNew",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(105)]).then(t.bind(null, "0fc5")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/user/qrCode",
+      component: () => Promise.all([t.e(0), t.e(125)]).then(t.bind(null, "2971")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/user/passport",
+      component: () => Promise.all([t.e(0), t.e(123)]).then(t.bind(null, "1e4d")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/analysis/stuData",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(60)]).then(t.bind(null, "7778")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/analysis/stuLocation",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(61)]).then(t.bind(null, "23a6")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/student/todo",
+      component: () => Promise.all([t.e(0), t.e(20)]).then(t.bind(null, "700f")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/todo",
+      component: () => Promise.all([t.e(0), t.e(57)]).then(t.bind(null, "58c1")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/user/doBindingMob",
+      component: () => Promise.all([t.e(0), t.e(121)]).then(t.bind(null, "a3a5")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/user/account",
+      component: () => Promise.all([t.e(0), t.e(119)]).then(t.bind(null, "f7d9")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/composite/index",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(70)]).then(t.bind(null, "e90c")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/composite/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(69)]).then(t.bind(null, "ebc5")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/index",
+      component: () => Promise.all([t.e(0), t.e(87)]).then(t.bind(null, "19fe")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/messageIndex",
+      component: () => Promise.all([t.e(0), t.e(90)]).then(t.bind(null, "710a")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/new",
+      name: "/teacher/message/new",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(91)]).then(t.bind(null, "8060")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/statistics",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(92)]).then(t.bind(null, "0df3")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/detail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(86)]).then(t.bind(null, "9c8e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/analysis/teaMessage",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(62)]).then(t.bind(null, "4c50")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/message",
+      name: "/teacher/message/message",
+      component: () => Promise.all([t.e(0), t.e(88)]).then(t.bind(null, "098e")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/teacher/message/messageDetail",
+      name: "/teacher/message/messageDetail",
+      component: () => Promise.all([t.e(0), t.e(1), t.e(89)]).then(t.bind(null, "2a54")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/maintainer/index",
+      component: () => Promise.all([t.e(0), t.e(12)]).then(t.bind(null, "7ee9")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/maintainer/todo",
+      component: () => Promise.all([t.e(0), t.e(16)]).then(t.bind(null, "b6c5")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/maintainer/repairList",
+      component: () => Promise.all([t.e(0), t.e(14)]).then(t.bind(null, "f741")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/maintainer/detail",
+      component: () => Promise.all([t.e(0), t.e(11)]).then(t.bind(null, "8456")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/maintainer/receivingOrder",
+      component: () => Promise.all([t.e(0), t.e(13)]).then(t.bind(null, "2c02")),
+      meta: {
+        needLogin: !0
+      }
+    }, {
+      path: "/maintainer/repairOrder",
+      component: () => Promise.all([t.e(0), t.e(15)]).then(t.bind(null, "589c")),
+      meta: {
+        needLogin: !0
+      }
+    }]
+  }, {
+    path: "*",
+    component: () => Promise.all([t.e(0), t.e(7)]).then(t.bind(null, "e51e"))
+  }];
+  var L = w;
+  const y = v["a"].prototype.push;
+  v["a"].prototype.push = function(e) {
+    return y.call(this, e).catch((e => e))
+  }, a["a"].use(v["a"]);
+  var x = function() {
+      const e = new v["a"]({
+        scrollBehavior: () => ({
+          x: 0,
+          y: 0
+        }),
+        routes: L,
+        mode: "hash",
+        base: ""
+      });
+      return e.beforeEach(((e, n, t) => {
+        e.meta.needLogin ? window.localStorage.userinfo ? t() : t({
+          path: "/",
+          query: {
+            path: e.path,
+            query: e.query
+          }
+        }) : t()
+      })), e
+    },
+    S = async function() {
+      const e = "function" === typeof x ? await x({
+          Vue: a["a"]
+        }) : x,
+        n = {
+          router: e,
+          render: e => e(P),
+          el: "#q-app"
+        };
+      return {
+        app: n,
+        router: e
+      }
+    }, E = t("bc3a"), I = t.n(E), $ = t("ac02");
+  a["a"].prototype.$axios = I.a, a["a"].prototype.$appConf = $, a["a"].prototype.$axiosAction = function(e, n, t = "post", a = !0) {
+    return this.$axios({
+      url: e,
+      method: t,
+      data: JSON.stringify(n),
+      baseURL: window.localStorage.server + $.base,
+      headers: {
+        forbid_notify: a ? "" : "true"
+      }
+    })
+  }, I.a.interceptors.request.use((e => (e.headers["Content-Type"] = "application/json", window.localStorage.userinfo && window.localStorage.jwt && (e.headers.Authorization = window.localStorage.getItem("jwt")), e.headers["App-Version"] = window.localStorage.appversion, e)), (e => Promise.reject(e))), I.a.interceptors.response.use((e => (e.headers.token && window.localStorage.setItem("jwt", e.headers.token), 200 === e.status ? Promise.resolve(e) : Promise.reject(e))));
+  var j = t("59d7"),
+    q = t("ef35"),
+    N = async ({
+      app: e,
+      urlPath: n,
+      redirect: t,
+      router: a
+    }) => {
+      document.addEventListener("jpush.receiveMessage", (function(e) {
+        JPush.addLocalNotification(10, e.message, "提示", 4, 1e4, {})
+      }), !0), document.addEventListener("jpush.receiveNotification", (function(e) {
+        const n = new CustomEvent("refreshTodoList", null);
+        window.dispatchEvent(n);
+        const t = new CustomEvent("resetBadge", null);
+        window.dispatchEvent(t)
+      }), !0), document.addEventListener("jpush.receiveRegistrationId", (function(e) {}), !0), document.addEventListener("jpush.openNotification", (function(e) {
+        if (JPush.isPlatformIOS()) {
+          a.push({
+            name: "/transfer",
+            params: {
+              path: e.extras.path
+            }
+          });
+          const n = new CustomEvent("updateBadge", {
+            detail: {
+              id: e.extras.pushid
+            }
+          });
+          window.dispatchEvent(n)
+        } else {
+          const n = "cn.jpush.android.EXTRA",
+            t = e.extras[n];
+          a.push({
+            name: "/transfer",
+            params: {
+              path: t.path
+            }
+          });
+          const o = new CustomEvent("updateBadge", {
+            detail: {
+              id: t.pushid
+            }
+          });
+          window.dispatchEvent(o)
+        }
+      }), !1), window.addEventListener("launchapp.open", (({
+        detail: {
+          path: e
+        }
+      }) => {
+        a.push({
+          name: "/transfer",
+          params: {
+            path: e
+          }
+        })
+      }), !1)
+    };
+  a["a"].use(l["a"], {
+    components: {
+      QPullToRefresh: j["a"],
+      QInfiniteScroll: q["a"]
+    }
+  });
+  const O = "";
+  async function k() {
+    const {
+      app: e,
+      router: n
+    } = await S();
+    let t = !1;
+    const o = e => {
+        t = !0;
+        const a = Object(e) === e ? n.resolve(e).route.fullPath : e;
+        window.location.href = a
+      },
+      i = window.location.href.replace(window.location.origin, ""),
+      l = [void 0, N];
+    for (let d = 0; !1 === t && d < l.length; d++)
+      if ("function" === typeof l[d]) try {
+        await l[d]({
+          app: e,
+          router: n,
+          Vue: a["a"],
+          ssrContext: null,
+          redirect: o,
+          urlPath: i,
+          publicPath: O
+        })
+      } catch (r) {
+        return r && r.url ? void(window.location.href = r.url) : void console.error("[Quasar] boot error:", r)
+      }!0 !== t && document.addEventListener("deviceready", (() => {
+        a["a"].prototype.$q.cordova = window.cordova, new a["a"](e)
+      }), !1)
+  }
+  k()
+}

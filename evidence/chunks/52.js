@@ -1,0 +1,671 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+  [52],
+  {
+    "1a43": function (t, s, e) {
+      "use strict";
+      e.r(s);
+      var a = function () {
+          var t = this,
+            s = t.$createElement,
+            e = t._self._c || s;
+          return e(
+            "q-layout",
+            { attrs: { view: "lHh lpr lFf" } },
+            [
+              e(
+                "q-header",
+                { staticClass: "bg-grey-3 text-black" },
+                [
+                  e(
+                    "q-toolbar",
+                    [
+                      e("q-btn", {
+                        attrs: { flat: "", round: "", dense: "", icon: "keyboard_arrow_left" },
+                        on: { click: t.goBack },
+                      }),
+                      e("q-toolbar-title", [t._v("我的签到")]),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+              e(
+                "q-page-container",
+                [
+                  t.record
+                    ? e(
+                        "q-page",
+                        { staticClass: "bg-grey-3" },
+                        [
+                          e(
+                            "q-card",
+                            { staticClass: "full-width row", attrs: { flat: "" } },
+                            [
+                              e(
+                                "q-card-section",
+                                {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value: 2 == t.record.status && "result" == t.tab,
+                                      expression: "record.status == 2 && tab == 'result'",
+                                    },
+                                  ],
+                                  staticClass:
+                                    "full-width row justify-center bg-positive text-white",
+                                  staticStyle: { height: "4rem", "font-size": "1.5rem" },
+                                },
+                                [
+                                  e("q-icon", { attrs: { name: "done", size: "2rem" } }),
+                                  t._v("签到成功\n        "),
+                                ],
+                                1,
+                              ),
+                              e(
+                                "q-card-section",
+                                {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value: 1 == t.record.status && "result" == t.tab,
+                                      expression: "record.status == 1 && tab == 'result'",
+                                    },
+                                  ],
+                                  staticClass: "full-width row justify-center bg-red text-white",
+                                  staticStyle: { height: "4rem", "font-size": "1.5rem" },
+                                },
+                                [
+                                  e("q-icon", { attrs: { name: "clear", size: "2rem" } }),
+                                  t._v("未签到\n        "),
+                                ],
+                                1,
+                              ),
+                              e(
+                                "q-card-section",
+                                {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value: 3 == t.record.status && "result" == t.tab,
+                                      expression: "record.status == 3 && tab == 'result'",
+                                    },
+                                  ],
+                                  staticClass:
+                                    "full-width row justify-center bg-primary text-white",
+                                  staticStyle: { height: "4rem", "font-size": "1.5rem" },
+                                },
+                                [
+                                  e("q-icon", { attrs: { name: "schedule", size: "2rem" } }),
+                                  t._v("已请假\n        "),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                          e(
+                            "q-card",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: null != t.record.si_time && "result" == t.tab,
+                                  expression: "record.si_time != null && tab == 'result'",
+                                },
+                              ],
+                              staticClass: "full-width q-my-sm",
+                              attrs: { flat: "" },
+                            },
+                            [
+                              e(
+                                "q-card-section",
+                                { staticClass: "full-width row justify-center" },
+                                [
+                                  e("div", { staticClass: "row" }, [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "text-primary",
+                                        staticStyle: { "font-size": "0.9rem" },
+                                        on: { click: t.showQrCode },
+                                      },
+                                      [t._v("点击展示二维码")],
+                                    ),
+                                  ]),
+                                ],
+                              ),
+                            ],
+                            1,
+                          ),
+                          e(
+                            "q-card",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: "result" == t.tab,
+                                  expression: "tab == 'result'",
+                                },
+                              ],
+                              staticClass: "full-width",
+                              attrs: { flat: "" },
+                            },
+                            [
+                              e("q-card-section", [
+                                e("div", { staticClass: "row" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "full-width text-weight-bold",
+                                      staticStyle: { "font-size": "18px" },
+                                    },
+                                    [t._v(t._s(t.record.title))],
+                                  ),
+                                ]),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("姓名(学号)")],
+                                  ),
+                                  t._v(
+                                    t._s(t.record.stu_name) +
+                                      "（" +
+                                      t._s(t.record.student_no) +
+                                      "）\n          ",
+                                  ),
+                                ]),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("性别")],
+                                  ),
+                                  t._v(t._s(t.record.sex_name) + "\n          "),
+                                ]),
+                                e(
+                                  "div",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "show",
+                                        rawName: "v-show",
+                                        value: 1 == t.record.status,
+                                        expression: "record.status == 1",
+                                      },
+                                    ],
+                                    staticClass: "row q-mt-xs",
+                                  },
+                                  [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "neu-css-after-colon text-grey",
+                                        staticStyle: { "font-size": "15px" },
+                                      },
+                                      [t._v("签到状态")],
+                                    ),
+                                    t._v("未签到\n          "),
+                                  ],
+                                ),
+                                e(
+                                  "div",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "show",
+                                        rawName: "v-show",
+                                        value: 3 == t.record.status,
+                                        expression: "record.status == 3",
+                                      },
+                                    ],
+                                    staticClass: "row q-mt-xs",
+                                  },
+                                  [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "neu-css-after-colon text-grey",
+                                        staticStyle: { "font-size": "15px" },
+                                      },
+                                      [t._v("签到状态")],
+                                    ),
+                                    t._v("已请假\n          "),
+                                  ],
+                                ),
+                                e(
+                                  "div",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "show",
+                                        rawName: "v-show",
+                                        value: null != t.record.qrcode_source,
+                                        expression: "record.qrcode_source != null",
+                                      },
+                                    ],
+                                    staticClass: "row q-mt-xs",
+                                  },
+                                  [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "neu-css-after-colon text-grey",
+                                        staticStyle: { "font-size": "15px" },
+                                      },
+                                      [t._v("扫码来源")],
+                                    ),
+                                    t._v(t._s(t.record.qr_name) + "\n          "),
+                                  ],
+                                ),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("学院")],
+                                  ),
+                                  t._v(t._s(t.record.dep_name) + "\n          "),
+                                ]),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("专业")],
+                                  ),
+                                  t._v(t._s(t.record.major_name) + "\n          "),
+                                ]),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("班级")],
+                                  ),
+                                  t._v(t._s(t.record.class_name) + "\n          "),
+                                ]),
+                                e(
+                                  "div",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "show",
+                                        rawName: "v-show",
+                                        value: null != t.record.signin_time,
+                                        expression: "record.signin_time != null",
+                                      },
+                                    ],
+                                    staticClass: "row q-mt-xs",
+                                  },
+                                  [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "neu-css-after-colon text-grey",
+                                        staticStyle: { "font-size": "15px" },
+                                      },
+                                      [t._v("签到时间")],
+                                    ),
+                                    t._v(t._s(t.record.signin_time) + "\n          "),
+                                  ],
+                                ),
+                                e(
+                                  "div",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "show",
+                                        rawName: "v-show",
+                                        value: null != t.record.signin_location,
+                                        expression: "record.signin_location != null",
+                                      },
+                                    ],
+                                    staticClass: "row q-mt-xs",
+                                  },
+                                  [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "neu-css-after-colon text-grey",
+                                        staticStyle: { "font-size": "15px" },
+                                      },
+                                      [t._v("签到位置")],
+                                    ),
+                                    t._v(t._s(t.record.address) + "\n          "),
+                                  ],
+                                ),
+                              ]),
+                            ],
+                            1,
+                          ),
+                          e(
+                            "q-card",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: "result" == t.tab,
+                                  expression: "tab == 'result'",
+                                },
+                              ],
+                              staticClass: "q-mt-sm",
+                              attrs: { flat: "", "full-width": "" },
+                            },
+                            [
+                              e("q-card-section", [
+                                e(
+                                  "div",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "show",
+                                        rawName: "v-show",
+                                        value: null != t.record.info_result,
+                                        expression: "record.info_result != null",
+                                      },
+                                    ],
+                                    staticClass: "q-mt-xs row",
+                                  },
+                                  [
+                                    e(
+                                      "span",
+                                      {
+                                        staticClass: "neu-css-after-colon text-grey",
+                                        staticStyle: { "font-size": "15px" },
+                                      },
+                                      [t._v("附加信息")],
+                                    ),
+                                    t._v("已填写\n          "),
+                                  ],
+                                ),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("发起人")],
+                                  ),
+                                  e("span", [t._v(t._s(t.record.tea_name))]),
+                                ]),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("签到时间段")],
+                                  ),
+                                  e("span", [t._v(t._s(t.timeSlot))]),
+                                ]),
+                                e("div", { staticClass: "row q-mt-xs" }, [
+                                  e(
+                                    "span",
+                                    {
+                                      staticClass: "neu-css-after-colon text-grey",
+                                      staticStyle: { "font-size": "15px" },
+                                    },
+                                    [t._v("详情")],
+                                  ),
+                                  e("span", {
+                                    staticClass: "full-width",
+                                    domProps: { innerHTML: t._s(t.record.detail) },
+                                  }),
+                                ]),
+                              ]),
+                            ],
+                            1,
+                          ),
+                          e(
+                            "q-card",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: "qa" == t.tab,
+                                  expression: "tab == 'qa'",
+                                },
+                              ],
+                              staticClass: "bg-grey-3",
+                              attrs: { flat: "" },
+                            },
+                            [
+                              e(
+                                "q-card-section",
+                                [
+                                  e("neu-qa-list", {
+                                    attrs: { taskMenuId: "signin", taskId: t.id + "" },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      )
+                    : t._e(),
+                ],
+                1,
+              ),
+              e(
+                "q-dialog",
+                {
+                  model: {
+                    value: t.qrShowingDialog,
+                    callback: function (s) {
+                      t.qrShowingDialog = s;
+                    },
+                    expression: "qrShowingDialog",
+                  },
+                },
+                [
+                  e(
+                    "q-card",
+                    { staticClass: "full-width", attrs: { flat: "" } },
+                    [
+                      e(
+                        "q-card-section",
+                        { staticClass: "row items-center justify-between" },
+                        [
+                          e("div", { staticClass: "text-h6" }, [t._v("二维码展示")]),
+                          e("q-btn", {
+                            attrs: { icon: "close", flat: "", round: "", dense: "", size: "sm" },
+                            on: { click: t.clearScan },
+                          }),
+                        ],
+                        1,
+                      ),
+                      e("q-separator"),
+                      e(
+                        "q-card-section",
+                        { staticClass: "text-center" },
+                        [
+                          [
+                            e("vue-qr", {
+                              staticClass: "q-mb-xl",
+                              attrs: {
+                                text: t.downloadData.text,
+                                margin: 0,
+                                colorDark: "#3B3B3B",
+                                colorLight: "#fff",
+                                size: 250,
+                              },
+                            }),
+                          ],
+                        ],
+                        2,
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+              e(
+                "q-footer",
+                { staticClass: "bg-white text-primary", attrs: { bordered: "" } },
+                [
+                  e(
+                    "q-tabs",
+                    {
+                      staticClass: "text-black",
+                      attrs: {
+                        "no-caps": "",
+                        "active-color": "primary",
+                        "indicator-color": "transparent",
+                        align: "justify",
+                      },
+                      model: {
+                        value: t.tab,
+                        callback: function (s) {
+                          t.tab = s;
+                        },
+                        expression: "tab",
+                      },
+                    },
+                    [
+                      e("q-tab", { attrs: { name: "result", label: "签到结果" } }),
+                      e("q-separator", { attrs: { vertical: "" } }),
+                      e("q-tab", { attrs: { name: "qa", label: "提问" } }),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+            ],
+            1,
+          );
+        },
+        r = [],
+        i = e("658f"),
+        o = e.n(i),
+        n = e("7590"),
+        c = {
+          components: { vueQr: o.a, NeuQaList: n["a"] },
+          data() {
+            return {
+              tab: "result",
+              tabs: "",
+              id: this.$route.query.id,
+              batch_no: this.$route.query.batch_no,
+              record: null,
+              downloadData: { text: "" },
+              qrShowingDialog: !1,
+              timeSlot: "",
+            };
+          },
+          destroyed() {
+            window.removeEventListener("popstate", this.goBack, !1);
+          },
+          mounted() {
+            (this.$axiosAction("/api/student/signin/signin.api", {
+              action: "getSigninSuccess",
+              id: this.id,
+              batch_no: this.batch_no,
+            }).then((t) => {
+              0 === t.data.code
+                ? ((this.record = t.data.result),
+                  this.record.begin_time_befor === this.record.end_time_befor
+                    ? (this.timeSlot = this.record.begin_time + " 至 " + this.record.end_time_after)
+                    : (this.timeSlot = this.record.begin_time + " 至 " + this.record.end_time))
+                : this.goBack();
+            }),
+              window.history &&
+                window.history.pushState &&
+                (history.pushState(null, null, document.URL),
+                window.addEventListener("popstate", this.goBack, !1)));
+          },
+          methods: {
+            showQrCode() {
+              ((this.qrShowingDialog = !0),
+                this.showEncryptionQrCode(),
+                (this.setInter = setInterval(() => {
+                  this.showEncryptionQrCode();
+                }, 6e4)));
+            },
+            clearScan() {
+              ((this.qrShowingDialog = !1), clearInterval(this.setInter));
+            },
+            showEncryptionQrCode() {
+              this.$axiosAction("/api/student/signin/signin.api", {
+                action: "showEncryptionQrCode",
+                id: this.id,
+                batch_no: this.batch_no,
+                login_name: this.record.student_no,
+              }).then((t) => {
+                0 === t.data.code && (this.downloadData.text = t.data.qrcode);
+              });
+            },
+            goBack() {
+              ((this.tabs = this.$route.query.tab),
+                this.$router.push({ name: "/student/signin/index", query: { tab: this.tabs } }));
+            },
+          },
+        },
+        l = c,
+        d = e("2877"),
+        u = e("4d5a"),
+        h = e("e359"),
+        w = e("65c6"),
+        v = e("9c40"),
+        m = e("6ac5"),
+        _ = e("09e3"),
+        p = e("9989"),
+        f = e("f09f"),
+        x = e("a370"),
+        g = e("0016"),
+        b = e("24e8"),
+        q = e("eb85"),
+        y = e("7ff0"),
+        C = e("429b"),
+        S = e("7460"),
+        z = e("eebe"),
+        Q = e.n(z),
+        k = Object(d["a"])(l, a, r, !1, null, null, null);
+      s["default"] = k.exports;
+      Q()(k, "components", {
+        QLayout: u["a"],
+        QHeader: h["a"],
+        QToolbar: w["a"],
+        QBtn: v["a"],
+        QToolbarTitle: m["a"],
+        QPageContainer: _["a"],
+        QPage: p["a"],
+        QCard: f["a"],
+        QCardSection: x["a"],
+        QIcon: g["a"],
+        QDialog: b["a"],
+        QSeparator: q["a"],
+        QFooter: y["a"],
+        QTabs: C["a"],
+        QTab: S["a"],
+      });
+    },
+  },
+]);

@@ -1,0 +1,8375 @@
+{
+ "10": {
+  "chunk": "10",
+  "chunkId": [
+   "10"
+  ],
+  "modules": [
+   "35a8"
+  ],
+  "routes": [
+   {
+    "path": "",
+    "name": null,
+    "chunks": [
+     "0",
+     "10"
+    ],
+    "mods": [
+     "35a8"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 5365,
+  "componentNames": [
+   "Welcome",
+   "check_box",
+   "check_box_outline_blank",
+   "show"
+  ],
+  "apis": [
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "不同意并退出",
+   "东软智慧学工系统是由大连东软教育科技集团有限公司",
+   "为了方便说明",
+   "为了更好地保护您的权益",
+   "为向您提供产品相关的基础功能和服务",
+   "使用合法必要的信息",
+   "信息收集",
+   "充分理解东软智慧学工的",
+   "共享或向其提供您的信息",
+   "可将您的问题发送至我们的客服邮箱",
+   "同意",
+   "大连东软教育科技集团有限公司简称",
+   "如您同意",
+   "存储",
+   "寝室检查等业务",
+   "已同意",
+   "建议",
+   "开发运营的为您提供学生管理服务的应用",
+   "开始使用",
+   "开始接受我们的服务",
+   "当您有其他投诉",
+   "您有权拒绝或取消授权",
+   "我们",
+   "我们不会从第三方处获取",
+   "我们会在遵循法律法规的前提下",
+   "我们会基于您的明示授权",
+   "我们会采取业界先进的安全措施和技术保护您的信息安",
+   "我们依据最新的监管要求更新了",
+   "我们设立了个人信息保护专职部门",
+   "我们非常重视您的个人信息和隐私保护",
+   "或个人信息保护专员",
+   "收集",
+   "未成年人信息相关问题时",
+   "未经您同意",
+   "根据您在使用过程中的不同服务场景",
+   "欢迎使用东软智慧学工",
+   "流程申请",
+   "流程申请等业务",
+   "特向您说明如下",
+   "用于保障您的账号安全",
+   "用于向您推送必要的通知",
+   "用于请假",
+   "用户协议",
+   "相机",
+   "签到",
+   "系统通知权限",
+   "获取您的位置",
+   "设备号信息",
+   "请先阅读并同意用户协议及隐私政策",
+   "请您务必审慎阅读",
+   "请点击",
+   "隐私政策"
+  ]
+ },
+ "100": {
+  "chunk": "100",
+  "chunkId": [
+   "100"
+  ],
+  "modules": [
+   "60e8"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/notice/noticeExperience",
+    "name": "/teacher/notice/noticeExperience",
+    "chunks": [
+     "0",
+     "1",
+     "100"
+    ],
+    "mods": [
+     "60e8"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5287,
+  "componentNames": [
+   "noticeExperience",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "反馈截止时间",
+   "发起人",
+   "发起时间",
+   "已确认",
+   "已阅读",
+   "暂无通知",
+   "未确认",
+   "未阅读",
+   "没有更多了",
+   "的通知记录",
+   "阅读时间"
+  ]
+ },
+ "101": {
+  "chunk": "101",
+  "chunkId": [
+   "101"
+  ],
+  "modules": [
+   "32f5"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/process/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "101"
+    ],
+    "mods": [
+     "32f5"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 13015,
+  "componentNames": [
+   "close-popup",
+   "processTeaDetails",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "下一级审批人被删除或无权限",
+   "人审核中",
+   "入校核验时间段",
+   "入校申请时间段",
+   "删除该流程",
+   "发起申请",
+   "取消",
+   "姓名",
+   "存在风险",
+   "学号",
+   "学生信息",
+   "学生手机号码",
+   "审批中",
+   "审批意见",
+   "审批通过",
+   "审批驳回",
+   "当前审核教师",
+   "性别",
+   "您没有当前页面访问权限",
+   "或已被审批",
+   "操作成功",
+   "是否通过",
+   "未填写",
+   "流程名称",
+   "流程记录",
+   "流程详情",
+   "现在",
+   "申请位置",
+   "申请时间",
+   "申请详情",
+   "确定",
+   "确定要删除此流程数据吗",
+   "确认",
+   "确认通过",
+   "离校核验时间段",
+   "离校申请时间段",
+   "紧急联系号码",
+   "该流程被撤回",
+   "请刷新或联系管理员",
+   "返回",
+   "通过",
+   "院系",
+   "驳回"
+  ]
+ },
+ "102": {
+  "chunk": "102",
+  "chunkId": [
+   "102"
+  ],
+  "modules": [
+   "40d3"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/process/processTypeList",
+    "name": null,
+    "chunks": [
+     "0",
+     "102"
+    ],
+    "mods": [
+     "40d3"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6699,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "processNavigation",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "全部的",
+   "取消",
+   "复制",
+   "复制该模板设置数据",
+   "复制该流程设置数据并创建新",
+   "审批完成的",
+   "已审批",
+   "待审批",
+   "待审批的",
+   "查看或编辑当前流程",
+   "流程详情",
+   "申请信息",
+   "申请记录",
+   "确认复制",
+   "该流程类型被删除"
+  ]
+ },
+ "103": {
+  "chunk": "103",
+  "chunkId": [
+   "103"
+  ],
+  "modules": [
+   "897e"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/process/list",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "103"
+    ],
+    "mods": [
+     "897e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 21662,
+  "componentNames": [
+   "SanitationIndex",
+   "access_time",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "person",
+   "ripple",
+   "show",
+   "touch-hold",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "不需要核验",
+   "专业",
+   "以下学生存在风险选项",
+   "入校核验",
+   "入校核验开始时间",
+   "入校核验结束时间",
+   "入校申请开始时间",
+   "入校申请结束时间",
+   "关闭",
+   "内容",
+   "加载更多",
+   "取消",
+   "可以查询学号",
+   "姓名",
+   "学号",
+   "审批中",
+   "审批意见",
+   "审批提示",
+   "审批状态",
+   "已审批",
+   "已审批流程申请",
+   "年级",
+   "年级信息",
+   "开启",
+   "开始时间",
+   "待审批",
+   "待审批流程申请",
+   "性别",
+   "您没有当前页面访问权限",
+   "手机号",
+   "提交日期",
+   "提交时间",
+   "操作",
+   "操作成功",
+   "暂无流程申请",
+   "标题",
+   "没有更多了",
+   "流程名称",
+   "流程申请记录",
+   "班级",
+   "申请",
+   "申请时间",
+   "申请记录",
+   "确定",
+   "确认",
+   "离校核验",
+   "离校核验开始时间",
+   "离校核验结束时间",
+   "离校申请开始时间",
+   "离校申请结束时间",
+   "紧急联系号码",
+   "结束时间",
+   "结束时间应大于开始时间",
+   "综合查询",
+   "至少选择一项",
+   "请联系管理员或刷新",
+   "通过",
+   "部分审批下一级审批人没有权限或被删除",
+   "重置时间",
+   "院系",
+   "需要入校",
+   "需要入校核验",
+   "需要离校核验",
+   "驳回"
+  ]
+ },
+ "104": {
+  "chunk": "104",
+  "chunkId": [
+   "104"
+  ],
+  "modules": [
+   "1e9e"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/process/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "104"
+    ],
+    "mods": [
+     "1e9e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10318,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "processStudentIndex",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "入校核验",
+   "关闭",
+   "创建人",
+   "加载更多",
+   "取消",
+   "可以查询流程名称",
+   "审批中",
+   "已审批",
+   "已审批次数",
+   "开启",
+   "开启核验",
+   "暂无流程",
+   "没有更多了",
+   "流程名称",
+   "流程说明",
+   "状态",
+   "申请人数",
+   "申请次数",
+   "申请限制",
+   "确定",
+   "离校核验",
+   "综合查询",
+   "通过人数",
+   "通过次数",
+   "需我审批",
+   "驳回人数",
+   "驳回次数"
+  ]
+ },
+ "105": {
+  "chunk": "105",
+  "chunkId": [
+   "105"
+  ],
+  "modules": [
+   "0fc5"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/process/typeDetail",
+    "name": "/teacher/process/processTypeNew",
+    "chunks": [
+     "0",
+     "1",
+     "105"
+    ],
+    "mods": [
+     "0fc5"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 35946,
+  "componentNames": [
+   "access_time",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "processTypeNew",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "上移",
+   "下移",
+   "不设置则全校学生可申请",
+   "保存",
+   "入校园核验功能已关闭",
+   "入校核验开始时间",
+   "入校核验结束时间",
+   "入校申请开始时间",
+   "入校申请结束时间",
+   "关闭",
+   "出校园核验功能已关闭",
+   "删除",
+   "升为",
+   "发布",
+   "取消",
+   "可申请对象",
+   "启用",
+   "完成",
+   "审批流程",
+   "已选择",
+   "开启入校核验",
+   "开启离校核验",
+   "新增下一级审核人",
+   "新建",
+   "是否需要学生定位信息",
+   "更改后自动保存",
+   "检查项",
+   "流程名称",
+   "流程描述",
+   "流程配置",
+   "添加",
+   "申请限制",
+   "相关内容不能修改",
+   "确认删除",
+   "离校核验开始时间",
+   "离校核验结束时间",
+   "离校申请开始时间",
+   "离校申请结束时间",
+   "级审核人",
+   "编辑",
+   "表单项目",
+   "设置可申请对象",
+   "设置审核人",
+   "该审核人将被删除",
+   "该流程将被删除",
+   "请填写申请时间之后的时间",
+   "请填写该项",
+   "请设置审核人",
+   "请选择",
+   "请选择申请限制",
+   "选择申请限制",
+   "降为"
+  ]
+ },
+ "106": {
+  "chunk": "106",
+  "chunkId": [
+   "106"
+  ],
+  "modules": [
+   "3b5c"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/sanitation/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "106"
+    ],
+    "mods": [
+     "3b5c"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 24081,
+  "componentNames": [
+   "SanitationDetail",
+   "access_time",
+   "check",
+   "close-popup",
+   "content_copy",
+   "delete",
+   "event",
+   "get_app",
+   "keyboard_arrow_right",
+   "person",
+   "refresh",
+   "remove_red_eye",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/sanitation/sanitation.api"
+  ],
+  "chineseTerms": [
+   "任务状态",
+   "修改共享对象",
+   "允许填写人自己删除记录",
+   "共享",
+   "关闭",
+   "创建时间",
+   "删除",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查寝寝室",
+   "填写对象",
+   "填写有效时间",
+   "填写有效期间",
+   "复制",
+   "复制该寝室检查设置数据并全新发布",
+   "姓名",
+   "学生个人检查配置",
+   "完成",
+   "寝室",
+   "寝室检查配置",
+   "导出",
+   "已提交",
+   "延期",
+   "性别",
+   "截止日期至",
+   "执行日期",
+   "提交时间",
+   "提前结束",
+   "提前结束后教师将不能再填写寝室结果",
+   "教工号",
+   "暂存",
+   "暂无填写数据",
+   "查寝任务详情",
+   "检查寝室",
+   "没有更多了",
+   "确定",
+   "确认删除",
+   "确认复制",
+   "确认延期",
+   "确认提前结束",
+   "确认重新开启",
+   "综合查询",
+   "设置填写对象",
+   "该寝室任务及各位老师已填写的数据将被清空",
+   "该条信息不存在或您权限不足",
+   "请填写原截止日期之后的日期",
+   "请填写该项",
+   "选择",
+   "部门院系",
+   "重新开启",
+   "院系",
+   "预览",
+   "预览任务"
+  ]
+ },
+ "107": {
+  "chunk": "107",
+  "chunkId": [
+   "107"
+  ],
+  "modules": [
+   "a22e"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/sanitation/detailresult",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "107"
+    ],
+    "mods": [
+     "a22e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 16686,
+  "componentNames": [
+   "SanitationDetailResult",
+   "close-popup",
+   "event",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/basic/stuRoom.api",
+   "/api/teacher/sanitation/sanitation.api"
+  ],
+  "chineseTerms": [
+   "保存",
+   "修改学生查寝结果",
+   "修改状态再次点击",
+   "公寓楼",
+   "关闭",
+   "删除",
+   "取消",
+   "填写",
+   "学生",
+   "宿舍",
+   "宿舍检查结果",
+   "寝室",
+   "寝室检查基本内容",
+   "执行日期",
+   "执行时间应在任务执行时间范围内",
+   "提交",
+   "暂存",
+   "查寝结果",
+   "点击可查看",
+   "确认删除",
+   "若在添加",
+   "蓝色为当前正在展开",
+   "该任务没有学生检查项目",
+   "该学生查寝结果将会清空",
+   "该寝室不在该楼",
+   "该寝室结果将被删除",
+   "该楼寝室为空",
+   "请填写执行日期",
+   "请填写该项",
+   "请选择宿舍",
+   "请选择该项",
+   "选择宿舍",
+   "选择寝室"
+  ]
+ },
+ "108": {
+  "chunk": "108",
+  "chunkId": [
+   "108"
+  ],
+  "modules": [
+   "1563"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/sanitation/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "108"
+    ],
+    "mods": [
+     "1563"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8220,
+  "componentNames": [
+   "SanitationIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/sanitation/sanitation.api"
+  ],
+  "chineseTerms": [
+   "任务发起人",
+   "任务状态",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查寝任务名称",
+   "填写有效时间",
+   "已结束",
+   "暂无查寝任务",
+   "未进行",
+   "没有更多了",
+   "确定",
+   "综合查询",
+   "进行中"
+  ]
+ },
+ "109": {
+  "chunk": "109",
+  "chunkId": [
+   "109"
+  ],
+  "modules": [
+   "54fe"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/sanitation/new",
+    "name": "/teacher/sanitation/new",
+    "chunks": [
+     "0",
+     "1",
+     "109"
+    ],
+    "mods": [
+     "54fe"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 19915,
+  "componentNames": [
+   "SanitationNew",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/sanitation/sanitation.api"
+  ],
+  "chineseTerms": [
+   "上移",
+   "下移",
+   "允许填写人自己删除记录",
+   "共享对象",
+   "关闭",
+   "删除",
+   "发布",
+   "取消",
+   "名称",
+   "填写有效期间",
+   "学生个人检查配置",
+   "学生个人检查配置项目",
+   "学生检查配置",
+   "完成",
+   "寝室检查通知内容",
+   "寝室检查配置",
+   "将该查寝统计数据共享给其他老师",
+   "已选择",
+   "开始时间",
+   "截止日期应在开始日期之后",
+   "截止时间",
+   "执行对象",
+   "新建查寝任务",
+   "检查项",
+   "添加",
+   "编辑",
+   "要求",
+   "设置共享对象",
+   "设置填写对象",
+   "请填写任务名称",
+   "请填写开始时间",
+   "请填写结束时间",
+   "请填写要求",
+   "请填写该项",
+   "请设置学生个人检查配置",
+   "请设置寝室检查配置",
+   "请设置执行对象",
+   "请选择",
+   "配置",
+   "项目"
+  ]
+ },
+ "11": {
+  "chunk": "11",
+  "chunkId": [
+   "11"
+  ],
+  "modules": [
+   "8456"
+  ],
+  "routes": [
+   {
+    "path": "/maintainer/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "11"
+    ],
+    "mods": [
+     "8456"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8464,
+  "componentNames": [
+   "repairDetail"
+  ],
+  "apis": [
+   "/api/teacher/basic/maintainer.api"
+  ],
+  "chineseTerms": [
+   "分配维修人员",
+   "原维修人员",
+   "姓名",
+   "学号",
+   "学院",
+   "意见反馈",
+   "报修信息",
+   "报修区域",
+   "报修时间",
+   "报修类型",
+   "报修详情",
+   "接单时间",
+   "改派人员",
+   "改派原因",
+   "改派时间",
+   "故障描述",
+   "故障类型",
+   "故障附件",
+   "期望上门时间",
+   "本次维修满意度星级评分",
+   "维修人员",
+   "维修完成时间",
+   "维修描述",
+   "维修进度",
+   "维修附件",
+   "联系电话",
+   "详细地点",
+   "驳回原因",
+   "驳回时间"
+  ]
+ },
+ "110": {
+  "chunk": "110",
+  "chunkId": [
+   "110"
+  ],
+  "modules": [
+   "c4d2"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/scanning/leaveVer",
+    "name": "/teacher/scanning/leaveVer",
+    "chunks": [
+     "0",
+     "110"
+    ],
+    "mods": [
+     "c4d2"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6570,
+  "componentNames": [
+   "check",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/scanning/scanning.api"
+  ],
+  "chineseTerms": [
+   "发起位置",
+   "发起时间",
+   "发起申请",
+   "审批意见",
+   "请假信息核验",
+   "请假原因",
+   "请假时间",
+   "请假流程记录",
+   "请假类型",
+   "请假详情",
+   "需要离市",
+   "需要离校",
+   "需要离省"
+  ]
+ },
+ "111": {
+  "chunk": "111",
+  "chunkId": [
+   "111"
+  ],
+  "modules": [
+   "7e9c"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/scanning/signinVer",
+    "name": "/teacher/scanning/signinVer",
+    "chunks": [
+     "0",
+     "111"
+    ],
+    "mods": [
+     "7e9c"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 3812,
+  "componentNames": [
+   "check_circle",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/scanning/scanning.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "姓名",
+   "学号",
+   "学院",
+   "已填写",
+   "已签到",
+   "性别",
+   "扫码来源",
+   "班级",
+   "签到位置",
+   "签到信息核验",
+   "签到时间",
+   "附加信息"
+  ]
+ },
+ "112": {
+  "chunk": "112",
+  "chunkId": [
+   "112"
+  ],
+  "modules": [
+   "a0ab"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/signin/detail",
+    "name": "/teacher/signin/detail",
+    "chunks": [
+     "0",
+     "1",
+     "112"
+    ],
+    "mods": [
+     "a0ab"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 38995,
+  "componentNames": [
+   "NeuSigninStatistics",
+   "SigninDetail",
+   "arrow_drop_down",
+   "bubble_chart",
+   "close-popup",
+   "get_app",
+   "keyboard_arrow_right",
+   "mdi-qrcode",
+   "notifications",
+   "person",
+   "progress",
+   "ripple",
+   "show",
+   "statistics"
+  ],
+  "apis": [
+   "/api/teacher/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "一级行政区",
+   "一级行政区分布",
+   "三级行政区分布",
+   "上传的照片",
+   "专业",
+   "二级行政区",
+   "二级行政区分布",
+   "二维码展示",
+   "二维码来源",
+   "任务对象不能为空",
+   "位置异常",
+   "位置正常",
+   "位置状态",
+   "删除",
+   "加载更多",
+   "单次",
+   "取消",
+   "变更",
+   "变更为",
+   "变更人",
+   "变更原因",
+   "变更时间",
+   "变更状态",
+   "变更记录详情",
+   "变更说明",
+   "变更说明选填",
+   "可以查询学号",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周日",
+   "复制",
+   "复制该签到信息设置数据并全新发布",
+   "姓名",
+   "学号",
+   "学生提问",
+   "定位",
+   "导出",
+   "导出位置分布数据",
+   "导出签到数据",
+   "展示二维码",
+   "已签到",
+   "已签到人数",
+   "已签到次数",
+   "已请假",
+   "已请假人数",
+   "已请假次数",
+   "年级",
+   "应签到人数",
+   "应签到次数",
+   "性别",
+   "手机号",
+   "按专业统计",
+   "按班级统计",
+   "按院系统计",
+   "推送",
+   "数据",
+   "数据将被清空",
+   "时间段选择",
+   "暂无",
+   "有变更",
+   "未签到",
+   "未签到人数",
+   "未签到提醒",
+   "本次签到率",
+   "本次请假率",
+   "查看照片",
+   "查看签到状态变更记录",
+   "没有更多了",
+   "班级",
+   "班级信息",
+   "的签到统计",
+   "短信提醒",
+   "确定",
+   "确认删除",
+   "确认复制",
+   "签到"
+  ]
+ },
+ "113": {
+  "chunk": "113",
+  "chunkId": [
+   "113"
+  ],
+  "modules": [
+   "6822"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/signin/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "113"
+    ],
+    "mods": [
+     "6822"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8875,
+  "componentNames": [
+   "SigninIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "任务状态",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查询任务名称",
+   "已结束",
+   "总执行次数",
+   "执行时间",
+   "数据",
+   "暂无",
+   "未进行",
+   "没有更多了",
+   "确定",
+   "签到任务名称",
+   "签到方式",
+   "签到频率",
+   "综合查询",
+   "进行中"
+  ]
+ },
+ "114": {
+  "chunk": "114",
+  "chunkId": [
+   "114"
+  ],
+  "modules": [
+   "2045"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/signin/new",
+    "name": "/teacher/signin/new",
+    "chunks": [
+     "0",
+     "1",
+     "114"
+    ],
+    "mods": [
+     "2045"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 51492,
+  "componentNames": [
+   "SigninNew",
+   "access_time",
+   "back",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/basic/location.api",
+   "/api/teacher/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "不支持该类型文件上传",
+   "二维码负责人",
+   "以内",
+   "份文件不符合格式限制",
+   "允许班级干部查看任务数据",
+   "允许范围外签到",
+   "共享对象",
+   "关闭",
+   "删除",
+   "删除该时间段",
+   "加载更多",
+   "半径",
+   "发布",
+   "发布单位",
+   "取消",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周日",
+   "多边形",
+   "学生",
+   "完成",
+   "将该",
+   "已选择",
+   "开始截止时间",
+   "开始日期",
+   "开始时间",
+   "循环签到频率",
+   "截止日期",
+   "截止日期应在开始日期之后",
+   "截止时间",
+   "截止时间应在开始时间之后",
+   "指定日期开始截止时间段不能重复",
+   "指定日期开始时间不能重复",
+   "教师",
+   "文件大小应限制在",
+   "新建",
+   "无需签到对象",
+   "时间段",
+   "暂无签到地点",
+   "有效范围",
+   "查看",
+   "没有更多了",
+   "添加",
+   "添加人",
+   "添加学生二维码负责人",
+   "添加教师二维码负责人",
+   "签到任务名称",
+   "签到对象",
+   "签到开始时间",
+   "签到方式",
+   "签到时进行拍照",
+   "签到类型",
+   "签到结束时间",
+   "签到范围",
+   "签到说明",
+   "签到通知内容",
+   "签到频率",
+   "组合子任务不可更改分享对象",
+   "统计数据共享给其他老师",
+   "设置共享对象",
+   "设置无需签到对象",
+   "设置签到对象",
+   "请填写签到说明",
+   "请填写该项",
+   "请设置签到地点",
+   "请设置签到对象",
+   "选择",
+   "选择文件并上传",
+   "选择签到范围",
+   "通知提前推送时间",
+   "通知设定",
+   "附件",
+   "附件上传",
+   "附件格式支持"
+  ]
+ },
+ "115": {
+  "chunk": "115",
+  "chunkId": [
+   "115"
+  ],
+  "modules": [
+   "92f0"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/signin/signinExperience",
+    "name": "/teacher/signin/signinExperience",
+    "chunks": [
+     "0",
+     "1",
+     "115"
+    ],
+    "mods": [
+     "92f0"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6196,
+  "componentNames": [
+   "show",
+   "signinExperience"
+  ],
+  "apis": [
+   "/api/teacher/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发起人",
+   "已签到",
+   "已请假",
+   "暂无签到记录",
+   "未签到",
+   "没有更多了",
+   "的签到记录",
+   "签到方式",
+   "签到时间段",
+   "签到频率"
+  ]
+ },
+ "116": {
+  "chunk": "116",
+  "chunkId": [
+   "116"
+  ],
+  "modules": [
+   "49de"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/signin/statistics",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "116"
+    ],
+    "mods": [
+     "49de"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 37886,
+  "componentNames": [
+   "NeuSigninRangeNow",
+   "SigninStatistics",
+   "check",
+   "close-popup",
+   "content_copy",
+   "delete",
+   "keyboard_arrow_right",
+   "remove_red_eye",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "不允许范围外签到",
+   "为组合任务",
+   "二维码负责人",
+   "任务对象不能为空",
+   "修改共享对象",
+   "修改组合共享",
+   "允许班级干部查看任务数据",
+   "允许范围外签到",
+   "共享",
+   "关闭",
+   "创建时间",
+   "删除",
+   "加载更多",
+   "半径",
+   "发布单位",
+   "发起人",
+   "取消",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周循环",
+   "周日",
+   "复制",
+   "复制该签到信息设置数据并全新发布",
+   "多边形",
+   "学生",
+   "完成",
+   "对象",
+   "已签人数",
+   "已签到次数",
+   "已请假人数",
+   "已请假次数",
+   "应签人数",
+   "应签到次数",
+   "开始截止日期",
+   "开始截止时间",
+   "循环频率",
+   "总执行次数",
+   "总签到率",
+   "总请假率",
+   "执行周期",
+   "执行频率",
+   "执行频率若为周循环则当天依然有效",
+   "拍照",
+   "指定日期频率修改无需签到对象后下次执行生效",
+   "指定日期频率修改签到对象后下次执行生效",
+   "提前结束",
+   "教师",
+   "数据",
+   "数据将被清空",
+   "无需",
+   "暂无",
+   "暂无签到地点",
+   "有效范围",
+   "未签到人数",
+   "查看范围",
+   "没有更多了",
+   "添加人",
+   "点击确定进入组合详情修改",
+   "知道了",
+   "确定",
+   "确认",
+   "确认删除",
+   "确认复制",
+   "确认提前结束",
+   "签到方式",
+   "签到时间段",
+   "签到率",
+   "签到率计算规则",
+   "签到范围",
+   "签到附加题表单",
+   "签到频率",
+   "结束",
+   "统计",
+   "范围外签到人数",
+   "计算规则",
+   "设置"
+  ]
+ },
+ "117": {
+  "chunk": "117",
+  "chunkId": [
+   "117"
+  ],
+  "modules": [
+   "0930"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/verification/leaveVer",
+    "name": "/teacher/verification/leaveVer",
+    "chunks": [
+     "0",
+     "117"
+    ],
+    "mods": [
+     "0930"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6744,
+  "componentNames": [
+   "check",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "发起位置",
+   "发起时间",
+   "发起申请",
+   "审批意见",
+   "请假信息核验",
+   "请假原因",
+   "请假时间",
+   "请假流程记录",
+   "请假类型",
+   "请假详情",
+   "需要离市",
+   "需要离校",
+   "需要离省"
+  ]
+ },
+ "118": {
+  "chunk": "118",
+  "chunkId": [
+   "118"
+  ],
+  "modules": [
+   "87c4"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/verification/signinVer",
+    "name": "/teacher/verification/signinVer",
+    "chunks": [
+     "0",
+     "118"
+    ],
+    "mods": [
+     "87c4"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 3796,
+  "componentNames": [
+   "check_circle",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "姓名",
+   "学号",
+   "学院",
+   "已填写",
+   "已签到",
+   "性别",
+   "扫码来源",
+   "班级",
+   "签到位置",
+   "签到信息核验",
+   "签到时间",
+   "附加信息"
+  ]
+ },
+ "119": {
+  "chunk": "119",
+  "chunkId": [
+   "119"
+  ],
+  "modules": [
+   "f7d9"
+  ],
+  "routes": [
+   {
+    "path": "/user/account",
+    "name": null,
+    "chunks": [
+     "0",
+     "119"
+    ],
+    "mods": [
+     "f7d9"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4553,
+  "componentNames": [
+   "Password",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/basic/stuInfo.api",
+   "/api/teacher/basic/mainInfo.api",
+   "/api/teacher/basic/teaInfo.api",
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "修改",
+   "取消",
+   "微信",
+   "微信解绑确认",
+   "您确认要解除绑定微信账号关联吗",
+   "手机号",
+   "授权处理过期",
+   "未安装微信",
+   "登录密码",
+   "确认",
+   "绑定",
+   "绑定中",
+   "解绑中",
+   "账号安全"
+  ]
+ },
+ "12": {
+  "chunk": "12",
+  "chunkId": [
+   "12"
+  ],
+  "modules": [
+   "7ee9"
+  ],
+  "routes": [
+   {
+    "path": "/maintainer/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "12"
+    ],
+    "mods": [
+     "7ee9"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 7472,
+  "componentNames": [
+   "MaintainerIndex",
+   "handyman",
+   "keyboard_arrow_right",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/basic/maintainer.api",
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "今日接单",
+   "再按一次退出",
+   "取消",
+   "完成报修单",
+   "您好",
+   "所属部门",
+   "报修单",
+   "是否退出当前帐号",
+   "智慧学工",
+   "检查新版本",
+   "用户协议",
+   "确认",
+   "维修师",
+   "综合统计",
+   "联系电话",
+   "评价星级",
+   "账号安全",
+   "退出当前帐号",
+   "隐私政策"
+  ]
+ },
+ "120": {
+  "chunk": "120",
+  "chunkId": [
+   "120"
+  ],
+  "modules": [
+   "d313"
+  ],
+  "routes": [
+   {
+    "path": "/user/bindingMob",
+    "name": null,
+    "chunks": [
+     "0",
+     "120"
+    ],
+    "mods": [
+     "d313"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5306,
+  "componentNames": [
+   "BindingMob"
+  ],
+  "apis": [
+   "/api/user/bindingMob.api"
+  ],
+  "chineseTerms": [
+   "位手机号",
+   "位验证码",
+   "可重新登录",
+   "您可以向下列老师发送代绑手机号申请",
+   "您当前绑定的手机号为",
+   "手机号",
+   "手机号绑定",
+   "新手机号与原手机号相同",
+   "根据学校要求",
+   "申请",
+   "申请已发送",
+   "秒后可重发",
+   "绑定",
+   "老师帮您绑定完成后",
+   "获取验证码",
+   "该功能暂未开放",
+   "请输入",
+   "请输入手机号",
+   "请输入验证码",
+   "需绑定手机号后才可使用",
+   "验证码"
+  ]
+ },
+ "121": {
+  "chunk": "121",
+  "chunkId": [
+   "121"
+  ],
+  "modules": [
+   "a3a5"
+  ],
+  "routes": [
+   {
+    "path": "/user/doBindingMob",
+    "name": null,
+    "chunks": [
+     "0",
+     "121"
+    ],
+    "mods": [
+     "a3a5"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 2177,
+  "componentNames": [
+   "DoBindingMob"
+  ],
+  "apis": [
+   "/api/user/bindingMob.api"
+  ],
+  "chineseTerms": [
+   "代其绑定",
+   "代绑手机号",
+   "原手机号",
+   "姓名",
+   "手机号"
+  ]
+ },
+ "122": {
+  "chunk": "122",
+  "chunkId": [
+   "122"
+  ],
+  "modules": [
+   "5e71"
+  ],
+  "routes": [
+   {
+    "path": "/user/findPwd",
+    "name": null,
+    "chunks": [
+     "0",
+     "122"
+    ],
+    "mods": [
+     "5e71"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 6531,
+  "componentNames": [
+   "BindingMob",
+   "show"
+  ],
+  "apis": [
+   "/api/memory.api",
+   "/api/user/findPwd.api"
+  ],
+  "chineseTerms": [
+   "下一步",
+   "两次密码输入不一致",
+   "个字符",
+   "位手机号",
+   "位数字字母特殊符号混合",
+   "位验证码",
+   "保存",
+   "学生用户",
+   "密码中必须包含字母",
+   "密码找回",
+   "手机号",
+   "教工号",
+   "教师用户",
+   "数字",
+   "新密码",
+   "最多",
+   "特称字符",
+   "用户名",
+   "确认密码",
+   "秒后可重发",
+   "至少",
+   "若未绑定手机号或长时间接收不到验证码",
+   "获取验证码",
+   "该功能暂未开放",
+   "请稍后再试",
+   "请联系管理员",
+   "请输入",
+   "请输入学号",
+   "请输入手机号",
+   "请输入新密码",
+   "请输入确认密码",
+   "请输入验证码",
+   "输入的验证码不正确",
+   "重置登录密码",
+   "验证失败",
+   "验证码"
+  ]
+ },
+ "123": {
+  "chunk": "123",
+  "chunkId": [
+   "123"
+  ],
+  "modules": [
+   "1e4d"
+  ],
+  "routes": [
+   {
+    "path": "/user/passport",
+    "name": null,
+    "chunks": [
+     "0",
+     "123"
+    ],
+    "mods": [
+     "1e4d"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 2946,
+  "componentNames": [
+   "Passport"
+  ],
+  "apis": [
+   "/api/user/passport.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "入校",
+   "培养层次",
+   "姓名",
+   "学号",
+   "学籍状态",
+   "寝室",
+   "年级",
+   "性别",
+   "班级",
+   "离校",
+   "通行卡",
+   "院系"
+  ]
+ },
+ "124": {
+  "chunk": "124",
+  "chunkId": [
+   "124"
+  ],
+  "modules": [
+   "62a1"
+  ],
+  "routes": [
+   {
+    "path": "/user/password",
+    "name": null,
+    "chunks": [
+     "0",
+     "124"
+    ],
+    "mods": [
+     "62a1"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 3601,
+  "componentNames": [
+   "Password"
+  ],
+  "apis": [
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "两次密码输入的不一致",
+   "个字符",
+   "修改",
+   "修改密码",
+   "原密码",
+   "密码中必须包含大小写字母",
+   "数字",
+   "新密码",
+   "最多",
+   "特殊字符",
+   "确认密码",
+   "至少",
+   "请输入原密码"
+  ]
+ },
+ "125": {
+  "chunk": "125",
+  "chunkId": [
+   "125"
+  ],
+  "modules": [
+   "2971"
+  ],
+  "routes": [
+   {
+    "path": "/user/qrCode",
+    "name": null,
+    "chunks": [
+     "0",
+     "125"
+    ],
+    "mods": [
+     "2971"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 1818,
+  "componentNames": [
+   "QrCode"
+  ],
+  "apis": [
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "我的二维码",
+   "秒后二维码自动刷新"
+  ]
+ },
+ "13": {
+  "chunk": "13",
+  "chunkId": [
+   "13"
+  ],
+  "modules": [
+   "2c02"
+  ],
+  "routes": [
+   {
+    "path": "/maintainer/receivingOrder",
+    "name": null,
+    "chunks": [
+     "0",
+     "13"
+    ],
+    "mods": [
+     "2c02"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5942,
+  "componentNames": [
+   "recevingOrder",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/basic/maintainer.api"
+  ],
+  "chineseTerms": [
+   "取消",
+   "姓名",
+   "学号",
+   "学院",
+   "报修信息",
+   "报修区域",
+   "报修时间",
+   "报修类型",
+   "接单",
+   "接单确认",
+   "故障描述",
+   "故障类型",
+   "故障附件",
+   "期望上门时间",
+   "确定",
+   "确定要接受当前订单么",
+   "联系电话",
+   "详细地点"
+  ]
+ },
+ "14": {
+  "chunk": "14",
+  "chunkId": [
+   "14"
+  ],
+  "modules": [
+   "f741"
+  ],
+  "routes": [
+   {
+    "path": "/maintainer/repairList",
+    "name": null,
+    "chunks": [
+     "0",
+     "14"
+    ],
+    "mods": [
+     "f741"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 9727,
+  "componentNames": [
+   "repairList",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/basic/maintainer.api"
+  ],
+  "chineseTerms": [
+   "个字",
+   "全部",
+   "加载更多",
+   "取消",
+   "已分配",
+   "报修单列表",
+   "报修单号",
+   "接单",
+   "接单时间",
+   "改派人员",
+   "改派原因",
+   "暂无报修",
+   "最多填写",
+   "最少填写",
+   "期望上门时间",
+   "查看详情",
+   "没有更多了",
+   "申请改派",
+   "确定",
+   "维修",
+   "维修完成时间",
+   "请填写改派原因",
+   "请填写该项",
+   "请选择改派人员"
+  ]
+ },
+ "15": {
+  "chunk": "15",
+  "chunkId": [
+   "15"
+  ],
+  "modules": [
+   "589c"
+  ],
+  "routes": [
+   {
+    "path": "/maintainer/repairOrder",
+    "name": null,
+    "chunks": [
+     "0",
+     "15"
+    ],
+    "mods": [
+     "589c"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10086,
+  "componentNames": [
+   "repairOrder"
+  ],
+  "apis": [
+   "/api/teacher/basic/maintainer.api"
+  ],
+  "chineseTerms": [
+   "上传",
+   "不支持该类型文件上传",
+   "个字",
+   "个文件",
+   "以内",
+   "份文件不符合格式限制",
+   "删除",
+   "取消",
+   "报修单号",
+   "故障类型",
+   "文件大小应限制在",
+   "文件格式支持",
+   "最多可上传",
+   "最多填写",
+   "最少填写",
+   "每个",
+   "维修",
+   "维修完成",
+   "维修描述",
+   "维修附件",
+   "请填写该项",
+   "请选择故障类型",
+   "选择文件并上传"
+  ]
+ },
+ "16": {
+  "chunk": "16",
+  "chunkId": [
+   "16"
+  ],
+  "modules": [
+   "b6c5"
+  ],
+  "routes": [
+   {
+    "path": "/maintainer/todo",
+    "name": null,
+    "chunks": [
+     "0",
+     "16"
+    ],
+    "mods": [
+     "b6c5"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5037,
+  "componentNames": [
+   "StudentTodo",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/push/push.api",
+   "/api/teacher/basic/mainInfo.api"
+  ],
+  "chineseTerms": [
+   "分钟前",
+   "刚刚",
+   "加载更多",
+   "天前",
+   "小时前",
+   "暂无未读消息",
+   "未读消息",
+   "没有更多了",
+   "清除",
+   "确认清除",
+   "确认清除当前列表信息"
+  ]
+ },
+ "17": {
+  "chunk": "17",
+  "chunkId": [
+   "17"
+  ],
+  "modules": [
+   "261e"
+  ],
+  "routes": [
+   {
+    "path": "/policy/privacyPolicy",
+    "name": null,
+    "chunks": [
+     "0",
+     "17"
+    ],
+    "mods": [
+     "261e"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 1287,
+  "componentNames": [
+   "PrivacyPolicy"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "隐私政策"
+  ]
+ },
+ "18": {
+  "chunk": "18",
+  "chunkId": [
+   "18"
+  ],
+  "modules": [
+   "f26b"
+  ],
+  "routes": [
+   {
+    "path": "/policy/termsOfUse",
+    "name": null,
+    "chunks": [
+     "0",
+     "18"
+    ],
+    "mods": [
+     "f26b"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 1279,
+  "componentNames": [
+   "TermsOfUse"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "用户协议"
+  ]
+ },
+ "19": {
+  "chunk": "19",
+  "chunkId": [
+   "19"
+  ],
+  "modules": [
+   "500e"
+  ],
+  "routes": [
+   {
+    "path": "/student/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "19"
+    ],
+    "mods": [
+     "500e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 12170,
+  "componentNames": [
+   "StudentIndex",
+   "keyboard_arrow_right",
+   "mdi-trumpet",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/news/news.api",
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "入校通行卡",
+   "再按一次退出",
+   "加载中",
+   "取消",
+   "同学",
+   "您好",
+   "我的二维码",
+   "我的信息",
+   "是否退出当前帐号",
+   "智慧学工",
+   "检查新版本",
+   "用户协议",
+   "确认",
+   "离校通行卡",
+   "系统错误",
+   "综合统计",
+   "该新闻被删除或不存在",
+   "账号安全",
+   "退出当前帐号",
+   "隐私政策"
+  ]
+ },
+ "20": {
+  "chunk": "20",
+  "chunkId": [
+   "20"
+  ],
+  "modules": [
+   "700f"
+  ],
+  "routes": [
+   {
+    "path": "/student/todo",
+    "name": null,
+    "chunks": [
+     "0",
+     "20"
+    ],
+    "mods": [
+     "700f"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5031,
+  "componentNames": [
+   "StudentTodo",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/push/push.api",
+   "/api/student/home/home.api"
+  ],
+  "chineseTerms": [
+   "分钟前",
+   "刚刚",
+   "加载更多",
+   "天前",
+   "小时前",
+   "暂无未读消息",
+   "未读消息",
+   "没有更多了",
+   "清除",
+   "确认清除",
+   "确认清除当前列表信息"
+  ]
+ },
+ "21": {
+  "chunk": "21",
+  "chunkId": [
+   "21"
+  ],
+  "modules": [
+   "d0ce"
+  ],
+  "routes": [
+   {
+    "path": "/student/apply/applyDetail",
+    "name": "/student/apply/applyDetail",
+    "chunks": [
+     "0",
+     "1",
+     "21"
+    ],
+    "mods": [
+     "d0ce"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 18731,
+  "componentNames": [
+   "ApplyDetail",
+   "attach_file",
+   "clear",
+   "detail",
+   "done",
+   "show",
+   "touch-pan",
+   "warning"
+  ],
+  "apis": [
+   "/api/student/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "不保存",
+   "保存",
+   "保存已填写内容",
+   "信息收集",
+   "信息收集正文",
+   "修改提交",
+   "发布单位",
+   "取消",
+   "填写",
+   "填写时间",
+   "定位",
+   "定位失败",
+   "已报名人数",
+   "已提交人数",
+   "已申请人数",
+   "成功",
+   "我的申请",
+   "报名",
+   "报名时间",
+   "提交",
+   "提交的定位信息",
+   "提示",
+   "提问",
+   "时间",
+   "时间段",
+   "是否保存",
+   "未到",
+   "未进行",
+   "活动报名",
+   "活动报名正文",
+   "申请",
+   "申请时间",
+   "申请正文",
+   "确定",
+   "自动填写上次内容",
+   "该任务需要定位信息",
+   "详情",
+   "重新定位",
+   "限额"
+  ]
+ },
+ "22": {
+  "chunk": "22",
+  "chunkId": [
+   "22"
+  ],
+  "modules": [
+   "0a0d"
+  ],
+  "routes": [
+   {
+    "path": "/student/apply/index",
+    "name": "/student/apply/index",
+    "chunks": [
+     "0",
+     "22"
+    ],
+    "mods": [
+     "0a0d"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 11837,
+  "componentNames": [
+   "ApplyIndex",
+   "Applyform",
+   "NeuApplyHistory",
+   "attach_file",
+   "doing",
+   "history",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "信息收集时间",
+   "加载更多",
+   "历史",
+   "发起人",
+   "报名时间",
+   "数据",
+   "暂无历史",
+   "暂无进行中的",
+   "正在进行",
+   "没有更多了",
+   "班级协助",
+   "申请时间"
+  ]
+ },
+ "23": {
+  "chunk": "23",
+  "chunkId": [
+   "23"
+  ],
+  "modules": [
+   "def2"
+  ],
+  "routes": [
+   {
+    "path": "/student/apply/stumanage",
+    "name": null,
+    "chunks": [
+     "0",
+     "23"
+    ],
+    "mods": [
+     "def2"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4897,
+  "componentNames": [
+   "applyStumanage",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "人数",
+   "加载更多",
+   "暂无进行的",
+   "没有更多了",
+   "班级协助"
+  ]
+ },
+ "24": {
+  "chunk": "24",
+  "chunkId": [
+   "24"
+  ],
+  "modules": [
+   "f260"
+  ],
+  "routes": [
+   {
+    "path": "/student/apply/stumanagedetail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "24"
+    ],
+    "mods": [
+     "f260"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 11187,
+  "componentNames": [
+   "SigninStuManageDetail",
+   "get_app",
+   "person",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/student/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发布单位",
+   "发起人",
+   "取消",
+   "可以查询学号",
+   "姓名",
+   "学号",
+   "导出",
+   "性别",
+   "手机号",
+   "报名",
+   "提交时的定位信息",
+   "收集",
+   "时间",
+   "暂无数据",
+   "没有更多了",
+   "申请",
+   "确定",
+   "综合查询",
+   "该条信息不存在或您权限不足",
+   "详情",
+   "进度"
+  ]
+ },
+ "25": {
+  "chunk": "25",
+  "chunkId": [
+   "25"
+  ],
+  "modules": [
+   "c3b1"
+  ],
+  "routes": [
+   {
+    "path": "/student/basic/stuInfo",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "25"
+    ],
+    "mods": [
+     "c3b1"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6639,
+  "componentNames": [
+   "BasicStuInfo",
+   "NeuViewWidgetValue",
+   "keyboard_arrow_right",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/student/basic/stuInfo.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "保存",
+   "取消",
+   "培养层次",
+   "姓名",
+   "学号",
+   "学籍状态",
+   "寝室",
+   "年级",
+   "性别",
+   "我的信息",
+   "手机号",
+   "班级",
+   "身份证号",
+   "院系"
+  ]
+ },
+ "26": {
+  "chunk": "26",
+  "chunkId": [
+   "26"
+  ],
+  "modules": [
+   "a1b2"
+  ],
+  "routes": [
+   {
+    "path": "/student/experience/index",
+    "name": "/student/experience/index",
+    "chunks": [
+     "0",
+     "26"
+    ],
+    "mods": [
+     "a1b2"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 17138,
+  "componentNames": [
+   "close-popup",
+   "experienceIndex",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/experience/experience.api"
+  ],
+  "chineseTerms": [
+   "信息收集",
+   "分钟",
+   "填写率",
+   "完成率",
+   "完成率计算规则",
+   "已签到次数",
+   "已请假次数",
+   "应签到次数",
+   "待审批",
+   "待审批数",
+   "报名率",
+   "日常流程",
+   "活动报名",
+   "申请",
+   "申请数量",
+   "申请率",
+   "知道了",
+   "离校次数",
+   "离校返校流程",
+   "签到",
+   "签到变更信息数",
+   "综合统计",
+   "补假次数",
+   "被驳回数",
+   "计算规则",
+   "请假",
+   "通知",
+   "通过",
+   "驳回"
+  ]
+ },
+ "27": {
+  "chunk": "27",
+  "chunkId": [
+   "27"
+  ],
+  "modules": [
+   "3076"
+  ],
+  "routes": [
+   {
+    "path": "/student/leave/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "27"
+    ],
+    "mods": [
+     "3076"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 12934,
+  "componentNames": [
+   "LeaveDetails",
+   "close-popup",
+   "show"
+  ],
+  "apis": [
+   "/api/student/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "二维码展示",
+   "人审核中",
+   "发起位置",
+   "发起时间",
+   "发起申请",
+   "取消",
+   "审批中",
+   "审批意见",
+   "审批通过",
+   "已销假",
+   "当前审核教师",
+   "批量请假教师",
+   "撤回",
+   "数据将被清空",
+   "确认撤回",
+   "该请假及其产生的",
+   "请假信息",
+   "请假信息二维码",
+   "请假原因",
+   "请假学生",
+   "请假时间",
+   "请假流程记录",
+   "请假类型",
+   "请假详情",
+   "销假",
+   "销假成功",
+   "附件",
+   "需要出市",
+   "需要出省",
+   "需要离校"
+  ]
+ },
+ "28": {
+  "chunk": "28",
+  "chunkId": [
+   "28"
+  ],
+  "modules": [
+   "cc5a"
+  ],
+  "routes": [
+   {
+    "path": "/student/leave/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "28"
+    ],
+    "mods": [
+     "cc5a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5829,
+  "componentNames": [
+   "LeaveIndex",
+   "keyboard_arrow_right",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/student/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "审批中",
+   "暂无请假",
+   "没有更多了",
+   "请假",
+   "需要离市",
+   "需要离校",
+   "需要离省",
+   "驳回"
+  ]
+ },
+ "29": {
+  "chunk": "29",
+  "chunkId": [
+   "29"
+  ],
+  "modules": [
+   "fffb"
+  ],
+  "routes": [
+   {
+    "path": "/student/leave/leave",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "29"
+    ],
+    "mods": [
+     "fffb"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 12869,
+  "componentNames": [
+   "LeaveLeave",
+   "access_time",
+   "close-popup",
+   "event"
+  ],
+  "apis": [
+   "/api/student/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "以内",
+   "份文件不符合格式限制",
+   "关闭",
+   "取消",
+   "图片上传",
+   "图片格式支持",
+   "定位",
+   "开始时间",
+   "我要请假",
+   "提交请假",
+   "每张",
+   "添加附件",
+   "紧急联系人",
+   "结束时间",
+   "请假原因",
+   "请假类型",
+   "请填写请假原因",
+   "请填选择开始时间",
+   "请填选择结束时间",
+   "请填选择请假类型",
+   "选择文件并上传",
+   "重新定位",
+   "需要出市",
+   "需要出市则需要离校必选",
+   "需要出省",
+   "需要出省则需要出市必选",
+   "需要出省则需要离校必选",
+   "需要离校"
+  ]
+ },
+ "3": {
+  "chunk": "3",
+  "chunkId": [
+   "3"
+  ],
+  "modules": [
+   "2a13",
+   "a92a",
+   "c9b2"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/qrScanning",
+    "name": "/student/signin/qrScanning",
+    "chunks": [
+     "0",
+     "3"
+    ],
+    "mods": [
+     "2a13"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 4277,
+  "componentNames": [
+   "PageMain",
+   "show"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "不合法的二维码",
+   "二维码扫描",
+   "关闭",
+   "打开",
+   "扫码失败",
+   "放入框内",
+   "确定",
+   "签到失败",
+   "自动扫描",
+   "请扫描正确的二维码",
+   "轻触",
+   "返回",
+   "重新扫描"
+  ]
+ },
+ "30": {
+  "chunk": "30",
+  "chunkId": [
+   "30"
+  ],
+  "modules": [
+   "750d"
+  ],
+  "routes": [
+   {
+    "path": "/student/leave/reportleave",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "30"
+    ],
+    "mods": [
+     "750d"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5878,
+  "componentNames": [
+   "ReportLeave"
+  ],
+  "apis": [
+   "/api/student/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "不能销假",
+   "以内",
+   "份文件不符合格式限制",
+   "你不在销假范围内",
+   "图片上传",
+   "图片格式支持",
+   "定位",
+   "定位失败",
+   "暂时不能销假",
+   "每张",
+   "添加附件",
+   "确认销假",
+   "请上传附件",
+   "选择文件并上传",
+   "重新定位",
+   "销假"
+  ]
+ },
+ "31": {
+  "chunk": "31",
+  "chunkId": [
+   "31"
+  ],
+  "modules": [
+   "579a"
+  ],
+  "routes": [
+   {
+    "path": "/student/news/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "31"
+    ],
+    "mods": [
+     "579a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4379,
+  "componentNames": [
+   "newsDetail"
+  ],
+  "apis": [
+   "/api/teacher/news/news.api"
+  ],
+  "chineseTerms": [
+   "删除",
+   "发布单位",
+   "发布时间",
+   "发布者",
+   "取消",
+   "无访问权限",
+   "确认删除",
+   "系统错误",
+   "该新闻将被删除",
+   "详情",
+   "阅读量"
+  ]
+ },
+ "32": {
+  "chunk": "32",
+  "chunkId": [
+   "32"
+  ],
+  "modules": [
+   "5542"
+  ],
+  "routes": [
+   {
+    "path": "/student/news/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "32"
+    ],
+    "mods": [
+     "5542"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8338,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "newsStudentIndex",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/news/news.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发布者",
+   "取消",
+   "可以查询新闻标题和新闻发布者",
+   "新闻状态",
+   "暂无新闻",
+   "未轮播",
+   "没有更多了",
+   "确定",
+   "系统错误",
+   "综合查询",
+   "轮播中",
+   "链接新闻"
+  ]
+ },
+ "33": {
+  "chunk": "33",
+  "chunkId": [
+   "33"
+  ],
+  "modules": [
+   "4f38"
+  ],
+  "routes": [
+   {
+    "path": "/student/notice/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "33"
+    ],
+    "mods": [
+     "4f38"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6047,
+  "componentNames": [
+   "NoticeDetail",
+   "attach_file",
+   "detail",
+   "show"
+  ],
+  "apis": [
+   "/api/student/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "发布单位",
+   "提问",
+   "查阅学生",
+   "确认已读",
+   "请签名",
+   "通知详情"
+  ]
+ },
+ "34": {
+  "chunk": "34",
+  "chunkId": [
+   "34"
+  ],
+  "modules": [
+   "d2bb0"
+  ],
+  "routes": [
+   {
+    "path": "/student/notice/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "34"
+    ],
+    "mods": [
+     "d2bb0"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5365,
+  "componentNames": [
+   "NoticeIndex",
+   "attach_file",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "分钟前",
+   "刚刚",
+   "加载更多",
+   "天前",
+   "小时前",
+   "暂无通知",
+   "没有更多了",
+   "班级协助"
+  ]
+ },
+ "35": {
+  "chunk": "35",
+  "chunkId": [
+   "35"
+  ],
+  "modules": [
+   "cb82"
+  ],
+  "routes": [
+   {
+    "path": "/student/notice/stumanage",
+    "name": null,
+    "chunks": [
+     "0",
+     "35"
+    ],
+    "mods": [
+     "cb82"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4603,
+  "componentNames": [
+   "NoticeStumanage",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "应确认",
+   "应阅读",
+   "暂无通知",
+   "未确认",
+   "未阅读",
+   "没有更多了",
+   "班级协助"
+  ]
+ },
+ "36": {
+  "chunk": "36",
+  "chunkId": [
+   "36"
+  ],
+  "modules": [
+   "90a6"
+  ],
+  "routes": [
+   {
+    "path": "/student/notice/stumanagedetail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "36"
+    ],
+    "mods": [
+     "90a6"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 16466,
+  "componentNames": [
+   "SigninIndex",
+   "close-popup",
+   "get_app",
+   "person",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/student/notice/notice.api",
+   "/api/teacher/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "专业名称",
+   "加载更多",
+   "反馈截止时间",
+   "发布单位",
+   "发起人",
+   "取消",
+   "可以查询学号",
+   "姓名",
+   "导出",
+   "已确认",
+   "已确认人数",
+   "已阅读",
+   "已阅读人数",
+   "应确认人数",
+   "应阅读人数",
+   "显示签名",
+   "暂无数据",
+   "未确认",
+   "未确认人数",
+   "未阅读",
+   "未阅读人数",
+   "没有更多了",
+   "班级名称",
+   "的统计",
+   "确定",
+   "确认状态",
+   "确认率",
+   "签名详情",
+   "综合查询",
+   "该条信息不存在或您权限不足",
+   "详情",
+   "通知时间",
+   "阅读时间",
+   "阅读状态",
+   "阅读率",
+   "院系名称"
+  ]
+ },
+ "37": {
+  "chunk": "37",
+  "chunkId": [
+   "37"
+  ],
+  "modules": [
+   "5e52"
+  ],
+  "routes": [
+   {
+    "path": "/student/process/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "37"
+    ],
+    "mods": [
+     "5e52"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 9765,
+  "componentNames": [
+   "processDetails",
+   "show"
+  ],
+  "apis": [
+   "/api/student/process/process.api",
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "人审核中",
+   "保存",
+   "入校核验时间段",
+   "入校申请时间段",
+   "发起申请",
+   "取消",
+   "审批中",
+   "审批意见",
+   "审批通过",
+   "审批驳回",
+   "当前审核教师",
+   "当前所在位置",
+   "撤回",
+   "数据将被清空",
+   "未填写",
+   "流程名称",
+   "流程记录",
+   "流程详情",
+   "申请位置",
+   "申请学生",
+   "申请时间",
+   "申请详情",
+   "确认撤回",
+   "离校核验时间段",
+   "离校申请时间段",
+   "系统加载错误",
+   "紧急联系号码",
+   "该流程及其产生的",
+   "请返回刷新"
+  ]
+ },
+ "38": {
+  "chunk": "38",
+  "chunkId": [
+   "38"
+  ],
+  "modules": [
+   "839a"
+  ],
+  "routes": [
+   {
+    "path": "/student/process/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "38"
+    ],
+    "mods": [
+     "839a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5613,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "processStudentIndex",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/student/process/process.api"
+  ],
+  "chineseTerms": [
+   "不需要核验",
+   "加载更多",
+   "我的",
+   "提交日期",
+   "暂无流程申请",
+   "没有更多了",
+   "流程名称",
+   "申请",
+   "离校核验",
+   "需要入校",
+   "需要入校核验",
+   "需要离校核验"
+  ]
+ },
+ "39": {
+  "chunk": "39",
+  "chunkId": [
+   "39"
+  ],
+  "modules": [
+   "f3a7"
+  ],
+  "routes": [
+   {
+    "path": "/student/process/new",
+    "name": "/student/process/new",
+    "chunks": [
+     "0",
+     "39"
+    ],
+    "mods": [
+     "f3a7"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 7977,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "processStudentIndex",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/student/process/process.api"
+  ],
+  "chineseTerms": [
+   "不需要核验",
+   "入校申请开始时间",
+   "入校申请结束时间",
+   "加载更多",
+   "取消",
+   "可以查询流程名称",
+   "暂无流程",
+   "没有更多了",
+   "流程说明",
+   "确定",
+   "离校核验",
+   "离校申请开始时间",
+   "离校申请结束时间",
+   "综合查询",
+   "选择",
+   "需要入校",
+   "需要入校核验",
+   "需要离校核验"
+  ]
+ },
+ "4": {
+  "chunk": "4",
+  "chunkId": [
+   "4"
+  ],
+  "modules": [
+   "0611",
+   "acdd",
+   "cc95"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/qrcodeScanning",
+    "name": null,
+    "chunks": [
+     "0",
+     "4"
+    ],
+    "mods": [
+     "0611"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 3398,
+  "componentNames": [
+   "PageMain",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/scanning/scanning.api"
+  ],
+  "chineseTerms": [
+   "不合法的二维码",
+   "信息核验",
+   "关闭",
+   "打开",
+   "扫码失败",
+   "放入框内",
+   "自动扫描",
+   "轻触",
+   "返回",
+   "重新扫描"
+  ]
+ },
+ "40": {
+  "chunk": "40",
+  "chunkId": [
+   "40"
+  ],
+  "modules": [
+   "c054"
+  ],
+  "routes": [
+   {
+    "path": "/student/process/NewProcess",
+    "name": "/student/process/NewProcess",
+    "chunks": [
+     "0",
+     "1",
+     "40"
+    ],
+    "mods": [
+     "c054"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5397,
+  "componentNames": [
+   "processNewPage",
+   "show"
+  ],
+  "apis": [
+   "/api/student/process/process.api"
+  ],
+  "chineseTerms": [
+   "取消",
+   "当前所在位置",
+   "数据加载错误",
+   "新建",
+   "流程申请",
+   "申请",
+   "紧急联系号码",
+   "请重新加载或联系管理员"
+  ]
+ },
+ "41": {
+  "chunk": "41",
+  "chunkId": [
+   "41"
+  ],
+  "modules": [
+   "733d"
+  ],
+  "routes": [
+   {
+    "path": "/student/repair/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "41"
+    ],
+    "mods": [
+     "733d"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 9071,
+  "componentNames": [
+   "RepairDetails"
+  ],
+  "apis": [
+   "/api/student/repair/repair.api"
+  ],
+  "chineseTerms": [
+   "个人主页",
+   "分配维修人员",
+   "原维修人员",
+   "姓名",
+   "学号",
+   "学院",
+   "意见反馈",
+   "报修信息",
+   "报修区域",
+   "报修时间",
+   "报修类型",
+   "报修详情",
+   "接单时间",
+   "改派人员",
+   "改派原因",
+   "改派时间",
+   "故障描述",
+   "故障类型",
+   "故障附件",
+   "期望上门时间",
+   "本次维修满意度星级评分",
+   "维修人员",
+   "维修完成时间",
+   "维修描述",
+   "维修进度",
+   "维修附件",
+   "联系电话",
+   "评价",
+   "详细地点",
+   "退回原因",
+   "退回时间"
+  ]
+ },
+ "42": {
+  "chunk": "42",
+  "chunkId": [
+   "42"
+  ],
+  "modules": [
+   "dc02"
+  ],
+  "routes": [
+   {
+    "path": "/student/repair/evaluate",
+    "name": null,
+    "chunks": [
+     "0",
+     "42"
+    ],
+    "mods": [
+     "dc02"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 2774,
+  "componentNames": [
+   "Evaluate"
+  ],
+  "apis": [
+   "/api/student/repair/repair.api"
+  ],
+  "chineseTerms": [
+   "发表评价",
+   "意见反馈",
+   "本次维修满意度星级评分",
+   "维修评价"
+  ]
+ },
+ "43": {
+  "chunk": "43",
+  "chunkId": [
+   "43"
+  ],
+  "modules": [
+   "8a70"
+  ],
+  "routes": [
+   {
+    "path": "/student/repair/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "43"
+    ],
+    "mods": [
+     "8a70"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 6886,
+  "componentNames": [
+   "RepairIndex",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/student/repair/repair.api"
+  ],
+  "chineseTerms": [
+   "全部",
+   "加载更多",
+   "已分配",
+   "报修",
+   "报修单号",
+   "接单人",
+   "接单时间",
+   "暂无报修",
+   "期望上门时间",
+   "查看详情",
+   "没有更多了",
+   "维修完成时间",
+   "编辑"
+  ]
+ },
+ "44": {
+  "chunk": "44",
+  "chunkId": [
+   "44"
+  ],
+  "modules": [
+   "866f"
+  ],
+  "routes": [
+   {
+    "path": "/student/repair/maintainerInfo",
+    "name": null,
+    "chunks": [
+     "0",
+     "44"
+    ],
+    "mods": [
+     "866f"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 2942,
+  "componentNames": [
+   "MaintainerInfo"
+  ],
+  "apis": [
+   "/api/student/repair/repair.api"
+  ],
+  "chineseTerms": [
+   "个人主页",
+   "今日接单",
+   "姓名",
+   "完成报修单",
+   "所属部门",
+   "综合统计",
+   "联系电话",
+   "评价星级"
+  ]
+ },
+ "45": {
+  "chunk": "45",
+  "chunkId": [
+   "45"
+  ],
+  "modules": [
+   "b25f"
+  ],
+  "routes": [
+   {
+    "path": "/student/repair/new",
+    "name": null,
+    "chunks": [
+     "0",
+     "45"
+    ],
+    "mods": [
+     "b25f"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 15674,
+  "componentNames": [
+   "NewRepair",
+   "access_time",
+   "close-popup",
+   "event"
+  ],
+  "apis": [
+   "/api/student/repair/repair.api"
+  ],
+  "chineseTerms": [
+   "上传",
+   "不支持该类型文件上传",
+   "个文件",
+   "以内",
+   "份文件不符合格式限制",
+   "关闭",
+   "删除",
+   "取消",
+   "姓名",
+   "学号",
+   "学院",
+   "报修区域",
+   "报修类型",
+   "提交报修",
+   "故障描述",
+   "故障描述不得超过",
+   "故障类型",
+   "文件大小应限制在",
+   "文件格式支持",
+   "最多可上传",
+   "期望上门时间",
+   "每个",
+   "添加附件",
+   "申请报修",
+   "联系电话",
+   "详细地点",
+   "请填写故障描述",
+   "请填写有效的联系电话",
+   "请填写详细地点",
+   "请填选择报修区域",
+   "请填选择报修类型",
+   "请填选择故障类型",
+   "请填选择期望上门时间",
+   "选择文件并上传"
+  ]
+ },
+ "46": {
+  "chunk": "46",
+  "chunkId": [
+   "46"
+  ],
+  "modules": [
+   "93dc"
+  ],
+  "routes": [
+   {
+    "path": "/student/sanitation/detailResult",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "46"
+    ],
+    "mods": [
+     "93dc"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4680,
+  "componentNames": [
+   "SanitationStuDetailResult"
+  ],
+  "apis": [
+   "/api/student/sanitation/sanitation.api"
+  ],
+  "chineseTerms": [
+   "个人检查结果",
+   "个人检查结果教师未填写",
+   "宿舍",
+   "宿舍检查结果",
+   "寝室检查基本内容",
+   "寝室检查详情",
+   "执行日期",
+   "无个人检查结果",
+   "该条信息不存在或您权限不足"
+  ]
+ },
+ "47": {
+  "chunk": "47",
+  "chunkId": [
+   "47"
+  ],
+  "modules": [
+   "7c65"
+  ],
+  "routes": [
+   {
+    "path": "/student/sanitation/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "47"
+    ],
+    "mods": [
+     "7c65"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 7056,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "ripple",
+   "sanitationStudentIndex",
+   "show"
+  ],
+  "apis": [
+   "/api/student/sanitation/sanitation.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "取消",
+   "可以查询检查老师",
+   "寝室检查",
+   "提交时间",
+   "暂无寝室检查结果",
+   "检查教师",
+   "检查日期",
+   "没有更多了",
+   "确定",
+   "综合查询"
+  ]
+ },
+ "48": {
+  "chunk": "48",
+  "chunkId": [
+   "48"
+  ],
+  "modules": [
+   "be3e"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/index",
+    "name": "/student/signin/index",
+    "chunks": [
+     "0",
+     "48"
+    ],
+    "mods": [
+     "be3e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10748,
+  "componentNames": [
+   "NeuSigninHistory",
+   "NeuSigninList",
+   "SigninIndex",
+   "history",
+   "keyboard_arrow_right",
+   "show",
+   "signin"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "历史",
+   "发起人",
+   "暂无数据",
+   "暂无进行的签到",
+   "正在进行",
+   "没有更多了",
+   "班级协助",
+   "签到",
+   "签到时间",
+   "进行中"
+  ]
+ },
+ "49": {
+  "chunk": "49",
+  "chunkId": [
+   "49"
+  ],
+  "modules": [
+   "048f"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/qrcodePerson",
+    "name": null,
+    "chunks": [
+     "0",
+     "49"
+    ],
+    "mods": [
+     "048f"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4641,
+  "componentNames": [
+   "NeuSigninList",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发起人",
+   "我负责的签到",
+   "暂无需要处理的任务",
+   "没有更多了",
+   "签到时间",
+   "进行中"
+  ]
+ },
+ "5": {
+  "chunk": "5",
+  "chunkId": [
+   "5"
+  ],
+  "modules": [
+   "97d4",
+   "d9a7",
+   "dc6c"
+  ],
+  "routes": [
+   {
+    "path": "/user/login",
+    "name": null,
+    "chunks": [
+     "0",
+     "5"
+    ],
+    "mods": [
+     "dc6c"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 12677,
+  "componentNames": [
+   "Login",
+   "cancel",
+   "show"
+  ],
+  "apis": [
+   "/api/user/loginout.api"
+  ],
+  "chineseTerms": [
+   "位数字",
+   "其他登录方式",
+   "员工号",
+   "学校",
+   "学校代码错误",
+   "学生",
+   "密码",
+   "忘记密码",
+   "授权处理过期",
+   "教工号",
+   "教师",
+   "未安装微信",
+   "用户协议",
+   "用户名",
+   "用户登录",
+   "登录中",
+   "维修",
+   "该学校暂未开放密码找回服务",
+   "请先输入学校代码",
+   "请输入学号",
+   "请输入学校代码",
+   "请输入密码",
+   "请输入验证码",
+   "隐私政策",
+   "验证码"
+  ]
+ },
+ "50": {
+  "chunk": "50",
+  "chunkId": [
+   "50"
+  ],
+  "modules": [
+   "b6d3"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/qrcodePersonDetails",
+    "name": "/student/signin/qrcodePersonDetails",
+    "chunks": [
+     "0",
+     "50"
+    ],
+    "mods": [
+     "b6d3"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4917,
+  "componentNames": [
+   "personnel",
+   "scan",
+   "show",
+   "signin"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "二维码负责人",
+   "发起人",
+   "签到人员列表",
+   "签到扫描",
+   "签到时间段"
+  ]
+ },
+ "51": {
+  "chunk": "51",
+  "chunkId": [
+   "51"
+  ],
+  "modules": [
+   "df96"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/signin",
+    "name": "/student/signin/signin",
+    "chunks": [
+     "0",
+     "1",
+     "51"
+    ],
+    "mods": [
+     "df96"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10841,
+  "componentNames": [
+   "attach_file",
+   "close-popup",
+   "information",
+   "local_see",
+   "mdi-qrcode-scan",
+   "place",
+   "show",
+   "signin"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "任务信息",
+   "发布单位",
+   "发起人",
+   "取消",
+   "可自行选择是否签到",
+   "定位失败",
+   "已打卡",
+   "已结束",
+   "已请假",
+   "当前为签到时间",
+   "当前为签到范围外",
+   "当前所在位置",
+   "提问",
+   "无法进行签到",
+   "无法进行签到打卡",
+   "是否进行拍照",
+   "未开始",
+   "未打卡",
+   "本次签到任务您已请假",
+   "照片上传失败",
+   "确定",
+   "签到",
+   "签到任务还未开始",
+   "签到时间段",
+   "签到详情",
+   "请注意及时签到",
+   "请稍后再来",
+   "附件"
+  ]
+ },
+ "52": {
+  "chunk": "52",
+  "chunkId": [
+   "52"
+  ],
+  "modules": [
+   "1a43"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/signinSuccess",
+    "name": "/student/signin/signinSuccess",
+    "chunks": [
+     "0",
+     "1",
+     "52"
+    ],
+    "mods": [
+     "1a43"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8968,
+  "componentNames": [
+   "clear",
+   "done",
+   "result",
+   "schedule",
+   "show"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "二维码展示",
+   "发起人",
+   "姓名",
+   "学号",
+   "学院",
+   "已填写",
+   "已请假",
+   "性别",
+   "我的签到",
+   "扫码来源",
+   "提问",
+   "未签到",
+   "点击展示二维码",
+   "班级",
+   "签到位置",
+   "签到成功",
+   "签到时间",
+   "签到时间段",
+   "签到状态",
+   "签到结果",
+   "详情",
+   "附加信息"
+  ]
+ },
+ "53": {
+  "chunk": "53",
+  "chunkId": [
+   "53"
+  ],
+  "modules": [
+   "a2f3"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/stumanage",
+    "name": null,
+    "chunks": [
+     "0",
+     "53"
+    ],
+    "mods": [
+     "a2f3"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4592,
+  "componentNames": [
+   "NoticeStumanage",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "已签人数",
+   "应签人数",
+   "暂无进行的签到",
+   "未签人数",
+   "没有更多了",
+   "班级协助",
+   "请假人数"
+  ]
+ },
+ "54": {
+  "chunk": "54",
+  "chunkId": [
+   "54"
+  ],
+  "modules": [
+   "4ab0"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/signinPersonnel",
+    "name": "/student/signin/signinPersonnel",
+    "chunks": [
+     "0",
+     "54"
+    ],
+    "mods": [
+     "4ab0"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10484,
+  "componentNames": [
+   "close-popup",
+   "keyboard_arrow_right",
+   "personnel",
+   "ripple",
+   "scan",
+   "show",
+   "signin"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "任务状态",
+   "加载更多",
+   "取消",
+   "变更",
+   "变更为",
+   "变更状态",
+   "变更记录",
+   "变更说明",
+   "变更说明选填",
+   "可以查询学号",
+   "姓名",
+   "已签到",
+   "已请假",
+   "按姓名排序",
+   "按学号排序",
+   "暂无数据",
+   "未签到",
+   "没有更多了",
+   "确定",
+   "签到人员列表",
+   "签到扫描",
+   "综合查询"
+  ]
+ },
+ "55": {
+  "chunk": "55",
+  "chunkId": [
+   "55"
+  ],
+  "modules": [
+   "a6f6"
+  ],
+  "routes": [
+   {
+    "path": "/student/signin/stumanagedetail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "55"
+    ],
+    "mods": [
+     "a6f6"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 14410,
+  "componentNames": [
+   "SigninStuManageDetail",
+   "get_app",
+   "keyboard_arrow_right",
+   "person",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/student/signin/signin.api"
+  ],
+  "chineseTerms": [
+   "一级行政区",
+   "二级行政区",
+   "二维码来源",
+   "位置异常",
+   "位置正常",
+   "位置状态",
+   "加载更多",
+   "动态二维码",
+   "发布单位",
+   "发起人",
+   "取消",
+   "可以查询学号",
+   "姓名",
+   "学号",
+   "定位",
+   "导出",
+   "已签到",
+   "已请假",
+   "性别",
+   "手机号",
+   "数据",
+   "方式",
+   "时间",
+   "暂无",
+   "未签到",
+   "查看照片",
+   "没有更多了",
+   "确定",
+   "确认率",
+   "签到",
+   "签到时间",
+   "签到结果",
+   "综合查询",
+   "该条信息不存在或您权限不足",
+   "详情",
+   "详细地址",
+   "静态二维码"
+  ]
+ },
+ "56": {
+  "chunk": "56",
+  "chunkId": [
+   "56"
+  ],
+  "modules": [
+   "69c3"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "56"
+    ],
+    "mods": [
+     "69c3"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 15168,
+  "componentNames": [
+   "TeacherIndex",
+   "close-popup",
+   "keyboard_arrow_right",
+   "mdi-trumpet",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/experience/experience.api",
+   "/api/teacher/news/news.api",
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "信息核验",
+   "再按一次退出",
+   "加载中",
+   "取消",
+   "您好",
+   "我的二维码",
+   "我的信息",
+   "教工号或姓名",
+   "无该学生",
+   "是否退出当前帐号",
+   "智慧学工",
+   "检查新版本",
+   "用户协议",
+   "确定",
+   "确认",
+   "系统错误",
+   "综合统计",
+   "老师",
+   "该新闻被删除或不存在",
+   "请准确输入学号",
+   "请至少输入两个字符",
+   "请选择要查看的人员",
+   "账号安全",
+   "退出当前帐号",
+   "隐私政策"
+  ]
+ },
+ "57": {
+  "chunk": "57",
+  "chunkId": [
+   "57"
+  ],
+  "modules": [
+   "58c1"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/todo",
+    "name": null,
+    "chunks": [
+     "0",
+     "57"
+    ],
+    "mods": [
+     "58c1"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5030,
+  "componentNames": [
+   "TeacherTodo",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/push/push.api",
+   "/api/teacher/home/home.api"
+  ],
+  "chineseTerms": [
+   "分钟前",
+   "刚刚",
+   "加载更多",
+   "天前",
+   "小时前",
+   "暂无未读消息",
+   "未读消息",
+   "没有更多了",
+   "清除",
+   "确认清除",
+   "确认清除当前列表信息"
+  ]
+ },
+ "58": {
+  "chunk": "58",
+  "chunkId": [
+   "58"
+  ],
+  "modules": [
+   "9ddf"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/achievement/index",
+    "name": "/teacher/achievement/index",
+    "chunks": [
+     "0",
+     "58"
+    ],
+    "mods": [
+     "9ddf"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 9052,
+  "componentNames": [
+   "achievementIndex"
+  ],
+  "apis": [
+   "/api/teacher/achievement/achievement.api"
+  ],
+  "chineseTerms": [
+   "信息收集",
+   "发布数量",
+   "姓名",
+   "寝室检查",
+   "已接入",
+   "性别",
+   "您没有访问权限",
+   "手机号",
+   "批量请假",
+   "接入",
+   "提交数量",
+   "收集率",
+   "教工号",
+   "教师信息",
+   "教师综合统计",
+   "日常流程",
+   "日志",
+   "正在加载",
+   "签到",
+   "综合统计",
+   "角色",
+   "请假",
+   "返校离校流程",
+   "通知",
+   "院系"
+  ]
+ },
+ "59": {
+  "chunk": "59",
+  "chunkId": [
+   "59"
+  ],
+  "modules": [
+   "c676"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/analysis/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "59"
+    ],
+    "mods": [
+     "c676"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 3407,
+  "componentNames": [
+   "AnalysisIndex",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "业务数据分析",
+   "定位数据分析",
+   "对学生在各业务模块中产生的数据进行统计分析",
+   "对学生的定位数据进行统计分析",
+   "对教师的信息收集数据进行统计分析",
+   "教师信息收集数据分析"
+  ]
+ },
+ "6": {
+  "chunk": "6",
+  "chunkId": [
+   "6"
+  ],
+  "modules": [
+   "713b"
+  ],
+  "routes": [
+   {
+    "path": "/",
+    "name": null,
+    "chunks": [
+     "6"
+    ],
+    "mods": [
+     "713b"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 2222,
+  "componentNames": [
+   "MainLayout"
+  ],
+  "apis": [
+   "/api/push/push.api"
+  ],
+  "chineseTerms": [
+   "仿宋",
+   "华文仿宋",
+   "华文宋体",
+   "华文楷体",
+   "华文黑体",
+   "字体",
+   "字号",
+   "宋体",
+   "对齐方式",
+   "排版",
+   "操作",
+   "新宋体",
+   "标题",
+   "格式",
+   "楷体",
+   "隶书",
+   "黑体"
+  ]
+ },
+ "60": {
+  "chunk": "60",
+  "chunkId": [
+   "60"
+  ],
+  "modules": [
+   "7778"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/analysis/stuData",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "60"
+    ],
+    "mods": [
+     "7778"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 164068,
+  "componentNames": [
+   "AnalysisStuData",
+   "ApplyAnalysis",
+   "LeaveAnalysis",
+   "NoticeAnalysis",
+   "ProcessAnalysis",
+   "SigninAnalysis",
+   "close-popup",
+   "detailed",
+   "event",
+   "generalSituation",
+   "keyboard_arrow_right",
+   "realTime",
+   "show",
+   "signinData"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/analysis/analysis.api",
+   "/api/teacher/process/process.api"
+  ],
+  "chineseTerms": [
+   "一天内及一天",
+   "一天至三天",
+   "不包含已请假次数",
+   "业务数据分析",
+   "人数",
+   "仅自己创建的",
+   "仅自己发布的",
+   "休假中人数",
+   "信息收集",
+   "修改率",
+   "修改率计算规则",
+   "关闭",
+   "各专业已签到次数",
+   "各专业已请假次数",
+   "各专业应签到次数",
+   "各专业签到率",
+   "各专业签到率计算规则",
+   "各年级已签到次数",
+   "各年级已请假次数",
+   "各年级应签到次数",
+   "各年级签到率",
+   "各年级签到率计算规则",
+   "各班级已签到次数",
+   "各班级已请假次数",
+   "各班级应签到次数",
+   "各班级签到率",
+   "各班级签到率计算规则",
+   "各院系已签到次数",
+   "各院系已请假次数",
+   "各院系应签到次数",
+   "各院系签到率",
+   "各院系签到率计算规则",
+   "填写率",
+   "大于",
+   "学生数据",
+   "完成",
+   "小于等于",
+   "小时",
+   "已修改",
+   "已修改签到次数",
+   "已填写的人数",
+   "已收集",
+   "已收集人数",
+   "已签到",
+   "已签到总次数",
+   "已签到次数",
+   "已经确认通知",
+   "已经确认通知总数",
+   "已请假",
+   "已请假次数",
+   "已选择",
+   "已阅读总数",
+   "年级数据",
+   "应签到次数",
+   "开始时间",
+   "总人数",
+   "总人次数",
+   "总请假次数",
+   "截止时间应在开始时间之后",
+   "报名",
+   "按专业统计",
+   "按专业统计流程信息",
+   "按专业统计确认率",
+   "按专业统计签到率",
+   "按专业统计请假信息",
+   "按专业统计阅读率",
+   "按年级统计",
+   "按年级统计流程信息",
+   "按年级统计确认率",
+   "按年级统计签到率",
+   "按年级统计请假信息",
+   "按年级统计阅读率",
+   "按性别统计请假次数",
+   "按时长统计请假次数",
+   "按班级统计",
+   "按班级统计流程信息",
+   "按班级统计确认率",
+   "按班级统计签到率",
+   "按班级统计请假信息",
+   "按班级统计阅读率"
+  ]
+ },
+ "61": {
+  "chunk": "61",
+  "chunkId": [
+   "61"
+  ],
+  "modules": [
+   "23a6"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/analysis/stuLocation",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "61"
+    ],
+    "mods": [
+     "23a6"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 35527,
+  "componentNames": [
+   "AnalysisStuLocation",
+   "NeuStuLocationAnalysis",
+   "changedLocation",
+   "close-popup",
+   "distribution",
+   "event",
+   "keyboard_arrow_right",
+   "search",
+   "show",
+   "stuLocation"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/analysis/analysis.api"
+  ],
+  "chineseTerms": [
+   "与主校区所在地关系",
+   "专业",
+   "主校区所在地",
+   "人数",
+   "仅统计最终位置",
+   "位置",
+   "位置分布",
+   "位置分布数据",
+   "位置变化",
+   "位置变化判断基准",
+   "位置变化数据",
+   "位置变化次数",
+   "关闭",
+   "其他",
+   "加载更多",
+   "区间外",
+   "变化",
+   "可视化分析",
+   "地市",
+   "姓名",
+   "学号",
+   "学生定位",
+   "学生定位数据",
+   "学生范围",
+   "完成",
+   "定位数据分析",
+   "定位数据分析详情",
+   "定位次数",
+   "导出",
+   "已选择",
+   "年级",
+   "开始时间",
+   "性别",
+   "所在地市",
+   "所在省",
+   "数据分析详情",
+   "数据来源",
+   "无变化",
+   "无定位",
+   "无定位数据",
+   "无数据",
+   "时间",
+   "曾到访",
+   "最终定位",
+   "有变化",
+   "有定位",
+   "没有更多了",
+   "特别行政区",
+   "班级",
+   "生成分析数据",
+   "的定位数据",
+   "直辖市",
+   "省直县",
+   "离开",
+   "终点",
+   "结束时间",
+   "自治区",
+   "自治区直县",
+   "详细地址",
+   "请选择学生范围",
+   "请选择定位数据来源",
+   "请选择定位数据采集时间范围",
+   "起点",
+   "返回",
+   "选择",
+   "选择学生范围",
+   "重新分析",
+   "院系",
+   "非主校区所在地"
+  ]
+ },
+ "62": {
+  "chunk": "62",
+  "chunkId": [
+   "62"
+  ],
+  "modules": [
+   "4c50"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/analysis/teaMessage",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "62"
+    ],
+    "mods": [
+     "4c50"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 16531,
+  "componentNames": [
+   "AnalysisStuData",
+   "ApplyAnalysis",
+   "close-popup",
+   "event",
+   "generalSituation",
+   "keyboard_arrow_right",
+   "realTime",
+   "show"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/analysis/analysis.api",
+   "/api/teacher/teaanalysis/tanalysis.api"
+  ],
+  "chineseTerms": [
+   "人数",
+   "仅自己发布的",
+   "关闭",
+   "填写率",
+   "完成",
+   "已填写的人数",
+   "已收集",
+   "已收集人数",
+   "已选择",
+   "开始时间",
+   "总人数",
+   "截止时间应在开始时间之后",
+   "按院系统计",
+   "收集",
+   "收集率",
+   "教师信息收集数据分析",
+   "教师数据",
+   "未收集",
+   "未收集人数",
+   "检索",
+   "生成统计图",
+   "知道了",
+   "结束时间",
+   "统计对象",
+   "自己发布",
+   "计算规则",
+   "设置统计对象",
+   "请选择统计教师",
+   "请选择统计时间",
+   "请选择统计时间与统计教师",
+   "请选择统计时间和统计教师",
+   "选择",
+   "院系数据"
+  ]
+ },
+ "63": {
+  "chunk": "63",
+  "chunkId": [
+   "63"
+  ],
+  "modules": [
+   "64e7"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/apply/applyExperience",
+    "name": "/teacher/apply/applyExperience",
+    "chunks": [
+     "0",
+     "1",
+     "63"
+    ],
+    "mods": [
+     "64e7"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8550,
+  "componentNames": [
+   "applyExperience",
+   "close-popup",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "创建时间",
+   "加载更多",
+   "发起人",
+   "名称",
+   "填写",
+   "报名",
+   "数据",
+   "时间",
+   "暂无",
+   "有效时间",
+   "没有更多了",
+   "状态",
+   "申请",
+   "的历史",
+   "记录"
+  ]
+ },
+ "64": {
+  "chunk": "64",
+  "chunkId": [
+   "64"
+  ],
+  "modules": [
+   "6154"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/apply/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "64"
+    ],
+    "mods": [
+     "6154"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 31890,
+  "componentNames": [
+   "ApplyDetail",
+   "NeuApplyStatistics",
+   "arrow_drop_down",
+   "cancel",
+   "close-popup",
+   "get_app",
+   "keyboard_arrow_right",
+   "notifications",
+   "person",
+   "progress",
+   "ripple",
+   "search",
+   "show",
+   "statistics"
+  ],
+  "apis": [
+   "/api/teacher/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "上个时间段",
+   "下个时间段",
+   "专业",
+   "专业名称",
+   "人数",
+   "仅支持查询文本",
+   "关闭",
+   "加载更多",
+   "单次",
+   "单选类型收集内容",
+   "取消",
+   "可以查询学号",
+   "填写",
+   "填写时间段",
+   "姓名",
+   "学号",
+   "学生提问",
+   "导出",
+   "将被撤回",
+   "已填写",
+   "年级",
+   "性别",
+   "手机号",
+   "报名",
+   "报名统计",
+   "报名进度",
+   "按专业统计",
+   "按班级统计",
+   "按院系统计",
+   "推送",
+   "提交时的定位信息",
+   "提醒",
+   "撤回",
+   "收集内容查询",
+   "收集统计",
+   "收集进度",
+   "数字",
+   "时间段",
+   "时间段选择",
+   "暂无数据",
+   "未填写",
+   "本次",
+   "没有更多了",
+   "班级",
+   "班级信息",
+   "班级名称",
+   "申请",
+   "申请统计",
+   "申请进度",
+   "的统计",
+   "短信提醒",
+   "确定",
+   "确认撤回",
+   "统计",
+   "统计方式",
+   "综合查询",
+   "表单填写详情",
+   "该学生",
+   "详情",
+   "请至少选择一个时间段",
+   "进度",
+   "选择查询内容",
+   "院系",
+   "院系名称"
+  ]
+ },
+ "65": {
+  "chunk": "65",
+  "chunkId": [
+   "65"
+  ],
+  "modules": [
+   "fdfc"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/apply/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "65"
+    ],
+    "mods": [
+     "fdfc"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8847,
+  "componentNames": [
+   "ApplyIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "任务数据",
+   "任务状态",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查询任务名称",
+   "已结束",
+   "总执行次数",
+   "执行时间",
+   "执行频率",
+   "暂无",
+   "未进行",
+   "没有更多了",
+   "确定",
+   "综合查询",
+   "进行中"
+  ]
+ },
+ "66": {
+  "chunk": "66",
+  "chunkId": [
+   "66"
+  ],
+  "modules": [
+   "ac1c"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/apply/new",
+    "name": "/teacher/apply/new",
+    "chunks": [
+     "0",
+     "1",
+     "66"
+    ],
+    "mods": [
+     "ac1c"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 45419,
+  "componentNames": [
+   "NoticeNew",
+   "access_time",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "上移",
+   "下移",
+   "不支持该类型文件上传",
+   "人数限制",
+   "以内",
+   "份文件不符合格式限制",
+   "信息收集",
+   "信息收集项目",
+   "允许",
+   "允许班级干部查看任务数据",
+   "共享对象",
+   "关闭",
+   "删除",
+   "删除该时间段",
+   "发布",
+   "发布单位",
+   "取消",
+   "名称",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周日",
+   "填写",
+   "完成",
+   "对象",
+   "将该",
+   "已选择",
+   "开始截止时间",
+   "开始日期",
+   "开始时间",
+   "循环",
+   "您没有当前页面访问权限",
+   "截止日期",
+   "截止日期应在开始日期之后",
+   "截止时间",
+   "截止时间应在开始时间之后",
+   "执行频率",
+   "报名",
+   "指定日期开始截止时间段不能重复",
+   "指定日期开始时间不能重复",
+   "撤回学生数据",
+   "文件大小应限制在",
+   "新建",
+   "无需",
+   "时间段",
+   "条件限定",
+   "查看",
+   "添加",
+   "申请",
+   "组合子任务不可更改分享对象",
+   "结束时间",
+   "统计数据共享给其他老师",
+   "编辑",
+   "设置",
+   "设置信息收集项目",
+   "设置共享对象",
+   "设置审批人员",
+   "设置无需",
+   "说明",
+   "请填写该项",
+   "请填写通知正文",
+   "请设置",
+   "请设置信息收集项目",
+   "选择",
+   "选择文件并上传",
+   "通知内容",
+   "通知提前推送时间",
+   "通知设定",
+   "附件",
+   "附件上传",
+   "附件格式支持",
+   "需要学生定位信息",
+   "频率"
+  ]
+ },
+ "67": {
+  "chunk": "67",
+  "chunkId": [
+   "67"
+  ],
+  "modules": [
+   "d03a"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/apply/statistics",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "67"
+    ],
+    "mods": [
+     "d03a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 29666,
+  "componentNames": [
+   "access_time",
+   "applyStatistics",
+   "check",
+   "close-popup",
+   "content_copy",
+   "delete",
+   "event",
+   "keyboard_arrow_right",
+   "remove_red_eye",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/apply/apply.api"
+  ],
+  "chineseTerms": [
+   "为组合任务",
+   "人数",
+   "人数限制",
+   "任务对象不能为空",
+   "信息收集表单",
+   "修改共享对象",
+   "修改组合共享",
+   "允许",
+   "允许班级干部查看任务数据",
+   "共享",
+   "关闭",
+   "创建时间",
+   "删除",
+   "加载更多",
+   "及其产生的",
+   "反馈截止时间至",
+   "发布单位",
+   "发起人",
+   "取消",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周循环",
+   "周日",
+   "填写",
+   "复制",
+   "复制该",
+   "完成",
+   "审批流程",
+   "对象",
+   "将再次收到提醒",
+   "延期",
+   "开始截止日期",
+   "开始截止时间",
+   "循环频率",
+   "总执行次数",
+   "执行时间",
+   "执行频率",
+   "执行频率若为周循环则当天依然有效",
+   "报名",
+   "指定日期频率修改任务对象后下次执行生效",
+   "指定日期频率修改无需任务对象后下次执行生效",
+   "提前结束",
+   "撤回学生数据",
+   "数据",
+   "数据将被清空",
+   "无需",
+   "时间段",
+   "暂无",
+   "未填写学生",
+   "没有更多了",
+   "点击确定进入组合详情修改",
+   "申请",
+   "确定",
+   "确认删除",
+   "确认复制",
+   "确认延期",
+   "确认提前结束",
+   "确认重新开启",
+   "级审批人员",
+   "结束",
+   "统计",
+   "设置",
+   "设置数据并全新发布",
+   "设置无需",
+   "该任务为组合任务子任务",
+   "请填写原截止时间之后的时间",
+   "请填写该项",
+   "选择",
+   "重新开启",
+   "重新开启后",
+   "附件",
+   "需要学生定位信息",
+   "预览",
+   "预览正文"
+  ]
+ },
+ "68": {
+  "chunk": "68",
+  "chunkId": [
+   "68"
+  ],
+  "modules": [
+   "ad93"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/basic/teaInfo",
+    "name": null,
+    "chunks": [
+     "0",
+     "68"
+    ],
+    "mods": [
+     "ad93"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 1825,
+  "componentNames": [
+   "BasicTeaInfo"
+  ],
+  "apis": [
+   "/api/teacher/basic/teaInfo.api"
+  ],
+  "chineseTerms": [
+   "姓名",
+   "性别",
+   "我的信息",
+   "手机号",
+   "教工号",
+   "角色",
+   "身份证号",
+   "院系"
+  ]
+ },
+ "69": {
+  "chunk": "69",
+  "chunkId": [
+   "69"
+  ],
+  "modules": [
+   "ebc5"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/composite/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "69"
+    ],
+    "mods": [
+     "ebc5"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 20806,
+  "componentNames": [
+   "CompositeDetail",
+   "close-popup",
+   "delete",
+   "get_app",
+   "keyboard_arrow_right",
+   "remove_red_eye",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/composite/composite.api"
+  ],
+  "chineseTerms": [
+   "任务及其下面的数据也会被删除",
+   "任务名称",
+   "信息收集",
+   "修改共享对象",
+   "共享",
+   "创建人",
+   "创建时间",
+   "删除",
+   "加载更多",
+   "发布新任务",
+   "发起人",
+   "取消",
+   "可以查询任务名称和类型",
+   "完成",
+   "导出",
+   "您没有新建相关任务权限",
+   "或无权限",
+   "新建",
+   "暂无任务",
+   "查看",
+   "没有更多了",
+   "活动报名",
+   "点击去发布",
+   "申请",
+   "确定",
+   "确定删除",
+   "确认",
+   "类型",
+   "组合任务包含",
+   "组合任务详情",
+   "综合查询",
+   "获取对象发布",
+   "该内容为空",
+   "请联系管理员",
+   "选择",
+   "选择全部任务对象",
+   "选择已完成任务对象",
+   "选择时间段",
+   "附件",
+   "预览",
+   "预览任务"
+  ]
+ },
+ "7": {
+  "chunk": "7",
+  "chunkId": [
+   "7"
+  ],
+  "modules": [
+   "e51e"
+  ],
+  "routes": [
+   {
+    "path": "*",
+    "name": null,
+    "chunks": [
+     "0",
+     "7"
+    ],
+    "mods": [
+     "e51e"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 697,
+  "componentNames": [
+   "Error404"
+  ],
+  "apis": [],
+  "chineseTerms": []
+ },
+ "70": {
+  "chunk": "70",
+  "chunkId": [
+   "70"
+  ],
+  "modules": [
+   "e90c"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/composite/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "70"
+    ],
+    "mods": [
+     "e90c"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10354,
+  "componentNames": [
+   "close-popup",
+   "compositeIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/composite/composite.api"
+  ],
+  "chineseTerms": [
+   "共享对象",
+   "共享给其他老师",
+   "创建人",
+   "创建时间",
+   "加载更多",
+   "取消",
+   "可以查询组合名称",
+   "名称",
+   "完成",
+   "已选择",
+   "新建组合",
+   "暂无",
+   "没有更多了",
+   "确定",
+   "综合查询",
+   "设置共享对象",
+   "请填写该项",
+   "请选择"
+  ]
+ },
+ "71": {
+  "chunk": "71",
+  "chunkId": [
+   "71"
+  ],
+  "modules": [
+   "a0d5"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/experience/index",
+    "name": "/teacher/experience/index",
+    "chunks": [
+     "0",
+     "71"
+    ],
+    "mods": [
+     "a0d5"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 20873,
+  "componentNames": [
+   "close-popup",
+   "experienceIndex",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/experience/experience.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "信息收集",
+   "分钟",
+   "培养层次",
+   "填写率",
+   "姓名",
+   "学号",
+   "学生综合统计",
+   "学籍状态",
+   "寝室",
+   "已接入",
+   "已签到次数",
+   "已请假次数",
+   "年级",
+   "应签到次数",
+   "待审批",
+   "待审批数",
+   "性别",
+   "手机号",
+   "报名率",
+   "接入",
+   "日常流程",
+   "查看信息收集记录",
+   "查看全部申请记录",
+   "查看全部签到记录",
+   "查看全部请假记录",
+   "查看全部通知记录",
+   "查看活动报名记录",
+   "活动报名",
+   "班级",
+   "申请",
+   "申请数量",
+   "申请率",
+   "知道了",
+   "离校次数",
+   "离校返校流程",
+   "签到",
+   "签到变更信息数",
+   "签到率",
+   "签到率计算规则",
+   "补假次数",
+   "被驳回数",
+   "角色",
+   "计算规则",
+   "请假",
+   "通知",
+   "通过",
+   "院系",
+   "驳回"
+  ]
+ },
+ "72": {
+  "chunk": "72",
+  "chunkId": [
+   "72"
+  ],
+  "modules": [
+   "d79d"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/joblog/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "72"
+    ],
+    "mods": [
+     "d79d"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 24830,
+  "componentNames": [
+   "JoblogDetail",
+   "access_time",
+   "check",
+   "close-popup",
+   "content_copy",
+   "delete",
+   "event",
+   "get_app",
+   "keyboard_arrow_right",
+   "person",
+   "refresh",
+   "remove_red_eye",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/joblog/joblog.api"
+  ],
+  "chineseTerms": [
+   "修改共享对象",
+   "允许填报人自己删除记录",
+   "共享",
+   "关闭",
+   "创建时间",
+   "删除",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查询教工号",
+   "填写对象",
+   "填写有效时间",
+   "填写有效期间",
+   "填报日志系统管理员是否可见",
+   "复制",
+   "复制该模板设置数据并全新发布",
+   "姓名",
+   "完成",
+   "导出",
+   "工作日志",
+   "工作日志表单",
+   "延期",
+   "性别",
+   "截止日期至",
+   "提交",
+   "提交时间",
+   "提前结束",
+   "提前结束后教师将不能再填写该模板工作日志",
+   "教工号",
+   "无法查看",
+   "日志详情",
+   "暂存",
+   "暂无数据",
+   "没有更多了",
+   "确定",
+   "确认删除",
+   "确认复制",
+   "确认延期",
+   "确认提前结束",
+   "确认重新开启",
+   "综合查询",
+   "设置填写对象",
+   "该工作日志已设置管理员无法查看详情",
+   "该工作日志模板及各位老师已填写的数据将被清空",
+   "该条信息不存在或您权限不足",
+   "请填写原截止日期之后的日期",
+   "请填写该项",
+   "选择",
+   "部门",
+   "部门院系",
+   "重新开启",
+   "预览",
+   "预览模板"
+  ]
+ },
+ "73": {
+  "chunk": "73",
+  "chunkId": [
+   "73"
+  ],
+  "modules": [
+   "b6da"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/joblog/detailresult",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "73"
+    ],
+    "mods": [
+     "b6da"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5164,
+  "componentNames": [
+   "JoblogDetailResult",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/joblog/joblog.api"
+  ],
+  "chineseTerms": [
+   "删除",
+   "取消",
+   "提交",
+   "日志内容",
+   "暂存",
+   "确认删除",
+   "该工作日志内容将被删除"
+  ]
+ },
+ "74": {
+  "chunk": "74",
+  "chunkId": [
+   "74"
+  ],
+  "modules": [
+   "326a"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/joblog/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "74"
+    ],
+    "mods": [
+     "326a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8183,
+  "componentNames": [
+   "JoblogIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/joblog/joblog.api"
+  ],
+  "chineseTerms": [
+   "任务状态",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查询日志任务名称",
+   "填写有效时间",
+   "已结束",
+   "日志提交数",
+   "暂无日志",
+   "未进行",
+   "没有更多了",
+   "确定",
+   "综合查询",
+   "进行中"
+  ]
+ },
+ "75": {
+  "chunk": "75",
+  "chunkId": [
+   "75"
+  ],
+  "modules": [
+   "18bf"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/joblog/new",
+    "name": "/teacher/joblog/new",
+    "chunks": [
+     "0",
+     "1",
+     "75"
+    ],
+    "mods": [
+     "18bf"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 14558,
+  "componentNames": [
+   "JoblogIndex",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/joblog/joblog.api"
+  ],
+  "chineseTerms": [
+   "上移",
+   "下移",
+   "允许填报人自己删除记录",
+   "共享对象",
+   "关闭",
+   "删除",
+   "发布",
+   "取消",
+   "名称",
+   "填写对象",
+   "填写有效期间",
+   "填报日志系统管理员是否可见",
+   "完成",
+   "将该日志统计数据共享给他老师",
+   "工作日志表单设置",
+   "工作日志表单项目",
+   "已选择",
+   "开始时间",
+   "截止日期应在开始日期之后",
+   "截止时间",
+   "新建模板",
+   "模板说明",
+   "添加",
+   "编辑",
+   "要求",
+   "设置共享对象",
+   "设置填写对象",
+   "设置工作日志表单",
+   "请填写要求",
+   "请填写该项",
+   "请设置填写对象",
+   "请设置工作日志表单项目",
+   "请选择"
+  ]
+ },
+ "76": {
+  "chunk": "76",
+  "chunkId": [
+   "76"
+  ],
+  "modules": [
+   "efa0"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "76"
+    ],
+    "mods": [
+     "efa0"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 17532,
+  "componentNames": [
+   "LeaveDetail",
+   "close-popup",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "人审核中",
+   "内容",
+   "发起位置",
+   "发起时间",
+   "发起申请",
+   "取消",
+   "姓名",
+   "学号",
+   "学生信息",
+   "审批意见",
+   "审批流程",
+   "审批状态",
+   "已销假",
+   "当前审核教师",
+   "当日暂无课表及活动信息",
+   "性别",
+   "您无权限查看此详情",
+   "您没有权限执行此操作",
+   "批量请假教师",
+   "无需审批",
+   "日期",
+   "是否出市",
+   "是否出省",
+   "是否离校",
+   "查看",
+   "查看历史请假",
+   "现在",
+   "的课表及活动",
+   "确认",
+   "该请假信息已被撤回",
+   "请假原因",
+   "请假时间",
+   "请假次数",
+   "请假类型",
+   "请假详情",
+   "课程信息",
+   "通过",
+   "销假成功",
+   "销假状态",
+   "附件",
+   "院系",
+   "驳回"
+  ]
+ },
+ "77": {
+  "chunk": "77",
+  "chunkId": [
+   "77"
+  ],
+  "modules": [
+   "07ff"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/history",
+    "name": null,
+    "chunks": [
+     "0",
+     "77"
+    ],
+    "mods": [
+     "07ff"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4839,
+  "componentNames": [
+   "LeaveHistroy",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "不需要离市",
+   "不需要离校",
+   "不需要离省",
+   "加载更多",
+   "审批中",
+   "暂无请假记录",
+   "没有更多了",
+   "的请假历史",
+   "需要离市",
+   "需要离校",
+   "需要离省",
+   "驳回"
+  ]
+ },
+ "78": {
+  "chunk": "78",
+  "chunkId": [
+   "78"
+  ],
+  "modules": [
+   "3cd2"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/list",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "78"
+    ],
+    "mods": [
+     "3cd2"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 16720,
+  "componentNames": [
+   "LeaveIndex",
+   "close-popup",
+   "keyboard_arrow_right",
+   "person",
+   "ripple",
+   "show",
+   "touch-hold",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "个月",
+   "加载更多",
+   "取消",
+   "可以查询学号",
+   "天以内",
+   "姓名",
+   "审批中",
+   "审批意见",
+   "审批状态",
+   "审批通过",
+   "已审批请假",
+   "年级信息",
+   "待审批请假",
+   "您没有权限执行此操作",
+   "操作",
+   "暂无请假记录",
+   "最近",
+   "没有更多了",
+   "确定",
+   "确认",
+   "综合查询",
+   "至少勾选一项请假",
+   "请假时长",
+   "请假时间",
+   "请假记录",
+   "超过",
+   "通过",
+   "院系",
+   "需要离市",
+   "需要离校",
+   "需要离省",
+   "驳回"
+  ]
+ },
+ "79": {
+  "chunk": "79",
+  "chunkId": [
+   "79"
+  ],
+  "modules": [
+   "f3d1"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/leaveExperience",
+    "name": "/teacher/leave/leaveExperience",
+    "chunks": [
+     "0",
+     "1",
+     "79"
+    ],
+    "mods": [
+     "f3d1"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5424,
+  "componentNames": [
+   "show",
+   "signinExperience"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发起时间",
+   "审批中",
+   "暂无请假记录",
+   "没有更多了",
+   "的历史请假记录",
+   "的请假记录",
+   "的通知记录",
+   "请假时间",
+   "请假类型",
+   "需要离市",
+   "需要离校",
+   "需要离省",
+   "驳回"
+  ]
+ },
+ "8": {
+  "chunk": "8",
+  "chunkId": [
+   "8"
+  ],
+  "modules": [
+   "46fe"
+  ],
+  "routes": [
+   {
+    "path": "/transfer",
+    "name": "/transfer",
+    "chunks": [
+     "0",
+     "8"
+    ],
+    "mods": [
+     "46fe"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 482,
+  "componentNames": [
+   "Transfer"
+  ],
+  "apis": [],
+  "chineseTerms": []
+ },
+ "80": {
+  "chunk": "80",
+  "chunkId": [
+   "80"
+  ],
+  "modules": [
+   "2727"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/multiHistory",
+    "name": "/teacher/leave/multiHistory",
+    "chunks": [
+     "0",
+     "80"
+    ],
+    "mods": [
+     "2727"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4727,
+  "componentNames": [
+   "LeaveHistroy",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "不需要离市",
+   "不需要离校",
+   "不需要离省",
+   "加载更多",
+   "学生数量",
+   "审批中",
+   "暂无请假记录",
+   "没有更多了",
+   "的请假历史",
+   "需要离市",
+   "需要离校",
+   "需要离省",
+   "驳回"
+  ]
+ },
+ "81": {
+  "chunk": "81",
+  "chunkId": [
+   "81"
+  ],
+  "modules": [
+   "493a"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/multilist",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "81"
+    ],
+    "mods": [
+     "493a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 17045,
+  "componentNames": [
+   "MultiLeave",
+   "close-popup",
+   "keyboard_arrow_right",
+   "person",
+   "ripple",
+   "show",
+   "touch-hold",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "个月",
+   "加载更多",
+   "取消",
+   "可以查询教工号",
+   "天以内",
+   "姓名信息",
+   "学生数量",
+   "审批中",
+   "审批意见",
+   "审批状态",
+   "审批通过",
+   "您没有权限执行此操作",
+   "我的批量请假",
+   "批量请假审批",
+   "操作",
+   "暂无请假记录",
+   "最近",
+   "没有更多了",
+   "确定",
+   "确认",
+   "综合查询",
+   "至少勾选一项请假",
+   "请假时长",
+   "请假时间",
+   "请假记录",
+   "请选择未审批的请假",
+   "超过",
+   "通过",
+   "需要离校",
+   "驳回"
+  ]
+ },
+ "82": {
+  "chunk": "82",
+  "chunkId": [
+   "82"
+  ],
+  "modules": [
+   "965e"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/multidetail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "82"
+    ],
+    "mods": [
+     "965e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 12692,
+  "componentNames": [
+   "MultiLeaveDetail",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "人审核中",
+   "发起位置",
+   "发起时间",
+   "发起申请",
+   "取消",
+   "姓名",
+   "学生数量",
+   "审批意见",
+   "审批流程",
+   "审批状态",
+   "当前审核教师",
+   "性别",
+   "您无权限查看此详情",
+   "您没有权限执行此操作",
+   "批量请假详情",
+   "撤回",
+   "教工号",
+   "教师信息",
+   "数据将被清空",
+   "无需审批",
+   "是否出市",
+   "是否出省",
+   "是否离校",
+   "查看历史请假",
+   "现在",
+   "确认撤回",
+   "该请假信息已被撤回",
+   "该请假及其产生的",
+   "请假原因",
+   "请假时间",
+   "请假次数",
+   "请假类型",
+   "请假详情",
+   "通过",
+   "附件",
+   "驳回"
+  ]
+ },
+ "83": {
+  "chunk": "83",
+  "chunkId": [
+   "83"
+  ],
+  "modules": [
+   "3865"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/multiStudent",
+    "name": "/teacher/leave/multiStudent",
+    "chunks": [
+     "0",
+     "83"
+    ],
+    "mods": [
+     "3865"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 4465,
+  "componentNames": [
+   "MultiStudent",
+   "person",
+   "show"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "加载更多",
+   "暂无学生",
+   "没有更多了",
+   "请假学生"
+  ]
+ },
+ "84": {
+  "chunk": "84",
+  "chunkId": [
+   "84"
+  ],
+  "modules": [
+   "a858"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "84"
+    ],
+    "mods": [
+     "a858"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 5344,
+  "componentNames": [
+   "Navigation",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "全部的请假信息",
+   "审批完成的请假信息",
+   "已审批",
+   "待审批",
+   "待审批的请假信息",
+   "我的批量请假",
+   "批量请假审批",
+   "教师的全部批量请假信息",
+   "请假记录",
+   "需要教师审批的全部批量请假信息"
+  ]
+ },
+ "85": {
+  "chunk": "85",
+  "chunkId": [
+   "85"
+  ],
+  "modules": [
+   "43e8"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/leave/newMultiLeave",
+    "name": "/teacher/leave/newMultiLeave",
+    "chunks": [
+     "0",
+     "1",
+     "85"
+    ],
+    "mods": [
+     "43e8"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 15079,
+  "componentNames": [
+   "LeaveLeave",
+   "access_time",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/leave/leave.api"
+  ],
+  "chineseTerms": [
+   "以内",
+   "份文件不符合格式限制",
+   "关闭",
+   "取消",
+   "图片上传",
+   "图片格式支持",
+   "完成",
+   "定位",
+   "已选择",
+   "开始时间",
+   "批量请假",
+   "提交请假",
+   "每张",
+   "添加附件",
+   "紧急联系人",
+   "结束时间",
+   "设置请假对象",
+   "请假原因",
+   "请假学生",
+   "请假类型",
+   "请填写请假原因",
+   "请填选择开始时间",
+   "请填选择结束时间",
+   "请填选择请假类型",
+   "请选择请假学生",
+   "选择",
+   "选择文件并上传",
+   "重新定位",
+   "需要出市",
+   "需要出省",
+   "需要离校"
+  ]
+ },
+ "86": {
+  "chunk": "86",
+  "chunkId": [
+   "86"
+  ],
+  "modules": [
+   "9c8e"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "86"
+    ],
+    "mods": [
+     "9c8e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 21827,
+  "componentNames": [
+   "MessageDetail",
+   "cancel",
+   "close-popup",
+   "get_app",
+   "keyboard_arrow_right",
+   "notifications",
+   "person",
+   "ripple",
+   "search",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/message/message.api"
+  ],
+  "chineseTerms": [
+   "上个时间段",
+   "下个时间段",
+   "专业",
+   "仅支持查询文本",
+   "关闭",
+   "加载更多",
+   "单次",
+   "单选类型收集内容",
+   "取消",
+   "可以查询学号",
+   "填写",
+   "填写时间段",
+   "姓名",
+   "定位信息",
+   "导出",
+   "已填写",
+   "年级",
+   "性别",
+   "手机号",
+   "推送",
+   "提交时的定位信息",
+   "提醒",
+   "收集内容查询",
+   "教工号",
+   "数字",
+   "时间段选择",
+   "暂无数据",
+   "未填写",
+   "没有更多了",
+   "班级信息",
+   "短信提醒",
+   "确定",
+   "综合查询",
+   "表单填写详情",
+   "请至少选择一个时间段",
+   "进度",
+   "选择查询内容",
+   "院系"
+  ]
+ },
+ "87": {
+  "chunk": "87",
+  "chunkId": [
+   "87"
+  ],
+  "modules": [
+   "19fe"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "87"
+    ],
+    "mods": [
+     "19fe"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 2871,
+  "componentNames": [
+   "AnalysisIndex",
+   "keyboard_arrow_right"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "教师信息收集填报",
+   "教师信息收集管理",
+   "管理教师信息收集的数据",
+   "需要进行填报的教师信息收集"
+  ]
+ },
+ "88": {
+  "chunk": "88",
+  "chunkId": [
+   "88"
+  ],
+  "modules": [
+   "098e"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/message",
+    "name": "/teacher/message/message",
+    "chunks": [
+     "0",
+     "88"
+    ],
+    "mods": [
+     "098e"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 9765,
+  "componentNames": [
+   "Message",
+   "MessageForm",
+   "MessageHistory",
+   "attach_file",
+   "doing",
+   "history",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/message/teamessage.api"
+  ],
+  "chineseTerms": [
+   "信息收集时间",
+   "加载更多",
+   "历史",
+   "发起人",
+   "数据",
+   "暂无历史",
+   "暂无进行中的",
+   "正在进行",
+   "没有更多了",
+   "申请时间"
+  ]
+ },
+ "89": {
+  "chunk": "89",
+  "chunkId": [
+   "89"
+  ],
+  "modules": [
+   "2a54"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/messageDetail",
+    "name": "/teacher/message/messageDetail",
+    "chunks": [
+     "0",
+     "1",
+     "89"
+    ],
+    "mods": [
+     "2a54"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10374,
+  "componentNames": [
+   "MessageDetail",
+   "attach_file",
+   "clear",
+   "detail",
+   "done",
+   "show",
+   "touch-pan",
+   "warning"
+  ],
+  "apis": [
+   "/api/teacher/message/teamessage.api"
+  ],
+  "chineseTerms": [
+   "不保存",
+   "保存",
+   "保存已填写内容",
+   "信息收集",
+   "修改提交",
+   "发布单位",
+   "取消",
+   "填写",
+   "填写时间",
+   "定位",
+   "定位失败",
+   "成功",
+   "提交",
+   "提交的定位信息",
+   "提示",
+   "时间",
+   "时间段",
+   "是否保存",
+   "未到",
+   "未进行",
+   "确定",
+   "自动填写上次内容",
+   "该任务需要定位信息",
+   "详情",
+   "重新定位"
+  ]
+ },
+ "9": {
+  "chunk": "9",
+  "chunkId": [
+   "9"
+  ],
+  "modules": [
+   "da3b"
+  ],
+  "routes": [
+   {
+    "path": "/update",
+    "name": null,
+    "chunks": [
+     "0",
+     "9"
+    ],
+    "mods": [
+     "da3b"
+    ],
+    "needLogin": false
+   }
+  ],
+  "bytes": 3593,
+  "componentNames": [
+   "Update",
+   "show"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "下载安装最新版",
+   "东软智慧学工",
+   "前往",
+   "官网下载安装最新版",
+   "建议您更新",
+   "有新版本发布",
+   "立即更新",
+   "腾讯应用宝",
+   "请更新后使用"
+  ]
+ },
+ "90": {
+  "chunk": "90",
+  "chunkId": [
+   "90"
+  ],
+  "modules": [
+   "710a"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/messageIndex",
+    "name": null,
+    "chunks": [
+     "0",
+     "90"
+    ],
+    "mods": [
+     "710a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8530,
+  "componentNames": [
+   "MessageIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/message/message.api"
+  ],
+  "chineseTerms": [
+   "任务数据",
+   "任务状态",
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查询任务名称",
+   "已结束",
+   "总执行次数",
+   "执行时间",
+   "执行频率",
+   "暂无",
+   "未进行",
+   "没有更多了",
+   "确定",
+   "综合查询",
+   "进行中"
+  ]
+ },
+ "91": {
+  "chunk": "91",
+  "chunkId": [
+   "91"
+  ],
+  "modules": [
+   "8060"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/new",
+    "name": "/teacher/message/new",
+    "chunks": [
+     "0",
+     "1",
+     "91"
+    ],
+    "mods": [
+     "8060"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 37693,
+  "componentNames": [
+   "MessageNew",
+   "access_time",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/message/message.api"
+  ],
+  "chineseTerms": [
+   "上移",
+   "下移",
+   "不支持该类型文件上传",
+   "以内",
+   "份文件不符合格式限制",
+   "信息收集",
+   "信息收集项目",
+   "关闭",
+   "删除",
+   "删除该时间段",
+   "发布",
+   "发布单位",
+   "取消",
+   "名称",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周日",
+   "完成",
+   "对象",
+   "已选择",
+   "开始截止时间",
+   "开始日期",
+   "开始时间",
+   "循环",
+   "您没有当前页面访问权限",
+   "截止日期",
+   "截止日期应在开始日期之后",
+   "截止时间",
+   "截止时间应在开始时间之后",
+   "执行频率",
+   "指定日期开始截止时间段不能重复",
+   "指定日期开始时间不能重复",
+   "文件大小应限制在",
+   "新建",
+   "无需",
+   "时间段",
+   "添加",
+   "结束时间",
+   "编辑",
+   "设置信息收集项目",
+   "设置填写对象",
+   "设置审批人员",
+   "设置无需填写对象",
+   "说明",
+   "请填写该项",
+   "请填写通知正文",
+   "请设置",
+   "请设置信息收集项目",
+   "选择",
+   "选择文件并上传",
+   "通知内容",
+   "通知提前推送时间",
+   "通知设定",
+   "附件",
+   "附件上传",
+   "附件格式支持",
+   "频率"
+  ]
+ },
+ "92": {
+  "chunk": "92",
+  "chunkId": [
+   "92"
+  ],
+  "modules": [
+   "0df3"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/message/statistics",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "92"
+    ],
+    "mods": [
+     "0df3"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 23119,
+  "componentNames": [
+   "access_time",
+   "check",
+   "close-popup",
+   "content_copy",
+   "delete",
+   "event",
+   "keyboard_arrow_right",
+   "messageStatistics",
+   "remove_red_eye",
+   "ripple",
+   "show"
+  ],
+  "apis": [
+   "/api/teacher/message/message.api"
+  ],
+  "chineseTerms": [
+   "人数",
+   "任务对象不能为空",
+   "信息收集表单",
+   "关闭",
+   "创建时间",
+   "删除",
+   "加载更多",
+   "及其产生的",
+   "反馈截止时间至",
+   "发布单位",
+   "发起人",
+   "取消",
+   "周一",
+   "周三",
+   "周二",
+   "周五",
+   "周六",
+   "周四",
+   "周循环",
+   "周日",
+   "复制",
+   "复制该",
+   "完成",
+   "对象",
+   "将再次收到提醒",
+   "已收集人数",
+   "延期",
+   "开始截止日期",
+   "开始截止时间",
+   "循环频率",
+   "总人数",
+   "总执行次数",
+   "执行时间",
+   "执行频率",
+   "执行频率若为周循环则当天依然有效",
+   "指定日期频率修改任务对象后下次执行生效",
+   "指定日期频率修改无需任务对象后下次执行生效",
+   "提前结束",
+   "数据",
+   "数据将被清空",
+   "无需",
+   "时间段",
+   "暂无",
+   "未填写教师",
+   "未收集人数",
+   "没有更多了",
+   "确认删除",
+   "确认复制",
+   "确认延期",
+   "确认提前结束",
+   "确认重新开启",
+   "结束",
+   "统计",
+   "设置",
+   "设置数据并全新发布",
+   "设置无需",
+   "请填写原截止时间之后的时间",
+   "请填写该项",
+   "选择",
+   "重新开启",
+   "重新开启后",
+   "附件",
+   "预览",
+   "预览正文"
+  ]
+ },
+ "93": {
+  "chunk": "93",
+  "chunkId": [
+   "93"
+  ],
+  "modules": [
+   "daec"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/monitor/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "93"
+    ],
+    "mods": [
+     "daec"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 23093,
+  "componentNames": [
+   "NeuAccessStudent",
+   "NeuStatActive",
+   "NeuStatApp",
+   "close-popup",
+   "collectStuData",
+   "event",
+   "generalSituation",
+   "keyboard_arrow_right",
+   "manufacturerData",
+   "monitorIndex",
+   "platformData",
+   "show",
+   "statActive",
+   "statApp",
+   "studentConnect"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/achievement/achievement.api",
+   "/api/teacher/monitor/monitor.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "全体用户",
+   "关闭",
+   "其他",
+   "周粒度",
+   "学生总人数",
+   "学生接入",
+   "学生接入人数",
+   "学生用户",
+   "学生设备",
+   "学院",
+   "完成",
+   "已接入",
+   "已选择",
+   "总人数",
+   "按年级统计接入率",
+   "接入数据",
+   "接入概况",
+   "接入率",
+   "接入率计算规则",
+   "教师用户",
+   "教师设备",
+   "日粒度",
+   "暂无统计数据",
+   "月粒度",
+   "未接入",
+   "活跃度",
+   "班级",
+   "生成统计图",
+   "知道了",
+   "终端分布",
+   "终端平台分布",
+   "终端机型分布",
+   "统计学生",
+   "统计接入率",
+   "计算规则",
+   "设备",
+   "设置统计对象",
+   "请输入统计开始日期",
+   "请输入统计截止日期",
+   "请选择",
+   "请选择统计学生"
+  ]
+ },
+ "94": {
+  "chunk": "94",
+  "chunkId": [
+   "94"
+  ],
+  "modules": [
+   "6b6a"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/news/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "94"
+    ],
+    "mods": [
+     "6b6a"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 10962,
+  "componentNames": [
+   "access_time",
+   "close-popup",
+   "delete",
+   "event",
+   "newsDetail",
+   "ripple"
+  ],
+  "apis": [
+   "/api/teacher/news/news.api"
+  ],
+  "chineseTerms": [
+   "不设置则不在",
+   "主页中轮播的结束时间",
+   "关闭",
+   "删除",
+   "发布单位",
+   "发布时间",
+   "发布者",
+   "取消",
+   "延期",
+   "推送在籍学生",
+   "推送教师",
+   "新设置不能设置今天",
+   "无访问权限",
+   "未设置",
+   "确认删除",
+   "确认延期",
+   "系统错误",
+   "结束日期至",
+   "结束时间",
+   "设置",
+   "设置结束时间",
+   "设置该新闻在",
+   "该新闻将被删除",
+   "详情",
+   "请填写原截止日期之后或未来的日期",
+   "请填写该项",
+   "轮播中显示",
+   "链接新闻",
+   "阅读量"
+  ]
+ },
+ "95": {
+  "chunk": "95",
+  "chunkId": [
+   "95"
+  ],
+  "modules": [
+   "c201"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/news/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "95"
+    ],
+    "mods": [
+     "c201"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8986,
+  "componentNames": [
+   "keyboard_arrow_right",
+   "newsTeacherIndex",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/news/news.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发布时间",
+   "发布者",
+   "取消",
+   "可以查询新闻标题和新闻发布者",
+   "新闻状态",
+   "暂无新闻",
+   "未轮播",
+   "没有更多了",
+   "确定",
+   "系统错误",
+   "结束时间",
+   "综合查询",
+   "轮播中",
+   "链接新闻"
+  ]
+ },
+ "96": {
+  "chunk": "96",
+  "chunkId": [
+   "96"
+  ],
+  "modules": [
+   "8087"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/news/new",
+    "name": "/teacher/news/new",
+    "chunks": [
+     "0",
+     "96"
+    ],
+    "mods": [
+     "8087"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8761,
+  "componentNames": [
+   "access_time",
+   "close-popup",
+   "event",
+   "newsNew"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/news/news.api"
+  ],
+  "chineseTerms": [
+   "不设置则不在",
+   "主页中轮播的结束时间",
+   "关闭",
+   "发布",
+   "发布单位",
+   "取消",
+   "或者",
+   "推送至在籍学生",
+   "推送至教师",
+   "新建",
+   "新闻内容",
+   "标题",
+   "标题长度不能超过",
+   "正文",
+   "添加链接新闻",
+   "结束时间",
+   "设置该新闻在",
+   "请填写正文",
+   "请填写该项",
+   "轮播中显示",
+   "链接开头必须包含",
+   "链接新闻"
+  ]
+ },
+ "97": {
+  "chunk": "97",
+  "chunkId": [
+   "97"
+  ],
+  "modules": [
+   "03ca"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/notice/detail",
+    "name": null,
+    "chunks": [
+     "0",
+     "1",
+     "97"
+    ],
+    "mods": [
+     "03ca"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 31656,
+  "componentNames": [
+   "SigninIndex",
+   "access_time",
+   "check",
+   "close-popup",
+   "delete",
+   "event",
+   "get_app",
+   "keyboard_arrow_right",
+   "notifications",
+   "person",
+   "progress",
+   "refresh",
+   "remove_red_eye",
+   "reply",
+   "ripple",
+   "show",
+   "statistics"
+  ],
+  "apis": [
+   "/api/teacher/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "专业",
+   "专业名称",
+   "为组合任务",
+   "修改共享对象",
+   "修改组合共享",
+   "允许班级干部查看任务数据",
+   "共享",
+   "关闭",
+   "删除",
+   "加载更多",
+   "原通知及其产生的",
+   "反馈截止时间",
+   "反馈截止时间至",
+   "发布单位",
+   "发起人",
+   "取消",
+   "可以查询学号",
+   "姓名",
+   "学生提问",
+   "完成",
+   "导出",
+   "将再次收到提醒",
+   "已确认",
+   "已确认人数",
+   "已阅读",
+   "已阅读人数",
+   "年级",
+   "应确认人数",
+   "应阅读人数",
+   "延期",
+   "性别",
+   "您可再次编辑并发布该通知",
+   "手机号",
+   "按专业统计",
+   "按班级统计",
+   "按院系统计",
+   "推送",
+   "提前结束",
+   "提前结束后将不再统计后续学生的阅读率",
+   "撤回",
+   "数据将被清空",
+   "显示签名",
+   "暂无数据",
+   "未确认",
+   "未确认人数",
+   "未阅读",
+   "未阅读人数",
+   "未阅读学生",
+   "未阅读提醒",
+   "没有更多了",
+   "点击确定进入组合详情修改",
+   "班级信息",
+   "班级名称",
+   "的统计",
+   "短信提醒",
+   "确定",
+   "确认删除",
+   "确认延期",
+   "确认提前结束",
+   "确认撤回",
+   "确认状态",
+   "确认率",
+   "确认重新开启",
+   "签名详情",
+   "统计",
+   "统计方式",
+   "综合查询",
+   "该条信息不存在或您权限不足",
+   "该通知及其产生的",
+   "详情",
+   "请填写原截止时间之后的时间",
+   "请填写该项",
+   "选择",
+   "通知对象",
+   "通知时间",
+   "通知统计",
+   "通知进度",
+   "重新开启",
+   "重新开启后",
+   "阅读时间"
+  ]
+ },
+ "98": {
+  "chunk": "98",
+  "chunkId": [
+   "98"
+  ],
+  "modules": [
+   "7f35"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/notice/index",
+    "name": null,
+    "chunks": [
+     "0",
+     "98"
+    ],
+    "mods": [
+     "7f35"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 8649,
+  "componentNames": [
+   "SigninIndex",
+   "keyboard_arrow_right",
+   "ripple",
+   "show",
+   "touch-pan"
+  ],
+  "apis": [
+   "/api/teacher/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "加载更多",
+   "发起人",
+   "取消",
+   "可以查询标题信息",
+   "已结束",
+   "执行时间",
+   "暂无通知",
+   "没有更多了",
+   "确定",
+   "确认率",
+   "统计中",
+   "综合查询",
+   "阅读状态",
+   "阅读率"
+  ]
+ },
+ "99": {
+  "chunk": "99",
+  "chunkId": [
+   "99"
+  ],
+  "modules": [
+   "66de"
+  ],
+  "routes": [
+   {
+    "path": "/teacher/notice/new",
+    "name": "/teacher/notice/new",
+    "chunks": [
+     "0",
+     "1",
+     "99"
+    ],
+    "mods": [
+     "66de"
+    ],
+    "needLogin": true
+   }
+  ],
+  "bytes": 23706,
+  "componentNames": [
+   "NoticeNew",
+   "access_time",
+   "close-popup",
+   "event",
+   "keyboard_arrow_right",
+   "show"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/teacher/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "不支持该类型文件上传",
+   "以内",
+   "份文件不符合格式限制",
+   "允许班级干部查看任务数据",
+   "共享对象",
+   "关闭",
+   "删除",
+   "反馈截止时间",
+   "发布",
+   "发布单位",
+   "取消",
+   "完成",
+   "定时发送",
+   "定时发送时间",
+   "将该",
+   "已选择",
+   "开启后学生需要点击确认按钮对内容进行确认",
+   "您没有当前页面访问权限",
+   "手动确认已读",
+   "文件大小应限制在",
+   "新建",
+   "查看",
+   "正文",
+   "组合子任务不可更改分享对象",
+   "统计数据共享给其他老师",
+   "设置共享对象",
+   "设置通知对象",
+   "请填写该项",
+   "请填写通知正文",
+   "请设置通知对象",
+   "选择",
+   "选择文件并上传",
+   "通知内容",
+   "通知参数",
+   "通知对象",
+   "通知标题",
+   "通知类型",
+   "附件",
+   "附件上传",
+   "附件格式支持"
+  ]
+ },
+ "app": {
+  "chunk": "app",
+  "chunkId": [],
+  "modules": [
+   "0047",
+   "034f",
+   "1",
+   "2a19a",
+   "2f39",
+   "ac02",
+   "ad56",
+   "ed82"
+  ],
+  "routes": [],
+  "bytes": 25172,
+  "componentNames": [
+   "App"
+  ],
+  "apis": [
+   "/api/file_uploader.jsp",
+   "/api/user/user.api"
+  ],
+  "chineseTerms": [
+   "东软教育科技集团",
+   "东软智慧学工",
+   "会话已过期",
+   "手机号码不正确",
+   "批量请假",
+   "批量请假全部学生",
+   "批量请假历史记录",
+   "提示",
+   "教师端批量请假",
+   "教师端批量请假详情",
+   "无新版本",
+   "服务器出现错误",
+   "请假历史记录",
+   "请重新登录"
+  ]
+ },
+ "chunk-common": {
+  "chunk": "chunk-common",
+  "chunkId": [
+   "1"
+  ],
+  "modules": [
+   "0",
+   "156a",
+   "2",
+   "3",
+   "33be",
+   "3fc4",
+   "46f3",
+   "4aac",
+   "5333",
+   "58a84",
+   "7590",
+   "8bef",
+   "92db",
+   "961c",
+   "971b",
+   "974f",
+   "9a3d",
+   "9fa4",
+   "a086",
+   "b192",
+   "b872",
+   "bab8",
+   "cd81",
+   "ce02",
+   "d852",
+   "f395"
+  ],
+  "routes": [],
+  "bytes": 167513,
+  "componentNames": [
+   "NeuApplyStatistics",
+   "NeuAssignStudent",
+   "NeuAssignTeacher",
+   "NeuCollectSearch",
+   "NeuDefineWidget",
+   "NeuExportData",
+   "NeuFullScreenImage",
+   "NeuGeoLocation",
+   "NeuImportData",
+   "NeuLocationAnalysisMap",
+   "NeuManageQa",
+   "NeuQaList",
+   "NeuViewAssignedStudent",
+   "NeuViewAssignedTeacher",
+   "NeuViewMap",
+   "NeuWidget",
+   "access_time",
+   "answer",
+   "arrow_drop_down",
+   "bubble_chart",
+   "cancel",
+   "chevron_right",
+   "close-popup",
+   "color_lens",
+   "create",
+   "event",
+   "group",
+   "keyboard_arrow_right",
+   "more_vert",
+   "ripple",
+   "role",
+   "router",
+   "show",
+   "team",
+   "touch-pan",
+   "unAnswer"
+  ],
+  "apis": [
+   "/api/public.api",
+   "/api/student/basic/qa.api",
+   "/api/teacher/basic/memberGroup.api",
+   "/api/teacher/basic/qa.api",
+   "/api/teacher/basic/role.api",
+   "/api/teacher/basic/student.api",
+   "/api/teacher/basic/teacher.api",
+   "/api/teacher/notice/notice.api"
+  ],
+  "chineseTerms": [
+   "一行数据为一个匹配项",
+   "上海",
+   "上海市",
+   "上移",
+   "上限值",
+   "下拉框",
+   "下移",
+   "下限值",
+   "下限值不应超过上限值",
+   "不可以为纯数字表达式",
+   "不支持该类型文件上传",
+   "个字",
+   "个对象",
+   "个文件",
+   "个文件保存",
+   "主校区所在地外迁移",
+   "主题色",
+   "之间的整数",
+   "云南",
+   "云南省",
+   "人已设置完毕",
+   "仅提问人可见",
+   "仅自己可见",
+   "以内",
+   "份文件不符合格式限制",
+   "位的小数",
+   "位置授权状态获取失败",
+   "允许多行",
+   "允许小数",
+   "全国",
+   "全部路线",
+   "关闭",
+   "其中",
+   "其他",
+   "其它",
+   "具体学号名单如上",
+   "内蒙古",
+   "内蒙古自治区",
+   "写入文件失败",
+   "分布图",
+   "分组",
+   "删除",
+   "包含匹配项文本即算匹配成功",
+   "北京",
+   "北京市",
+   "单个文件大小",
+   "单选",
+   "单选按钮",
+   "参数设置有误",
+   "取消",
+   "取消置顶",
+   "另有",
+   "台湾",
+   "台湾省",
+   "吉林",
+   "吉林省",
+   "名学生",
+   "名学生学号不存在或您无权设置",
+   "四川",
+   "四川省",
+   "回答",
+   "因数据量过大本次下载数据已被拆分成",
+   "在此输入你的问题",
+   "地区",
+   "培养层次",
+   "处理中",
+   "处理成功",
+   "处理结果",
+   "多选",
+   "大于等于",
+   "天津",
+   "天津市",
+   "学号批量导入",
+   "学籍状态",
+   "宁夏",
+   "宁夏回族自治区",
+   "安徽",
+   "安徽省",
+   "完成",
+   "定位"
+  ]
+ },
+ "vendor": {
+  "chunk": "vendor",
+  "chunkId": [
+   "0"
+  ],
+  "modules": [
+   "0016",
+   "007d",
+   "00ee",
+   "0156",
+   "0170",
+   "0366",
+   "0378",
+   "03ed",
+   "0481",
+   "04f6",
+   "04f7",
+   "05c0",
+   "05eb",
+   "0655",
+   "068f",
+   "06ad",
+   "06cf",
+   "079e",
+   "07fd",
+   "0831",
+   "0924",
+   "0967",
+   "09e3",
+   "0a06",
+   "0b25",
+   "0cb2",
+   "0cd3",
+   "0cfb",
+   "0d3b",
+   "0d59",
+   "0da8",
+   "0df6",
+   "0e51",
+   "0f99",
+   "1146",
+   "133d",
+   "13d5",
+   "1418",
+   "14c3",
+   "15a4",
+   "1687",
+   "17d6",
+   "182d",
+   "18c0",
+   "19aa",
+   "19eb",
+   "1be4",
+   "1be7",
+   "1c0b",
+   "1c16",
+   "1c1c",
+   "1c35",
+   "1c7e",
+   "1cdc",
+   "1d2b",
+   "1d80",
+   "1dde",
+   "1f39",
+   "1fb5",
+   "2023",
+   "20c8",
+   "216a",
+   "217c",
+   "21a1",
+   "21e1",
+   "2244",
+   "2248",
+   "2266",
+   "22b4",
+   "22d1",
+   "2306",
+   "2355",
+   "23cb",
+   "23e7",
+   "241c",
+   "2444",
+   "24e8",
+   "2626",
+   "26e9",
+   "27f9",
+   "282b",
+   "2877",
+   "2a19",
+   "2a62",
+   "2b0e",
+   "2b17",
+   "2b3d",
+   "2b69",
+   "2bb1",
+   "2cd2",
+   "2cf4",
+   "2cf49",
+   "2d00",
+   "2d83",
+   "2da4",
+   "2da7",
+   "2dc5",
+   "2e67",
+   "2f1f",
+   "2f45",
+   "30b5",
+   "313e",
+   "3301",
+   "33d3",
+   "342d",
+   "342f",
+   "3437",
+   "35a1",
+   "3620",
+   "3627",
+   "3786",
+   "37e8",
+   "3842",
+   "387f",
+   "38a2",
+   "3901",
+   "392f",
+   "3934",
+   "3980",
+   "3b73",
+   "3bbe",
+   "3ca3",
+   "3d69",
+   "3eba",
+   "3f8c",
+   "401b",
+   "4041",
+   "4069",
+   "4074",
+   "4082",
+   "41ef",
+   "428f",
+   "429b",
+   "42a1",
+   "42d2",
+   "42e5",
+   "4319",
+   "4362",
+   "436b",
+   "44ad",
+   "44d2",
+   "44de",
+   "4573",
+   "463c",
+   "467f",
+   "4755",
+   "4840",
+   "48a9",
+   "4930",
+   "4983",
+   "498a",
+   "49bb",
+   "4a3f",
+   "4a7b",
+   "4aa2",
+   "4b7e",
+   "4bc4",
+   "4cbb",
+   "4d5a",
+   "4d64",
+   "4d65",
+   "4df4",
+   "4e73",
+   "4e82",
+   "4f85",
+   "4fab",
+   "4fac",
+   "5098",
+   "50c4",
+   "5135",
+   "5210",
+   "5270",
+   "52ee",
+   "5319",
+   "538f",
+   "5395",
+   "5426",
+   "551f",
+   "562e",
+   "5692",
+   "56ef",
+   "57b0",
+   "582c",
+   "5899",
+   "58a8",
+   "58a81",
+   "58e5",
+   "594d",
+   "59d7",
+   "5b87",
+   "5c6c",
+   "5cc6",
+   "5e76",
+   "5e81",
+   "5f02",
+   "5fb2",
+   "5ff7",
+   "605d",
+   "607d",
+   "608a",
+   "60da",
+   "6179",
+   "621a",
+   "625e",
+   "6285",
+   "6521",
+   "6547",
+   "658f",
+   "65c6",
+   "65ed",
+   "65f0",
+   "6642",
+   "6679",
+   "66e5",
+   "68ab",
+   "6900",
+   "697e",
+   "697e7",
+   "69f3",
+   "6a67",
+   "6ac0",
+   "6ac5",
+   "6b1d",
+   "6cb7",
+   "6d8b",
+   "6eeb",
+   "6f0c",
+   "6f5b",
+   "6fd3",
+   "714f",
+   "7156",
+   "72db",
+   "7418",
+   "7460",
+   "74af",
+   "74e8",
+   "7518",
+   "7562",
+   "75c3",
+   "76a5",
+   "76f3",
+   "77a7",
+   "7837",
+   "7839",
+   "7919",
+   "7937",
+   "7a77",
+   "7aac",
+   "7b0b",
+   "7c73",
+   "7cbe",
+   "7d6c",
+   "7d6e",
+   "7d72",
+   "7dd0",
+   "7e03",
+   "7ee0",
+   "7f67",
+   "7f9a",
+   "7fae",
+   "7ff0",
+   "80f0",
+   "8169",
+   "81d5",
+   "81e7",
+   "823b",
+   "825a",
+   "8328",
+   "8380",
+   "83ab",
+   "83b9",
+   "8418",
+   "84ce",
+   "8572",
+   "857d",
+   "8582",
+   "85fc",
+   "861c",
+   "861d",
+   "8716",
+   "8728",
+   "87b1",
+   "87c3",
+   "87e8",
+   "88b3",
+   "8918",
+   "8925",
+   "89b6",
+   "89d6",
+   "89e3",
+   "8a22",
+   "8aa5",
+   "8aa7",
+   "8b39",
+   "8c4f",
+   "8d32",
+   "8df4",
+   "8e43",
+   "8f8e",
+   "9071",
+   "90e3",
+   "9112",
+   "9152",
+   "9263",
+   "9404",
+   "944e",
+   "94ca",
+   "9523",
+   "9564",
+   "9680",
+   "9850",
+   "985d",
+   "9861",
+   "98b7",
+   "9989",
+   "998a",
+   "99b6",
+   "9a1f",
+   "9bdd",
+   "9bf2",
+   "9c40",
+   "9cf9",
+   "9d57",
+   "9e62",
+   "9ed3",
+   "9f29",
+   "9f7f",
+   "9fbc",
+   "a078",
+   "a15a",
+   "a267",
+   "a2bf",
+   "a370",
+   "a434",
+   "a4b4",
+   "a640",
+   "a691",
+   "a8f0",
+   "a981",
+   "aa74",
+   "ab41",
+   "ac0f",
+   "ac1f",
+   "ace4",
+   "ad6d",
+   "adad",
+   "ae22",
+   "ae40",
+   "ae69",
+   "ae93",
+   "af5c",
+   "afcb",
+   "b047",
+   "b05d",
+   "b0af",
+   "b0dd",
+   "b12f",
+   "b1d4",
+   "b3c1",
+   "b50d",
+   "b575",
+   "b622",
+   "b727",
+   "b7d9",
+   "b7fa",
+   "baa5",
+   "bc3a",
+   "bd4c",
+   "bda7",
+   "bf69",
+   "c037",
+   "c04e",
+   "c0a8",
+   "c19f",
+   "c1d0",
+   "c294",
+   "c345",
+   "c3da",
+   "c401",
+   "c410",
+   "c430",
+   "c474",
+   "c4a3",
+   "c532",
+   "c6b6",
+   "c6cd",
+   "c775",
+   "c7a2",
+   "c8af",
+   "c8b5",
+   "c8ba",
+   "c8c8",
+   "c8d2",
+   "c975",
+   "ca78",
+   "ca80",
+   "ca84",
+   "cb11",
+   "cb32",
+   "cbe5",
+   "cc04",
+   "cc12",
+   "cc78",
+   "cccd",
+   "cd33",
+   "cdf9",
+   "ce4e",
+   "cee4",
+   "d012",
+   "d039",
+   "d066",
+   "d1e7",
+   "d28f",
+   "d2bb",
+   "d32f",
+   "d3f4",
+   "d409",
+   "d44e",
+   "d498",
+   "d4c6",
+   "d4d1",
+   "d51b",
+   "d58f",
+   "d5b7",
+   "d66b",
+   "d728",
+   "d784",
+   "d882",
+   "d925"
+  ],
+  "routes": [],
+  "bytes": 2490986,
+  "componentNames": [
+   "Arial",
+   "BottomSheetPlugin",
+   "Calibri",
+   "DialogPlugin",
+   "Normal",
+   "QAvatar",
+   "QBadge",
+   "QBreadcrumbs",
+   "QBreadcrumbsEl",
+   "QBtn",
+   "QBtnDropdown",
+   "QBtnGroup",
+   "QBtnToggle",
+   "QCard",
+   "QCardActions",
+   "QCardSection",
+   "QChatMessage",
+   "QCheckbox",
+   "QChip",
+   "QCircularProgress",
+   "QDate",
+   "QDialog",
+   "QDrawer",
+   "QEditor",
+   "QExpansionItem",
+   "QFab",
+   "QFabAction",
+   "QField",
+   "QFooter",
+   "QForm",
+   "QGlobalDialog",
+   "QHeader",
+   "QIcon",
+   "QImg",
+   "QInfiniteScroll",
+   "QInput",
+   "QItem",
+   "QItemLabel",
+   "QItemSection",
+   "QLayout",
+   "QLinearProgress",
+   "QList",
+   "QLoading",
+   "QMarkupTable",
+   "QMenu",
+   "QNotifications",
+   "QOptionGroup",
+   "QPage",
+   "QPageContainer",
+   "QPageSticky",
+   "QPopupEdit",
+   "QPopupProxy",
+   "QPortal",
+   "QPullToRefresh",
+   "QRadio",
+   "QRating",
+   "QResizeObserver",
+   "QResponsive",
+   "QScrollArea",
+   "QScrollObserver",
+   "QSelect",
+   "QSeparator",
+   "QSlideTransition",
+   "QSlider",
+   "QSpinner",
+   "QSpinnerDots",
+   "QTab",
+   "QTabPanel",
+   "QTabPanelWrapper",
+   "QTabPanels",
+   "QTabs",
+   "QTime",
+   "QTimeline",
+   "QTimelineEntry",
+   "QToggle",
+   "QToolbar",
+   "QToolbarTitle",
+   "QTooltip",
+   "QUploader",
+   "QUploaderAddTrigger",
+   "QUploaderBase",
+   "QVideo",
+   "RouterLink",
+   "RouterView",
+   "VeLine",
+   "VeRing",
+   "bm-circle",
+   "bm-map",
+   "bm-marker",
+   "bm-navigation",
+   "bm-polygon",
+   "bm-scale",
+   "bm-view",
+   "click-outside",
+   "close",
+   "close-popup",
+   "highest",
+   "horizontal",
+   "keep-alive",
+   "line",
+   "lowest",
+   "main",
+   "material-icons",
+   "max",
+   "median",
+   "min",
+   "name",
+   "open",
+   "pageText",
+   "q-transition--",
+   "q-transition--fade",
+   "q-transition--field-message",
+   "q-transition--jump-",
+   "q-transition--scale",
+   "q-transition--slide-",
+   "ripple",
+   "show",
+   "time",
+   "touch-hold",
+   "touch-pan",
+   "touch-swipe",
+   "transition",
+   "value",
+   "version",
+   "vertical",
+   "vue-qr"
+  ],
+  "apis": [],
+  "chineseTerms": [
+   "一乙丁七乃九了二人儿入八几刀刁力匕十卜又三下丈上",
+   "一佚佾壹日溢逸鎰馹任壬妊姙恁",
+   "一月",
+   "一覧",
+   "丁盯叮钉顶鼎锭定订丢东冬董懂动栋侗恫冻洞兜抖斗陡",
+   "丂丄丅丆丏丒丗丟丠両丣並丩丮丯丱丳丵丷丼乀乁乂乄",
+   "七月",
+   "三月",
+   "上午",
+   "上标",
+   "下划线",
+   "下午",
+   "下标",
+   "丑丐不中丰丹之尹予云井互五亢仁什仃仆仇仍今介仄元",
+   "世丕且丘主乍乏乎以付仔仕他仗代令仙仞充兄冉冊冬凹",
+   "两端对齐",
+   "个图表系列组成",
+   "个系列是一个",
+   "个系列是一个表示",
+   "丫丸凡久么也乞于亡兀刃勺千叉口土士夕大女子孑孓寸",
+   "中仲衆重卽櫛楫汁葺增憎曾拯烝甑症繒蒸證贈之只",
+   "中文",
+   "中等偏大",
+   "丱丼仨仜仩仡仝仚刌匜卌圢圣夗夯宁宄尒尻屴屳帄庀庂",
+   "串櫛釧屑屈",
+   "丹亶但單團壇彖斷旦檀段湍短端簞緞蛋袒鄲鍛撻澾獺疸",
+   "主体",
+   "主题河流图",
+   "乂乜凵匚厂万丌乇亍囗",
+   "乂倪",
+   "乆乊乑乕乗乚乛乢乣乤乥乧乨乪乫乬乭乮乯乲乴乵乶乷",
+   "乏逼下何厦夏廈昰河瑕荷蝦賀遐霞鰕壑學虐謔鶴寒恨悍",
+   "乒坪苹萍平凭瓶评屏坡泼颇婆破魄迫粕剖扑铺仆莆葡菩",
+   "九月",
+   "习媳喜铣洗系隙戏细瞎虾匣霞辖暇峡侠狭下厦夏吓掀锨",
+   "书赎孰熟薯暑曙署蜀黍鼠属术述树束戍竖墅庶数漱",
+   "乳汝入褥软阮蕊瑞锐闰润若弱撒洒萨腮鳃塞赛三叁",
+   "乸乹乺乻乼乽乿亀亁亂亃亄亅亇亊",
+   "亂卵欄欒瀾爛蘭鸞剌辣嵐擥攬欖濫籃纜藍襤覽拉臘蠟廊",
+   "二月",
+   "亍丌兀丐廿卅丕亘丞鬲孬噩丨禺丿匕乇夭爻卮氐囟胤馗",
+   "于佑偶優又友右宇寓尤愚憂旴牛玗瑀盂祐禑禹紆羽芋藕",
+   "亐亖亗亙亜亝亞亣亪亯亰亱亴亶亷亸亹亼亽亾仈仌仏仐",
+   "五月",
+   "亜唖娃阿哀愛挨姶逢葵茜穐悪握渥旭葦芦鯵梓圧斡扱宛",
+   "亦裔意毅忆义益溢诣议谊译异翼翌绎茵荫因殷音阴姻吟",
+   "亨横衡恒轰哄烘虹鸿洪宏弘红喉侯猴吼厚候后呼乎忽瑚",
+   "亭低停偵剃貞呈堤定帝底庭廷弟悌抵挺提梯汀碇禎程締",
+   "亶从仍仄仆仂仗仞仭仟价伉佚估佛佝佗佇佶侈侏侘佻佩",
+   "亻仃仉仂仨仡仫仞伛仳伢佤仵伥伧伉伫佞佧攸佚佝",
+   "今妗擒昑檎琴禁禽芩衾衿襟",
+   "介疥诫届巾筋斤金今津襟紧锦仅谨进靳晋禁近烬浸",
+   "仍剩孕芿仔刺咨姉姿子字孜恣慈滋炙煮玆瓷疵磁紫者自",
+   "仒仚仛仜仠仢仦仧仩仭仮仯仱仴仸仹仺仼仾伀伂伃伄伅",
+   "仙僊先善嬋宣扇敾旋渲煽琁瑄璇璿癬禪線繕羨腺膳船蘚",
+   "代码",
+   "仪表盘图",
+   "仿伉伙伊伕伍伐休伏仲件任仰仳份企伋光兇兆先全",
+   "伄仴伒冱刓刉刐劦匢匟卍厊吇囡囟圮圪圴夼妀奼妅奻奾",
+   "伆伇伈伋伌伒伓伔伕伖伜伝伡伣伨伩伬伭伮伱伳伵伷伹",
+   "伉伫佞佧攸佚佝",
+   "伍侮坞戊雾晤物勿务悟误昔熙析西硒矽晰嘻吸锡牺",
+   "伐罰抜筏閥鳩噺塙蛤隼伴判半反叛帆搬斑板氾汎版犯班",
+   "伞散桑嗓丧搔骚扫嫂瑟色涩森僧莎砂杀刹沙纱傻啥煞筛",
+   "伟伪尾纬未蔚味畏胃喂魏位渭谓尉慰卫瘟温蚊文闻纹吻",
+   "伴瓣半办绊邦帮梆榜膀绑棒磅蚌镑傍谤苞胞包褒剥",
+   "伶例冷励嶺怜玲礼苓鈴隷零霊麗齢暦歴列劣烈裂廉恋憐",
+   "伻伾伿佀佁佂佄佅佇佈佉佊佋佌佒佔佖佡佢佦佨佪佫佭",
+   "伽佳假價加可呵哥嘉嫁家暇架枷柯歌珂痂稼苛茄街袈訶",
+   "住注祝驻抓爪拽专砖转撰赚篆桩庄装妆撞壮状椎锥追赘",
+   "余俞逾鱼愉渝渔隅予娱雨与屿禹宇语羽玉域芋郁吁遇喻",
+   "佛弗彿拂崩朋棚硼繃鵬丕備匕匪卑妃婢庇悲憊扉批斐枇",
+   "作你伯低伶余佝佈佚兌克免兵冶冷別判利刪刨劫助努劬",
+   "佟佗伲伽佶佴侑侉侃侏佾佻侪佼侬侔俦俨俪俅俚俣俜俑",
+   "佮佱佲併佷佸佹佺佽侀侁侂侅來侇侊侌侎侐侒侓侕侖侘",
+   "佰侑佯來侖儘俔俟俎俘俛俑俚俐俤俥倚倨倔倪倥倅伜俶",
+   "佳家加荚颊贾甲钾假稼价架驾嫁歼监坚尖笺间煎兼肩艰",
+   "佴侉侄佷佌侗佪侚佹侁佸侐侜侔侞侒侂侕佫佮冞冼冾刵",
+   "使屎驶始式示士世柿事拭誓逝势是嗜噬适仕侍释饰氏市",
+   "侍児字寺慈持時次滋治爾璽痔磁示而耳自蒔辞汐鹿式識"
+  ]
+ }
+}

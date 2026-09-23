@@ -1,0 +1,51 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/chunk-common.js -> module "58a84"
+ * Route: (shared/core)
+ * Component guess: chunk-common_58a84
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+"58a84": function(e, t, i) {
+  "use strict";
+  i.d(t, "c", (function() {
+    return a
+  })), i.d(t, "b", (function() {
+    return s
+  })), i.d(t, "a", (function() {
+    return l
+  }));
+  i("c975"), i("13d5"), i("4e82"), i("5319"), i("ddb0");
+
+  function a(e, t) {
+    if ("R" === e.type && "S" !== e.selectPattern && e.isOther) return t ? t.value + (t.other ? ":" + t.other : "") : "";
+    if ("C" === e.type) {
+      const i = [];
+      for (const a of t ? e.isOther ? t.value : t : []) i.push(a + (e.isOther && "其他" === a && t.other ? ":" + t.other : ""));
+      return i.sort(), i.toString()
+    }
+    if ("S" === e.type) return t ? "已签名" : "未签名";
+    if ("A" === e.type) return t && t.value ? t.value : "";
+    if ("F" === e.type) {
+      const e = (t || []).reduce(((e, t) => e.concat(t.srcname)), []);
+      return e.join("\r\n")
+    }
+    return t
+  }
+
+  function s(e, t, i) {
+    return "R" === e.type && "S" !== e.selectPattern && e.isOther || "C" === e.type || "A" === e.type || "F" === e.type ? a(e, t) === a(e, i) : t === i
+  }
+
+  function l(e, t) {
+    if (e.riskMode && "R" === e.type && (e.riskConfig || []).findIndex((i => i === ("S" !== e.selectPattern && e.isOther ? t.value : t))) > -1) return !0;
+    if (e.riskMode && "A" === e.type && e.riskConfig && t && e.riskConfig.replace(/(\r\n)/g, /\n/).split(/\n/).findIndex((e => t.value.indexOf(e) > -1)) > -1) return !0;
+    if (e.riskMode && "T" === e.type && e.riskConfig && t && e.riskConfig.replace(/(\r\n)/g, /\n/).split(/\n/).findIndex((e => t.indexOf(e) > -1)) > -1) return !0;
+    if (e.riskMode && "C" === e.type) {
+      const i = [];
+      for (const a of t ? e.isOther ? t.value : t : []) i.push(a);
+      return i.findIndex((t => (e.riskConfig || []).findIndex((e => e === t)) > -1)) > -1
+    }
+    return !(!e.riskMode || "N" !== e.type || !e.riskConfig || null === t || "" === t || void 0 === t) && (!(null !== e.riskConfig.max && "" !== e.riskConfig.max && t > e.riskConfig.max) && !(null !== e.riskConfig.min && "" !== e.riskConfig.min && t < e.riskConfig.min))
+  }
+}

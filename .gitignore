@@ -1,0 +1,16 @@
+# Ignore local analysis inputs, build outputs, and downloaded dependencies.
+node_modules/
+**/node_modules/
+*.apk
+*.aab
+*.dex
+*.arsc
+*.axml
+*.so
+*.der
+*.jks
+*.keystore
+.env
+.env.*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1301 @@
+/**
+ * Webpack module logic recovery
+ * Source: assets/www/js/106.js -> module "3b5c"
+ * Route: /teacher/sanitation/detail
+ * Component guess: 106_3b5c
+ * Fidelity: exact module body, beautified only (webpack wrapper retained)
+ * Note: variable names inside the original production module are preserved as evidence.
+ */
+"3b5c": function(t, e, a) {
+  "use strict";
+  a.r(e);
+  var i = function() {
+      var t = this,
+        e = this,
+        a = e.$createElement,
+        i = e._self._c || a;
+      return i("q-layout", {
+        attrs: {
+          view: "lHh lpr lFf"
+        }
+      }, [i("q-header", {
+        staticClass: "bg-grey-3 text-black"
+      }, [i("q-toolbar", [i("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "keyboard_arrow_left"
+        },
+        on: {
+          click: e.goBack
+        }
+      }), i("q-toolbar-title", [e._v("查寝任务详情")]), i("q-btn", {
+        attrs: {
+          flat: "",
+          round: "",
+          dense: "",
+          icon: "search"
+        },
+        on: {
+          click: e.open
+        }
+      }, [i("q-badge", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: 0 != e.condCount,
+          expression: "condCount != 0"
+        }],
+        attrs: {
+          color: "orange",
+          floating: "",
+          transparent: ""
+        }
+      }, [e._v(e._s(e.condCount))])], 1)], 1), i("q-expansion-item", {
+        staticClass: "bg-white full-width q-ml-sm",
+        attrs: {
+          "switch-toggle-side": "",
+          "expand-icon-toggle": "",
+          "expand-separator": ""
+        },
+        scopedSlots: e._u([{
+          key: "header",
+          fn: function() {
+            return [i("q-item-section", [i("q-item-label", {
+              staticStyle: {
+                "font-size": "1.3em"
+              }
+            }, [e._v(e._s(e.sanitation.title))])], 1), i("q-item-section", {
+              attrs: {
+                side: ""
+              }
+            }, [i("q-btn", {
+              attrs: {
+                flat: "",
+                dense: "",
+                icon: "more_vert",
+                size: "sm"
+              },
+              on: {
+                click: function(t) {
+                  e.drawerRight = !e.drawerRight
+                }
+              }
+            })], 1)]
+          },
+          proxy: !0
+        }])
+      }, [i("q-card", [i("q-card-section", [i("div", {
+        staticClass: "row"
+      }, [i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("发起人")]), e._v(e._s(e.sanitation.teacher_name) + "\n              ")]), i("div", {
+        staticClass: "q-ml-xl"
+      }, [i("span", {
+        staticClass: "text-grey"
+      }, [e._v(" ")])]), i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("创建时间")]), e._v(e._s(e.sanitation.create_time) + "\n              ")]), i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("填写有效时间")]), e._v(e._s(e.sanitation.begin_date) + " ~ " + e._s(e.sanitation.end_date) + "\n              ")])])])], 1)], 1)], 1), i("q-pull-to-refresh", {
+        ref: "pageRefresh",
+        on: {
+          refresh: e.refresh
+        }
+      }, [i("q-page-container", [i("q-page", {
+        staticClass: "bg-grey-3 q-py-sm"
+      }, [e._l(e.list, (function(t) {
+        return i("q-card", {
+          key: t.id,
+          staticClass: "bg-white q-mb-sm q-mx-sm",
+          style: 0 == t.status ? "border-left:0.25rem solid #b5b3b3;" : "border-left:0.25rem solid #027be3;",
+          attrs: {
+            flat: ""
+          },
+          on: {
+            click: function(a) {
+              return e.goDetail(t, t.allow_edit, t.teacher_no)
+            }
+          }
+        }, [i("q-item", [i("q-item-section", [i("q-item-label", [i("q-icon", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "男" == t.sex_name,
+            expression: "item.sex_name == '男'"
+          }],
+          attrs: {
+            name: "person",
+            color: "blue"
+          }
+        }), i("q-icon", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: "女" == t.sex_name,
+            expression: "item.sex_name == '女'"
+          }],
+          attrs: {
+            name: "person",
+            color: "pink"
+          }
+        }), e._v("\n                      " + e._s(t.teacher_name) + " "), i("span", {
+          staticClass: "text-grey"
+        }, [e._v("(" + e._s(t.teacher_no) + ")")])], 1), i("q-item-label", {
+          attrs: {
+            lines: "1",
+            caption: ""
+          }
+        }, [e._v(" " + e._s(t.dep_name) + " ")]), i("q-item-label", {
+          staticClass: "q-mb-xs",
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon "
+        }, [e._v("检查寝室")]), e._v(e._s(t.room_name) + "\n                    ")]), i("q-item-label", {
+          staticClass: "q-mb-xs",
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon "
+        }, [e._v("执行日期")]), e._v(e._s(t.check_date) + "\n                    ")]), i("q-item-label", {
+          staticClass: "q-mb-xs",
+          attrs: {
+            caption: ""
+          }
+        }, [i("span", {
+          staticClass: "neu-css-after-colon "
+        }, [e._v("创建时间")]), e._v(e._s(t.create_time) + "\n                    ")])], 1), i("q-item-section", {
+          staticClass: "q-mt-sm",
+          attrs: {
+            side: ""
+          }
+        }, [i("q-item-label", [i("q-icon", {
+          attrs: {
+            name: "keyboard_arrow_right",
+            size: "xs"
+          }
+        })], 1)], 1)], 1)], 1)
+      })), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !e.isLoading && e.paging.pageCount != e.paging.pageNum,
+          expression: "!isLoading && paging.pageCount != paging.pageNum"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md",
+        on: {
+          click: function(t) {
+            return e.loadList(null)
+          }
+        }
+      }, [e._v("\n                加载更多...\n              ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !e.isLoading && e.paging.pageCount == e.paging.pageNum && 0 != e.list.length,
+          expression: "!isLoading && paging.pageCount == paging.pageNum && list.length != 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [e._v("\n                没有更多了\n              ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: !e.isLoading && 0 == e.list.length,
+          expression: "!isLoading && list.length == 0"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [e._v("\n                暂无填写数据\n              ")]), i("div", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: e.isLoading,
+          expression: "isLoading"
+        }],
+        staticClass: "text-center text-grey q-pt-sm q-pb-md"
+      }, [i("q-spinner-dots", {
+        attrs: {
+          color: "primary",
+          size: "md"
+        }
+      })], 1)], 2)], 1)], 1), i("q-dialog", {
+        attrs: {
+          persistent: ""
+        },
+        model: {
+          value: e.extendDialog,
+          callback: function(t) {
+            e.extendDialog = t
+          },
+          expression: "extendDialog"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-form", {
+        on: {
+          submit: e.extendSanitation
+        }
+      }, [i("q-card-section", {
+        staticClass: "text-h6"
+      }, [e._v("\n              " + e._s(1 == e.sanitation.status ? "确认延期" : "确认重新开启") + "\n            ")]), i("q-card-section", [i("div", {
+        staticClass: "row items-center"
+      }, [e._v("\n                " + e._s(1 == e.sanitation.status ? "延期" : "重新开启") + "截止日期至：\n                "), i("q-field", {
+        staticStyle: {
+          width: "100%"
+        },
+        attrs: {
+          outlined: "",
+          dense: "",
+          "stack-label": "",
+          "hide-bottom-space": "",
+          "lazy-rules": "",
+          rules: [function(t) {
+            return !!t || "请填写该项"
+          }, function(e) {
+            return e >= t.sanitation.end_date || "请填写原截止日期之后的日期"
+          }],
+          value: e.endDate
+        },
+        scopedSlots: e._u([{
+          key: "control",
+          fn: function() {
+            return [e._v(e._s(e.endDate))]
+          },
+          proxy: !0
+        }, {
+          key: "append",
+          fn: function() {
+            return [i("q-icon", {
+              staticClass: "cursor-pointer",
+              attrs: {
+                name: "event"
+              }
+            }, [i("q-popup-proxy", {
+              attrs: {
+                "transition-show": "scale",
+                "transition-hide": "scale"
+              }
+            }, [i("div", [i("q-date", {
+              attrs: {
+                flat: "",
+                minimal: "",
+                mask: "YYYY-MM-DD"
+              },
+              model: {
+                value: e.endDate,
+                callback: function(t) {
+                  e.endDate = t
+                },
+                expression: "endDate"
+              }
+            }, [i("div", {
+              staticClass: "row items-center justify-end"
+            }, [i("q-btn", {
+              directives: [{
+                name: "close-popup",
+                rawName: "v-close-popup"
+              }],
+              attrs: {
+                dense: "",
+                label: "关闭",
+                flat: ""
+              }
+            })], 1)])], 1)])], 1)]
+          },
+          proxy: !0
+        }])
+      })], 1)]), i("q-card-section", {
+        staticClass: "row q-gutter-sm justify-end"
+      }, [i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          outline: "",
+          color: "grey",
+          label: "取消"
+        }
+      }), i("q-btn", {
+        attrs: {
+          unelevated: "",
+          color: "primary",
+          label: 1 == e.sanitation.status ? "延期" : "重新开启",
+          type: "submit"
+        }
+      })], 1)], 1)], 1)], 1), i("q-dialog", {
+        attrs: {
+          maximized: !0
+        },
+        model: {
+          value: e.detailDialog,
+          callback: function(t) {
+            e.detailDialog = t
+          },
+          expression: "detailDialog"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-card-section", {
+        staticClass: "row items-center justify-between"
+      }, [i("div", {
+        staticClass: "text-h6"
+      }, [e._v("预览")]), i("q-btn", {
+        directives: [{
+          name: "close-popup",
+          rawName: "v-close-popup"
+        }],
+        attrs: {
+          icon: "close",
+          flat: "",
+          round: "",
+          dense: "",
+          size: "sm"
+        }
+      })], 1), i("q-separator"), i("q-card-section", [i("div", {
+        staticClass: "q-mt-sm text-bold"
+      }, [e._v(e._s(e.sanitation.title))]), i("div", {
+        staticClass: "q-mt-sm"
+      }, [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("发起人")]), e._v(e._s(e.sanitation.teacher_name) + "\n            ")]), i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("填写有效期间")]), e._v(e._s(e.sanitation.begin_date) + " ~ " + e._s(e.sanitation.end_date) + "\n            ")]), i("div", {
+        staticClass: "q-mt-sm",
+        domProps: {
+          innerHTML: e._s(e.sanitation.detail)
+        }
+      })]), i("q-separator"), i("q-card-section", [i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("允许填写人自己删除记录")]), e._v(e._s(1 === e.sanitation.allow_delete ? "是" : "否") + "\n            "), i("div", {
+        staticStyle: {
+          float: "right",
+          "margin-top": "-7px"
+        }
+      }, [e.sanitation.is_author ? i("q-toggle", {
+        staticClass: "q-pa-sm",
+        attrs: {
+          size: "lg",
+          "checked-icon": "check",
+          "unchecked-icon": "clear",
+          dense: "",
+          "false-value": 0,
+          "true-value": 1
+        },
+        on: {
+          input: e.changeAllowDelete
+        },
+        model: {
+          value: e.sanitation.allow_delete,
+          callback: function(t) {
+            e.$set(e.sanitation, "allow_delete", t)
+          },
+          expression: "sanitation.allow_delete"
+        }
+      }) : e._e()], 1)])]), i("q-separator"), i("q-card-section", [i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("填写对象")]), e.sanitation.is_author && null !== e.menuInfo.edit_permit ? i("div", {
+        staticStyle: {
+          float: "right"
+        }
+      }, [i("span", {
+        staticClass: "text-grey",
+        on: {
+          click: e.taskTargetDialogOpen
+        }
+      }, [e._v("选择")]), i("q-icon", {
+        staticClass: "text-grey",
+        attrs: {
+          name: "keyboard_arrow_right",
+          size: "sm"
+        }
+      })], 1) : e._e()]), i("neu-view-assigned-teacher", {
+        attrs: {
+          value: e.sanitation.task_target
+        }
+      })], 1), i("q-separator"), i("q-card-section", [i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("共享")]), e.sanitation.is_author && null !== e.menuInfo.edit_permit ? i("div", {
+        staticStyle: {
+          float: "right"
+        }
+      }, [i("span", {
+        staticClass: "text-grey",
+        on: {
+          click: e.openShareDialog
+        }
+      }, [e._v("选择")]), i("q-icon", {
+        staticClass: "text-grey",
+        attrs: {
+          name: "keyboard_arrow_right",
+          size: "sm"
+        }
+      })], 1) : e._e()]), i("neu-view-assigned-teacher", {
+        attrs: {
+          value: e.sanitation.share_target
+        }
+      })], 1), i("q-separator"), i("q-card-section", [i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("寝室检查配置")])]), e._l(e.sanitation.info_config, (function(t, a) {
+        return i("div", {
+          key: a,
+          staticClass: "bg-grey-2 q-pa-sm q-mt-sm"
+        }, [i("neu-widget", {
+          attrs: {
+            config: t,
+            viewMode: !0
+          },
+          model: {
+            value: e.infoModel[a],
+            callback: function(t) {
+              e.$set(e.infoModel, a, t)
+            },
+            expression: "infoModel[index]"
+          }
+        })], 1)
+      }))], 2), i("q-separator"), i("q-card-section", {
+        directives: [{
+          name: "show",
+          rawName: "v-show",
+          value: e.stu_info_config_status,
+          expression: "stu_info_config_status"
+        }]
+      }, [i("div", [i("span", {
+        staticClass: "text-grey neu-css-after-colon"
+      }, [e._v("学生个人检查配置")])]), e._l(e.sanitation.stu_info_config, (function(t, a) {
+        return i("div", {
+          key: a,
+          staticClass: "bg-grey-2 q-pa-sm q-mt-sm"
+        }, [i("neu-widget", {
+          attrs: {
+            config: t,
+            viewMode: !0
+          },
+          model: {
+            value: e.stuInfoModel[a],
+            callback: function(t) {
+              e.$set(e.stuInfoModel, a, t)
+            },
+            expression: "stuInfoModel[index]"
+          }
+        })], 1)
+      }))], 2)], 1)], 1), i("q-dialog", {
+        attrs: {
+          persistent: "",
+          fullWidth: "",
+          maximized: !0
+        },
+        model: {
+          value: e.shareDialog,
+          callback: function(t) {
+            e.shareDialog = t
+          },
+          expression: "shareDialog"
+        }
+      }, [i("div", {
+        staticClass: "full-width bg-white"
+      }, [i("div", {
+        staticClass: "full-width row items-center justify-between q-px-md q-py-sm"
+      }, [i("div", {
+        staticClass: "text-bold"
+      }, [e._v("修改共享对象")]), i("q-btn", {
+        attrs: {
+          unelevated: "",
+          color: "primary",
+          label: "完成"
+        },
+        on: {
+          click: e.updateShareTarget
+        }
+      })], 1), i("neu-assign-teacher", {
+        model: {
+          value: e.shareTarget,
+          callback: function(t) {
+            e.shareTarget = t
+          },
+          expression: "shareTarget"
+        }
+      })], 1)]), i("q-dialog", {
+        attrs: {
+          persistent: "",
+          fullWidth: "",
+          maximized: !0
+        },
+        model: {
+          value: e.taskTargetDialog,
+          callback: function(t) {
+            e.taskTargetDialog = t
+          },
+          expression: "taskTargetDialog"
+        }
+      }, [i("q-card", {
+        staticClass: "full-width",
+        attrs: {
+          flat: ""
+        }
+      }, [i("q-toolbar", [i("div", {
+        staticClass: "full-width row items-center justify-between q-px-xs q-py-sm"
+      }, [i("div", {
+        staticClass: "text-bold text-black"
+      }, [e._v("设置填写对象")]), i("q-btn", {
+        attrs: {
+          unelevated: "",
+          color: "primary",
+          label: "完成"
+        },
+        on: {
+          click: e.updateActionTarget
+        }
+      })], 1)]), i("q-card-section", [i("neu-assign-teacher", {
+        model: {
+          value: e.actionTarget,
+          callback: function(t) {
+            e.actionTarget = t
+          },
+          expression: "actionTarget"
+        }
+      })], 1)], 1)], 1), i("q-drawer", {
+        attrs: {
+          side: "right",
+          width: 200,
+          breakpoint: 100,
+          overlay: "",
+          bordered: "",
+          "content-class": "bg-white-3"
+        },
+        model: {
+          value: e.drawerRight,
+          callback: function(t) {
+            e.drawerRight = t
+          },
+          expression: "drawerRight"
+        }
+      }, [i("q-scroll-area", {
+        staticClass: "fit"
+      }, [i("q-list", {
+        staticStyle: {
+          "border-left": "0.15rem solid #027be3"
+        },
+        attrs: {
+          separator: ""
+        }
+      }, [i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: function(t) {
+            e.detailDialog = !0
+          }
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "remove_red_eye",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("预览任务")])], 1), 1 == e.sanitation.status && e.sanitation.is_author ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: e.terminateSanitation
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "check",
+          size: "sm",
+          color: "primary"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-primary",
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("提前结束")])], 1) : e._e(), 1 == e.sanitation.status && e.sanitation.is_author ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: e.openExtendDialog
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "access_time",
+          size: "sm",
+          color: "primary"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-primary",
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("延期")])], 1) : e._e(), e.sanitation.is_author ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: e.copyApply
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "content_copy",
+          size: "sm",
+          color: "primary"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-primary",
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("复制")])], 1) : e._e(), 0 == e.sanitation.status && e.sanitation.is_author ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: e.openExtendDialog
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "refresh",
+          size: "sm",
+          color: "primary"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-primary",
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("重新开启")])], 1) : e._e(), e.sanitation.is_author || "A" == e.roleId ? i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: e.deleteSanitation
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "delete",
+          size: "sm",
+          color: "red"
+        }
+      })], 1), i("q-item-section", {
+        staticClass: "text-red",
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("删除")])], 1) : e._e(), i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        },
+        on: {
+          click: e.exportList
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: ""
+        }
+      }, [i("q-icon", {
+        attrs: {
+          name: "get_app",
+          size: "sm"
+        }
+      })], 1), i("q-item-section", {
+        staticStyle: {
+          "font-size": "1.1rem"
+        }
+      }, [e._v("导出")])], 1)], 1)], 1)], 1), i("q-dialog", {
+        attrs: {
+          position: "bottom"
+        },
+        model: {
+          value: e.dialog,
+          callback: function(t) {
+            e.dialog = t
+          },
+          expression: "dialog"
+        }
+      }, [i("q-card", {
+        staticStyle: {
+          width: "350px"
+        }
+      }, [i("q-linear-progress", {
+        attrs: {
+          value: 1,
+          color: "primary"
+        }
+      }), i("q-card-section", {
+        staticClass: "row items-center justify-between",
+        attrs: {
+          dense: ""
+        }
+      }, [i("q-btn", {
+        attrs: {
+          outline: "",
+          label: "取消",
+          color: "grey",
+          size: "md"
+        },
+        on: {
+          click: function(t) {
+            return e.close()
+          }
+        }
+      }), i("q-btn", {
+        attrs: {
+          unelevated: "",
+          label: "确定",
+          color: "primary",
+          size: "md"
+        },
+        on: {
+          click: e.getCondition
+        }
+      })], 1), i("q-separator"), i("q-list", {
+        attrs: {
+          bordered: ""
+        }
+      }, [i("q-item", {
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [i("span", [e._v("任务状态")])]), i("q-item-section", [i("div", {
+        staticClass: "row justify-evenly"
+      }, e._l([{
+        label: "已提交",
+        value: "1"
+      }, {
+        label: "暂存",
+        value: "0"
+      }], (function(t) {
+        return i("q-btn", {
+          key: t.value,
+          attrs: {
+            outline: "",
+            color: t.value == e.queryModel.status ? "primary" : "grey"
+          },
+          on: {
+            click: function(a) {
+              return e.getValue(t.value)
+            }
+          }
+        }, [e._v("\n                        " + e._s(t.label) + "\n                        "), i("q-badge", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: e.queryModel.status == t.value,
+            expression: "queryModel.status == item.value"
+          }],
+          attrs: {
+            color: "orange",
+            floating: ""
+          }
+        }, [e._v("√")])], 1)
+      })), 1)])], 1), i("q-separator"), i("q-item", {
+        directives: [{
+          name: "ripple",
+          rawName: "v-ripple"
+        }],
+        attrs: {
+          clickable: ""
+        }
+      }, [i("q-item-section", {
+        attrs: {
+          avatar: "",
+          top: ""
+        }
+      }, [i("span", [e._v("综合查询")])]), i("q-item-section", [i("q-input", {
+        attrs: {
+          outlined: "",
+          clearable: "",
+          dense: ""
+        },
+        model: {
+          value: e.queryModel.mutli_search,
+          callback: function(t) {
+            e.$set(e.queryModel, "mutli_search", t)
+          },
+          expression: "queryModel.mutli_search"
+        }
+      }), i("q-item-label", {
+        staticStyle: {
+          "margin-top": "4px"
+        },
+        attrs: {
+          caption: ""
+        }
+      }, [e._v("可以查寝寝室、教工号、院系")])], 1)], 1)], 1)], 1)], 1), e.show_createNew ? i("q-page-sticky", {
+        attrs: {
+          position: "bottom-right",
+          offset: e.fabPos
+        },
+        on: {
+          click: function(t) {
+            e.createNew()
+          }
+        }
+      }, [i("q-btn", {
+        directives: [{
+          name: "touch-pan",
+          rawName: "v-touch-pan.prevent.mouse",
+          value: e.moveFab,
+          expression: "moveFab",
+          modifiers: {
+            prevent: !0,
+            mouse: !0
+          }
+        }],
+        attrs: {
+          round: "",
+          color: "primary",
+          icon: "edit"
+        }
+      })], 1) : e._e(), i("neu-export-data", {
+        attrs: {
+          config: e.exportCompConfig
+        }
+      })], 1)
+    },
+    s = [],
+    n = (a("13d5"), a("fb6a"), a("ded3")),
+    o = a.n(n),
+    r = a("9a3d"),
+    l = a("5333"),
+    c = a("974f"),
+    d = a("58a84"),
+    h = a("d852"),
+    u = {
+      components: {
+        NeuAssignTeacher: r["a"],
+        NeuViewAssignedTeacher: l["a"],
+        NeuWidget: c["a"],
+        NeuExportData: h["a"]
+      },
+      name: "SanitationDetail",
+      filters: {
+        ellipsis(t) {
+          return t ? t.length > 9 ? t.slice(0, 9) + "..." : t : ""
+        }
+      },
+      data() {
+        return {
+          roleId: JSON.parse(window.localStorage.getItem("userinfo")).role_id,
+          drawerRight: !1,
+          id: null,
+          menuInfo: null,
+          sanitation: {},
+          stu_info_config_status: !1,
+          detailDialog: !1,
+          extendDialog: !1,
+          endDate: null,
+          shareDialog: !1,
+          shareTarget: [],
+          infoModel: [],
+          stuInfoModel: [],
+          list: [],
+          paging: {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          },
+          show_createNew: !1,
+          condition: [],
+          condCount: 0,
+          dialog: !1,
+          originalCond: {},
+          queryModel: {
+            status: "",
+            mutli_search: ""
+          },
+          isLoading: !1,
+          fabPos: [30, 40],
+          exportCompConfig: null,
+          taskTargetDialog: !1,
+          actionTarget: []
+        }
+      },
+      destroyed() {
+        window.removeEventListener("popstate", this.goBack, !1)
+      },
+      mounted() {
+        this.id = this.$route.query.id, void 0 === this.id && (this.id = window.localStorage.getItem("sanitation_id")), window.localStorage.getItem("menu") && (this.menuInfo = JSON.parse(window.localStorage.getItem("menu")).find((t => "sanitation" === t.id))), this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+          action: "querySanitation",
+          id: this.id,
+          roleId: this.roleId
+        }).then((t => {
+          0 === t.data.code && ("" === t.data.result && (this.$showErrorNotify("该条信息不存在或您权限不足"), this.goBack()), this.sanitation = t.data.result, this.show_createNew = t.data.result.allow_create, 0 !== this.sanitation.stu_info_config.length && (this.stu_info_config_status = !0))
+        })).catch((t => {
+          this.sanitation = {}
+        })), window.history && window.history.pushState && (history.pushState(null, null, document.URL), window.addEventListener("popstate", this.goBack, !1)), this.loadList((() => {}))
+      },
+      methods: {
+        loadList(t) {
+          t && (this.paging.pageNum = 0, this.list = []), this.paging.pageNum += 1, this.isLoading = !0, this.$axiosAction("/api/teacher/sanitation/sanitation.api", o()(o()({
+            action: "querySanitationResultList"
+          }, this.queryModel), {}, {
+            sanitation_id: this.id,
+            pageSize: this.paging.pageSize,
+            pageNum: this.paging.pageNum
+          })).then((e => {
+            if (0 === e.data.code) {
+              this.list = this.list.concat(e.data.result.list);
+              const {
+                pageSize: t,
+                pageNum: a,
+                rowCount: i,
+                pageCount: s,
+                startIndex: n,
+                endIndex: r
+              } = o()({}, e.data.result);
+              this.paging = {
+                pageSize: t,
+                pageNum: a,
+                rowCount: i,
+                pageCount: s,
+                startIndex: n,
+                endIndex: r
+              }
+            } else this.setDefaultList();
+            t && t(), this.isLoading = !1
+          })).catch((e => {
+            this.setDefaultList(), t && t(), this.isLoading = !1
+          }))
+        },
+        setDefaultList() {
+          this.list = [], this.paging = {
+            pageSize: 30,
+            pageNum: 0,
+            pageCount: 0
+          }
+        },
+        refresh(t) {
+          this.loadList(t)
+        },
+        goBack() {
+          this.$router.push("/teacher/sanitation/index")
+        },
+        terminateSanitation() {
+          this.$q.dialog({
+            title: "确认提前结束",
+            message: "提前结束后教师将不能再填写寝室结果。",
+            html: !0,
+            persistent: !0,
+            cancel: {
+              label: "取消",
+              outline: !0,
+              color: "grey"
+            },
+            ok: {
+              label: "提前结束",
+              unelevated: !0,
+              color: "primary"
+            }
+          }).onOk((() => {
+            this.$q.loading.show(), this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+              action: "terminateSanitation",
+              id: this.id
+            }).then((t => {
+              0 === t.data.code && this.$router.push("/teacher/Sanitation/index"), this.$q.loading.hide()
+            })).catch((t => {
+              this.$q.loading.hide()
+            }))
+          }))
+        },
+        openExtendDialog() {
+          this.extendDialog = !0, this.endDate = this.sanitation.end_date
+        },
+        extendSanitation() {
+          this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+            action: 1 === this.sanitation.status ? "extendSanitation" : "restartSanitation",
+            id: this.id,
+            end_date: this.endDate
+          }).then((t => {
+            0 === t.data.code && (1 === this.sanitation.status ? (this.sanitation.end_date = this.endDate, this.extendDialog = !1) : this.$router.push("/teacher/Sanitation/index"))
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        deleteSanitation() {
+          this.$q.dialog({
+            title: "确认删除",
+            message: "该寝室任务及各位老师已填写的数据将被清空。</span>",
+            html: !0,
+            persistent: !0,
+            cancel: {
+              label: "取消",
+              outline: !0,
+              color: "grey"
+            },
+            ok: {
+              label: "删除",
+              unelevated: !0,
+              color: "negative"
+            }
+          }).onOk((() => {
+            this.$q.loading.show(), this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+              action: "deleteSanitation",
+              id: this.id,
+              roleId: this.roleId,
+              teacher_no: this.sanitation.teacher_no,
+              title: this.sanitation.title
+            }).then((t => {
+              0 === t.data.code && this.$router.push("/teacher/Sanitation/index"), this.$q.loading.hide()
+            })).catch((t => {
+              this.$q.loading.hide()
+            }))
+          }))
+        },
+        goDetail(t, e, a) {
+          let i = "";
+          i = e ? "u" : "d";
+          const s = this.show_createNew && 1 === this.sanitation.allow_delete && "n" !== i;
+          this.$router.push("/teacher/sanitation/detailresult?type=" + i + "&sanId=" + this.id + "&teacher_no=" + a + "&getAllowDelete=" + s), window.localStorage.setItem("sanitation_result_detail", JSON.stringify(t))
+        },
+        createNew() {
+          this.$router.push(`/teacher/sanitation/detailresult?type=n&sanId=${this.id}`)
+        },
+        openShareDialog() {
+          this.shareDialog = !0, this.shareTarget = this.sanitation.share_target
+        },
+        updateShareTarget() {
+          this.$q.loading.show(), this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+            action: "updateShareTarget",
+            id: this.id,
+            share_target: this.shareTarget && this.shareTarget.length > 0 ? JSON.stringify(this.shareTarget) : null
+          }).then((t => {
+            0 === t.data.code && (this.sanitation.share_target = this.shareTarget, this.shareDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        exportList() {
+          const t = this.condition.reduce(((t, e) => (t[e.name] = e.value, t)), {});
+          t.sanitation_id = parseInt(this.id), t.status = this.tab, this.exportCompConfig = ["/api/teacher/sanitation/sanitation.api", "exportSanitationResultDetailList", t, {
+            [this.sanitation.title]: "result"
+          }, this.sanitation.title, null, t => t.reduce(((t, e) => {
+            const a = {
+              "教工号": e.teacher_no,
+              "姓名": e.teacher_name,
+              "性别": e.sex_name,
+              "部门院系": e.dep_name,
+              "寝室": e.room_name,
+              "执行日期": e.check_date,
+              "提交时间": e.create_time
+            };
+            if (this.sanitation.info_config !== [])
+              for (let i = 0; i < this.sanitation.info_config.length; i++) a[(i + 1).toString() + "." + this.sanitation.info_config[i].label] = e.info_result ? Object(d["c"])(this.sanitation.info_config[i], e.info_result[i]) : null;
+            return t.concat(a)
+          }), []), 1e3, 5e3]
+        },
+        open() {
+          this.dialog = !0, this.originalCond = Object.keys(this.queryModel).reduce(((t, e) => (t[e] = this.queryModel[e], t)), {})
+        },
+        close() {
+          this.dialog = !1, this.queryModel = Object.keys(this.originalCond).reduce(((t, e) => (t[e] = this.originalCond[e], t)), {})
+        },
+        getCondition() {
+          this.condCount = Object.keys(this.queryModel).reduce(((t, e) => this.queryModel[e] ? t + 1 : t), 0), this.$refs.pageRefresh.trigger(), this.dialog = !1
+        },
+        getValue(t) {
+          this.queryModel.status === t ? this.queryModel.status = "" : this.queryModel.status = t
+        },
+        moveFab(t) {
+          this.draggingFab = !0 !== t.isFirst && !0 !== t.isFinal, this.fabPos = [this.fabPos[0] - t.delta.x, this.fabPos[1] - t.delta.y]
+        },
+        taskTargetDialogOpen() {
+          this.taskTargetDialog = !0, this.actionTarget = JSON.parse(JSON.stringify(this.sanitation.task_target))
+        },
+        updateActionTarget() {
+          this.$q.loading.show(), this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+            action: "updateActionTarget",
+            id: this.id,
+            task_target: this.actionTarget && this.actionTarget.length > 0 ? JSON.stringify(this.actionTarget) : null
+          }).then((t => {
+            0 === t.data.code && (this.sanitation.task_target = this.actionTarget, this.taskTargetDialog = !1), this.$q.loading.hide()
+          })).catch((t => {
+            this.$q.loading.hide()
+          }))
+        },
+        changeAllowDelete() {
+          this.$axiosAction("/api/teacher/sanitation/sanitation.api", {
+            action: "updateAllowDelete",
+            id: this.id,
+            allow_delete: this.sanitation.allow_delete
+          }).then((t => {
+            0 === t.data.code || this.$router.push("/teacher/sanitation/index")
+          })).catch((t => {
+            this.record = {}
+          }))
+        },
+        copyApply() {
+          this.$q.dialog({
+            title: "确认复制",
+            message: "复制该寝室检查设置数据并全新发布",
+            html: !0,
+            persistent: !0,
+            cancel: {
+              label: "取消",
+              outline: !0,
+              color: "grey"
+            },
+            ok: {
+              label: "复制",
+              unelevated: !0,
+              color: "primary"
+            }
+          }).onOk((() => {
+            this.$router.push({
+              name: "/teacher/sanitation/new",
+              params: {
+                sanitation: this.sanitation
+              }
+            })
+          }))
+        }
+      }
+    },
+    p = u,
+    g = a("2877"),
+    m = a("4d5a"),
+    v = a("e359"),
+    _ = a("65c6"),
+    q = a("9c40"),
+    f = a("6ac5"),
+    w = a("58a81"),
+    b = a("3b73"),
+    y = a("4074"),
+    x = a("0170"),
+    k = a("f09f"),
+    C = a("a370"),
+    S = a("59d7"),
+    D = a("09e3"),
+    N = a("9989"),
+    T = a("1c1c"),
+    $ = a("66e5"),
+    z = a("0016"),
+    I = a("eb85"),
+    L = a("8380"),
+    Q = a("24e8"),
+    M = a("0378"),
+    A = a("8572"),
+    O = a("7cbe"),
+    P = a("52ee"),
+    R = a("9564"),
+    j = a("9404"),
+    E = a("4983"),
+    F = a("6b1d"),
+    J = a("27f9"),
+    B = a("de5e"),
+    Y = a("7f67"),
+    H = a("714f"),
+    V = a("75c3"),
+    W = a("eebe"),
+    U = a.n(W),
+    G = Object(g["a"])(p, i, s, !1, null, null, null);
+  e["default"] = G.exports;
+  U()(G, "components", {
+    QLayout: m["a"],
+    QHeader: v["a"],
+    QToolbar: _["a"],
+    QBtn: q["a"],
+    QToolbarTitle: f["a"],
+    QBadge: w["a"],
+    QExpansionItem: b["a"],
+    QItemSection: y["a"],
+    QItemLabel: x["a"],
+    QCard: k["a"],
+    QCardSection: C["a"],
+    QPullToRefresh: S["a"],
+    QPageContainer: D["a"],
+    QPage: N["a"],
+    QList: T["a"],
+    QItem: $["a"],
+    QIcon: z["a"],
+    QSeparator: I["a"],
+    QSpinnerDots: L["a"],
+    QDialog: Q["a"],
+    QForm: M["a"],
+    QField: A["a"],
+    QPopupProxy: O["a"],
+    QDate: P["a"],
+    QToggle: R["a"],
+    QDrawer: j["a"],
+    QScrollArea: E["a"],
+    QLinearProgress: F["a"],
+    QInput: J["a"],
+    QPageSticky: B["a"]
+  }), U()(G, "directives", {
+    ClosePopup: Y["a"],
+    Ripple: H["a"],
+    TouchPan: V["a"]
+  })
+}
